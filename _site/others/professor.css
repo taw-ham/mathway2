@@ -1,0 +1,56 @@
+#reposta_certa button {
+    background-color: limegreen;
+    color: whitesmoke;
+    margin-left: 1.2%;
+}
+
+#pergunta_errada button {
+    background-color: red;
+    color: whitesmoke;
+    margin-left: 1.2%;
+}
+
+#perguntas_nao_feitas button {
+    background-color: darkgray;
+    color: whitesmoke
+}
+
+#reposta_certa li {
+    margin-bottom: 5%;
+}
+
+#pergunta_errada li {
+    margin-bottom: 5%;
+}
+
+#perguntas_nao_feitas li {
+    margin-bottom: 5%;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0%;
+    width: 96%;
+    background-color: whitesmoke;
+    border-radius: 2px;
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: 2%;
+    border: 1px solid darkslategrey;
+}
+
+table td {
+    width: 12%;
+    text-align: center;
+    font-family: calibri;
+    background-image: url('./fotis/paper.png');
+}
+
+table th {
+    font-family: calibri;
+    text-align: center;
+    background: linear-gradient( #6495ED, #6495ED, lightblue);
+    color: white;
+    text-shadow: 1px 1px #000;
+    padding: 1%;
+}
