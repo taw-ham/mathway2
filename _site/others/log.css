@@ -1,0 +1,1823 @@
+body {
+    background-image: url('./fotis/water.jpg');
+    background-size: cover;
+    margin: 0%;
+}
+
+.menu {
+    margin: 0%;
+    list-style-type: none;
+    display: inline-block;
+    background-color: whitesmoke;
+    padding: 0.5%;
+    width: 100%;
+    border-bottom: 2px solid gainsboro;
+    position: static;
+}
+
+.menu li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.menu .logo {
+    text-align: left;
+}
+
+.menu .logo a {
+    font-family: magneto;
+    font-size: 150%;
+    text-decoration: none;
+}
+
+.menu .logo img {
+    margin-top: -0.2%;
+}
+
+.menu .op {
+    margin-left: 10%;
+    margin-right: -22%;
+    font-size: 100%;
+    margin-top: 0.2%;
+}
+
+.menu .op a {
+    font-family: calibri;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.typeprof {
+    font-weight: bold;
+    font-family: calibri;
+    margin-left: 0.5%;
+    font-size: 100%;
+    background-color: lightgray;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 4px;
+}
+
+.wall {
+    background-color: lightslategrey;
+    width: 70%;
+    margin: 0%;
+    padding-bottom: 5.4%;
+    padding-top: 5%;
+    margin-left: 30%;
+    border-left: 1px solid gainsboro;
+    background-image: url('./fotis/wallpaperm.png');
+    opacity: 95%;
+    position: relative;
+}
+
+.opb {
+    background-color: whitesmoke;
+    padding: 1%;
+    width: 40%;
+    margin-left: 50%;
+    font-family: calibri;
+    border-radius: 2px;
+}
+
+#logx {
+    width: 40%;
+    background-color: whitesmoke;
+    padding: 1%;
+    margin-left: 50%;
+    border-radius: 2px;
+}
+
+#logx header {
+    background-color: royalblue;
+    color: white;
+    text-align: center;
+    padding: 0.2%;
+}
+
+#logx header h2 {
+    font-size: 135%;
+    text-shadow: 1px 1px #000;
+    margin-top: 1%;
+}
+
+#logx label {
+    padding-top: 1%;
+    font-family: calibri;
+}
+
+#logx p {
+    padding-top: 1%;
+    font-size: 80%;
+    font-family: calibri;
+}
+
+#logx button {
+    font-family: calibri;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+#infx {
+    background: linear-gradient(lightseagreen, lightseagreen, lightblue, lightblue, whitesmoke);
+    width: 40%;
+    margin-left: 5%;
+    float: left;
+    padding: 1%;
+    border-radius: 2px;
+}
+
+#infx h1 {
+    font-family: magneto;
+    color: white;
+    text-shadow: 1px 1px #000;
+    font-size: 160%;
+}
+
+#infx p {
+    font-family: calibri;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px #000;
+    font-size: 120%;
+}
+
+#logxalun {
+    background-color: lightgrey;
+    padding: 2%;
+}
+
+#logxprof {
+    background-color: lightgrey;
+    padding: 2%;
+}
+
+.warnx {
+    margin-top: 1%;
+}
+
+.copyx {
+    background-color: #000;
+    list-style-type: none;
+    display: inline-block;
+    margin: 0%;
+    width: 100%;
+    padding: 0.5%;
+    position: static;
+}
+
+.copyx li {
+    list-style-type: none;
+    display: inline-block;
+    color: white;
+    font-size: 80%;
+    padding-left: 1%;
+}
+
+.copyx li a {
+    color: white;
+}
+
+.wall2 {
+    background-color: lightsteelblue;
+    width: 100%;
+    margin: 0%;
+    opacity: 95%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    position: relative;
+}
+
+#logx2 {
+    width: 30%;
+    background-color: whitesmoke;
+    padding: 1%;
+    border-radius: 2px;
+    margin-left: 34%;
+}
+
+#logx2 header {
+    background-color: royalblue;
+    color: white;
+    text-align: center;
+    padding: 0.2%;
+}
+
+#logx2 header h2 {
+    font-size: 125%;
+    text-shadow: 1px 1px #000;
+    margin-top: 1%;
+}
+
+#logx2 label {
+    padding-top: 1%;
+    font-family: calibri;
+}
+
+#logx2 p {
+    padding-top: 1%;
+    font-size: 80%;
+    font-family: calibri;
+}
+
+#logx2 button {
+    font-family: calibri;
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
+}
+
+.escolhax {
+    background-color: whitesmoke;
+    padding: 0.5%;
+    width: 30%;
+    margin-left: 34%;
+}
+
+.escolhax header {
+    background-color: lightslategray;
+    padding: 1%;
+    border: 2px solid royalblue;
+    margin-top: 2%;
+}
+
+.escolhax .escolhax-a {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.dfi.wa.gov%2Fsites%2Fdefault%2Ffiles%2Fhigh-school-classroom-fb.jpg&f=1&nofb=1');
+    background-size: cover;
+}
+
+.escolhax .escolhax-b {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fi.huffpost.com%2Fgen%2F1728627%2Fimages%2Fo-TEACHER-IN-CLASSROOM-facebook.jpg&f=1&nofb=1');
+    background-size: cover;
+}
+
+.escolhax .escolhax-a button {
+    font-family: calibri;
+    margin-left: 31%;
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
+}
+
+.escolhax .escolhax-b button {
+    font-family: calibri;
+    margin-left: 24.5%;
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
+}
+
+.escolhax-a {
+    float: left;
+    width: 47%;
+}
+
+.escolhax-b {
+    margin-left: 52%;
+}
+
+.menu .logo2 {
+    text-align: left;
+}
+
+.menu .logo2 a {
+    font-family: magneto;
+    font-size: 150%;
+    text-decoration: none;
+}
+
+.menu .logo2 img {
+    margin-top: -0.2%;
+}
+
+.wallprof {
+    background-color: lightslategrey;
+    background-image: url('./fotis/wood.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0%;
+    position: relative;
+    width: 90%;
+    opacity: 95%;
+    margin-left: 5%;
+    border-left: 1px solid darkgray;
+    border-right: 1px solid darkgray;
+    padding-bottom: 17%;
+    padding-top: 1%;
+}
+
+.wallalun {
+    background-color: lightslategrey;
+    background-image: url('./fotis/wood.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0%;
+    position: relative;
+    width: 90%;
+    opacity: 95%;
+    margin-left: 5%;
+    border-left: 1px solid darkgray;
+    border-right: 1px solid darkgray;
+    padding-bottom: 32%;
+    padding-top: 1%;
+}
+
+.highx {
+    margin-left: 42%;
+    margin-top: 1%;
+    border-radius: 2px;
+}
+
+.highx2 {
+    margin-left: 50%;
+    margin-top: 1%;
+    border-radius: 2px;
+}
+
+.wayx {
+    background-color: lightskyblue;
+    padding: 0.5%;
+    margin: 0%;
+}
+
+.way3 {
+    text-decoration: none;
+    text-align: center;
+    font-family: calibri;
+    font-weight: bold;
+    color: whitesmoke;
+    text-shadow: 1px 1px #000;
+    font-size: 120%;
+    padding-left: 3%;
+    padding-right: 1%;
+}
+
+.way2 {
+    text-decoration: none;
+    text-align: center;
+    font-family: calibri;
+    font-weight: bold;
+    color: whitesmoke;
+    text-shadow: 1px 1px #000;
+    font-size: 120%;
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.way1 {
+    text-align: center;
+    font-family: calibri;
+    font-weight: bold;
+    color: whitesmoke;
+    text-shadow: 1px 1px #000;
+    text-decoration: none;
+    font-size: 120%;
+    margin-left: 32%;
+    padding-right: 3%;
+    padding-left: 1%;
+}
+
+.way1:hover {
+    background-color: darkgray;
+    color: whitesmoke;
+    text-shadow: 1px 1px #000;
+    border-radius: 1px;
+}
+
+.way2:hover {
+    background-color: darkgray;
+    color: whitesmoke;
+    text-shadow: 1px 1px #000;
+    border-radius: 1px;
+}
+
+.way3:hover {
+    background-color: darkgray;
+    color: whitesmoke;
+    text-shadow: 1px 1px #000;
+    border-radius: 1px;
+}
+
+.articx {
+    background-color: whitesmoke;
+    margin: 0%;
+    width: 30%;
+    margin-top: 1%;
+    margin-left: 46%;
+    padding: 1%;
+    display: inline-block;
+    border-radius: 2px;
+    border: 1px solid lightslategrey;
+}
+
+.articx article h2 {
+    font-size: 100%;
+    font-family: calibri;
+    font-weight: bold;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 5%;
+    background-color: lightslategrey;
+    color: white;
+    text-shadow: 1px 1px #000;
+}
+
+.articx article p {
+    font-size: 80%;
+    font-family: calibri;
+    margin-top: 1%;
+}
+
+.articx article img {
+    border: 1px solid lightgray;
+}
+
+.dadosx {
+    float: left;
+    background-color: whitesmoke;
+    margin: 0%;
+    margin-top: -16.9%;
+    margin-left: 18%;
+    width: 22%;
+    padding: 1%;
+    border-radius: 2px;
+    border: 1px solid lightslategrey;
+}
+
+.dadosx ul {
+    list-style-type: none;
+    margin: 0%;
+    margin-left: -18%;
+}
+
+.dadosx h2 {
+    background-color: royalblue;
+    color: white;
+    text-shadow: 1px 1px #000;
+    text-align: center;
+    font-size: 100%;
+    padding: 2%;
+    font-family: calibri;
+    font-weight: bold;
+}
+
+.dadosx h1 {
+    background-color: lightgray;
+    text-indent: 2%;
+    font-family: calibri;
+    font-size: 100%;
+    padding: 1%;
+}
+
+.codex {
+    margin: 0%;
+    background-color: whitesmoke;
+    padding: 0.5%;
+    padding-bottom: 0.8%;
+    width: 22%;
+    margin-left: 18%;
+    border-radius: 2px;
+    margin-top: 3.2%;
+    border: 1px solid lightslategrey;
+}
+
+.codex button {
+    margin-top: 2%;
+    font-family: calibri;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    width: 100%;
+}
+
+.codex2 {
+    margin: 0%;
+    background-color: whitesmoke;
+    padding: 1%;
+    padding-bottom: 0.5%;
+    width: 24%;
+    margin-top: -16.9%;
+    margin-left: 16%;
+    border-radius: 2px;
+    border: 1px solid lightslategrey;
+}
+
+.codex2 p {
+    background-color: lightgray;
+    padding: 1%;
+    font-family: calibri;
+    font-size: 100%;
+    font-weight: bold;
+    text-indent: 2%;
+}
+
+.codex2 h2 {
+    font-size: 100%;
+    background-color: royalblue;
+    padding: 2%;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px #000;
+    font-weight: bold;
+    font-family: calibri;
+}
+
+.codex2 h1 {
+    background-color: lightgray;
+    text-indent: 2%;
+    font-family: calibri;
+    font-size: 100%;
+    padding: 1%;
+}
+
+.codex2 button {
+    font-family: calibri;
+    margin-top: 6%;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    font-size: 95%;
+}
+
+.codex2 input {
+    width: 100%;
+}
+
+.dadosxalun {
+    float: left;
+    background-color: whitesmoke;
+    margin: 0%;
+    margin-top: -20%;
+    margin-left: 26%;
+    width: 22%;
+    padding: 1%;
+    border-radius: 2px;
+    border: 1px solid lightslategrey;
+}
+
+.dadosxalun ul {
+    list-style-type: none;
+    margin: 0%;
+    margin-left: -18%;
+}
+
+.dadosxalun h2 {
+    background-color: royalblue;
+    color: white;
+    text-shadow: 1px 1px #000;
+    text-align: center;
+    font-size: 100%;
+    padding: 2%;
+    font-family: calibri;
+    font-weight: bold;
+}
+
+.dadosxalun h1 {
+    background-color: lightgray;
+    text-indent: 2%;
+    font-family: calibri;
+    font-size: 100%;
+    padding: 1%;
+}
+
+.salasx {
+    margin: 0%;
+    background-color: whitesmoke;
+    padding: 0.5%;
+    padding-bottom: 0.8%;
+    border-radius: 2px;
+    width: 22%;
+    margin-top: 0%;
+    margin-left: 26%;
+    border: 1px solid lightslategrey;
+}
+
+.salasx button {
+    font-family: calibri;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    margin-top: 2%;
+    width: 100%;
+}
+
+.salasx small {
+    text-align: center;
+}
+
+.comentx {
+    margin: 0%;
+    background-color: whitesmoke;
+    padding: 1%;
+    border-radius: 2px;
+    width: 22%;
+    margin-top: -36.2%;
+    margin-left: 2%;
+    border: 1px solid lightslategrey;
+}
+
+.comentx textarea {
+    width: 100%;
+}
+
+.comentx button {
+    font-family: calibri;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    font-size: 80%;
+}
+
+.comentx ul {
+    margin: 0%;
+    background-color: lightgray;
+    margin-top: 3%;
+    padding: 1%;
+}
+
+.comentx ul li {
+    font-family: calibri;
+    margin-left: 10%;
+    border-bottom: 1px solid darkgray;
+}
+
+.salasx2 {
+    margin: 0%;
+    background-color: whitesmoke;
+    padding: 1%;
+    border-radius: 2px;
+    width: 22%;
+    margin-top: -20%;
+    margin-left: 2%;
+    border: 1px solid lightslategrey;
+}
+
+.salasx2 h2 {
+    background-color: royalblue;
+    color: white;
+    text-shadow: 1px 1px #000;
+    text-align: center;
+    font-size: 100%;
+    padding: 2%;
+    font-family: calibri;
+    font-weight: bold;
+}
+
+.salasx2 button {
+    font-family: calibri;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    margin-top: 6%;
+}
+
+.salasx2 input {
+    width: 100%;
+}
+
+.notasx {
+    margin: 0%;
+    background-color: whitesmoke;
+    padding: 0.5%;
+    border-radius: 2px;
+    width: 20%;
+    margin-top: 1%;
+    margin-left: 24%;
+    border: 1px solid lightslategrey;
+}
+
+.notasx button {
+    font-family: calibri;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    margin-left: 22%;
+}
+
+.notasx2 button {
+    margin-left: 2%;
+    font-family: calibri;
+    margin-top: 0.5%;
+    padding-top: 0.02%;
+    padding-bottom: 0.02%;
+}
+
+.exercx {
+    margin: 0%;
+    background-color: whitesmoke;
+    padding: 2%;
+    width: 40%;
+    margin-left: 2%;
+    border: 1px solid lightslategrey;
+}
+
+.exercx button {
+    font-family: calibri;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    margin-top: 2%;
+    margin-left: -2%;
+    font-size: 95%;
+}
+
+.exercx h1 {
+    background: linear-gradient(#6495ED, #6495ED, #6495ED, lightblue);
+    text-align: center;
+    font-size: 120%;
+    font-family: calibri;
+    color: white;
+    text-shadow: 1px 1px #000;
+    padding: 0.8%;
+    font-weight: bold;
+    margin-left: -2%;
+    border-radius: 2px;
+}
+
+.exercx img {
+    margin-top: -1.5%;
+}
+
+.exercx2 {
+    margin: 0%;
+    background-color: whitesmoke;
+    padding: 2%;
+    width: 30%;
+    margin-top: -2.1%;
+    margin-left: -2%;
+}
+
+.exercx2 button {
+    font-family: calibri;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+    margin-top: 2%;
+    margin-left: -4%;
+}
+
+.exercx2 h1 {
+    background-color: lightsteelblue;
+    text-align: center;
+    font-size: 120%;
+    font-family: calibri;
+    color: white;
+    text-shadow: 1px 1px #000;
+    padding: 1%;
+    font-weight: bold;
+    margin-left: -4%;
+}
+
+.linhax {
+    width: 100%;
+    margin-left: 0%;
+    margin-left: -4%;
+}
+
+.linhax2 {
+    width: 100%;
+    margin-left: 0%;
+}
+
+.listaspastx {
+    margin: 0%;
+    background-color: whitesmoke;
+    padding: 1%;
+    width: 40%;
+    margin-left: 2%;
+    border: 1px solid lightslategrey;
+}
+
+.listaspastx h2 {
+    background: linear-gradient(#6495ED, #6495ED, #6495ED, lightblue);
+    color: white;
+    text-shadow: 1px 1px #000;
+    text-align: center;
+    font-size: 120%;
+    padding: 0.8%;
+    font-family: calibri;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.listaspastx ul {
+    list-style-type: none;
+    margin: 0%;
+    padding: 1%;
+    background-color: lightgray;
+    padding-right: 2%;
+}
+
+.listaspastx li {
+    font-family: calibri;
+    list-style-type: none;
+    padding-bottom: 3%;
+    margin-top: 2%;
+    margin-left: 0.5%;
+    background-image: url('./fotis/clean2.jpg');
+    background-size: cover;
+    border: 1px solid darkslategrey;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.listaspastx button {
+    font-family: calibri;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    margin-top: 3%;
+    margin-left: 1%;
+}
+
+.wallexerc {
+    background-color: whitesmoke;
+    padding: 2%;
+    margin: 0%;
+    opacity: 95%;
+    background-image: url('./fotis/classroom.jpg');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    padding-bottom: 20%;
+}
+
+.exercop {
+    margin: 0%;
+    background-color: whitesmoke;
+    padding: 0.5%;
+    width: 40%;
+    margin-top: 1%;
+    margin-left: 2%;
+    border-bottom: 1px solid gainsboro;
+}
+
+.exercop button {
+    font-family: calibri;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+}
+
+.listatemax {
+    margin: 0%;
+    background-color: whitesmoke;
+    padding: 2%;
+    width: 40%;
+    margin-left: 2%;
+    border: 1px solid lightslategrey;
+}
+
+.listatemax h2 {
+    background: linear-gradient(#6495ED, #6495ED, #6495ED, lightblue);
+    color: white;
+    text-shadow: 1px 1px #000;
+    text-align: center;
+    font-size: 120%;
+    padding: 0.8%;
+    font-family: calibri;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.listatemax button {
+    font-family: calibri;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    margin-top: 2%;
+    font-size: 95%;
+}
+
+.listatemax input {
+    font-family: calibri;
+}
+
+.listatemax ul {
+    list-style-type: none;
+    margin: 0%;
+    background-color: lightgray;
+    padding: 1%;
+}
+
+.listatemax li {
+    margin-left: 1%;
+    font-family: calibri;
+}
+
+.listatemax li button {
+    font-family: calibri;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+}
+
+.creatx {
+    margin: 0%;
+    padding: 1%;
+    width: 40%;
+    background-color: whitesmoke;
+    margin-left: 2%;
+}
+
+.creatx2 {
+    background-color: lightgray;
+    padding: 2%;
+}
+
+.creatx3 {
+    background-color: lightgray;
+    padding: 1%;
+}
+
+.creatx button {
+    font-family: calibri;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    margin-left: 1%;
+    margin-top: -0.5%;
+}
+
+.creatx h2 {
+    background: linear-gradient(#6495ED, #6495ED, #6495ED, lightblue);
+    color: white;
+    text-shadow: 1px 1px #000;
+    text-align: center;
+    font-size: 120%;
+    padding: 0.8%;
+    font-family: calibri;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.creatx h1 {
+    border-bottom: 1px solid #000;
+    text-align: center;
+    font-size: 100%;
+    padding: 1%;
+    font-family: calibri;
+    text-align: left;
+}
+
+.creatx input {
+    width: 50%;
+}
+
+.perserverx {
+    margin: 0%;
+    padding: 1%;
+    list-style-type: none;
+}
+
+.perserverx li {
+    font-family: calibri;
+    margin-top: 1%;
+}
+
+.perserverx li button {
+
+
+    margin-left: -0.5%;
+}
+
+.perserverx li button:hover {
+    background-color: lightblue;
+}
+
+#fazer_lista_teorica {
+    margin-top: 2%;
+}
+
+.percontx {
+    font-family: calibri;
+    color: white;
+    text-shadow: 1px 1px #000;
+    font-weight: bold;
+    background-color: darkgray;
+    padding: 0.5%;
+    text-indent: 1%;
+}
+
+.exectx {
+    margin: 0%;
+    background-color: whitesmoke;
+    padding: 3%;
+    width: 50%;
+    margin-left: 23%;
+    margin-top: 1%;
+    border: 1px solid lightslategrey;
+}
+
+.exectx p {
+    font-family: calibri;
+    background-color: lightblue;
+    border: 1px solid lightgray;
+    padding: 1%;
+    margin-top: 2%;
+}
+
+.exectx h2 {
+    background: linear-gradient(#6495ED, #6495ED, #6495ED, lightblue);
+    color: white;
+    text-shadow: 1px 1px #000;
+    text-align: left;
+    font-size: 120%;
+    padding: 0.8%;
+    font-family: calibri;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.exectx img {
+    margin-top: -0.5%;
+}
+
+.exectx span {
+    font-weight: bold;
+    padding: 0.5%;
+    margin-left: 2%;
+    margin-top: 4%;
+}
+
+.exectx ul {
+    margin: 0%;
+    padding-top: 2%;
+    background-color: lightgray;
+    list-style-type: none;
+}
+
+.exectx ul li {
+    font-family: calibri;
+    margin-left: -6%;
+}
+
+.exectx button {
+    font-family: calibri;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    margin-top: 2%;
+}
+
+.resultx {
+    margin: 0%;
+    background-color: whitesmoke;
+    padding: 2%;
+    width: 50%;
+    margin-left: 2%;
+    border: 1px solid lightslategrey;
+}
+
+.resultx p {
+    background-color: darkgray;
+    padding: 0.5%;
+    font-family: calibri;
+    color: white;
+    text-shadow: 1px 1px #000;
+    font-size: 120%;
+    font-weight: bold;
+    text-indent: 1%;
+}
+
+.resultx button {
+    font-family: calibri;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    margin-top: 2%;
+}
+
+.resultx ul {
+    margin: 0%;
+    background-color: lightblue;
+    padding: 1%;
+    list-style-type: none;
+}
+
+.resultx li {
+    font-family: calibri;
+}
+
+.resultx img {
+    margin-top: -0.5%;
+}
+
+.resultx h2 {
+    background: linear-gradient(#6495ED, #6495ED, #6495ED, lightblue);
+    color: white;
+    text-shadow: 1px 1px #000;
+    text-align: left;
+    font-size: 120%;
+    padding: 0.8%;
+    font-family: magneto;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.salasintx {
+    margin: 0%;
+    background-color: lightgray;
+    padding: 2%;
+    width: 30%;
+}
+
+.salasintx ul {
+    list-style-type: none;
+    margin: 0%;
+}
+
+.salasintx ul li {
+    margin-left: -12%;
+}
+
+.salasintx button {
+    background-color: lightsteelblue;
+    border-radius: 2px;
+    width: 50%;
+    margin-top: 2%;
+    color: white;
+    font-family: calibri;
+    text-shadow: 1px 1px #000;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+}
+
+.salasintx button:hover {
+    background-color: royalblue;
+}
+
+.listasintx {
+    margin: 0%;
+    background-color: whitesmoke;
+    padding: 1%;
+    width: 40%;
+    margin-left: 2%;
+    border: 1px solid lightslategrey;
+}
+
+.listasintx h2 {
+    background: linear-gradient(#6495ED, #6495ED, #6495ED, lightblue);
+    color: white;
+    text-shadow: 1px 1px #000;
+    text-align: center;
+    font-size: 120%;
+    padding: 0.8%;
+    font-family: calibri;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.listasintx button {
+    font-family: calibri;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+
+.listasintx ul {
+    list-style-type: none;
+    margin: 0%;
+    background-color: lightgray;
+    padding: 1%;
+    padding-right: 2%;
+}
+
+.listasintx li {
+    font-family: calibri;
+    list-style-type: none;
+    padding-bottom: 3%;
+    margin-top: 2%;
+    margin-left: 0.5%;
+    background-image: url('./fotis/clean.jpg');
+    background-size: cover;
+    width: 100%;
+    border: 1px solid darkslategrey;
+    border-radius: 2px;
+}
+
+.listasintxx {
+    margin: 0%;
+    background-color: whitesmoke;
+    padding: 1%;
+    width: 40%;
+    margin-left: 2%;
+    border: 1px solid lightslategrey;
+}
+
+.listasintxx h2 {
+    background: linear-gradient(#6495ED, #6495ED, #6495ED, lightblue);
+    color: white;
+    text-shadow: 1px 1px #000;
+    text-align: center;
+    font-size: 120%;
+    padding: 0.8%;
+    font-family: calibri;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.listasintxx button {
+    font-family: calibri;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    margin-top: 3%;
+    margin-left: 1%;
+}
+
+.listasintxx ul {
+    list-style-type: none;
+    margin: 0%;
+    background-color: lightgray;
+    padding: 1%;
+    padding-right: 2%;
+}
+
+.listasintxx li {
+    font-family: calibri;
+    list-style-type: none;
+    padding-bottom: 3%;
+    margin-top: 2%;
+    margin-left: 0.5%;
+    background-image: url('./fotis/clean.jpg');
+    background-size: cover;
+    width: 100%;
+    border: 1px solid darkslategrey;
+    border-radius: 2px;
+}
+
+.trashx {
+    margin: 0%;
+    background: none;
+    border: none;
+    border-radius: 100px;
+    width: 8%;
+}
+
+.spanx {
+    margin: 0%;
+    font-family: calibri;
+    border-radius: 2px;
+    margin-left: 1%;
+    background-color: #000;
+    color: white;
+    padding: 1%;
+}
+
+.trashx:hover {
+    background-color: lightcoral;
+    border-radius: 100px;
+}
+
+.listasintx2 {
+    margin: 0%;
+    background-color: whitesmoke;
+    padding: 1%;
+    width: 40%;
+    margin-left: 2%;
+    border: 1px solid lightslategrey;
+}
+
+.listasintx2 h2 {
+    background: linear-gradient(#6495ED, #6495ED, #6495ED, lightblue);
+    color: white;
+    text-shadow: 1px 1px #000;
+    text-align: center;
+    font-size: 120%;
+    padding: 0.8%;
+    font-family: calibri;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.listasintx2 button {
+    font-family: calibri;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+
+.listasintx2 ul {
+    list-style-type: none;
+    margin: 0%;
+    background-color: lightgray;
+    padding: 1%;
+    padding-right: 2%;
+}
+
+.listasintx2 li {
+    font-family: calibri;
+    list-style-type: none;
+    padding-bottom: 3%;
+    margin-top: 2%;
+    margin-left: 0.5%;
+    background-image: url('./fotis/clean.jpg');
+    background-size: cover;
+    width: 100%;
+    border: 1px solid darkslategrey;
+    border-radius: 2px;
+}
+
+.listasintxx2 {
+    margin: 0%;
+    background-color: whitesmoke;
+    padding: 1%;
+    width: 40%;
+    margin-left: 2%;
+    border: 1px solid lightslategrey;
+}
+
+.listasintxx2 h2 {
+    background: linear-gradient(#6495ED, #6495ED, #6495ED, lightblue);
+    color: white;
+    text-shadow: 1px 1px #000;
+    text-align: center;
+    font-size: 120%;
+    padding: 0.8%;
+    font-family: calibri;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.listasintxx2 button {
+    font-family: calibri;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    margin-top: 3%;
+    margin-left: 1%;
+}
+
+.listasintxx2 ul {
+    list-style-type: none;
+    margin: 0%;
+    background-color: lightgray;
+    padding: 1%;
+    padding-right: 2%;
+}
+
+.listasintxx2 li {
+    font-family: calibri;
+    list-style-type: none;
+    padding-bottom: 3%;
+    margin-top: 2%;
+    margin-left: 0.5%;
+    background-image: url('./fotis/clean.jpg');
+    background-size: cover;
+    width: 100%;
+    border: 1px solid darkslategrey;
+    border-radius: 2px;
+}
+
+.codesalax {
+    background-color: whitesmoke;
+    margin: 0%;
+    padding: 1%;
+    width: 20%;
+    margin-left: 2%;
+    margin-top: 1%;
+    border: 1px solid lightslategrey;
+}
+
+.codesalax h2 {
+    background: linear-gradient(#6495ED, #6495ED, #6495ED, lightblue);
+    text-align: center;
+    font-size: 100%;
+    font-family: calibri;
+    color: white;
+    text-shadow: 1px 1px #000;
+    padding: 0.8%;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.codesalax h1 {
+    background-color: lightgray;
+    text-indent: 2%;
+    font-family: calibri;
+    font-size: 100%;
+    padding: 1%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.codesalax button {
+    font-family: calibri;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+}
+
+.listacreatex {
+    margin: 0%;
+    background-color: whitesmoke;
+    padding: 2%;
+    width: 50%;
+    margin-left: 2%;
+    border: 1px solid lightslategrey;
+}
+
+.listacreatex .createnom h2 {
+    background: linear-gradient(#6495ED, #6495ED, #6495ED, lightblue);
+    color: white;
+    text-shadow: 1px 1px #000;
+    text-align: center;
+    font-size: 120%;
+    padding: 0.8%;
+    font-family: calibri;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.listacreatex .createnom h1 {
+    background-color: lightgray;
+    text-indent: 2%;
+    font-family: calibri;
+    font-size: 100%;
+    padding: 1%;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.listacreatex input {
+    width: 70%;
+}
+
+.listacreatex button {
+    font-family: calibri;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    margin-top: -0.5%;
+}
+
+.professortemasx h2 {
+    background: linear-gradient(#6495ED, #6495ED, #6495ED, lightblue);
+    color: white;
+    text-shadow: 1px 1px #000;
+    text-align: center;
+    font-size: 120%;
+    padding: 0.8%;
+    font-family: calibri;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.professortemasx h1 {
+    border-bottom: 1px solid #000;
+    text-align: center;
+    font-size: 100%;
+    padding: 1%;
+    font-family: calibri;
+    text-align: left;
+}
+
+.professortemasx textarea {
+    width: 100%;
+}
+
+.usersalax {
+    margin: 0%;
+    background-color: whitesmoke;
+    padding: 1%;
+    width: 30%;
+    margin-left: 2%;
+    margin-top: 1%;
+    border: 1px solid lightslategrey;
+}
+
+.usersalax h2 {
+    background: linear-gradient(#6495ED, #6495ED, #6495ED, lightblue);
+    color: white;
+    text-shadow: 1px 1px #000;
+    text-align: center;
+    font-size: 120%;
+    padding: 0.8%;
+    font-family: calibri;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.usersalax button {
+    font-family: calibri;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    margin-top: 2%;
+}
+
+.usersalax ul {
+    margin: 0%;
+    background-color: lightgray;
+    padding: 1%;
+}
+
+.usersalax li {
+    font-family: calibri;
+    border-bottom: 1px solid darkgray;
+    margin-left: 6%;
+}
+
+.notafuncx {
+    margin: 0%;
+    padding: 1%;
+    margin-left: 2%;
+    width: 30%;
+    background-color: whitesmoke;
+    border: 1px solid lightslategrey;
+}
+
+.notafuncx h2 {
+    background: linear-gradient(#6495ED, #6495ED, #6495ED, lightblue);
+    color: white;
+    text-shadow: 1px 1px #000;
+    text-align: center;
+    font-size: 120%;
+    padding: 0.8%;
+    font-family: calibri;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.notafuncx h1 {
+    border-bottom: 1px solid #000;
+    text-align: center;
+    font-size: 100%;
+    padding: 1%;
+    font-family: calibri;
+    text-align: left;
+}
+
+.notafuncx ul {
+    margin: 0%;
+    background-color: lightgray;
+    padding: 1%;
+    padding-right: 2%;
+    list-style-type: none;
+}
+
+.notafuncx li {
+    font-family: calibri;
+    list-style-type: none;
+    padding-bottom: 3%;
+    margin-top: 2%;
+    margin-left: 0.5%;
+    background-image: url('./fotis/homework.jpg');
+    background-size: cover;
+    border: 1px solid darkslategrey;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.notafuncx button {
+    font-family: calibri;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    margin-top: 4%;
+    margin-left: 1%;
+}
+
+.listanotax {
+    margin-left: 2%;
+    padding: 0.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: darkgray;
+}
+
+.notalunx li {
+    color: white;
+    text-shadow: 1px 1px #000;
+    font-weight: bold;
+}
+
+.modnotax {
+    margin: 0%;
+    padding: 1%;
+    margin-left: 2%;
+    width: 60%;
+    background-color: whitesmoke;
+    border: 1px solid lightslategrey;
+}
+
+.modnotax button {
+    font-family: calibri;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.obx0 {
+    color: darkred;
+    font-family: calibri;
+}
+
+.infalun {
+    background-color: darkslategrey;
+    padding: 1%;
+    width: 40%;
+    margin: 0%;
+    padding-bottom: 2%;
+    float: right;
+}
+
+.infalun img {
+    border-radius: 2px;
+    margin-left: 48%;
+}
+
+.infalun h2 {
+    color: whitesmoke;
+    text-shadow: 1px 1px #000;
+    font-family: magneto;
+    font-size: 150%;
+    background-color: lightsteelblue;
+    margin-top: 4%;
+    text-indent: 2%;
+    margin-left: -2.5%;
+    width: 102.5%;
+    padding: 0.5%;
+}
+
+.infalun p {
+    font-size: 100;
+    color: white;
+    font-family: calibri;
+}
+
+.graficox {
+    background-image: url('./fotis/quadro.jpg');
+    background-size: cover;
+    margin: 0%;
+}
+
+.graficox2 {
+    background-image: url('./fotis/graficox.jpg');
+    background-size: cover;
+    margin: 0%;
+}
+
+.codeprof {
+    background-color: whitesmoke;
+    padding: 0.5%;
+    margin: 0%;
+    width: 40%;
+    font-size: 80%;
+    font-family: calibri;
+    margin-top: 1%;
+    margin-left: 2%;
+    border-radius: 2px;
+    border: 1px solid lightslategrey;
+}
+
+.codeprof2 {
+    background-color: whitesmoke;
+    padding: 0.5%;
+    margin: 0%;
+    width: 40%;
+    font-size: 80%;
+    font-family: calibri;
+    margin-left: 2%;
+    border-radius: 2px;
+    border: 1px solid lightslategrey;
+}
+
+.bookx {
+    background-color: whitesmoke;
+    margin: 0%;
+    padding: 1%;
+    margin-top: 4%;
+}
+
+.bookx h3 {
+    color: #000;
+    margin-top: 1%;
+    font-size: 80%;
+    font-family: calibri;
+    text-indent: 1%;
+    background-color: lightsteelblue;
+    padding: 1%;
+    border-radius: 2px;
+}
+
+.bookx img {
+    margin-left: 1%;
+}
+
+.infprof {
+    background-color: darkslategrey;
+    padding: 1%;
+    width: 40%;
+    margin: 0%;
+    padding-bottom: 2%;
+    float: right;
+}
+
+.infprof img {
+    border-radius: 2px;
+    margin-left: 48%;
+}
+
+.infprof h2 {
+    color: whitesmoke;
+    text-shadow: 1px 1px #000;
+    font-family: magneto;
+    font-size: 150%;
+    background-color: lightsteelblue;
+    margin-top: 4%;
+    text-indent: 2%;
+    margin-left: -2.5%;
+    width: 102.5%;
+    padding: 0.5%;
+}
+
+.infprof p {
+    font-size: 100%;
+    color: white;
+    font-family: calibri;
+}
+
+.bookx2 {
+    background-color: whitesmoke;
+    margin: 0%;
+    padding: 1%;
+    margin-top: 4%;
+}
+
+.bookx2 h3 {
+    color: #000;
+    margin-top: 1%;
+    font-size: 80%;
+    font-family: calibri;
+    text-indent: 1%;
+    background-color: goldenrod;
+    padding: 1%;
+    border-radius: 2px;
+}
+
+.bookx2 img {
+    margin-left: 1%;
+}
+
+.cautionx {
+    background-color: lightgray;
+    border-radius: 30px;
+    padding: 0.5%;
+}
+
+#lixeira {
+    background-color: #e74c3c;
+    width: 8%;
+    height: 20px;
+    text-align: center;
+    color: white;
+    padding: 0.5%;
+    display: inline-block;
+}
+
+.imgprofx {
+    padding: 2%;
+    border: 2px solid lightblue;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fi.huffpost.com%2Fgen%2F1728627%2Fimages%2Fo-TEACHER-IN-CLASSROOM-facebook.jpg&f=1&nofb=1');
+    background-size: cover;
+}
+
+.imgalunx {
+    padding: 2%;
+    border: 2px solid lightblue;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.dfi.wa.gov%2Fsites%2Fdefault%2Ffiles%2Fhigh-school-classroom-fb.jpg&f=1&nofb=1');
+    background-size: cover;
+}
+
+#bbx:hover {
+    background-color: blue;
+}
+
+#ccx:hover {
+    background-color: darkgreen;
+}
+
+#bbx2:hover {
+    background-color: blue;
+}
+
+#ccx2:hover {
+    background-color: darkgreen;
+}
+
+#area_temas_escolher {
+    padding: 1%;
+    margin: 0%;
+}
+
+#area_temas_escolher button {
+    background-color: lightsteelblue;
+    color: white;
+    text-shadow: 1px 1px #000;
+    font-family: calibri;
+    padding: 0.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-weight: bold;
+}
+
+#area_temas_escolher button:hover {
+    background-color: royalblue;
+}
+
+.correctx {
+    border-radius: 2px;
+}
+
+.correctx2 {
+    border-radius: 2px;
+    width: 10%;
+}
