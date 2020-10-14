@@ -528,7 +528,7 @@ document.getElementById("exercicios").onclick = function () {
                                     lista_perguntas_certas_user.push(lista_pergunta_server[posicao_pergunta]);
                                     posicao_certa.push(posicao_pergunta + 1)
                                     console.log(lista_perguntas_certas_user);
-                                    swal('Certa Resposta!', '<img height="6%" width="6%" src="./others/fotis/smile.png" />  parabéns', 'success');
+                                    swal('Certa Resposta!', '<img height="6%" width="6%" src="./fotis/smile.png" />  parabéns', 'success');
                                     nota += 100
                                 } else {
                                     lista_perguntas_erradas_usuario.push(lista_pergunta_server[posicao_pergunta])
@@ -540,7 +540,7 @@ document.getElementById("exercicios").onclick = function () {
                                     }
                                     console.log(lista_opcoes2s)
                                     opcoes_correta2.push(opcoes_corretas_server[posicao_opcoes_certas]);
-                                    swal('Resposta Errada!', '<img height="6%" width="6%" src="./others/fotis/sad.png" />  estude mais um pouco', 'error')
+                                    swal('Resposta Errada!', '<img height="6%" width="6%" src="./fotis/sad.png" />  estude mais um pouco', 'error')
                                 }
                                 t_number++;
                                 posicao_pergunta++;
@@ -595,7 +595,7 @@ document.getElementById("exercicios").onclick = function () {
                                         $("#fazer_perguntas_erradas").show("fast");
                                     }
                                     document.getElementById("voltar_escolha_lista_teorica").onclick = function () {
-                                        $("#wallalunx").css('background-image', 'url("./others/fotis/wood.png")');
+                                        $("#wallalunx").css('background-image', 'url("./fotis/wood.png")');
                                         $("#wallalunx").css('padding-bottom', '26%');
                                         $("#infalunx").show("fast");
                                         $("#termino_exercicio").hide("fast");
@@ -650,14 +650,14 @@ document.getElementById("exercicios").onclick = function () {
                                                 if (opcoes_correta2[posicao_opcoes_certas] == input_radio_situacao) {
                                                     pergunta_certa_final.push(lista_perguntas_erradas_usuario[posicao_pergunta]);
                                                     posicao_certa.push(posicao_pergunta + 1)
-                                                    swal('Certa Resposta!', '<img height="6%" width="6%" src="./others/fotis/smile.png" />  parabéns', 'success');
+                                                    swal('Certa Resposta!', '<img height="6%" width="6%" src="./fotis/smile.png" />  parabéns', 'success');
                                                     nota += 100;
 
                                                 } else {
                                                     pergunta_final_errada.push(lista_perguntas_erradas_usuario[posicao_pergunta]);
                                                     posicao_erradas_perguntas.push(posicao_pergunta + 1);
                                                     console.log(lista_perguntas_erradas_usuario, lista_opcoes2s, opcoes_correta2);
-                                                    swal('Resposta Errada!', '<img height="6%" width="6%" src="./others/fotis/sad.png" />  estude mais um pouco', 'error')
+                                                    swal('Resposta Errada!', '<img height="6%" width="6%" src="./fotis/sad.png" />  estude mais um pouco', 'error')
                                                 }
                                                 t_number++;
                                                 posicao_pergunta++;
@@ -718,7 +718,7 @@ document.getElementById("exercicios").onclick = function () {
                                                         ul_resposta_errada.append(li)
                                                     }
                                                     document.getElementById("voltar_escolha_lista_teorica").onclick = function () {
-                                                        $("#wallalunx").css('background-image', 'url("./others/fotis/wood.jpg")');
+                                                        $("#wallalunx").css('background-image', 'url("./fotis/wood.jpg")');
                                                         $("#wallalunx").css('padding-bottom', '26%');
                                                         $("#infalunx").show("fast");
                                                         $("#reposta_certa").empty();
@@ -812,7 +812,7 @@ document.getElementById("exercicios").onclick = function () {
                                     lista_perguntas_certas_user.push(lista_pergunta_server[posicao_pergunta]);
                                     posicao_certa.push(posicao_pergunta + 1)
                                     console.log(lista_perguntas_certas_user);
-                                    swal('Certa Resposta!', '<img height="6%" width="6%" src="./others/fotis/smile.png" />  parabéns', 'success');
+                                    swal('Certa Resposta!', '<img height="6%" width="6%" src="./fotis/smile.png" />  parabéns', 'success');
                                     nota += 100
                                 } else {
                                     lista_perguntas_erradas_usuario.push(lista_pergunta_server[posicao_pergunta])
@@ -824,7 +824,7 @@ document.getElementById("exercicios").onclick = function () {
                                     }
                                     console.log(lista_opcoes2s)
                                     opcoes_correta2.push(opcoes_corretas_server[posicao_opcoes_certas]);
-                                    swal('Resposta Errada!', '<img height="6%" width="6%" src="./others/fotis/sad.png" />  estude mais um pouco', 'error')
+                                    swal('Resposta Errada!', '<img height="6%" width="6%" src="./fotis/sad.png" />  estude mais um pouco', 'error')
                                 }
                                 t_number++;
                                 posicao_pergunta++;
@@ -880,7 +880,7 @@ document.getElementById("exercicios").onclick = function () {
 
                                     }
                                     document.getElementById("voltar_escolha_lista_teorica").onclick = function () {
-                                        $("#wallalunx").css('background-image', 'url("./others/fotis/wood.jpg")');
+                                        $("#wallalunx").css('background-image', 'url("./fotis/wood.jpg")');
                                         $("#wallalunx").css('padding-bottom', '26%');
                                         $("#infalunx").show("fast");
                                         $("#termino_exercicio").hide("fast");
@@ -927,14 +927,14 @@ document.getElementById("exercicios").onclick = function () {
                                                 if (opcoes_correta2[posicao_opcoes_certas] == input_radio_situacao) {
                                                     pergunta_certa_final.push(lista_perguntas_erradas_usuario[posicao_pergunta]);
                                                     posicao_certa.push(posicao_pergunta + 1)
-                                                    swal('Certa Resposta!', '<img height="6%" width="6%" src="./others/fotis/smile.png" />  parabéns', 'success');
+                                                    swal('Certa Resposta!', '<img height="6%" width="6%" src="./fotis/smile.png" />  parabéns', 'success');
                                                     nota += 100;
 
                                                 } else {
                                                     pergunta_final_errada.push(lista_perguntas_erradas_usuario[posicao_pergunta]);
                                                     posicao_erradas_perguntas.push(posicao_pergunta + 1);
                                                     console.log(lista_perguntas_erradas_usuario, lista_opcoes2s, opcoes_correta2);
-                                                    swal('Resposta Errada!', '<img height="6%" width="6%" src="./others/fotis/sad.png" />  estude mais um pouco', 'error')
+                                                    swal('Resposta Errada!', '<img height="6%" width="6%" src="./fotis/sad.png" />  estude mais um pouco', 'error')
                                                 }
                                                 t_number++;
                                                 posicao_pergunta++;
@@ -998,7 +998,7 @@ document.getElementById("exercicios").onclick = function () {
                                                         ul_resposta_errada.append(li)
                                                     }
                                                     document.getElementById("voltar_escolha_lista_teorica").onclick = function () {
-                                                        $("#wallalunx").css('background-image', 'url("./others/fotis/wood.jpg")');
+                                                        $("#wallalunx").css('background-image', 'url("./fotis/wood.jpg")');
                                                         $("#wallalunx").css('padding-bottom', '26%');
                                                         $("#infalunx").show("fast");
                                                         $("#reposta_certa").empty();
@@ -1061,7 +1061,7 @@ document.getElementById("exercicios").onclick = function () {
                 }
                 document.getElementById("salvar_nome_lista_teorica").onclick = function () {
                     $("#wallalunx").css('padding-bottom', '12%');
-                    $("#wallalunx").css('background-image', 'url("./others/fotis/classroom.jpg")');
+                    $("#wallalunx").css('background-image', 'url("./fotis/classroom.jpg")');
                     $("#wallalunx").css('background-size', 'cover');
                     $("#criacao_lista_teorica").css('width', '80%');
                     $("#infalunx").hide("fast");
@@ -1124,7 +1124,7 @@ document.getElementById("exercicios").onclick = function () {
                                             lista_perguntas_certas_user.push(lista_pergunta_server[posicao_pergunta]);
                                             posicao_certa.push(posicao_pergunta + 1)
                                             console.log(lista_perguntas_certas_user);
-                                            swal('Certa Resposta!', '<img height="6%" width="6%" src="./others/fotis/smile.png" />  parabéns', 'success');
+                                            swal('Certa Resposta!', '<img height="6%" width="6%" src="./fotis/smile.png" />  parabéns', 'success');
                                             nota += 100
                                         } else {
                                             lista_perguntas_erradas_usuario.push(lista_pergunta_server[posicao_pergunta])
@@ -1136,7 +1136,7 @@ document.getElementById("exercicios").onclick = function () {
                                             }
                                             console.log(lista_opcoes2s)
                                             opcoes_correta2.push(opcoes_corretas_server[posicao_opcoes_certas]);
-                                            swal('Resposta Errada!', '<img height="6%" width="6%" src="./others/fotis/sad.png" />  estude mais um pouco', 'error');
+                                            swal('Resposta Errada!', '<img height="6%" width="6%" src="./fotis/sad.png" />  estude mais um pouco', 'error');
                                         }
                                         t_number++;
                                         posicao_pergunta++;
@@ -1169,7 +1169,7 @@ document.getElementById("exercicios").onclick = function () {
                                         let ul_resposta_certa = document.getElementById("reposta_certa");
                                         let ul_resposta_errada = document.getElementById("pergunta_errada");
                                         document.getElementById("voltar_escolha_lista_teorica").onclick = function () {
-                                            $("#wallalunx").css('background-image', 'url("./others/fotis/wood.jpg")');
+                                            $("#wallalunx").css('background-image', 'url("./fotis/wood.jpg")');
                                             $("#wallalunx").css('padding-bottom', '26%');
                                             $("#infalunx").show("fast");
                                             $("#termino_exercicio").hide("fast");
@@ -1230,14 +1230,14 @@ document.getElementById("exercicios").onclick = function () {
                                                     if (opcoes_correta2[posicao_opcoes_certas] == input_radio_situacao) {
                                                         pergunta_certa_final.push(lista_perguntas_erradas_usuario[posicao_pergunta]);
                                                         posicao_certa.push(posicao_pergunta + 1)
-                                                        swal('Certa Resposta!', '<img height="6%" width="6%" src="./others/fotis/smile.png" />  parabéns', 'success');
+                                                        swal('Certa Resposta!', '<img height="6%" width="6%" src="./fotis/smile.png" />  parabéns', 'success');
                                                         nota += 100;
 
                                                     } else {
                                                         pergunta_final_errada.push(lista_perguntas_erradas_usuario[posicao_pergunta]);
                                                         posicao_erradas_perguntas.push(posicao_pergunta + 1);
                                                         console.log(lista_perguntas_erradas_usuario, lista_opcoes2s, opcoes_correta2);
-                                                        swal('Resposta Errada!', '<img height="6%" width="6%" src="./others/fotis/sad.png" />  estude mais um pouco', 'error')
+                                                        swal('Resposta Errada!', '<img height="6%" width="6%" src="./fotis/sad.png" />  estude mais um pouco', 'error')
                                                     }
                                                     t_number++;
                                                     posicao_pergunta++;
@@ -1294,7 +1294,7 @@ document.getElementById("exercicios").onclick = function () {
                                                             ul_resposta_errada.append(li)
                                                         }
                                                         document.getElementById("voltar_escolha_lista_teorica").onclick = function () {
-                                                            $("#wallalunx").css('background-image', 'url("./others/fotis/wood.jpg")');
+                                                            $("#wallalunx").css('background-image', 'url("./fotis/wood.jpg")');
                                                             $("#wallalunx").css('padding-bottom', '26%');
                                                             $("#infalunx").show("fast");
                                                             $("#reposta_certa").empty();
@@ -1352,7 +1352,7 @@ document.getElementById("exercicios").onclick = function () {
                     $("#wallalunx").css('padding-bottom', '12%');
                     $("#criacao_lista_teorica").css('width', '80%');
                     $("#infalunx").hide("fast");
-                    $("#wallalunx").css('background-image', 'url("./others/fotis/classroom.jpg")');
+                    $("#wallalunx").css('background-image', 'url("./fotis/classroom.jpg")');
                     $("#wallalunx").css('background-size', 'cover');
                     let input_nome = $("#nome_lista_teorica").val();
                     if (input_nome == "") {
@@ -1400,7 +1400,7 @@ document.getElementById("exercicios").onclick = function () {
                         }
                         document.getElementById("fazer_lista_teorica").onclick = function () {
                             $("#criacao_lista_teorica").css('background', 'none');
-                            $("#wallalunx").css('background-image', 'url("./others/fotis/classroom.jpg")');
+                            $("#wallalunx").css('background-image', 'url("./fotis/classroom.jpg")');
                             $("#wallalunx").css('background-size', 'cover');
                             $("#infalunx").hide("fast");
                             $("#wallalunx").css('padding-bottom', '20%');
@@ -1446,7 +1446,7 @@ document.getElementById("exercicios").onclick = function () {
                                             console.log(lista_certas_usuario);
                                             posicao_certa_pergunta.push(posicao_pergunta + 1)
 
-                                            swal('Certa Resposta!', '<img height="6%" width="6%" src="./others/fotis/smile.png" />  parabéns', 'success');
+                                            swal('Certa Resposta!', '<img height="6%" width="6%" src="./fotis/smile.png" />  parabéns', 'success');
                                             nota += 100;
 
                                         } else {
@@ -1461,7 +1461,7 @@ document.getElementById("exercicios").onclick = function () {
                                             opcoes_correta2.push(opcoes_certas_server[posicao_opcoes_certas]);
 
 
-                                            swal('Resposta Errada!', '<img height="6%" width="6%" src="./others/fotis/sad.png" />  estude mais um pouco', 'error')
+                                            swal('Resposta Errada!', '<img height="6%" width="6%" src="./fotis/sad.png" />  estude mais um pouco', 'error')
                                         }
                                         t_number++;
                                         posicao_pergunta++;
@@ -1516,7 +1516,7 @@ document.getElementById("exercicios").onclick = function () {
 
                                             }
                                             document.getElementById("voltar_escolha_lista_teorica").onclick = function () {
-                                                $("#wallalunx").css('background-image', 'url("./others/fotis/wood.jpg")');
+                                                $("#wallalunx").css('background-image', 'url("./fotis/wood.jpg")');
                                                 $("#wallalunx").css('padding-bottom', '26%');
                                                 $("#infalunx").show("fast");
                                                 $("#termino_exercicio").hide("fast");
@@ -1562,14 +1562,14 @@ document.getElementById("exercicios").onclick = function () {
                                                             pergunta_certa_final.push(lista_perguntas_erradas_usuario[posicao_pergunta]);
                                                             posicao_certa_pergunta.push(posicao_pergunta + 1);
 
-                                                            swal('Certa Resposta!', '<img height="6%" width="6%" src="./others/fotis/smile.png" />  parabéns', 'success');
+                                                            swal('Certa Resposta!', '<img height="6%" width="6%" src="./fotis/smile.png" />  parabéns', 'success');
                                                             nota += 100;
 
                                                         } else {
 
                                                             pergunta_final_errada.push(lista_perguntas_erradas_usuario[posicao_pergunta]);
                                                             console.log(lista_perguntas_erradas_usuario, lista_opcoes2s, opcoes_correta2);
-                                                            swal('Resposta Errada!', '<img height="6%" width="6%" src="./others/fotis/sad.png" />  estude mais um pouco', 'error')
+                                                            swal('Resposta Errada!', '<img height="6%" width="6%" src="./fotis/sad.png" />  estude mais um pouco', 'error')
                                                             posicao_errada_pergunta.push(posicao_pergunta + 1);
                                                         }
                                                         t_number++;
@@ -1627,7 +1627,7 @@ document.getElementById("exercicios").onclick = function () {
                                                                 ul_resposta_errada.append(li)
                                                             }
                                                             document.getElementById("voltar_escolha_lista_teorica").onclick = function () {
-                                                                $("#wallalunx").css('background-image', 'url("./others/fotis/wood.jpg")');
+                                                                $("#wallalunx").css('background-image', 'url("./fotis/wood.jpg")');
                                                                 $("#wallalunx").css('padding-bottom', '26%');
                                                                 $("#infalunx").show("fast");
                                                                 $("#reposta_certa").empty();
@@ -1741,7 +1741,7 @@ document.getElementById("salas_presentes").onclick = function () {
                         button_acessar_lista.onclick = function () {
                             $("#codeprofx2").hide("fast");
                             $("#infalunx").hide("fast");
-                            $("#wallalunx").css('background-image', 'url("./others/fotis/classroom.jpg")');
+                            $("#wallalunx").css('background-image', 'url("./fotis/classroom.jpg")');
                             $("#wallalunx").css('background-size', 'cover');
                             $("#area_escolha_lista_teorica").hide("fast");
                             var id_lista_teorica = event.target.id;
@@ -1789,7 +1789,7 @@ document.getElementById("salas_presentes").onclick = function () {
                                         ul_perguntas_nao_feitas.append(li);
                                     }
                                     document.getElementById("voltar_escolha_lista_teorica").onclick = function () {
-                                        $("#wallalunx").css('background-image', 'url("./others/fotis/wood.jpg")');
+                                        $("#wallalunx").css('background-image', 'url("./fotis/wood.jpg")');
                                         $("#wallalunx").css('padding-bottom', '26%');
                                         $("#infalunx").show("fast");
                                         $("#termino_exercicio").hide("fast");
@@ -1846,14 +1846,14 @@ document.getElementById("salas_presentes").onclick = function () {
                                                     console.log(lista_certas_usuario);
                                                     posicao_certa_pergunta.push(posicao_pergunta + 1);
 
-                                                    swal('Certa Resposta!', '<img height="6%" width="6%" src="./others/fotis/smile.png" />  parabéns', 'success');
+                                                    swal('Certa Resposta!', '<img height="6%" width="6%" src="./fotis/smile.png" />  parabéns', 'success');
                                                     nota += 100;
 
                                                 } else {
                                                     lista_erradas_usuario.push(lista_pergunta[posicao_pergunta])
                                                     posicao_errada_pergunta.push(posicao_pergunta + 1);
 
-                                                    swal('Resposta Errada!', '<img height="6%" width="6%" src="./others/fotis/sad.png" />  estude mais um pouco', 'error')
+                                                    swal('Resposta Errada!', '<img height="6%" width="6%" src="./fotis/sad.png" />  estude mais um pouco', 'error')
                                                 }
                                                 t_number++;
                                                 posicao_pergunta++;
@@ -1934,7 +1934,7 @@ document.getElementById("salas_presentes").onclick = function () {
                                                         ul_resposta_errada.append(li);
                                                     }
                                                     document.getElementById("voltar_escolha_lista_teorica").onclick = function () {
-                                                        $("#wallalunx").css('background-image', 'url("./others/fotis/wood.jpg")');
+                                                        $("#wallalunx").css('background-image', 'url("./fotis/wood.jpg")');
                                                         $("#wallalunx").css('padding-bottom', '26%');
                                                         $("#infalunx").show("fast");
                                                         $("#termino_exercicio").hide("fast");
@@ -2063,7 +2063,7 @@ document.getElementById("salas_presentes").onclick = function () {
                                                         }
 
                                                         document.getElementById("voltar_escolha_lista_teorica").onclick = function () {
-                                                            $("#wallalunx").css('background-image', 'url("./others/fotis/wood.jpg")');
+                                                            $("#wallalunx").css('background-image', 'url("./fotis/wood.jpg")');
                                                             $("#wallalunx").css('padding-bottom', '26%');
                                                             $("#infalunx").show("fast");
                                                             $("#termino_exercicio").hide("fast");
@@ -2190,7 +2190,7 @@ document.getElementById("salas_presentes").onclick = function () {
                                                             })
                                                         }
                                                         document.getElementById("voltar_escolha_lista_teorica").onclick = function () {
-                                                            $("#wallalunx").css('background-image', 'url("./others/fotis/wood.jpg")');
+                                                            $("#wallalunx").css('background-image', 'url("./fotis/wood.jpg")');
                                                             $("#wallalunx").css('padding-bottom', '26%');
                                                             $("#infalunx").show("fast");
                                                             $("#termino_exercicio").hide("fast");

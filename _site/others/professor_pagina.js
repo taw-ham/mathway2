@@ -264,7 +264,7 @@ document.getElementById("salas_criadas").onclick = function () {
 
             li.setAttribute('id', resposta[i].id)
             button_acessar_sala.innerHTML = resposta[i].nome;
-            button_apagar_sala.innerHTML = "<img height='108%' width='108%' src='./others/fotis/trash.png'>"
+            button_apagar_sala.innerHTML = "<img height='108%' width='108%' src='./fotis/trash.png'>"
             button_apagar_sala.setAttribute("id", resposta[i].id);
 
             button_acessar_sala.setAttribute("class", "btn btn-primary");
@@ -338,7 +338,7 @@ document.getElementById("salas_criadas").onclick = function () {
 
 
                 document.getElementById("modificar_nota").onclick = function () {
-                    $("#wallprofx").css('background-image', 'url("./others/fotis/classroom.jpg")');
+                    $("#wallprofx").css('background-image', 'url("./fotis/classroom.jpg")');
                     $("#wallprofx").css('padding-bottom', '30%');
                     $("#infprofx").hide("fast");
                     $("#codeprofx2").hide("fast");
@@ -422,7 +422,7 @@ document.getElementById("salas_criadas").onclick = function () {
                         }
                     })
                     document.getElementById("fim_comeco").onclick = function () {
-                        $("#wallprofx").css('background-image', 'url("./others/fotis/wood.jpg")');
+                        $("#wallprofx").css('background-image', 'url("./fotis/wood.jpg")');
                         $("#wallprofx").css('background-size', 'cover');
                         $("#wallprofx").css('background-repeat', 'no-repeat');
                         $("#wallprofx").css('padding-bottom', '28%');
@@ -505,7 +505,7 @@ document.getElementById("salas_criadas").onclick = function () {
                 }
 
                 document.getElementById("ver_lista_teorica").onclick = function () {
-                    $("#wallprofx").css('background-image', 'url("./others/fotis/classroom.jpg")');
+                    $("#wallprofx").css('background-image', 'url("./fotis/classroom.jpg")');
                     $("#wallprofx").css('background-size', 'cover');
                     $("#wallprofx").css('padding-bottom', '30%');
                     $("#infprofx").hide("fast");
@@ -526,7 +526,7 @@ document.getElementById("salas_criadas").onclick = function () {
                             let button_apagar_lista_teorica = document.createElement("button");
                             button_acessar_lista_teorica.setAttribute("class", "btn btn-primary");
                             button_apagar_lista_teorica.setAttribute("class", "trashx");
-                            button_apagar_lista_teorica.innerHTML = "<img height='108%' width='108%' src='./others/fotis/trash.png'>"
+                            button_apagar_lista_teorica.innerHTML = "<img height='108%' width='108%' src='./fotis/trash.png'>"
                             button_apagar_lista_teorica.setAttribute("id", resposta[i].id);
                             li.append(button_acessar_lista_teorica);
                             li.append(button_apagar_lista_teorica);
@@ -592,12 +592,12 @@ document.getElementById("salas_criadas").onclick = function () {
                                                 lista_perguntas_certas_user.push(lista_perguntas[posicao_pergunta]);
                                                 console.log(lista_perguntas_certas_user);
                                                 posicao_pergunta_certa.push(posicao_pergunta + 1);
-                                                swal('Certa Resposta!', '<img height="6%" width="6%" src="./others/fotis/smile.png" />  parabéns', 'success');
+                                                swal('Certa Resposta!', '<img height="6%" width="6%" src="./fotis/smile.png" />  parabéns', 'success');
                                                 nota += 100
                                             } else {
                                                 lista_perguntas_erradas_usuario.push(lista_perguntas[posicao_pergunta])
                                                 posicao_pergunta_errada.push(posicao_pergunta + 1);
-                                                swal('Resposta Errada!', '<img height="6%" width="6%" src="./others/fotis/sad.png" />  estude mais um pouco', 'error');
+                                                swal('Resposta Errada!', '<img height="6%" width="6%" src="./fotis/sad.png" />  estude mais um pouco', 'error');
                                             }
                                             t_number++;
                                             posicao_pergunta++;
@@ -659,7 +659,7 @@ document.getElementById("salas_criadas").onclick = function () {
                     })
                 }
                 document.getElementById("nao_look_lista_teorica").onclick = function () {
-                    $("#wallprofx").css('background-image', 'url("./others/fotis/wood.jpg")');
+                    $("#wallprofx").css('background-image', 'url("./fotis/wood.jpg")');
                     $("#wallprofx").css('background-size', 'cover');
                     $("#wallprofx").css('background-repeat', 'no-repeat');
                     $("#infprofx").show("fast");

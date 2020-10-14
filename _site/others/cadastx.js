@@ -94,7 +94,7 @@ document.getElementById("fazer_cadastro").onclick = function () {
                     const aluno = new Aluno(email, nome, senha);
                     const aluno_service2 = new Aluno_Service("https://yprto.sse.codesandbox.io/Alunos");
                     aluno_service2.inserir(aluno).then(resposta => {
-                        window.location.assign("./others/logx.html");
+                        window.location.assign("./logx.html");
                     })
                 }
             })
@@ -109,7 +109,7 @@ document.getElementById("fazer_cadastro").onclick = function () {
                     const professor_service = new ProfessorService("https://yprto.sse.codesandbox.io/professores");
                     const professor = new PROFESSOR(nome, senha, email);
                     professor_service.inserir(professor).then(resposta => {
-                        window.location.assign("./others/logx.html");
+                        window.location.assign("./logx.html");
                     })
 
                 }
