@@ -89,7 +89,7 @@ document.getElementById("fazer_login").onclick = function () {
                 localStorage.setItem('id', id_login);
                 localStorage.setItem('e-mail', usuario);
                 localStorage.setItem('nome', nome_login);
-                window.location.assign("/others/pagina_aluno.html");
+                window.location.assign("./pagina_aluno.html");
             }
         })
     } else if (tipo_loginx === "ccx") {
@@ -105,7 +105,7 @@ document.getElementById("fazer_login").onclick = function () {
                 localStorage.setItem('id', id);
                 localStorage.setItem('email', email);
                 localStorage.setItem('nome', nome_user);
-                window.location.assign("/others/professor_pagina.html")
+                window.location.assign("./professor_pagina.html")
             }
         })
     } else {
