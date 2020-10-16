@@ -92,7 +92,7 @@ document.getElementById("fazer_cadastro").onclick = function () {
                     const aluno = new Aluno(email, nome, senha);
                     const aluno_service2 = new Aluno_Service("https://whispering-hollows-11624.herokuapp.com/Alunos");
                     aluno_service2.inserir(aluno).then(resposta => {
-                        window.location.assign("../");
+                        window.location.assign("./index.html");
                     })
                 }
             })
@@ -107,7 +107,7 @@ document.getElementById("fazer_cadastro").onclick = function () {
                     const professor_service = new ProfessorService("https://whispering-hollows-11624.herokuapp.com/professores");
                     const professor = new PROFESSOR(nome, senha, email);
                     professor_service.inserir(professor).then(resposta => {
-                        window.location.assign("../");
+                        window.location.assign("./index.html");
                     })
 
                 }
