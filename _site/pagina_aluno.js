@@ -354,7 +354,7 @@ document.getElementById("entrar_sala").onclick = function () {
                     let sala_service = new Sala_Service(`https://whispering-hollows-11624.herokuapp.com/salas/${id_sala}`)
                     sala_service.atualizar(sala).then(resposta => {
                         console.log(resposta)
-                        location.reload
+                        location.reload();
                     })
 
                 } else {
