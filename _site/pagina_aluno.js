@@ -1704,7 +1704,7 @@ document.getElementById("salas_presentes").onclick = function () {
                                 console.log(current_date)
                                 if (current_date > target_date) {
                                     var atrasado = Math.abs((target_date - current_date) / 1000)
-                                    days = `Prazo de Entrega: ${parseInt(atrasado / 86400)} dias`
+                                    days = `| Prazo: ${parseInt(atrasado / 86400)} dias`
                                     atrasado = atrasado % 86400;
                                     hours = `${parseInt(atrasado / 3600)}:`;
                                     atrasado = atrasado % 3600;
