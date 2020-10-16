@@ -307,8 +307,8 @@ document.getElementById("salas_criadas").onclick = function () {
                         console.log(response);
                         for (let i = 0; i <= response.length - 1; i++) {
                             const lista_teorica_service = new Lista_Teoria_Service("https://whispering-hollows-11624.herokuapp.com/lista_teoricas");
-                            lista_teorica_service.deletar(response[i].id).then(response => {
-                                console.log(response);
+                            lista_teorica_service.deletar(response[i].id).then(resposta => {
+                                console.log(resposta);
                                 const nota_service = new Nota_Service(`https://whispering-hollows-11624.herokuapp.com/notas_professor?id_lista_teorica=${response[i].id}`);
                                 nota_service.listar().then(resposta => {
                                     for (let i = 0; i <= resposta.length - 1; i++) {
