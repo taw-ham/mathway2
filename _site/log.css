@@ -242,12 +242,12 @@ body {
 }
 
 .escolhax .escolhax-a {
-    background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.dfi.wa.gov%2Fsites%2Fdefault%2Ffiles%2Fhigh-school-classroom-fb.jpg&f=1&nofb=1');
+    background-image: url('./fotis/classalunx.jpg');
     background-size: cover;
 }
 
 .escolhax .escolhax-b {
-    background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fi.huffpost.com%2Fgen%2F1728627%2Fimages%2Fo-TEACHER-IN-CLASSROOM-facebook.jpg&f=1&nofb=1');
+    background-image: url('./fotis/classprofx.jpg');
     background-size: cover;
 }
 
@@ -1766,14 +1766,14 @@ body {
 .imgprofx {
     padding: 2%;
     border: 2px solid lightblue;
-    background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fi.huffpost.com%2Fgen%2F1728627%2Fimages%2Fo-TEACHER-IN-CLASSROOM-facebook.jpg&f=1&nofb=1');
+    background-image: url('./fotis/classprofx.jpg');
     background-size: cover;
 }
 
 .imgalunx {
     padding: 2%;
     border: 2px solid lightblue;
-    background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.dfi.wa.gov%2Fsites%2Fdefault%2Ffiles%2Fhigh-school-classroom-fb.jpg&f=1&nofb=1');
+    background-image: url('./fotis/classalunx.jpg');
     background-size: cover;
 }
 
