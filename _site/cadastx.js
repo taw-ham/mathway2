@@ -16,12 +16,12 @@ class Aluno_Service {
             headers: {
                 'Content-Type': 'application/json'
             }
-        }).then(resposta => resposta.json())
+        }).then(resposta => resposta.json());
     }
     listar() {
         return fetch(this.url, {
             method: "GET"
-        }).then(resposta => resposta.json())
+        }).then(resposta => resposta.json());
     }
 }
 class PROFESSOR {
@@ -43,16 +43,13 @@ class ProfessorService {
                 'Content-Type': 'application/json'
             }
         }).then(
-            resposta => resposta.json()
-        );
+            resposta => resposta.json());
     }
-    listar(){
-        return fetch(this.url,{
+    listar() {
+        return fetch(this.url, {
             method: "GET"
         }).then(
-            resposta => resposta.json()
-
-        )
+            resposta => resposta.json());
     }
 }
 
@@ -67,19 +64,20 @@ for (let i = 0; i <= tipo_userx.length - 1; i++) {
             $("#logx2").css('background', 'linear-gradient(lightblue,whitesmoke,whitesmoke)');
             $("#escolhaxa").css('background', 'lightblue');
             $("#obx02").hide("fast");
-            $("#bbx2").css('background-color','blue');
-            $("#ccx2").css('background-color','lightslategray');
+            $("#bbx2").css('background-color', 'blue');
+            $("#ccx2").css('background-color', 'lightslategray');
             $("#wallx2").css('padding-bottom', '3%');
         } else if (tipo_loginx === "ccx2") {
             $("#logx2").css('background', 'linear-gradient(lightgreen,whitesmoke,whitesmoke)');
             $("#escolhaxa").css('background', 'lightgreen');
             $("#obx02").hide("fast");
-            $("#ccx2").css('background-color','green');
-            $("#bbx2").css('background-color','lightslategray');
+            $("#ccx2").css('background-color', 'green');
+            $("#bbx2").css('background-color', 'lightslategray');
             $("#wallx2").css('padding-bottom', '3%');
         }
     }
 }
+
 document.getElementById("fazer_cadastro").onclick = function () {
     const nome = document.getElementById("nome_cadastro").value;
     const senha = document.getElementById("senha_cadastro").value;
@@ -94,7 +92,7 @@ document.getElementById("fazer_cadastro").onclick = function () {
                     const aluno = new Aluno(email, nome, senha);
                     const aluno_service2 = new Aluno_Service("https://whispering-hollows-11624.herokuapp.com/Alunos");
                     aluno_service2.inserir(aluno).then(resposta => {
-                        window.location.assign("./logx.html");
+                        window.location.assign("../");
                     })
                 }
             })
@@ -109,7 +107,7 @@ document.getElementById("fazer_cadastro").onclick = function () {
                     const professor_service = new ProfessorService("https://whispering-hollows-11624.herokuapp.com/professores");
                     const professor = new PROFESSOR(nome, senha, email);
                     professor_service.inserir(professor).then(resposta => {
-                        window.location.assign("./logx.html");
+                        window.location.assign("../");
                     })
 
                 }
