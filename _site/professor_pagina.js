@@ -252,7 +252,7 @@ document.getElementById("salas_criadas").onclick = function () {
     $("#infprofx").show("fast");
     $("#area_acessar_sala").show("fast");
     $("#menu_escolhas").hide("fast");
-    let sala_service = new Salas_Service(`https://yprto.sse.codesandbox.io/salas?id_criador=${id_login}`);
+    let sala_service = new Salas_Service(`https://whispering-hollows-11624.herokuapp.com/salas?id_criador=${id_login}`);
     sala_service.lista().then(resposta => {
         console.log(resposta)
         let ul = document.getElementById("opcoes_salas");
@@ -293,15 +293,15 @@ document.getElementById("salas_criadas").onclick = function () {
                 const id_sala = resposta[i].id;
 
 
-                const sala_service = new Salas_Service("https://yprto.sse.codesandbox.io/salas");
+                const sala_service = new Salas_Service("https://whispering-hollows-11624.herokuapp.com/salas");
                 sala_service.apagar(id_sala).then(resposta => {
                     console.log(resposta);
                     $("#opcoes_salas > li").remove(`#${id_sala}`);
-                    const lista_teorica_service = new Lista_Teoria_Service(`https://yprto.sse.codesandbox.io/lista_teoricas?id_sala=${id_sala}`)
+                    const lista_teorica_service = new Lista_Teoria_Service(`https://whispering-hollows-11624.herokuapp.com/lista_teoricas?id_sala=${id_sala}`)
                     lista_teorica_service.lista().then(response => {
                         console.log(response);
                         for (let i = 0; i <= response.length - 1; i++) {
-                            const lista_teorica_service = new Lista_Teoria_Service("https://yprto.sse.codesandbox.io/lista_teoricas");
+                            const lista_teorica_service = new Lista_Teoria_Service("https://whispering-hollows-11624.herokuapp.com/lista_teoricas");
                             lista_teorica_service.deletar(response[i].id).then(response => {
                                 console.log(response);
                             })
@@ -350,11 +350,11 @@ document.getElementById("salas_criadas").onclick = function () {
                     th_title.setAttribute('colspan', 6);
                     th_title.innerHTML = "tabela de alunos com entrega atrasada";
                     table_notas.append(th_title);
-                    let lista_teorica = new Lista_Teoria_Service(`https://yprto.sse.codesandbox.io/lista_teoricas?id_sala=${id_sala}`);
+                    let lista_teorica = new Lista_Teoria_Service(`https://whispering-hollows-11624.herokuapp.com/lista_teoricas?id_sala=${id_sala}`);
                     lista_teorica.lista().then(resposta => {
                       console.log(resposta)
                         for (let i = 0; i <= resposta.length - 1; i++) {
-                            let nota = new Nota_Service(`https://yprto.sse.codesandbox.io/notas_professor?id_lista_teorica=${resposta[i].id}&situacao=atrasado`);
+                            let nota = new Nota_Service(`https://whispering-hollows-11624.herokuapp.com/notas_professor?id_lista_teorica=${resposta[i].id}&situacao=atrasado`);
                             nota.listar().then(resposta => {
                               
       
@@ -394,7 +394,7 @@ document.getElementById("salas_criadas").onclick = function () {
                                         if (nota_modificada != "") {
                                             let situacao = "atualizada"
                                             let nota_class = new Nota(nota_modificada, situacao);
-                                            let nota_service = new Nota_Service(`https://yprto.sse.codesandbox.io/notas_professor/${id}`);
+                                            let nota_service = new Nota_Service(`https://whispering-hollows-11624.herokuapp.com/notas_professor/${id}`);
                                             nota_service.atualizar(nota_class).then(resposta => {
                                                 console.log(resposta)
                                                 $("tr").remove(`#${id}`);
@@ -410,7 +410,7 @@ document.getElementById("salas_criadas").onclick = function () {
                                         let situacao = "atualizada"
                                         $("tr").remove(`#${id}`);
                                         let nota = new NOTA(situacao);
-                                        let nota_service = new NOTA_SERVICE(`https://yprto.sse.codesandbox.io/notas_professor/${id}`)
+                                        let nota_service = new NOTA_SERVICE(`https://whispering-hollows-11624.herokuapp.com/notas_professor/${id}`)
                                         nota_service.atualizar(nota).then(resposta => {
                                             console.log(resposta);
                                             swal('Não Atualizada!', '- sem alterações na nota -', 'success');
@@ -441,7 +441,7 @@ document.getElementById("salas_criadas").onclick = function () {
                     $("#selecionar_lista_nota").show("fast")
                     $("#ver_nota_aluno").hide("fast");
                     let ul = document.getElementById("lista_teorica_nota");
-                    let lista_teorica_service = new Lista_Teoria_Service(`https://yprto.sse.codesandbox.io/lista_teoricas?id_sala=${id_sala}&id_criador=${id_login}`);
+                    let lista_teorica_service = new Lista_Teoria_Service(`https://whispering-hollows-11624.herokuapp.com/lista_teoricas?id_sala=${id_sala}&id_criador=${id_login}`);
                     lista_teorica_service.lista().then(resposta => {
                         console.log(resposta)
                         for (let i = 0; i <= resposta.length - 1; i++) {
@@ -457,7 +457,7 @@ document.getElementById("salas_criadas").onclick = function () {
                                 let id_lista_teorica = event.target.id;
                                 $("#selecionar_lista_nota").hide("fast");
                                 $("#ver_nota_aluno").show("fast");
-                                let nota_service = new Nota_Service(`https://yprto.sse.codesandbox.io/notas_professor?id_lista_teorica=${id_lista_teorica}`);
+                                let nota_service = new Nota_Service(`https://whispering-hollows-11624.herokuapp.com/notas_professor?id_lista_teorica=${id_lista_teorica}`);
                                 nota_service.listar().then(resposta => {
 
                                     console.log(resposta)
@@ -515,7 +515,7 @@ document.getElementById("salas_criadas").onclick = function () {
                     $("#proximo_passo3").hide("fast");
                     $("#termino_exercicio").hide("fast");
                     let ul = document.getElementById("listas_teoricas");
-                    let lista_teorica_service = new Lista_Teoria_Service(`https://yprto.sse.codesandbox.io/lista_teoricas?id_sala=${id_sala}&id_criador=${id_login}`);
+                    let lista_teorica_service = new Lista_Teoria_Service(`https://whispering-hollows-11624.herokuapp.com/lista_teoricas?id_sala=${id_sala}&id_criador=${id_login}`);
                     lista_teorica_service.lista().then(resposta => {
                         for (let i = 0; i <= resposta.length - 1; i++) {
                             let li = document.createElement("li");
@@ -547,7 +547,7 @@ document.getElementById("salas_criadas").onclick = function () {
                             button_apagar_lista_teorica.onclick = function () {
                                 let id = resposta[i].id
                                 $("#listas_teoricas > li").remove(`#${id}`)
-                                let lista_teorica_service = new Lista_Teoria_Service("https://yprto.sse.codesandbox.io/lista_teoricas");
+                                let lista_teorica_service = new Lista_Teoria_Service("https://whispering-hollows-11624.herokuapp.com/lista_teoricas");
                                 lista_teorica_service.deletar(id).then(resposta => {
                                     console.log(resposta)
 
@@ -558,7 +558,7 @@ document.getElementById("salas_criadas").onclick = function () {
                                 $("#selecionar_lista").hide("fast");
                                 $("#proximo_passo3").show("fast");
                                 $("#termino_exercicio").hide("fast");
-                                let lista_teorica_service = new Lista_Teoria_Service(`https://yprto.sse.codesandbox.io/lista_teoricas?id=${id}`);
+                                let lista_teorica_service = new Lista_Teoria_Service(`https://whispering-hollows-11624.herokuapp.com/lista_teoricas?id=${id}`);
                                 lista_teorica_service.lista().then(resposta => {
                                     let lista_perguntas = resposta[0].perguntas;
                                     let lista_opcoes = resposta[0].opcoes;
@@ -673,7 +673,7 @@ document.getElementById("salas_criadas").onclick = function () {
                     $("#opcoes_da_sala").hide("fast");
                     $("#look_participantes").show("fast");
                     let ul_participantes = document.getElementById("participantes")
-                    let sala_service = new Salas_Service(`https://yprto.sse.codesandbox.io/salas?id=${id_sala}&id_criador=${id_login}`);
+                    let sala_service = new Salas_Service(`https://whispering-hollows-11624.herokuapp.com/salas?id=${id_sala}&id_criador=${id_login}`);
                     sala_service.lista().then(resposta => {
                         let participantes;
                         for (let i = 0; i <= resposta.length - 1; i++) {
@@ -875,7 +875,7 @@ document.getElementById("salas_criadas").onclick = function () {
                                         console.log(nome_temas[i]);
                                         let li_nome = document.createElement("li");
                                         li_nome.append(h3);
-                                        let pergunta_service = new Perguntas_Service(`https://yprto.sse.codesandbox.io/perguntas?id_tema=${temas_lista[i]}`);
+                                        let pergunta_service = new Perguntas_Service(`https://whispering-hollows-11624.herokuapp.com/perguntas?id_tema=${temas_lista[i]}`);
                                         pergunta_service.listar().then(resposta => {
                                             ul.append(li_nome);
                                             for (let i = 0; i <= resposta.length - 1; i++) {
@@ -1039,7 +1039,7 @@ document.getElementById("salas_criadas").onclick = function () {
                                                 cont_perguntas++;
                                                 contador_perguntas.innerHTML = cont_perguntas + " pergunta(s) adicionadas";
                                                 let pergunta = new Pergunta(pergunta_user, opcoes_check, opcao_correta_user, id_login, nome_tema, id_tema);
-                                                let pergunta_service = new Perguntas_Service("https://yprto.sse.codesandbox.io/perguntas");
+                                                let pergunta_service = new Perguntas_Service("https://whispering-hollows-11624.herokuapp.com/perguntas");
                                                 pergunta_service.inserir(pergunta).then(resposta => {
                                                     console.log(resposta);
                                                     opcoes_check = [];
@@ -1062,7 +1062,7 @@ document.getElementById("salas_criadas").onclick = function () {
                                     }
                                     document.getElementById("enviar_lista_teorica").onclick = function () {
                                         let lista_teorica = new Lista_Teoria(nome_da_lista_teorica, lista_perguntas, lista_opcoes, opcoes_certas, id_login, id_sala, data_de_entrega, tempo_de_termino_final);
-                                        let lista_teorica_service = new Lista_Teoria_Service("https://yprto.sse.codesandbox.io/lista_teoricas");
+                                        let lista_teorica_service = new Lista_Teoria_Service("https://whispering-hollows-11624.herokuapp.com/lista_teoricas");
                                         lista_teorica_service.inserir(lista_teorica).then(resposta => {
                                             swal('Lista Criada com Sucesso!', '- volte à área de recursos da sala -', 'success');
                                             $("#perguntas_servidor").empty();
@@ -1113,7 +1113,7 @@ document.getElementById("criar_sala").onclick = function () {
         if (nome_sala == "") {
             swal('Sala Inválida!', '- escolha algum nome -', 'error');
         } else {
-            const sala_service = new Salas_Service(`https://yprto.sse.codesandbox.io/salas?id_criador=${id_login}&nome=${nome_sala}`);
+            const sala_service = new Salas_Service(`https://whispering-hollows-11624.herokuapp.com/salas?id_criador=${id_login}&nome=${nome_sala}`);
             sala_service.lista().then(response => {
                 if (response.length > 0) {
                     swal('nome de sala existente', '-tente novamente-', 'error');
@@ -1121,7 +1121,7 @@ document.getElementById("criar_sala").onclick = function () {
                     $("#nome_sala").hide("fast");
                     $("#proximo_passo").show("fast");
                     let aleatorio = Math.random().toString(36).substr(2, 5);
-                    const sala_service = new Salas_Service("https://yprto.sse.codesandbox.io/salas");
+                    const sala_service = new Salas_Service("https://whispering-hollows-11624.herokuapp.com/salas");
                     sala_service.lista().then(resposta => {
                         for (let i = 0; i <= resposta.length - 1; i++) {
                             if (resposta[i].codigo == aleatorio) {
@@ -1134,7 +1134,7 @@ document.getElementById("criar_sala").onclick = function () {
                                     let participantes = [];
                                     let participantes_id = []
                                     let sala = new Salas(nome_sala, id_login, aleatorio, participantes, participantes_id);
-                                    let sala_service = new Salas_Service("https://yprto.sse.codesandbox.io/salas");
+                                    let sala_service = new Salas_Service("https://whispering-hollows-11624.herokuapp.com/salas");
                                     sala_service.inserir(sala).then(resposta => {
                                         location.reload();
                                     })
