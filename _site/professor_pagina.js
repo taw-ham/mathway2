@@ -180,6 +180,11 @@ class Nota_Service {
             }
         }).then(resposta => resposta.json())
     }
+    deletar(id) {
+        return fetch(this.url + "/" + id, {
+            method: "DELETE"
+        }).then(resposta => resposta.json())
+    }
 }
 class NOTA {
     constructor(situacao) {
@@ -282,7 +287,7 @@ document.getElementById("salas_criadas").onclick = function () {
                 li.append(span)
 
             }
-            button_apagar_sala.onmouseout = function(){
+            button_apagar_sala.onmouseout = function () {
                 $("span").remove(`#${resposta[i].id}`);
             }
 
@@ -304,6 +309,15 @@ document.getElementById("salas_criadas").onclick = function () {
                             const lista_teorica_service = new Lista_Teoria_Service("https://whispering-hollows-11624.herokuapp.com/lista_teoricas");
                             lista_teorica_service.deletar(response[i].id).then(response => {
                                 console.log(response);
+                                const nota_service = new Nota_Service(`https://whispering-hollows-11624.herokuapp.com/notas_professor?id_lista_teorica=${response[i].id}`);
+                                nota_service.listar().then(resposta => {
+                                    for (let i = 0; i <= resposta.length - 1; i++) {
+                                        const Nota_service = new Nota_Service("https://whispering-hollows-11624.herokuapp.com/notas_professor");
+                                        Nota_service.deletar(resposta[i].id).then(resposta => {
+                                            console.log(resposta);
+                                        })
+                                    }
+                                })
                             })
                         }
                     })
@@ -352,12 +366,12 @@ document.getElementById("salas_criadas").onclick = function () {
                     table_notas.append(th_title);
                     let lista_teorica = new Lista_Teoria_Service(`https://whispering-hollows-11624.herokuapp.com/lista_teoricas?id_sala=${id_sala}`);
                     lista_teorica.lista().then(resposta => {
-                      console.log(resposta)
+                        console.log(resposta)
                         for (let i = 0; i <= resposta.length - 1; i++) {
                             let nota = new Nota_Service(`https://whispering-hollows-11624.herokuapp.com/notas_professor?id_lista_teorica=${resposta[i].id}&situacao=atrasado`);
                             nota.listar().then(resposta => {
-                              
-      
+
+
                                 for (let i = 0; i <= resposta.length - 1; i++) {
                                     let tr = document.createElement("tr");
                                     tr.setAttribute('id', resposta[i].id)
@@ -531,17 +545,17 @@ document.getElementById("salas_criadas").onclick = function () {
                             li.append(button_acessar_lista_teorica);
                             li.append(button_apagar_lista_teorica);
 
-                            button_apagar_lista_teorica.onmouseover = function(){
+                            button_apagar_lista_teorica.onmouseover = function () {
                                 let span = document.createElement("span");
-                                span.setAttribute('id',resposta[i].id)
+                                span.setAttribute('id', resposta[i].id)
                                 span.setAttribute('class', 'spanx');
                                 span.innerHTML = "apagar lista";
                                 li.append(span)
                             }
-                            button_apagar_lista_teorica.onmouseout = function(){
-                              $("span").remove(`#${resposta[i].id}`);
+                            button_apagar_lista_teorica.onmouseout = function () {
+                                $("span").remove(`#${resposta[i].id}`);
                             }
-                            
+
                             ul.append(li);
 
                             button_apagar_lista_teorica.onclick = function () {
@@ -549,8 +563,16 @@ document.getElementById("salas_criadas").onclick = function () {
                                 $("#listas_teoricas > li").remove(`#${id}`)
                                 let lista_teorica_service = new Lista_Teoria_Service("https://whispering-hollows-11624.herokuapp.com/lista_teoricas");
                                 lista_teorica_service.deletar(id).then(resposta => {
-                                    console.log(resposta)
-
+                                    console.log(resposta);
+                                    const nota_service = new Nota_Service(`https://whispering-hollows-11624.herokuapp.com/notas_professor?id_lista_teorica=${id}`);
+                                    nota_service.listar().then(resposta => {
+                                        for (let i = 0; i <= resposta.length - 1; i++) {
+                                            const Nota_service = new Nota_Service("https://whispering-hollows-11624.herokuapp.com/notas_professor");
+                                            Nota_service.deletar(resposta[i].id).then(resposta => {
+                                                console.log(resposta);
+                                            })
+                                        }
+                                    })
                                 })
                             }
                             button_acessar_lista_teorica.onclick = function () {
@@ -975,7 +997,7 @@ document.getElementById("salas_criadas").onclick = function () {
                                                 }
                                                 document.getElementById("opcoes_professor").value = "";
                                                 click++;
-                            
+
 
                                             } else {
                                                 swal("Resposta Inválida!", '- escolha sua opção -', 'error')
@@ -1004,15 +1026,15 @@ document.getElementById("salas_criadas").onclick = function () {
                                     }
 
                                     document.getElementById("adicionar_pergunta").onclick = function () {
-                                      for (let i = 0; i <= opcoes.length - 1; i++) {
-                                                        opcoes_check.push(opcoes[i]);
-                                                        console.log(opcoes_check)
+                                        for (let i = 0; i <= opcoes.length - 1; i++) {
+                                            opcoes_check.push(opcoes[i]);
+                                            console.log(opcoes_check)
 
-                                                    }
+                                        }
 
-                                                    console.log(opcoes)
-                                                    click = 0;
-                                                    cont_opcoes = 0;
+                                        console.log(opcoes)
+                                        click = 0;
+                                        cont_opcoes = 0;
 
                                         let pergunta_user = document.getElementById("pergunta_professor");
                                         let opcoes_user = document.getElementById("opcoes_professor");
