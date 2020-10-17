@@ -20,6 +20,7 @@ table {
     margin-top: -10%;
     margin-left: 2%;
     border: 1px solid darkslategrey;
+    position: static;
 }
 
 table td {
