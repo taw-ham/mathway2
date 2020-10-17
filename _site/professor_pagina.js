@@ -916,8 +916,7 @@ document.getElementById("salas_criadas").onclick = function () {
                                                     const opcoes_apagar = resposta[i].opcoes;
                                                     const apagar_opcoes_certa = resposta[i].opcao_certa;
 
-                                                    cont_perguntas++;
-                                                    contador_perguntas.innerHTML = cont_perguntas + " pergunta(s) adicionadas";
+                                                    
                                                     const indice_pergunta = lista_perguntas.findIndex(elemento => elemento === apagar_pergunta);
                                                     if (indice_pergunta > -1) {
                                                         $(`#${id_pergunta}`).css('background-color', 'red');
@@ -932,6 +931,8 @@ document.getElementById("salas_criadas").onclick = function () {
                                                         contador_perguntas.innerHTML = cont_perguntas + " pergunta(s) adicionadas";
 
                                                     } else {
+                                                        cont_perguntas++;
+                                                        contador_perguntas.innerHTML = cont_perguntas + " pergunta(s) adicionadas";
                                                         lista_perguntas.push(resposta[i].pergunta);
                                                         lista_opcoes.push(resposta[i].opcoes);
                                                         opcoes_certas.push(resposta[i].opcao_certa);
