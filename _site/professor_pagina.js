@@ -928,6 +928,8 @@ document.getElementById("salas_criadas").onclick = function () {
                                                         const index_opcoes_certas = opcoes_certas.findIndex(elemento => elemento === apagar_opcoes_certa);
                                                         opcoes_certas.splice(index_opcoes_certas, 1);
                                                         console.log(lista_perguntas, lista_opcoes, opcoes_certas);
+                                                        cont_perguntas --;
+                                                        contador_perguntas.innerHTML = cont_perguntas + " pergunta(s) adicionadas";
 
                                                     } else {
                                                         lista_perguntas.push(resposta[i].pergunta);
