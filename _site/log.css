@@ -585,10 +585,6 @@ body {
     padding: 1%;
 }
 
-.opcoesmx {
-    margin-top: -21%;
-}
-
 .salasx {
     margin: 0%;
     background-color: whitesmoke;
@@ -596,6 +592,7 @@ body {
     padding-bottom: 0.8%;
     border-radius: 2px;
     width: 24%;
+    margin-top: 1%;
     margin-left: 2%;
     border: 1px solid lightslategrey;
 }
