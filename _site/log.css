@@ -165,10 +165,8 @@ body {
     background-color: #000;
     list-style-type: none;
     display: inline-block;
-    margin: 0%;
     width: 100%;
     padding: 0.5%;
-    float: inline-end;
 }
 
 .copyx li {
