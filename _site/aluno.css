@@ -16,7 +16,7 @@ table {
     width: 22%;
     background-color: whitesmoke;
     border-radius: 2px;
-    padding: 1%;
+    padding: 0.5%;
     margin-top: -20%;
     margin-left: 10%;
     border: 1px solid darkslategrey;
@@ -27,7 +27,7 @@ table td {
     text-align: center;
     font-family: calibri;
     background-image: url('./fotis/paper.png');
-    padding: 2%;
+    padding: 1%;
 }
 
 table th {
