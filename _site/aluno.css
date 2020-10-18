@@ -11,7 +11,7 @@
 }
 
 table {
-    border-collapse: 18%;
+    border-collapse: collapse;
     margin: 0%;
     width: 22%;
     background-color: whitesmoke;
