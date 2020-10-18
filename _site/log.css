@@ -325,7 +325,6 @@ body {
     padding-top: 1%;
     height: 100%;
     position: absolute;
-    z-index: -1;
 }
 
 .highx {
