@@ -18,7 +18,7 @@ table {
     border-radius: 2px;
     padding: 0.5%;
     border: 1px solid darkslategrey;
-    float: right;
+    margin-left: 58%;
 }
 
 table td {
