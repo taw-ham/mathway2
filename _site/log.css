@@ -619,7 +619,7 @@ body {
     margin-top: -36.1%;
     margin-left: 2%;
     border: 1px solid lightslategrey;
-    position: absolute;
+    position: fixed;
 }
 
 .comentx textarea {
