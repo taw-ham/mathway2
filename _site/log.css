@@ -592,7 +592,7 @@ body {
     padding-bottom: 0.8%;
     border-radius: 2px;
     width: 24%;
-    margin-top: -1%;
+    margin-top: 1%;
     margin-left: 26%;
     border: 1px solid lightslategrey;
 }
@@ -615,9 +615,9 @@ body {
     padding: 0.5%;
     padding-bottom: 0.8%;
     border-radius: 2px;
-    width: 24%;
-    margin-top: -1%;
-    margin-left: 26%;
+    width: 22%;
+    margin-top: 1%;
+    margin-left: 2%;
     border: 1px solid lightslategrey;
 }
 
