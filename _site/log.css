@@ -3,9 +3,9 @@ body {
     background-size: cover;
     margin: 0%;
     width: 100%;
-    margin: auto;
-    min-width:600px;
-    max-width:2000px;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
 }
 
 .menu {
