@@ -168,6 +168,7 @@ body {
     margin: 0%;
     width: 100%;
     padding: 0.5%;
+    float: inline-end;
 }
 
 .copyx li {
@@ -297,7 +298,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0%;
-    position: relative;
     width: 90%;
     opacity: 95%;
     margin-left: 5%;
@@ -305,6 +305,9 @@ body {
     border-right: 1px solid darkgray;
     padding-bottom: 17%;
     padding-top: 1%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
 }
 
 .wallalun {
