@@ -330,11 +330,13 @@ body {
 .highx {
     margin-left: 42%;
     border-radius: 2px;
+    margin: 0%;
 }
 
 .highx2 {
     margin-left: 51.6%;
     border-radius: 2px;
+    margin: 0%;
 }
 
 .wayx {
