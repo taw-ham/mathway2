@@ -551,6 +551,7 @@ body {
     padding: 1%;
     border-radius: 2px;
     border: 1px solid lightslategrey;
+    position: fixed;
 }
 
 .dadosxalun ul {
