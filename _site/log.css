@@ -335,7 +335,6 @@ body {
 
 .highx2 {
     margin: 0%;
-    margin-top: 2%;
     margin-left: 51.6%;
     border-radius: 2px;
 }
@@ -559,6 +558,7 @@ body {
     padding: 1%;
     border-radius: 2px;
     border: 1px solid lightslategrey;
+    float: left;
 }
 
 .dadosxalun ul {
