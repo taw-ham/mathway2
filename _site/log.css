@@ -595,6 +595,7 @@ body {
     margin-top: 0.5%;
     margin-left: 26%;
     border: 1px solid lightslategrey;
+    float: left;
 }
 
 .salasx button {
