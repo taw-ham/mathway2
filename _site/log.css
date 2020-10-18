@@ -615,7 +615,7 @@ body {
     background-color: whitesmoke;
     padding: 1%;
     border-radius: 2px;
-    width: 22%;
+    width: 24%;
     margin-top: 1%;
     margin-left: 2%;
     border: 1px solid lightslategrey;
@@ -651,7 +651,7 @@ body {
     padding: 1%;
     border-radius: 2px;
     width: 22%;
-    margin-top: 2%;
+    margin-top: -20%;
     margin-left: 2%;
     border: 1px solid lightslategrey;
 }
