@@ -168,7 +168,7 @@ body {
     margin: 0%;
     width: 100%;
     padding: 0.5%;
-    position: fixed;
+    position: static;
 }
 
 .copyx li {
