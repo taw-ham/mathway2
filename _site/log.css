@@ -329,13 +329,11 @@ body {
 
 .highx {
     margin-left: 42%;
-    margin-top: 1%;
     border-radius: 2px;
 }
 
 .highx2 {
     margin-left: 26%;
-    margin-top: -7%;
     border-radius: 2px;
 }
 
@@ -552,7 +550,6 @@ body {
 .dadosxalun {
     background-color: whitesmoke;
     margin: 0%;
-    margin-top: -20%;
     margin-left: 58%;
     width: 22%;
     padding: 1%;
