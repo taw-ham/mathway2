@@ -20,7 +20,7 @@ table {
     border: 1px solid darkslategrey;
     margin-left: 2%;
     margin-top: -20.8%;
-    float: left;
+    float: bottom;
 }
 
 table td {
