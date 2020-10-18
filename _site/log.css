@@ -305,7 +305,7 @@ body {
     padding-bottom: 17%;
     padding-top: 1%;
     height: 100%;
-    position: absolute;
+    position: relative;
     z-index: -1;
 }
 
@@ -616,7 +616,7 @@ body {
     padding-bottom: 0.8%;
     border-radius: 2px;
     width: 22%;
-    margin-top: 1%;
+
     margin-left: 2%;
     border: 1px solid lightslategrey;
 }
