@@ -331,6 +331,7 @@ body {
     margin: 0%;
     margin-left: 42%;
     border-radius: 2px;
+    position: static;
 }
 
 .highx2 {
@@ -338,6 +339,7 @@ body {
     margin-top: -24%;
     margin-left: 51.6%;
     border-radius: 2px;
+    position: static;
 }
 
 .wayx {
@@ -596,6 +598,7 @@ body {
     border-radius: 2px;
     width: 24%;
     border: 1px solid lightslategrey;
+    position: static;
 }
 
 .salasx button {
