@@ -780,6 +780,11 @@ body {
     margin-left: 0%;
 }
 
+.linhax3 {
+    background-color: lightgray;
+    padding: 2%;
+}
+
 .listaspastx {
     margin: 0%;
     background-color: whitesmoke;

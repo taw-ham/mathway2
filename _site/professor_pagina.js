@@ -1121,7 +1121,7 @@ document.getElementById("salas_criadas").onclick = function () {
         }
     })
     document.getElementById("voltar_da_area_acessar_sala").onclick = function () {
-        $("#wallprofx").css('padding-bottom', '17%');
+        $("#wallprofx").css('padding-bottom', '17.2%');
         $("#muralxprof").show("fast");
         $("#infprofx").hide("fast");
         $("#codeprofx2").hide("fast");
@@ -1179,7 +1179,7 @@ document.getElementById("criar_sala").onclick = function () {
         }
     }
     document.getElementById("voltar_area_de_escolhas_inicial3").onclick = function () {
-        $("#wallprofx").css('padding-bottom', '17%');
+        $("#wallprofx").css('padding-bottom', '17.2%');
         $("#dadosxx").show("fast");
         $("#menu_escolhas").show("fast");
         $("#area_de_criar_sala").hide("fast");
