@@ -307,7 +307,6 @@ body {
     border-right: 1px solid darkgray;
     padding-bottom: 17%;
     padding-top: 1%;
-    height: 100%;
     position: relative;
     z-index: -1;
 }
@@ -325,7 +324,6 @@ body {
     border-right: 1px solid darkgray;
     padding-bottom: 32%;
     padding-top: 1%;
-    height: 100%;
     position: relative;
     z-index: -1;
 }
