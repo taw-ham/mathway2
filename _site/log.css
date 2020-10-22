@@ -299,6 +299,7 @@ body {
     background-image: url('./fotis/wood.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0%;
     width: 90%;
     opacity: 95%;
@@ -316,6 +317,7 @@ body {
     background-image: url('./fotis/wood.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0%;
     width: 90%;
     opacity: 95%;
