@@ -61,15 +61,15 @@ for (let i = 0; i <= tipo_userx.length - 1; i++) {
             $("#logx").css('background', 'linear-gradient(whitesmoke,lightblue)');
             $("#obx").hide("fast");
             $("#tipologinx").css('background', 'lightblue');
-            $("#bbx").css('background-color','blue');
-            $("#ccx").css('background-color','lightslategray');
+            $("#bbx").css('background-color', 'blue');
+            $("#ccx").css('background-color', 'lightslategray');
             $("#wallx").css('padding-bottom', '7.2%');
         } else {
             $("#logx").css('background', 'linear-gradient(whitesmoke,lightgreen');
             $("#obx").hide("fast");
             $("#tipologinx").css('background', 'lightgreen');
-            $("#ccx").css('background-color','green');
-            $("#bbx").css('background-color','lightslategray');
+            $("#ccx").css('background-color', 'green');
+            $("#bbx").css('background-color', 'lightslategray');
             $("#wallx").css('padding-bottom', '7.2%');
         }
     }
@@ -78,7 +78,7 @@ document.getElementById("fazer_login").onclick = function () {
     const usuario = $("#nome_login").val();
     const senha = $("#senha_login").val();
     if (tipo_loginx == "bbx") {
-        const aluno_service = new Aluno_Service(`https://whispering-hollows-11624.herokuapp.com/Alunos?email=${usuario}&senha=${senha}`);
+        const aluno_service = new Aluno_Service(`https://yprto.sse.codesandbox.io/Alunos?email=${usuario}&senha=${senha}`);
         aluno_service.listar().then(resposta => {
             if (resposta.length === 0) {
                 swal('Login Inválido!', '- email ou senha incorretos -', 'error');
@@ -93,7 +93,7 @@ document.getElementById("fazer_login").onclick = function () {
             }
         })
     } else if (tipo_loginx === "ccx") {
-        let loginservice = new ProfessorService(`https://whispering-hollows-11624.herokuapp.com/professores?email=${usuario}&senha=${senha}`);
+        let loginservice = new ProfessorService(`https://yprto.sse.codesandbox.io/professores?email=${usuario}&senha=${senha}`);
         loginservice.listar().then(results => {
             if (results.length === 0) {
                 swal('Login Inválido!', '- email ou senha incorretos -', 'error');

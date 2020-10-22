@@ -33,7 +33,7 @@ table td {
 table th {
     font-family: calibri;
     text-align: center;
-    background: linear-gradient( #6495ED, #6495ED, lightblue);
+    background: linear-gradient(#6495ED, #6495ED, lightblue);
     color: white;
     text-shadow: 1px 1px #000;
     padding: 1%;
