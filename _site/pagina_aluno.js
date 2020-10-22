@@ -1743,7 +1743,7 @@ document.getElementById("salas_presentes").onclick = function () {
                         button_acessar_lista.onclick = function () {
                             $("#codeprofx2").hide("fast");
                             $("#infalunx").hide("fast");
-                            $("#wallalunx").css('padding-bottom','20%');
+                            $("#wallalunx").css('padding-bottom','12%');
                             $("#wallalunx").css('background-image', 'url("./fotis/classroom.jpg")');
                             $("#wallalunx").css('background-size', 'cover');
                             $("#area_escolha_lista_teorica").hide("fast");
