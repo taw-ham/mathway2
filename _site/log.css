@@ -297,7 +297,7 @@ body {
 .wallprof {
     background-color: lightslategrey;
     background-image: url('./fotis/wood.jpg');
-
+    background-size: cover;
     background-repeat: no-repeat;
     margin: 0%;
     width: 90%;
@@ -305,7 +305,7 @@ body {
     margin-left: 5%;
     border-left: 1px solid darkgray;
     border-right: 1px solid darkgray;
-    padding-bottom: 17%;
+    padding-bottom: 17.2%;
     padding-top: 1%;
     position: relative;
     z-index: -1;
