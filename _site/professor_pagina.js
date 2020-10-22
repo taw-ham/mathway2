@@ -393,7 +393,7 @@ document.getElementById("salas_criadas").onclick = function () {
                                     let button_modificar = document.createElement("button");
                                     let button_nao_modificar = document.createElement("button");
                                     button_modificar.setAttribute("class", "btn btn-primary");
-                                    button_nao_modificar.setAttribute("class", "btn btn-primary");
+                                    button_nao_modificar.setAttribute("class", "btn btn-danger");
                                     button_modificar.setAttribute('id', resposta[i].id);
                                     button_modificar.innerHTML = "Modificar Nota"
                                     button_nao_modificar.setAttribute('id', resposta[i].id);
