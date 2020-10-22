@@ -1703,6 +1703,7 @@ document.getElementById("salas_presentes").onclick = function () {
                                 var current_date = new Date().getTime();
                                 console.log(current_date)
                                 if (current_date > target_date) {
+                                    button_acessar_lista.setAttribute("class", "btn btn-danger")
                                     var atrasado = Math.abs((target_date - current_date) / 1000)
                                     days = `| Atraso: ${parseInt(atrasado / 86400)} dias`
                                     atrasado = atrasado % 86400;
@@ -1742,6 +1743,7 @@ document.getElementById("salas_presentes").onclick = function () {
                         button_acessar_lista.onclick = function () {
                             $("#codeprofx2").hide("fast");
                             $("#infalunx").hide("fast");
+                            $("#wallalunx").css('padding-bottom','20%');
                             $("#wallalunx").css('background-image', 'url("./fotis/classroom.jpg")');
                             $("#wallalunx").css('background-size', 'cover');
                             $("#area_escolha_lista_teorica").hide("fast");
