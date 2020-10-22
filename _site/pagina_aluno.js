@@ -1707,6 +1707,7 @@ document.getElementById("salas_presentes").onclick = function () {
                                     days = `| Atraso: ${parseInt(atrasado / 86400)} dias`
                                     atrasado = atrasado % 86400;
                                     hours = `${parseInt(atrasado / 3600)}:`;
+                                   
                                     atrasado = atrasado % 3600;
                                     minutes = `${parseInt(atrasado / 60)}:`;
                                     seconds = `${parseInt(atrasado % 60)}`;

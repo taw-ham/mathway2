@@ -1086,6 +1086,12 @@ document.getElementById("salas_criadas").onclick = function () {
                                         }
                                     }
                                     document.getElementById("enviar_lista_teorica").onclick = function () {
+                                        $("#pergunta_digitada").empty();
+                                        $("#lugar_opcoes").empty();
+                                        $("#opcao_certa").empty();
+                                        $("#opcoes").empty();
+                                        opcoes = [];
+                                        
                                         let lista_teorica = new Lista_Teoria(nome_da_lista_teorica, lista_perguntas, lista_opcoes, opcoes_certas, id_login, id_sala, data_de_entrega, tempo_de_termino_final);
                                         let lista_teorica_service = new Lista_Teoria_Service("https://whispering-hollows-11624.herokuapp.com/lista_teoricas");
                                         lista_teorica_service.inserir(lista_teorica).then(resposta => {
