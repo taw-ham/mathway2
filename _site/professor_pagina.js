@@ -1134,7 +1134,7 @@ document.getElementById("salas_criadas").onclick = function () {
 }
 document.getElementById("criar_sala").onclick = function () {
 
-    $("#wallprofx").css('padding-bottom', '25.1%');
+    $("#wallprofx").css('padding-bottom', '25.2%');
     $("#dadosxx").hide("fast");
     $("#menu_escolhas").hide("fast");
     $("#area_de_criar_sala").show("fast");
