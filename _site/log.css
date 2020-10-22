@@ -1,4 +1,5 @@
 body {
+    background: linear-gradient(royalblue,#000,#000,#000,royalblue);
     background-image: url('./fotis/water.jpg');
     background-size: cover;
     background-repeat: no-repeat;
