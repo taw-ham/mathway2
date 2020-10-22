@@ -1019,6 +1019,7 @@ document.getElementById("salas_criadas").onclick = function () {
                                         console.log(nome_temas);
                                         button.innerHTML = nome_temas[i];
                                         button.setAttribute('id', temas_lista[i]);
+                                        button.setAttribute('class', 'btn btn-info');
                                         div.append(button);
                                         button.onclick = function () {
                                             click_salvar_tema++;
