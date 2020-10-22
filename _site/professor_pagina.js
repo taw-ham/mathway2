@@ -1091,6 +1091,7 @@ document.getElementById("salas_criadas").onclick = function () {
                                         $("#opcao_certa").empty();
                                         $("#opcoes").empty();
                                         opcoes = [];
+                                        console.log(opcoes)
                                         
                                         let lista_teorica = new Lista_Teoria(nome_da_lista_teorica, lista_perguntas, lista_opcoes, opcoes_certas, id_login, id_sala, data_de_entrega, tempo_de_termino_final);
                                         let lista_teorica_service = new Lista_Teoria_Service("https://whispering-hollows-11624.herokuapp.com/lista_teoricas");
