@@ -60,14 +60,14 @@ for (let i = 0; i <= tipo_userx.length - 1; i++) {
         if (tipo_loginx == "bbx") {
             $("#logx").css('background', 'linear-gradient(whitesmoke,lightblue)');
             $("#obx").hide("fast");
-            $("#tipologinx").css('background', 'lightblue');
+            $("#tipologinx").css('background-color', 'lightblue');
             $("#bbx").css('background-color', 'blue');
             $("#ccx").css('background-color', 'lightslategray');
             $("#wallx").css('padding-bottom', '7.2%');
         } else {
             $("#logx").css('background', 'linear-gradient(whitesmoke,lightgreen');
             $("#obx").hide("fast");
-            $("#tipologinx").css('background', 'lightgreen');
+            $("#tipologinx").css('background-color', 'lightlimegreen');
             $("#ccx").css('background-color', 'green');
             $("#bbx").css('background-color', 'lightslategray');
             $("#wallx").css('padding-bottom', '7.2%');
