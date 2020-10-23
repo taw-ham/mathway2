@@ -93,7 +93,7 @@ document.getElementById("fazer_login").onclick = function () {
             }
         })
     } else if (tipo_loginx === "ccx") {
-        let loginservice = new ProfessorService(`https://yprto.sse.codesandbox.io/professores?email=${usuario}&senha=${senha}`);
+        let loginservice = new ProfessorService(`https://in4j4.sse.codesandbox.io/professores?email=${usuario}&senha=${senha}`);
         loginservice.listar().then(results => {
             if (results.length === 0) {
                 swal('Login Inválido!', '- email ou senha incorretos -', 'error');
