@@ -62,14 +62,14 @@ for (let i = 0; i <= tipo_userx.length - 1; i++) {
         console.log(tipo_loginx);
         if (tipo_loginx === "bbx2") {
             $("#logx2").css('background', 'linear-gradient(lightblue,whitesmoke,whitesmoke)');
-            $("#escolhaxa").css('background', 'lightblue');
+            $("#escolhaxa").css('background-color', 'lightblue');
             $("#obx02").hide("fast");
             $("#bbx2").css('background-color', 'blue');
             $("#ccx2").css('background-color', 'lightslategray');
             $("#wallx2").css('padding-bottom', '3%');
         } else if (tipo_loginx === "ccx2") {
             $("#logx2").css('background', 'linear-gradient(lightgreen,whitesmoke,whitesmoke)');
-            $("#escolhaxa").css('background', 'lightgreen');
+            $("#escolhaxa").css('background-color', 'lightlimegreen');
             $("#obx02").hide("fast");
             $("#ccx2").css('background-color', 'green');
             $("#bbx2").css('background-color', 'lightslategray');
