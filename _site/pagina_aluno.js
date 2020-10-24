@@ -485,7 +485,7 @@ document.getElementById("exercicios").onclick = function () {
                     $("#infalunx").hide("fast");
                     const id_lista_teorica = event.target.id;
                     console.log(id_lista_teorica);
-                    const lista_teorica_servidor_service = new Lista_Teorica_Servidor_Service(`https://yprto.sse.codesandbox.io/${id_lista_teorica}`);
+                    const lista_teorica_servidor_service = new Lista_Teorica_Servidor_Service(`https://yprto.sse.codesandbox.io/Lista_Teorica_Servidor/${id_lista_teorica}`);
                     lista_teorica_servidor_service.listar().then(resposta => {
                         console.log(resposta);
                         let lista_pergunta_server;
