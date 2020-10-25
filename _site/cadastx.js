@@ -98,13 +98,13 @@ document.getElementById("fazer_cadastro").onclick = function () {
             })
 
         } else if (tipo_loginx === "ccx2") {
-            const professor_service = new ProfessorService(`https://yprto.sse.codesandbox.io/professores?email=${email}`);
+            const professor_service = new ProfessorService(`https://bancodedados.tawham.repl.co/professores?email=${email}`);
             professor_service.listar().then(resposta => {
                 if (resposta.length > 0) {
                     swal('Cadastro Inválido!', '- e-mail existente em outra conta -', 'error')
 
                 } else {
-                    const professor_service = new ProfessorService("https://yprto.sse.codesandbox.io/professores");
+                    const professor_service = new ProfessorService("https://bancodedados.tawham.repl.co/professores");
                     const professor = new PROFESSOR(nome, senha, email);
                     professor_service.inserir(professor).then(resposta => {
                         window.location.assign("./index.html");
