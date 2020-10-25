@@ -84,7 +84,7 @@ document.getElementById("fazer_cadastro").onclick = function () {
     const email = document.getElementById("email_cadastro").value;
     if (nome != "" && senha != "" && email != "") {
         if (tipo_loginx === "bbx2") {
-            const aluno_service = new Aluno_Service(`https://yprto.sse.codesandbox.io/Alunos?email=${email}`)
+            const aluno_service = new Aluno_Service(`https://bancodedados.tawham.repl.co/Alunos?email=${email}`)
             aluno_service.listar().then(resposta => {
                 if (resposta.length > 0) {
                     swal('Cadastro Inválido!', '- e-mail existente em outra conta -', 'error')
