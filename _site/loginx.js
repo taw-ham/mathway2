@@ -78,7 +78,7 @@ document.getElementById("fazer_login").onclick = function () {
     const usuario = $("#nome_login").val();
     const senha = $("#senha_login").val();
     if (tipo_loginx == "bbx") {
-        const aluno_service = new Aluno_Service(`https://yprto.sse.codesandbox.io/Alunos?email=${usuario}&senha=${senha}`);
+        const aluno_service = new Aluno_Service(`https://bancodedados.tawham.repl.co/Alunos?email=${usuario}&senha=${senha}`);
         aluno_service.listar().then(resposta => {
             if (resposta.length === 0) {
                 swal('Login Inválido!', '- email ou senha incorretos -', 'error');

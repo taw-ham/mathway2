@@ -90,7 +90,7 @@ document.getElementById("fazer_cadastro").onclick = function () {
                     swal('Cadastro Inválido!', '- e-mail existente em outra conta -', 'error')
                 } else {
                     const aluno = new Aluno(email, nome, senha);
-                    const aluno_service2 = new Aluno_Service("https://yprto.sse.codesandbox.io/Alunos");
+                    const aluno_service2 = new Aluno_Service("https://bancodedados.tawham.repl.co/Alunos");
                     aluno_service2.inserir(aluno).then(resposta => {
                         window.location.assign("./index.html");
                     })
