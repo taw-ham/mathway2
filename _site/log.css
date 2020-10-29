@@ -979,15 +979,12 @@ body {
 .perserverx li {
     font-family: calibri;
     margin-top: 1%;
-    text-align: left;
-}
-
-.perserverx li button img {
-    width: 100%;
 }
 
 .perserverx li button {
     margin-left: -0.5%;
+    text-align: left;
+    width: 100%;
 }
 
 .perserverx li button:hover {
