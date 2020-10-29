@@ -1008,7 +1008,7 @@ body {
     margin: 0%;
     background-color: whitesmoke;
     padding: 3%;
-    width: 50%;
+    width: 80%;
     margin-left: 23%;
     margin-top: 1%;
     border: 1px solid lightslategrey;
@@ -1038,7 +1038,7 @@ body {
     margin-top: -0.5%;
 }
 .exectx p img{
-    width: 106%;
+    height: 100%;
 }
 
 .exectx span {
