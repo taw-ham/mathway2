@@ -987,7 +987,7 @@ body {
 
 .perserverx li button {
     margin-left: -0.5%;
-    width: 100%;
+    padding-right: 1%;
 }
 
 .perserverx li button:hover {
@@ -1040,6 +1040,11 @@ body {
 
 .exectx img {
     margin-top: -0.5%;
+}
+
+.exectx p img {
+    height: 50%;
+    width: 50%;
 }
 
 .exectx span {
