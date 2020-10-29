@@ -1039,8 +1039,8 @@ body {
 }
 
 .exectx p img{
-    width: 50%;
-    height: 50%;
+    width: auto;
+    height: auto;
 }
 
 .exectx span {
