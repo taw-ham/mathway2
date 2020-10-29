@@ -69,9 +69,9 @@ for (let i = 0; i <= tipo_userx.length - 1; i++) {
             $("#wallx2").css('padding-bottom', '3%');
         } else if (tipo_loginx === "ccx2") {
             $("#logx2").css('background', 'linear-gradient(lightgreen,whitesmoke,whitesmoke)');
-            $("#escolhaxa").css('background-color', 'limegreen');
+            $("#escolhaxa").css('background-color', 'lightgreen');
             $("#obx02").hide("fast");
-            $("#ccx2").css('background-color', 'green');
+            $("#ccx2").css('background-color', 'limegreen');
             $("#bbx2").css('background-color', 'lightslategray');
             $("#wallx2").css('padding-bottom', '3%');
         }
