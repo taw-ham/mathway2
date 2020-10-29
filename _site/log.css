@@ -1009,7 +1009,7 @@ body {
     background-color: whitesmoke;
     padding: 3%;
     width: 60%;
-    margin-left: 19%;
+    margin-left: 19.5%;
     margin-top: 1%;
     border: 1px solid lightslategrey;
 }
@@ -1037,9 +1037,10 @@ body {
 .exectx img {
     margin-top: -0.5%;
 }
+
 .exectx p img{
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
 }
 
 .exectx span {
