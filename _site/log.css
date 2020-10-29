@@ -980,6 +980,11 @@ body {
     margin-top: 1%;
 }
 
+.perserverx li img {
+    height: 100%;
+    width: 100%;
+}
+
 .perserverx li button {
 
 
@@ -1054,7 +1059,7 @@ body {
 
 .exectx ul li {
     font-family: calibri;
-    margin-left: -6%;
+    margin-left: -8%;
 }
 
 .exectx button {
