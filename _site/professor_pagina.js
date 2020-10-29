@@ -901,17 +901,17 @@ document.getElementById("salas_criadas").onclick = function () {
                                         pergunta_service.listar().then(resposta => {
                                             ul.append(li_nome);
                                             for (let i = 0; i <= resposta.length - 1; i++) {
+                                                const opcoes_server_10 = resposta[i].opcoes;
                                                 let li = document.createElement("li");
                                                 let button = document.createElement("button");
                                                 button.setAttribute("id", resposta[i].id)
-                                                button.innerHTML = resposta[i].pergunta;
+                                                button.innerHTML = `${resposta[i].pergunta} </br> <p>${opcoes_server_10[0]} </p> <p>${opcoes_server_10[1]} </p><p>${opcoes_server_10[2]} </p> <p>${opcoes_server_10[3]} </p> <p>${opcoes_server_10[4]}</p>`
                                                 li.append(button);
                                                 ul.append(li);
                                                 button.onclick = function () {
                                                     const id_pergunta = resposta[i].id;
                                                     console.log(id_pergunta);
                                                     $(`#${id_pergunta}`).css('background-color', 'limegreen');
-
                                                     const apagar_pergunta = resposta[i].pergunta;
                                                     const opcoes_apagar = resposta[i].opcoes;
                                                     const apagar_opcoes_certa = resposta[i].opcao_certa;
