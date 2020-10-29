@@ -905,7 +905,7 @@ document.getElementById("salas_criadas").onclick = function () {
                                                 let li = document.createElement("li");
                                                 let button = document.createElement("button");
                                                 button.setAttribute("id", resposta[i].id)
-                                                button.innerHTML = `${resposta[i].pergunta} </br> a)${opcoes_server_10[0]} </br> b) ${opcoes_server_10[1]} </br>c)${opcoes_server_10[2]} </br> d) ${opcoes_server_10[3]} </br> e) ${opcoes_server_10[4]} </br>`
+                                                button.innerHTML = `${resposta[i].pergunta} </br> A)${opcoes_server_10[0]} </br> B)${opcoes_server_10[1]} </br> C)${opcoes_server_10[2]} </br> D)${opcoes_server_10[3]} </br> E)${opcoes_server_10[4]} </br>`
                                                 li.append(button);
                                                 ul.append(li);
                                                 button.onclick = function () {
