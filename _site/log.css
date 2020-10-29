@@ -1835,3 +1835,9 @@ body {
     border-radius: 2px;
     width: 10%;
 }
+
+.areaview {
+    margin: 0%;
+    padding: 0.5%;
+    background-color: whitesmoke;
+}

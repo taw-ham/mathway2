@@ -1006,7 +1006,7 @@ document.getElementById("salas_criadas").onclick = function () {
                                                 swal("Resposta Inválida!", '- escolha sua opção -', 'error')
                                             }
                                         } else {
-                                            swal("não pode mais adicionar perguntas", "", 'error')
+                                            swal("Entrada Inválida!", "- leia o limite de opções -", 'error')
                                         }
 
                                     }
