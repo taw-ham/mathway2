@@ -1815,6 +1815,7 @@ body {
 #area_temas_escolher {
     padding: 1%;
     margin: 0%;
+    background-color: lightgray;
 }
 
 #area_temas_escolher button {
