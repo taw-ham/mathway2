@@ -122,6 +122,7 @@ class Lista_Teoria {
             this.id_sala = id_sala,
             this.Data_de_entrega = Data_de_entrega,
             this.tempo_de_termino = tempo_de_termino
+           
 
     }
 }
@@ -748,6 +749,7 @@ document.getElementById("salas_criadas").onclick = function () {
                                 $("#wallprofx").css("padding-bottom", '12%');
                                 let nome_da_lista_teorica = $("#nome_lista_teorica").val();
                                 let tempo_de_fazer_lista = $("#tempo_fazer_lista").val();
+                                
                                 let data_entrega = $("#data_entrega").val();
                                 let tempo_de_termino_final;
                                 let tempo_de_termino = [];

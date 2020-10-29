@@ -43,6 +43,7 @@ class Nota {
         this.perguntas_nao_feitas = perguntas_nao_feitas;
         this.situacao = situacao;
         this.data_de_entrega = data_de_entrega;
+        
     }
 }
 class Nota_Service {
@@ -341,7 +342,7 @@ document.getElementById("entrar_sala").onclick = function () {
             swal('Código Inválido', '- insira algum código -', 'error');
         } else {
             console.log(codigo_sala)
-            let sala_service = new Sala_Service(`/salas?codigo=${codigo_sala}`)
+            let sala_service = new Sala_Service(`https://bancodedados.tawham.repl.co/salas?codigo=${codigo_sala}`)
             sala_service.listar().then(resposta => {
                 console.log(resposta);
                 if (resposta.length > 0) {
@@ -1805,6 +1806,7 @@ document.getElementById("salas_presentes").onclick = function () {
 
                                 } else {
                                     $("#fazer_exercicio_lista_teorica").show("fast");
+                                    
                                     let lista_teorica_service = new Lista_Teorica_Service(`https://bancodedados.tawham.repl.co/lista_teoricas?id=${id_lista_teorica}&id_sala=${id_sala}`);
                                     lista_teorica_service.listar().then(resposta => {
                                         var tempo_de_termino;
