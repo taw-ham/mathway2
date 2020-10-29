@@ -986,9 +986,8 @@ body {
 }
 
 .perserverx li button {
-
-
     margin-left: -0.5%;
+    width: 100%;
 }
 
 .perserverx li button:hover {
