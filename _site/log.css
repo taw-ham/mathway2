@@ -980,9 +980,9 @@ body {
     margin-top: 1%;
 }
 
-.perserverx li img {
-    height: 100%;
-    width: 100%;
+.perserverx li button img {
+    height: 95%;
+    width: 95%;
 }
 
 .perserverx li button {
