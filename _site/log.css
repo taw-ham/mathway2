@@ -973,17 +973,17 @@ body {
     margin: 0%;
     padding: 1%;
     list-style-type: none;
+    padding-right: 2%;
 }
 
 .perserverx li {
     font-family: calibri;
     margin-top: 1%;
-    padding-right: 1%;
 }
 
 .perserverx li button img {
-    height: 60%;
-    width: 60%;
+    height: 40%;
+    width: 40%;
 }
 
 .perserverx li button {
@@ -1043,8 +1043,8 @@ body {
 }
 
 .exectx p img {
-    height: 50%;
-    width: 50%;
+    height: 40%;
+    width: 40%;
 }
 
 .exectx span {
@@ -1091,6 +1091,11 @@ body {
     font-size: 120%;
     font-weight: bold;
     text-indent: 1%;
+}
+
+.resultx p img {
+    height: 30%;
+    width: 30%;
 }
 
 .resultx button {
