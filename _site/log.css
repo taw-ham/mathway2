@@ -991,6 +991,10 @@ body {
     background-color: lightblue;
 }
 
+.perserverx li button img {
+    width: 50%;
+}
+
 #fazer_lista_teorica {
     margin-top: 2%;
 }
