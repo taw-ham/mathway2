@@ -67,7 +67,7 @@ for (let i = 0; i <= tipo_userx.length - 1; i++) {
         } else {
             $("#logx").css('background', 'linear-gradient(whitesmoke,lightgreen');
             $("#obx").hide("fast");
-            $("#tipologinx").css('background-color', 'lightlimegreen');
+            $("#tipologinx").css('background-color', 'lightgreen');
             $("#ccx").css('background-color', 'green');
             $("#bbx").css('background-color', 'lightslategray');
             $("#wallx").css('padding-bottom', '7.2%');
