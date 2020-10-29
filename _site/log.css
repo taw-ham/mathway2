@@ -979,10 +979,11 @@ body {
 .perserverx li {
     font-family: calibri;
     margin-top: 1%;
+    text-align: left;
 }
 
 .perserverx li button img {
-    width: 40%;
+    width: 100%;
 }
 
 .perserverx li button {
@@ -1042,8 +1043,7 @@ body {
 }
 
 .exectx p img {
-    height: 50%;
-    width: 50%;
+    width: 100%;
 }
 
 .exectx span {
@@ -1093,8 +1093,7 @@ body {
 }
 
 .resultx p img {
-    height: 40%;
-    width: 40%;
+    width: 100%;
 }
 
 .resultx button {
