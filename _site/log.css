@@ -978,6 +978,7 @@ body {
 .perserverx li {
     font-family: calibri;
     margin-top: 1%;
+    padding-right: 1%;
 }
 
 .perserverx li button img {
@@ -987,7 +988,6 @@ body {
 
 .perserverx li button {
     margin-left: -0.5%;
-    padding-right: 1%;
 }
 
 .perserverx li button:hover {
