@@ -102,6 +102,7 @@ document.getElementById("fazer_login").onclick = function () {
                 const id = results[0].id;
                 const email = results[0].email;
                 const nome_user = results[0].nome;
+                module.exports = {id,email,nome_user}
                 localStorage.setItem('id', id);
                 localStorage.setItem('email', email);
                 localStorage.setItem('nome', nome_user);

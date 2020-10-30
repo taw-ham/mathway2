@@ -251,6 +251,8 @@ class Lista_Teorica_Servidor_Service {
         }).then(resposta => resposta.json())
     }
 }
+const {id,email,nome_user} = require('./loginx');
+console.log(id,email,nome_user);
 const id_login = localStorage.getItem('id');
 const email_login = localStorage.getItem('e-mail');
 const nome_login = localStorage.getItem('nome');
