@@ -1,3 +1,4 @@
+
 class Sala {
     constructor(participantes, participantes_id) {
         this.participantes = participantes;
@@ -2258,3 +2259,4 @@ document.getElementById("salas_presentes").onclick = function () {
         $("#escolha_de_sala").hide("fast");
     }
 }
+

@@ -1,3 +1,4 @@
+
 class PROFESSOR {
     constructor(nome, senha, email) {
         this.nome = nome;
