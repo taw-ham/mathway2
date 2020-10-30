@@ -152,7 +152,7 @@ const  obfuscationResult = JavaScriptObfuscator.obfuscate(`
     splitStrings: false,
     splitStringsChunkLength: 10,
     stringArray: true,
-    stringArrayEncoding: ['none','base64','rc4'],
+    stringArrayEncoding: ['base64'],
     stringArrayWrappersCount: 1,
     stringArrayWrappersChainedCalls: true,
     stringArrayWrappersType: 'variable',
@@ -162,4 +162,3 @@ const  obfuscationResult = JavaScriptObfuscator.obfuscate(`
     unicodeEscapeSequence: false
     }
 );
-
