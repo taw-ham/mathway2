@@ -252,7 +252,6 @@ class Lista_Teorica_Servidor_Service {
     }
 }
 
-console.log(id,email,nome_user);
 const id_login = localStorage.getItem('id');
 const email_login = localStorage.getItem('e-mail');
 const nome_login = localStorage.getItem('nome');
