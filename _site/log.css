@@ -1055,7 +1055,7 @@ body {
 
 .exectx ul li {
     font-family: calibri;
-    margin-left: -2%;
+    margin-left: -1%;
 }
 
 .exectx button {
@@ -1069,7 +1069,7 @@ body {
     margin: 0%;
     background-color: whitesmoke;
     padding: 2%;
-    width: 50%;
+    width: 96%;
     margin-left: 2%;
     border: 1px solid lightslategrey;
 }
@@ -1083,10 +1083,6 @@ body {
     font-size: 120%;
     font-weight: bold;
     text-indent: 1%;
-}
-
-.resultx p img {
-    width: 100%;
 }
 
 .resultx button {
