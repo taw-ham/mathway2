@@ -54,12 +54,12 @@ class ProfessorService {
 }
 
 let tipo_loginx;
-
+$("#ramdom_code").hide("fast");
 const tipo_userx = document.getElementsByName("tipo_login");
 for (let i = 0; i <= tipo_userx.length - 1; i++) {
     tipo_userx[i].onclick = function () {
         tipo_loginx = event.target.id;
-        console.log(tipo_loginx);
+        (tipo_loginx);
         if (tipo_loginx === "bbx2") {
             $("#logx2").css('background', 'linear-gradient(lightblue,whitesmoke,whitesmoke)');
             $("#escolhaxa").css('background-color', 'lightblue');
@@ -89,7 +89,12 @@ document.getElementById("fazer_cadastro").onclick = function () {
                 if (resposta.length > 0) {
                     swal('Cadastro Inválido!', '- e-mail existente em outra conta -', 'error')
                 } else {
-                    const aluno = new Aluno(email, nome, senha);
+                    const combination = "1234567890abcdefghijklmnopqrstuvwxyz";
+                    const encrypt_senha = CryptoJS.AES.encrypt(senha,combination);
+                    document.getElementById("ramdom_code").innerText = encrypt_senha;
+                    const senha_finish = document.getElementById("ramdom_code").textContent;
+                    (senha_finish);
+                    const aluno = new Aluno(email, nome, senha_finish);
                     const aluno_service2 = new Aluno_Service("https://bancodedados.tawham.repl.co/Alunos");
                     aluno_service2.inserir(aluno).then(resposta => {
                         window.location.assign("./index.html");
@@ -104,8 +109,13 @@ document.getElementById("fazer_cadastro").onclick = function () {
                     swal('Cadastro Inválido!', '- e-mail existente em outra conta -', 'error')
 
                 } else {
+                    const combination = "1234567890abcdefghijklmnopqrstuvwxyz";
+                    const encrypt_senha =  CryptoJS.AES.encrypt(senha,combination);
+                    document.getElementById("ramdom_code").innerText = encrypt_senha;
+                    const senha_finish = document.getElementById("ramdom_code").textContent;
+                    (senha_finish);
                     const professor_service = new ProfessorService("https://bancodedados.tawham.repl.co/professores");
-                    const professor = new PROFESSOR(nome, senha, email);
+                    const professor = new PROFESSOR(nome,senha_finish, email);
                     professor_service.inserir(professor).then(resposta => {
                         window.location.assign("./index.html");
                     })

@@ -1,4 +1,4 @@
-const  obfuscationResult = JavaScriptObfuscator.obfuscate(`
+
     class Aluno {
         constructor(email, nome, senha) {
             this.email = email;
@@ -79,36 +79,66 @@ const  obfuscationResult = JavaScriptObfuscator.obfuscate(`
         const usuario = $("#nome_login").val();
         const senha = $("#senha_login").val();
         if (tipo_loginx == "bbx") {
-            const aluno_service = new Aluno_Service("https://bancodedados.tawham.repl.co/Alunos?email="+usuario +"&senha="+senha);
+            const aluno_service = new Aluno_Service(`https://bancodedados.tawham.repl.co/Alunos?email=${usuario}`);
             aluno_service.listar().then(resposta => {
                 if (resposta.length === 0) {
-                    swal('Login Inválido!', '- email ou senha incorretos -', 'error');
+                    swal('Login Inválido!', '- email -', 'error');
                 } else {
-                    console.log(resposta);
-                    const id_login = resposta[0].id;
-                    const nome_login = resposta[0].nome;
-                    localStorage.setItem('id', id_login);
-                    localStorage.setItem('e-mail', usuario);
-                    localStorage.setItem('nome', nome_login);
-                    window.location.assign("./pagina_aluno.html");
+                    const combination = "1234567890abcdefghijklmnopqrstuvwxyz";
+                    const email = resposta[0].email;
+                    let id = resposta[0].id;
+                    id = id.toString();
+                    const nome_user = resposta[0].nome;
+                    const senha_banco =resposta[0].senha;
+                    
+                    const descypted_senha = CryptoJS.AES.decrypt(senha_banco,combination);
+                    const senha_descrypted = descypted_senha.toString(CryptoJS.enc.Utf8);
+                
+                    (senha_descrypted)
+                    if(senha == senha_descrypted){
+                        const encrypted_id = CryptoJS.AES.encrypt(id,combination);
+                        const encrypted_email = CryptoJS.AES.encrypt(email,combination);
+                        const encrypted_nome = CryptoJS.AES.encrypt(nome_user,combination);
+                        localStorage.setItem('id',encrypted_id);
+                        localStorage.setItem('email',encrypted_email);
+                        localStorage.setItem('nome',encrypted_nome);
+                        window.location.assign("./pagina_aluno.html");
+                    }else{
+                        swal('Login Inválido!', '- Senha Incorreta -', 'error')
+                    }
                 }
             })
         } else if (tipo_loginx === "ccx") {
-           
-            let loginservice = new ProfessorService("https://bancodedados.tawham.repl.co/professores?email="+usuario+"&senha="+senha);
+            let loginservice = new ProfessorService(`https://bancodedados.tawham.repl.co/professores?email=${usuario}`);
             loginservice.listar().then(results => {
-                if (results.length === 0) {
+                (results);
+                if (results.length == 0) {
                     swal('Login Inválido!', '- email ou senha incorretos -', 'error');
                 } else {
-                    console.log(results);
-                    const id = results[0].id;
+                    ("passou")
+                    const combination = "1234567890abcdefghijklmnopqrstuvwxyz";
+                    let id = results[0].id;
+                    id = id.toString();
                     const email = results[0].email;
                     const nome_user = results[0].nome;
-                 
-                    localStorage.setItem('id', id);
-                    localStorage.setItem('email', email);
-                    localStorage.setItem('nome', nome_user);
-                    window.location.assign("./professor_pagina.html")
+                    const senha_banco =results[0].senha;
+                    const descypted_senha = CryptoJS.AES.decrypt(senha_banco,combination);
+                    const senha_descrypted = descypted_senha.toString(CryptoJS.enc.Utf8);
+                    (senha_descrypted);
+                    if(senha == senha_descrypted){
+                        const encrypted_id = CryptoJS.AES.encrypt(id,combination);
+                        const encrypted_email = CryptoJS.AES.encrypt(email,combination);
+                        const encrypted_nome = CryptoJS.AES.encrypt(nome_user,combination);
+                        localStorage.setItem('id',encrypted_id);
+                        localStorage.setItem('email',encrypted_email);
+                        localStorage.setItem('nome',encrypted_nome);
+                        window.location.assign("./professor_pagina.html");
+
+                       
+                        
+                    }else{
+                        swal('Login Inválido!', '- Senha Incorreta -', 'error')
+                    }
                 }
             })
             
@@ -116,54 +146,3 @@ const  obfuscationResult = JavaScriptObfuscator.obfuscate(`
             swal('Login Inválido!', '- escolha seu tipo de usuário -', 'error');
         }
     }
-    `
-    ,
-    {
-        compact: true,
-    controlFlowFlattening: false,
-    controlFlowFlatteningThreshold: 0.75,
-    deadCodeInjection: false,
-    deadCodeInjectionThreshold: 0.4,
-    debugProtection: false,
-    debugProtectionInterval: false,
-    disableConsoleOutput: false,
-    domainLock: [],
-    forceTransformStrings: [],
-    identifierNamesGenerator: 'hexadecimal',
-    identifiersDictionary: [],
-    identifiersPrefix: '',
-    inputFileName: '',
-    log: false,
-    numbersToExpressions: false,
-    optionsPreset: 'default',
-    renameGlobals: false,
-    renameProperties: false,
-    reservedNames: [],
-    reservedStrings: [],
-    rotateStringArray: true,
-    seed: 0,
-    selfDefending: false,
-    shuffleStringArray: true,
-    simplify: true,
-    sourceMap: false,
-    sourceMapBaseUrl: '',
-    sourceMapFileName: '',
-    sourceMapMode: 'separate',
-    splitStrings: false,
-    splitStringsChunkLength: 10,
-    stringArray: true,
-    stringArrayEncoding: [],
-    stringArrayWrappersCount: 1,
-    stringArrayWrappersChainedCalls: true,
-    stringArrayWrappersType: 'variable',
-    stringArrayThreshold: 0.75,
-    target: 'browser',
-    transformObjectKeys: false,
-    unicodeEscapeSequence: false
-    }
-);
-  
- 
-    
-
-

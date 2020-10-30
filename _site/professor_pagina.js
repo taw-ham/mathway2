@@ -206,9 +206,18 @@ class NOTA_SERVICE {
         }).then(resposta => resposta.json())
     }
 }
-const id_login = localStorage.getItem('id');
-const nome_user = localStorage.getItem('nome');
-const email_user = localStorage.getItem('email');
+const id_criptografado = localStorage.getItem('id');
+const nome_criptografado = localStorage.getItem('nome');
+const email_criptografado = localStorage.getItem('email');
+const combination = "1234567890abcdefghijklmnopqrstuvwxyz";
+const decrypted_id = CryptoJS.AES.decrypt(id_criptografado, combination);
+const decrypted_nome = CryptoJS.AES.decrypt(nome_criptografado, combination);
+const decrypted_email = CryptoJS.AES.decrypt(email_criptografado, combination);
+const id_login = decrypted_id.toString(CryptoJS.enc.Utf8);
+const nome_user = decrypted_nome.toString(CryptoJS.enc.Utf8);
+const email_user = decrypted_email.toString(CryptoJS.enc.Utf8);
+(id_login,nome_user,email_user)
+
 document.getElementById("nome_user").innerText = `Nome: ${nome_user}`;
 document.getElementById("email_user").innerText = `E-mail: ${email_user}`;
 const logout = document.getElementById("logout");
@@ -260,7 +269,7 @@ document.getElementById("salas_criadas").onclick = function () {
     $("#menu_escolhas").hide("fast");
     let sala_service = new Salas_Service(`https://bancodedados.tawham.repl.co/salas?id_criador=${id_login}`);
     sala_service.lista().then(resposta => {
-        console.log(resposta)
+        (resposta)
         let ul = document.getElementById("opcoes_salas");
         for (let i = 0; i <= resposta.length - 1; i++) {
             let button_acessar_sala = document.createElement("button");
@@ -276,7 +285,7 @@ document.getElementById("salas_criadas").onclick = function () {
             button_acessar_sala.setAttribute("class", "btn btn-primary");
             button_apagar_sala.setAttribute("class", "trashx");
 
-            console.log(button_acessar_sala)
+            (button_acessar_sala)
             button_acessar_sala.setAttribute("id", resposta[i].id);
             li.append(button_acessar_sala);
             li.append(button_apagar_sala);
@@ -301,21 +310,21 @@ document.getElementById("salas_criadas").onclick = function () {
 
                 const sala_service = new Salas_Service("https://bancodedados.tawham.repl.co/salas");
                 sala_service.apagar(id_sala).then(resposta => {
-                    console.log(resposta);
+                    (resposta);
                     $("#opcoes_salas > li").remove(`#${id_sala}`);
                     const lista_teorica_service = new Lista_Teoria_Service(`https://bancodedados.tawham.repl.co/lista_teoricas?id_sala=${id_sala}`)
                     lista_teorica_service.lista().then(response => {
-                        console.log(response);
+                        (response);
                         for (let i = 0; i <= response.length - 1; i++) {
                             const lista_teorica_service = new Lista_Teoria_Service("https://bancodedados.tawham.repl.co/lista_teoricas");
                             lista_teorica_service.deletar(response[i].id).then(resposta => {
-                                console.log(resposta);
+                                (resposta);
                                 const nota_service = new Nota_Service(`https://bancodedados.tawham.repl.co/notas_professor?id_lista_teorica=${response[i].id}`);
                                 nota_service.listar().then(resposta => {
                                     for (let i = 0; i <= resposta.length - 1; i++) {
                                         const Nota_service = new Nota_Service("https://bancodedados.tawham.repl.co/notas_professor");
                                         Nota_service.deletar(resposta[i].id).then(resposta => {
-                                            console.log(resposta);
+                                            (resposta);
                                         })
                                     }
                                 })
@@ -367,7 +376,7 @@ document.getElementById("salas_criadas").onclick = function () {
                     table_notas.append(th_title);
                     let lista_teorica = new Lista_Teoria_Service(`https://bancodedados.tawham.repl.co/lista_teoricas?id_sala=${id_sala}`);
                     lista_teorica.lista().then(resposta => {
-                        console.log(resposta)
+                        (resposta)
                         for (let i = 0; i <= resposta.length - 1; i++) {
                             let nota = new Nota_Service(`https://bancodedados.tawham.repl.co/notas_professor?id_lista_teorica=${resposta[i].id}&situacao=atrasado`);
                             nota.listar().then(resposta => {
@@ -411,7 +420,7 @@ document.getElementById("salas_criadas").onclick = function () {
                                             let nota_class = new Nota(nota_modificada, situacao);
                                             let nota_service = new Nota_Service(`https://bancodedados.tawham.repl.co/notas_professor/${id}`);
                                             nota_service.atualizar(nota_class).then(resposta => {
-                                                console.log(resposta)
+                                                (resposta)
                                                 $("tr").remove(`#${id}`);
                                                 swal('Nota Atualizada!', '- atualização com sucesso -', 'success');
                                             })
@@ -427,7 +436,7 @@ document.getElementById("salas_criadas").onclick = function () {
                                         let nota = new NOTA(situacao);
                                         let nota_service = new NOTA_SERVICE(`https://bancodedados.tawham.repl.co/notas_professor/${id}`)
                                         nota_service.atualizar(nota).then(resposta => {
-                                            console.log(resposta);
+                                            (resposta);
                                             swal('Não Atualizada!', '- sem alterações na nota -', 'success');
 
                                         })
@@ -458,7 +467,7 @@ document.getElementById("salas_criadas").onclick = function () {
                     let ul = document.getElementById("lista_teorica_nota");
                     let lista_teorica_service = new Lista_Teoria_Service(`https://bancodedados.tawham.repl.co/lista_teoricas?id_sala=${id_sala}&id_criador=${id_login}`);
                     lista_teorica_service.lista().then(resposta => {
-                        console.log(resposta)
+                        (resposta)
                         for (let i = 0; i <= resposta.length - 1; i++) {
                             let li = document.createElement("li");
                             li.setAttribute("id", resposta[i].id);
@@ -475,7 +484,7 @@ document.getElementById("salas_criadas").onclick = function () {
                                 let nota_service = new Nota_Service(`https://bancodedados.tawham.repl.co/notas_professor?id_lista_teorica=${id_lista_teorica}`);
                                 nota_service.listar().then(resposta => {
 
-                                    console.log(resposta)
+                                    (resposta)
                                     let ul = document.getElementById("place_nota");
                                     for (let i = 0; i <= resposta.length - 1; i++) {
                                         const lista_acerto = resposta[i].perguntas_certas;
@@ -564,13 +573,13 @@ document.getElementById("salas_criadas").onclick = function () {
                                 $("#listas_teoricas > li").remove(`#${id}`)
                                 let lista_teorica_service = new Lista_Teoria_Service("https://bancodedados.tawham.repl.co/lista_teoricas");
                                 lista_teorica_service.deletar(id).then(resposta => {
-                                    console.log(resposta);
+                                    (resposta);
                                     const nota_service = new Nota_Service(`https://bancodedados.tawham.repl.co/notas_professor?id_lista_teorica=${id}`);
                                     nota_service.listar().then(resposta => {
                                         for (let i = 0; i <= resposta.length - 1; i++) {
                                             const Nota_service = new Nota_Service("https://bancodedados.tawham.repl.co/notas_professor");
                                             Nota_service.deletar(resposta[i].id).then(resposta => {
-                                                console.log(resposta);
+                                                (resposta);
                                             })
                                         }
                                     })
@@ -609,11 +618,11 @@ document.getElementById("salas_criadas").onclick = function () {
 
                                     document.getElementById("proxima_pergunta").onclick = function () {
                                         let input_radio_situacao = $("input[name='opcoes']:checked").val();
-                                        console.log(input_radio_situacao)
+                                        (input_radio_situacao)
                                         if (typeof input_radio_situacao != "undefined") {
                                             if (opcoes_certas[posicao_opcoes_certas] == input_radio_situacao) {
                                                 lista_perguntas_certas_user.push(lista_perguntas[posicao_pergunta]);
-                                                console.log(lista_perguntas_certas_user);
+                                                (lista_perguntas_certas_user);
                                                 posicao_pergunta_certa.push(posicao_pergunta + 1);
                                                 swal('Certa Resposta!', '<img height="6%" width="6%" src="./fotis/smile.png" />  parabéns', 'success');
                                                 nota += 100
@@ -636,7 +645,7 @@ document.getElementById("salas_criadas").onclick = function () {
                                                 input_radio[i].setAttribute('value', lista_opcoes[posicao_opcoes][i]);
                                             }
                                             if (posicao_pergunta == termino_lista) {
-                                                console.log("termino da lista teórica");
+                                                ("termino da lista teórica");
                                                 $("#proximo_passo3").hide("fast");
                                                 $("#termino_exercicio").show("fast");
                                                 $("#lugar_nota").text(`Sua nota foi ${(nota/posicao_pergunta).toFixed(0)} | acertos: ${lista_perguntas_certas_user.length}, erros: ${lista_perguntas_erradas_usuario.length}`)
@@ -734,9 +743,9 @@ document.getElementById("salas_criadas").onclick = function () {
                             for (let i = 0; i <= temas.length - 1; i++) {
                                 if (temas[i].checked) {
                                     nome_temas.push(temas[i].id)
-                                    console.log(nome_temas);
+                                    (nome_temas);
                                     temas_lista.push(temas[i].value);
-                                    console.log(temas_lista);
+                                    (temas_lista);
                                 }
                             }
 
@@ -777,7 +786,7 @@ document.getElementById("salas_criadas").onclick = function () {
                                     } else if (lista[0] == "00") {
                                         lista[0] = 0
                                     } else {
-                                        console.log("nice");
+                                        ("nice");
                                     }
                                     if (lista[1] == "01") {
                                         lista[1] = 1;
@@ -801,7 +810,7 @@ document.getElementById("salas_criadas").onclick = function () {
                                     } else if (lista[1] == "00") {
                                         lista[1] = 0
                                     } else {
-                                        console.log("nice")
+                                        ("nice")
                                     }
                                     if (lista[2] == "01") {
                                         lista[2] = 1;
@@ -825,7 +834,7 @@ document.getElementById("salas_criadas").onclick = function () {
                                     } else if (lista[2] == "00") {
                                         lista[2] = 0
                                     } else {
-                                        console.log("nice")
+                                        ("nice")
                                     }
                                     for (let i = 0; i <= lista.length - 1; i++) {
                                         tempo_de_termino.push(lista[i])
@@ -833,23 +842,23 @@ document.getElementById("salas_criadas").onclick = function () {
 
                                     }
                                     tempo_de_termino.splice(5, 1)
-                                    console.log(tempo_de_termino)
+                                    (tempo_de_termino)
                                     tempo_de_termino_final = tempo_de_termino[0];
                                     tempo_de_termino_final = tempo_de_termino_final + tempo_de_termino[1];
                                     tempo_de_termino_final = tempo_de_termino_final + tempo_de_termino[2];
                                     tempo_de_termino_final = tempo_de_termino_final + tempo_de_termino[3];
                                     tempo_de_termino_final = tempo_de_termino_final + tempo_de_termino[4];
-                                    console.log(tempo_de_termino_final);
+                                    (tempo_de_termino_final);
                                 } else {
                                     tempo_de_termino_final = "";
                                 }
-                                console.log(data_entrega);
+                                (data_entrega);
                                 let mes;
 
                                 let data_de_entrega = "";
                                 if (data_entrega != "") {
                                     mes = data_entrega.split(' ');
-                                    console.log(mes[0]);
+                                    (mes[0]);
                                     if (mes[0] == 'Janeiro' || mes[0] == 'janeiro') {
                                         mes[0] = "January" + " ";
                                     } else if (mes[0] == 'Fevereiro' || mes[0] == 'fevereiro') {
@@ -878,7 +887,7 @@ document.getElementById("salas_criadas").onclick = function () {
                                     data_de_entrega = mes[0];
                                     data_de_entrega += mes[1];
 
-                                    console.log(data_de_entrega);
+                                    (data_de_entrega);
                                 }
                                 if (nome_da_lista_teorica == "") {
                                     swal('Lista Inválida!', '- escolha algum nome -', 'error')
@@ -896,7 +905,7 @@ document.getElementById("salas_criadas").onclick = function () {
                                     for (let i = 0; i <= temas_lista.length - 1; i++) {
                                         let h3 = document.createElement("h3");
                                         h3.innerHTML = nome_temas[i].toUpperCase();
-                                        console.log(nome_temas[i]);
+                                        (nome_temas[i]);
                                         let li_nome = document.createElement("li");
                                         li_nome.append(h3);
                                         let pergunta_service = new Perguntas_Service(`https://bancodedados.tawham.repl.co/perguntas?id_tema=${temas_lista[i]}`);
@@ -912,7 +921,7 @@ document.getElementById("salas_criadas").onclick = function () {
                                                 ul.append(li);
                                                 button.onclick = function () {
                                                     const id_pergunta = resposta[i].id;
-                                                    console.log(id_pergunta);
+                                                    (id_pergunta);
                                                     $(`#${id_pergunta}`).css('background-color', 'limegreen');
                                                     const apagar_pergunta = resposta[i].pergunta;
                                                     const opcoes_apagar = resposta[i].opcoes;
@@ -924,11 +933,11 @@ document.getElementById("salas_criadas").onclick = function () {
                                                         $(`#${id_pergunta}`).css('background-color', 'red');
                                                         const apagado = lista_perguntas.splice(indice_pergunta, 1);
                                                         const index_opcoes = lista_opcoes.findIndex(elemento => elemento === opcoes_apagar);
-                                                        console.log(index_opcoes)
+                                                        (index_opcoes)
                                                         lista_opcoes.splice(index_opcoes, 1);
                                                         const index_opcoes_certas = opcoes_certas.findIndex(elemento => elemento === apagar_opcoes_certa);
                                                         opcoes_certas.splice(index_opcoes_certas, 1);
-                                                        console.log(lista_perguntas, lista_opcoes, opcoes_certas);
+                                                        (lista_perguntas, lista_opcoes, opcoes_certas);
                                                         cont_perguntas--;
                                                         contador_perguntas.innerHTML = cont_perguntas + " pergunta(s) adicionadas";
 
@@ -938,9 +947,9 @@ document.getElementById("salas_criadas").onclick = function () {
                                                         lista_perguntas.push(resposta[i].pergunta);
                                                         lista_opcoes.push(resposta[i].opcoes);
                                                         opcoes_certas.push(resposta[i].opcao_certa);
-                                                        console.log(lista_perguntas);
-                                                        console.log(lista_opcoes)
-                                                        console.log(opcoes_certas);
+                                                        (lista_perguntas);
+                                                        (lista_opcoes)
+                                                        (opcoes_certas);
                                                     }
                                                 }
                                             }
@@ -1018,7 +1027,7 @@ document.getElementById("salas_criadas").onclick = function () {
                                     let div = document.getElementById("area_temas_escolher");
                                     for (let i = 0; i <= temas_lista.length - 1; i++) {
                                         let button = document.createElement("button");
-                                        console.log(nome_temas);
+                                        (nome_temas);
                                         button.innerHTML = nome_temas[i];
                                         button.setAttribute('id', temas_lista[i]);
                                         button.setAttribute('class', 'btn btn-info');
@@ -1027,25 +1036,25 @@ document.getElementById("salas_criadas").onclick = function () {
                                             click_salvar_tema++;
                                             id_tema = event.target.id;
                                             nome_tema = button.textContent;
-                                            console.log(id_tema, nome_tema);
+                                            (id_tema, nome_tema);
                                         }
                                     }
 
                                     document.getElementById("adicionar_pergunta").onclick = function () {
                                         for (let i = 0; i <= opcoes.length - 1; i++) {
                                             opcoes_check.push(opcoes[i]);
-                                            console.log(opcoes_check)
+                                            (opcoes_check)
 
                                         }
 
-                                        console.log(opcoes)
+                                        (opcoes)
                                         click = 0;
                                         cont_opcoes = 0;
 
                                         let pergunta_user = document.getElementById("pergunta_professor");
                                         let opcoes_user = document.getElementById("opcoes_professor");
                                         let opcao_correta_user = document.getElementById("opcao_correta");
-                                        console.log(opcoes_check);
+                                        (opcoes_check);
 
                                         if (pergunta_user.value == "" || opcao_correta_user.value == "" || opcoes_check.length > 5 || opcoes_check.length < 5) {
                                             swal('Entrada Inválida!', '- preencha todos os campos -', 'error');
@@ -1059,19 +1068,19 @@ document.getElementById("salas_criadas").onclick = function () {
                                                 opcoes_user = opcoes_user.value;
                                                 opcao_correta_user = opcao_correta_user.value;
                                                 lista_perguntas.push(pergunta_user);
-                                                console.log(lista_perguntas);
+                                                (lista_perguntas);
                                                 lista_opcoes.push(opcoes_check);
-                                                console.log(lista_opcoes);
+                                                (lista_opcoes);
                                                 opcoes_certas.push(opcao_correta_user)
-                                                console.log(opcoes_certas);
+                                                (opcoes_certas);
                                                 cont_perguntas++;
                                                 contador_perguntas.innerHTML = cont_perguntas + " pergunta(s) adicionadas";
                                                 let pergunta = new Pergunta(pergunta_user, opcoes_check, opcao_correta_user, id_login, nome_tema, id_tema);
                                                 let pergunta_service = new Perguntas_Service("https://bancodedados.tawham.repl.co/perguntas");
                                                 pergunta_service.inserir(pergunta).then(resposta => {
-                                                    console.log(resposta);
+                                                    (resposta);
                                                     opcoes_check = [];
-                                                    console.log(opcoes_check);
+                                                    (opcoes_check);
 
                                                 })
                                                 document.getElementById("pergunta_professor").value = "";
@@ -1094,7 +1103,7 @@ document.getElementById("salas_criadas").onclick = function () {
                                         $("#opcao_certa").empty();
                                         $("#opcoes").empty();
                                         opcoes = [];
-                                        console.log(opcoes)
+                                        (opcoes)
 
                                         let lista_teorica = new Lista_Teoria(nome_da_lista_teorica, lista_perguntas, lista_opcoes, opcoes_certas, id_login, id_sala, data_de_entrega, tempo_de_termino_final);
                                         let lista_teorica_service = new Lista_Teoria_Service("https://bancodedados.tawham.repl.co/lista_teoricas");

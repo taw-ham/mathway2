@@ -251,10 +251,17 @@ class Lista_Teorica_Servidor_Service {
         }).then(resposta => resposta.json())
     }
 }
-
-const id_login = localStorage.getItem('id');
-const email_login = localStorage.getItem('e-mail');
-const nome_login = localStorage.getItem('nome');
+const id_criptografado = localStorage.getItem('id');
+const nome_criptografado = localStorage.getItem('nome');
+const email_criptografado = localStorage.getItem('email');
+const combination = "1234567890abcdefghijklmnopqrstuvwxyz";
+const decrypted_id = CryptoJS.AES.decrypt(id_criptografado, combination);
+const decrypted_nome = CryptoJS.AES.decrypt(nome_criptografado, combination);
+const decrypted_email = CryptoJS.AES.decrypt(email_criptografado, combination);
+const id_login = decrypted_id.toString(CryptoJS.enc.Utf8);
+const nome_login = decrypted_nome.toString(CryptoJS.enc.Utf8);
+const email_login = decrypted_email.toString(CryptoJS.enc.Utf8);
+(id_login,nome_login,email_login)
 const logout = document.getElementById("logout");
 logout.onclick = function () {
     localStorage.removeItem('id');
@@ -315,7 +322,7 @@ document.getElementById("enviar_comentario").onclick = function () {
         let comentario_class = new Comentario(nome_login, comentario, id_login);
         let comentario_service = new Comentario_Service("https://bancodedados.tawham.repl.co/comentario")
         comentario_service.inserir(comentario_class).then(resposta => {
-            console.log(resposta);
+            (resposta);
             comentario_service.listar().then(resposta => {
                 for (let i = 0; i <= resposta.length - 1; i++) {
                     let li = document.createElement("li");
@@ -342,10 +349,10 @@ document.getElementById("entrar_sala").onclick = function () {
         if (codigo_sala == "") {
             swal('Código Inválido', '- insira algum código -', 'error');
         } else {
-            console.log(codigo_sala)
+            (codigo_sala)
             let sala_service = new Sala_Service(`https://bancodedados.tawham.repl.co/salas?codigo=${codigo_sala}`)
             sala_service.listar().then(resposta => {
-                console.log(resposta);
+                (resposta);
                 if (resposta.length > 0) {
                     let id_sala = resposta[0].id
                     let participantes = (resposta[0].participantes);
@@ -355,7 +362,7 @@ document.getElementById("entrar_sala").onclick = function () {
                     let sala = new Sala(participantes, participantes_id);
                     let sala_service = new Sala_Service(`https://bancodedados.tawham.repl.co/salas/${id_sala}`)
                     sala_service.atualizar(sala).then(resposta => {
-                        console.log(resposta)
+                        (resposta)
                         location.reload();
                     })
 
@@ -486,10 +493,10 @@ document.getElementById("exercicios").onclick = function () {
                 button.onclick = function () {
                     $("#infalunx").hide("fast");
                     const id_lista_teorica = event.target.id;
-                    console.log(id_lista_teorica);
+                    (id_lista_teorica);
                     const lista_teorica_servidor_service = new Lista_Teorica_Servidor_Service(`https://bancodedados.tawham.repl.co/Lista_Teorica_Servidor/${id_lista_teorica}`);
                     lista_teorica_servidor_service.listar().then(resposta => {
-                        console.log(resposta);
+                        (resposta);
                         let lista_pergunta_server;
                         let opcoes_server;
                         let opcoes_corretas_server;
@@ -509,7 +516,7 @@ document.getElementById("exercicios").onclick = function () {
                         lista_pergunta_server = resposta.perguntas
                         opcoes_server = resposta.opcoes
                         opcoes_corretas_server = resposta.opcoes_certas;
-                        console.log(lista_pergunta_server);
+                        (lista_pergunta_server);
                         opcoes_server.push(lista_opcoes_falsas);
                         $("#place_lista_teoricas").hide("fast");
                         $("#fazer_exercicio_lista_teorica").show("fast");
@@ -524,23 +531,23 @@ document.getElementById("exercicios").onclick = function () {
                         document.getElementById("proxima_pergunta").onclick = function () {
                             $("#wallalunx").css('padding-bottom', '20%');
                             let input_radio_situacao = $("input[name='opcoes']:checked").val();
-                            console.log(input_radio_situacao)
+                            (input_radio_situacao)
                             if (typeof input_radio_situacao != "undefined") {
                                 if (opcoes_corretas_server[posicao_opcoes_certas] == input_radio_situacao) {
                                     lista_perguntas_certas_user.push(lista_pergunta_server[posicao_pergunta]);
                                     posicao_certa.push(posicao_pergunta + 1)
-                                    console.log(lista_perguntas_certas_user);
+                                    (lista_perguntas_certas_user);
                                     swal('Certa Resposta!', '<img height="6%" width="6%" src="./fotis/smile.png" />  parabéns', 'success');
                                     nota += 100
                                 } else {
                                     lista_perguntas_erradas_usuario.push(lista_pergunta_server[posicao_pergunta])
                                     posicao_erradas_perguntas.push(posicao_pergunta + 1);
-                                    console.log(posicao_erradas_perguntas);
+                                    (posicao_erradas_perguntas);
                                     for (let i = 0; i <= 4; i++) {
                                         lista_opcoes2s.push(opcoes_server[posicao_opcoes][i]);
-                                        console.log(lista_opcoes2s);
+                                        (lista_opcoes2s);
                                     }
-                                    console.log(lista_opcoes2s)
+                                    (lista_opcoes2s)
                                     opcoes_correta2.push(opcoes_corretas_server[posicao_opcoes_certas]);
                                     swal('Resposta Errada!', '<img height="6%" width="6%" src="./fotis/sad.png" />  estude mais um pouco', 'error')
                                 }
@@ -559,8 +566,8 @@ document.getElementById("exercicios").onclick = function () {
                                     input_radio[i].setAttribute('value', opcoes_server[posicao_opcoes][i]);
                                 }
                                 if (posicao_pergunta == lista_pergunta_server.length) {
-                                    console.log("termino lista");
-                                    console.log("termino da lista teórica");
+                                    ("termino lista");
+                                    ("termino da lista teórica");
                                     $("#fazer_exercicio_lista_teorica").hide("fast");
                                     $("#termino_exercicio").show("fast");
                                     nota = parseInt((nota / lista_pergunta_server.length).toFixed(0));
@@ -610,15 +617,15 @@ document.getElementById("exercicios").onclick = function () {
                                         lugar_perguntas.innerHTML = `${t_number} ${lista_pergunta_server.length})`
                                         let nota_servidor_service = new NOTA_SERVIDOR_SERVICE(`https://bancodedados.tawham.repl.co/notas_servidor?id_lista_teorica=${id_lista_teorica}&id_aluno=${id_login}`);
                                         nota_servidor_service.listar().then(resposta => {
-                                            console.log(resposta);
+                                            (resposta);
                                             const id = resposta[0].id;
-                                            console.log(id);
+                                            (id);
                                             const nota_servidor_service = new NOTA_SERVIDOR_SERVICE(`https://bancodedados.tawham.repl.co/notas_servidor/${id}`)
                                             nota_servidor_service.listar().then(resposta => {
-                                                console.log(resposta)
+                                                (resposta)
                                                 const nota_aluno = new NOTA_ALUNO_2(nota_final, lista_perguntas_certas_user, lista_perguntas_erradas_usuario)
                                                 nota_servidor_service.atualizar(nota_aluno).then(resposta => {
-                                                    console.log(resposta)
+                                                    (resposta)
                                                 })
 
                                             })
@@ -647,7 +654,7 @@ document.getElementById("exercicios").onclick = function () {
                                         document.getElementById("proxima_pergunta").onclick = function () {
                                             $("#wallalunx").css('padding-bottom', '20%');
                                             let input_radio_situacao = $("input[name='opcoes']:checked").val();
-                                            console.log(input_radio_situacao)
+                                            (input_radio_situacao)
                                             if (typeof input_radio_situacao != "undefined") {
                                                 if (opcoes_correta2[posicao_opcoes_certas] == input_radio_situacao) {
                                                     pergunta_certa_final.push(lista_perguntas_erradas_usuario[posicao_pergunta]);
@@ -658,7 +665,7 @@ document.getElementById("exercicios").onclick = function () {
                                                 } else {
                                                     pergunta_final_errada.push(lista_perguntas_erradas_usuario[posicao_pergunta]);
                                                     posicao_erradas_perguntas.push(posicao_pergunta + 1);
-                                                    console.log(lista_perguntas_erradas_usuario, lista_opcoes2s, opcoes_correta2);
+                                                    (lista_perguntas_erradas_usuario, lista_opcoes2s, opcoes_correta2);
                                                     swal('Resposta Errada!', '<img height="6%" width="6%" src="./fotis/sad.png" />  estude mais um pouco', 'error')
                                                 }
                                                 t_number++;
@@ -695,11 +702,11 @@ document.getElementById("exercicios").onclick = function () {
                                                     let nota_servidor_service = new NOTA_SERVIDOR_SERVICE(`https://bancodedados.tawham.repl.co/notas_servidor?id_lista_teorica=${id_lista_teorica}&id_aluno=${id_login}`)
                                                     nota_servidor_service.listar().then(resposta => {
                                                         let id = resposta[0].id
-                                                        console.log(id);
+                                                        (id);
                                                         let nota_servidor_service = new NOTA_SERVIDOR_SERVICE(`https://bancodedados.tawham.repl.co/notas_servidor/${id}`)
                                                         let nota_aluno = new NOTA_ALUNO_2(nota_final, lista_perguntas_certas_user, pergunta_final_errada)
                                                         nota_servidor_service.atualizar(nota_aluno).then(resposta => {
-                                                            console.log(resposta)
+                                                            (resposta)
                                                         })
                                                     })
 
@@ -773,7 +780,7 @@ document.getElementById("exercicios").onclick = function () {
                     const id_lista_teorica = event.target.id;
                     const lista_teorica_aluno = new Lista_Teorica_Aluno_Service(`https://bancodedados.tawham.repl.co/Lista_Teorica_aluno/${id_lista_teorica}`)
                     lista_teorica_aluno.listar().then(resposta => {
-                        console.log(resposta)
+                        (resposta)
                         let lista_pergunta_server;
                         let opcoes_server;
                         let opcoes_corretas_server;
@@ -793,7 +800,7 @@ document.getElementById("exercicios").onclick = function () {
                         lista_pergunta_server = resposta.perguntas
                         opcoes_server = resposta.opcoes
                         opcoes_corretas_server = resposta.opcoes_certas;
-                        console.log(lista_pergunta_server)
+                        (lista_pergunta_server)
                         opcoes_server.push(lista_opcoes_falsas);
                         $("#place_lista_teoricas").hide("fast");
                         $("#fazer_exercicio_lista_teorica").show("fast");
@@ -808,23 +815,23 @@ document.getElementById("exercicios").onclick = function () {
                         document.getElementById("proxima_pergunta").onclick = function () {
                             $("#wallalunx").css('padding-bottom', '20%');
                             let input_radio_situacao = $("input[name='opcoes']:checked").val();
-                            console.log(input_radio_situacao)
+                            (input_radio_situacao)
                             if (typeof input_radio_situacao != "undefined") {
                                 if (opcoes_corretas_server[posicao_opcoes_certas] == input_radio_situacao) {
                                     lista_perguntas_certas_user.push(lista_pergunta_server[posicao_pergunta]);
                                     posicao_certa.push(posicao_pergunta + 1)
-                                    console.log(lista_perguntas_certas_user);
+                                    (lista_perguntas_certas_user);
                                     swal('Certa Resposta!', '<img height="6%" width="6%" src="./fotis/smile.png" />  parabéns', 'success');
                                     nota += 100
                                 } else {
                                     lista_perguntas_erradas_usuario.push(lista_pergunta_server[posicao_pergunta])
                                     posicao_erradas_perguntas.push(posicao_pergunta + 1);
-                                    console.log(posicao_erradas_perguntas);
+                                    (posicao_erradas_perguntas);
                                     for (let i = 0; i <= 4; i++) {
                                         lista_opcoes2s.push(opcoes_server[posicao_opcoes][i]);
-                                        console.log(lista_opcoes2s);
+                                        (lista_opcoes2s);
                                     }
-                                    console.log(lista_opcoes2s)
+                                    (lista_opcoes2s)
                                     opcoes_correta2.push(opcoes_corretas_server[posicao_opcoes_certas]);
                                     swal('Resposta Errada!', '<img height="6%" width="6%" src="./fotis/sad.png" />  estude mais um pouco', 'error')
                                 }
@@ -843,8 +850,8 @@ document.getElementById("exercicios").onclick = function () {
                                     input_radio[i].setAttribute('value', opcoes_server[posicao_opcoes][i]);
                                 }
                                 if (posicao_pergunta == lista_pergunta_server.length) {
-                                    console.log("termino lista");
-                                    console.log("termino da lista teórica");
+                                    ("termino lista");
+                                    ("termino da lista teórica");
                                     $("#fazer_exercicio_lista_teorica").hide("fast");
                                     $("#termino_exercicio").show("fast");
                                     nota = parseInt((nota / lista_pergunta_server.length).toFixed(0));
@@ -894,12 +901,12 @@ document.getElementById("exercicios").onclick = function () {
                                         lugar_perguntas.innerHTML = `${t_number}/${lista_pergunta_server.length})`
                                         let nota_aluno_service = new NOTA_ALUNO_SERVICE(`https://bancodedados.tawham.repl.co/notas_aluno?id_lista_teorica=${id_lista_teorica}&id_aluno=${id_login}`)
                                         nota_aluno_service.listar().then(resposta => {
-                                            console.log(resposta);
+                                            (resposta);
                                             let id = resposta[0].id
                                             let nota_aluno_service = new NOTA_ALUNO_SERVICE(`https://bancodedados.tawham.repl.co/notas_aluno/${id}`)
                                             let nota_aluno = new NOTA_ALUNO_2(nota_final, lista_perguntas_certas_user, lista_perguntas_erradas_usuario)
                                             nota_aluno_service.atualizar(nota_aluno).then(resposta => {
-                                                console.log(resposta)
+                                                (resposta)
                                             })
                                         })
 
@@ -924,7 +931,7 @@ document.getElementById("exercicios").onclick = function () {
                                         document.getElementById("proxima_pergunta").onclick = function () {
                                             $("#wallalunx").css('padding-bottom', '20%');
                                             let input_radio_situacao = $("input[name='opcoes']:checked").val();
-                                            console.log(input_radio_situacao)
+                                            (input_radio_situacao)
                                             if (typeof input_radio_situacao != "undefined") {
                                                 if (opcoes_correta2[posicao_opcoes_certas] == input_radio_situacao) {
                                                     pergunta_certa_final.push(lista_perguntas_erradas_usuario[posicao_pergunta]);
@@ -935,7 +942,7 @@ document.getElementById("exercicios").onclick = function () {
                                                 } else {
                                                     pergunta_final_errada.push(lista_perguntas_erradas_usuario[posicao_pergunta]);
                                                     posicao_erradas_perguntas.push(posicao_pergunta + 1);
-                                                    console.log(lista_perguntas_erradas_usuario, lista_opcoes2s, opcoes_correta2);
+                                                    (lista_perguntas_erradas_usuario, lista_opcoes2s, opcoes_correta2);
                                                     swal('Resposta Errada!', '<img height="6%" width="6%" src="./fotis/sad.png" />  estude mais um pouco', 'error')
                                                 }
                                                 t_number++;
@@ -959,7 +966,7 @@ document.getElementById("exercicios").onclick = function () {
                                                     $("#fazer_perguntas_erradas").hide("fast");
                                                     t_number = 1;
                                                     lugar_perguntas.innerHTML = `${t_number}/${lista_pergunta_server.length})`
-                                                    console.log(encerrar + "lista teorica");
+                                                    (encerrar + "lista teorica");
                                                     nota = parseInt((nota / lista_pergunta_server.length).toFixed(0));
                                                     nota_final += nota;
                                                     $("#lugar_nota").text(`A sua nota foi: ${nota_final} | acertos: ${pergunta_certa_final.length}, erros: ${pergunta_final_errada.length}`);
@@ -973,13 +980,13 @@ document.getElementById("exercicios").onclick = function () {
                                                     }
                                                     let nota_aluno_service = new NOTA_ALUNO_SERVICE(`https://bancodedados.tawham.repl.co/notas_aluno?id_lista_teorica=${id_lista_teorica}&id_aluno=${id_login}`)
                                                     nota_aluno_service.listar().then(resposta => {
-                                                        console.log(resposta)
+                                                        (resposta)
                                                         let id = resposta[0].id
-                                                        console.log(id);
+                                                        (id);
                                                         let nota_aluno_service = new NOTA_ALUNO_SERVICE(`https://bancodedados.tawham.repl.co/notas_aluno/${id}`)
                                                         let nota_aluno = new NOTA_ALUNO_2(nota_final, lista_perguntas_certas_user, pergunta_final_errada)
                                                         nota_aluno_service.atualizar(nota_aluno).then(resposta => {
-                                                            console.log(resposta)
+                                                            (resposta)
                                                         })
                                                     })
 
@@ -1047,9 +1054,9 @@ document.getElementById("exercicios").onclick = function () {
                 for (let i = 0; i <= temas.length - 1; i++) {
                     if (temas[i].checked) {
                         nome_temas.push(temas[i].id)
-                        console.log(nome_temas);
+                        (nome_temas);
                         temas_lista.push(temas[i].value);
-                        console.log(temas_lista);
+                        (temas_lista);
                     }
                 }
                 $("#tema_lista_teorica").hide("fast");
@@ -1095,7 +1102,7 @@ document.getElementById("exercicios").onclick = function () {
                         }
                         let pergunta_service = new Pergunta_Service(`${link_banco}&_sort=opcoes&_limit=${quantidade_perguntas}&order=asc`);
                         pergunta_service.listar().then(resposta => {
-                            console.log(resposta);
+                            (resposta);
                             for (let i = 0; i <= resposta.length - 1; i++) {
                                 lista_pergunta_server.push(resposta[i].pergunta);
                                 opcoes_server.push(resposta[i].opcoes);
@@ -1104,7 +1111,7 @@ document.getElementById("exercicios").onclick = function () {
                             let lista_teorica_servidor = new Lista_Teorica_Servidor(nome_lista_teorica_automatica, id_login, lista_pergunta_server, opcoes_server, opcoes_corretas_server);
                             let lista_teorica_servidor_service = new Lista_Teorica_Servidor_Service("https://bancodedados.tawham.repl.co/Lista_Teorica_Servidor");
                             lista_teorica_servidor_service.inserir(lista_teorica_servidor).then(resposta => {
-                                console.log(resposta);
+                                (resposta);
                                 var id_lista_teorica = resposta.id;
                                 opcoes_server.push(lista_opcoes_falsas);
                                 let lugar_opcoes_resposta = document.querySelectorAll("#escolha");
@@ -1120,23 +1127,23 @@ document.getElementById("exercicios").onclick = function () {
                                 document.getElementById("proxima_pergunta").onclick = function () {
                                     $("#wallalunx").css('padding-bottom', '20%');
                                     let input_radio_situacao = $("input[name='opcoes']:checked").val();
-                                    console.log(input_radio_situacao)
+                                    (input_radio_situacao)
                                     if (typeof input_radio_situacao != "undefined") {
                                         if (opcoes_corretas_server[posicao_opcoes_certas] == input_radio_situacao) {
                                             lista_perguntas_certas_user.push(lista_pergunta_server[posicao_pergunta]);
                                             posicao_certa.push(posicao_pergunta + 1)
-                                            console.log(lista_perguntas_certas_user);
+                                            (lista_perguntas_certas_user);
                                             swal('Certa Resposta!', '<img height="6%" width="6%" src="./fotis/smile.png" />  parabéns', 'success');
                                             nota += 100
                                         } else {
                                             lista_perguntas_erradas_usuario.push(lista_pergunta_server[posicao_pergunta])
                                             posicao_erradas_perguntas.push(posicao_pergunta + 1);
-                                            console.log(posicao_erradas_perguntas);
+                                            (posicao_erradas_perguntas);
                                             for (let i = 0; i <= 4; i++) {
                                                 lista_opcoes2s.push(opcoes_server[posicao_opcoes][i]);
-                                                console.log(lista_opcoes2s);
+                                                (lista_opcoes2s);
                                             }
-                                            console.log(lista_opcoes2s)
+                                            (lista_opcoes2s)
                                             opcoes_correta2.push(opcoes_corretas_server[posicao_opcoes_certas]);
                                             swal('Resposta Errada!', '<img height="6%" width="6%" src="./fotis/sad.png" />  estude mais um pouco', 'error');
                                         }
@@ -1156,8 +1163,8 @@ document.getElementById("exercicios").onclick = function () {
                                         }
                                     }
                                     if (posicao_pergunta == lista_pergunta_server.length) {
-                                        console.log("termino lista");
-                                        console.log("termino da lista teórica");
+                                        ("termino lista");
+                                        ("termino da lista teórica");
                                         $("#fazer_exercicio_lista_teorica").hide("fast");
                                         $("#termino_exercicio").show("fast");
                                         nota = parseInt((nota / lista_pergunta_server.length).toFixed(0));
@@ -1227,7 +1234,7 @@ document.getElementById("exercicios").onclick = function () {
                                             document.getElementById("proxima_pergunta").onclick = function () {
                                                 $("#wallalunx").css('padding-bottom', '20%');
                                                 let input_radio_situacao = $("input[name='opcoes']:checked").val();
-                                                console.log(input_radio_situacao)
+                                                (input_radio_situacao)
                                                 if (typeof input_radio_situacao != "undefined") {
                                                     if (opcoes_correta2[posicao_opcoes_certas] == input_radio_situacao) {
                                                         pergunta_certa_final.push(lista_perguntas_erradas_usuario[posicao_pergunta]);
@@ -1238,7 +1245,7 @@ document.getElementById("exercicios").onclick = function () {
                                                     } else {
                                                         pergunta_final_errada.push(lista_perguntas_erradas_usuario[posicao_pergunta]);
                                                         posicao_erradas_perguntas.push(posicao_pergunta + 1);
-                                                        console.log(lista_perguntas_erradas_usuario, lista_opcoes2s, opcoes_correta2);
+                                                        (lista_perguntas_erradas_usuario, lista_opcoes2s, opcoes_correta2);
                                                         swal('Resposta Errada!', '<img height="6%" width="6%" src="./fotis/sad.png" />  estude mais um pouco', 'error')
                                                     }
                                                     t_number++;
@@ -1263,7 +1270,7 @@ document.getElementById("exercicios").onclick = function () {
                                                         t_number = 1;
                                                         lugar_perguntas.innerHTML = `${t_number}/${lista_pergunta_server.length})`
                                                         nota = parseInt((nota / lista_pergunta_server.length).toFixed(0));
-                                                        console.log(encerrar + "lista teorica");
+                                                        (encerrar + "lista teorica");
                                                         nota_final += nota;
                                                         $("#lugar_nota").text(`A sua nota foi: ${nota_final} | acertos: ${pergunta_certa_final.length}, erros: ${pergunta_final_errada.length}`)
                                                         nota = 0;
@@ -1277,7 +1284,7 @@ document.getElementById("exercicios").onclick = function () {
                                                         let nota_class = new NOTA_SERVIDOR(nome_login, nota_final, id_login, id_lista_teorica, nome_lista_teorica_automatica, lista_perguntas_certas_user, pergunta_final_errada);
                                                         let nota_service = new NOTA_SERVIDOR_SERVICE("https://bancodedados.tawham.repl.co/notas_servidor");
                                                         nota_service.inserir(nota_class).then(resposta => {
-                                                            console.log(resposta);
+                                                            (resposta);
                                                         })
                                                         for (let i = 0; i <= pergunta_certa_final.length - 1; i++) {
                                                             let li = document.createElement("li");
@@ -1336,9 +1343,9 @@ document.getElementById("exercicios").onclick = function () {
                 for (let i = 0; i <= temas.length - 1; i++) {
                     if (temas[i].checked) {
                         nome_temas.push(temas[i].id)
-                        console.log(nome_temas);
+                        (nome_temas);
                         temas_lista.push(temas[i].value);
-                        console.log(temas_lista);
+                        (temas_lista);
                     }
                 }
                 $("#tema_lista_teorica").hide("fast");
@@ -1372,7 +1379,7 @@ document.getElementById("exercicios").onclick = function () {
                         for (let i = 0; i <= temas_lista.length - 1; i++) {
                             let h3 = document.createElement("h3");
                             h3.innerHTML = nome_temas[i].toUpperCase();
-                            console.log(nome_temas[i]);
+                            (nome_temas[i]);
                             let li_nome = document.createElement("li");
                             li_nome.append(h3);
                             let pergunta_service = new Pergunta_Service(`https://bancodedados.tawham.repl.co/perguntas?id_tema=${temas_lista[i]}`);
@@ -1388,12 +1395,12 @@ document.getElementById("exercicios").onclick = function () {
                                     ul.append(li);
                                     button.onclick = function () {
                                         let id_pergunta = resposta[i].id
-                                        console.log(id_pergunta)
+                                        (id_pergunta)
                                         $("#perguntasserver > li").remove(`#${id_pergunta}`)
                                         contador_perguntas_adicionadas++;
                                         $("#contador_perguntas").text(`${contador_perguntas_adicionadas} pergunta(s) adicionadas`);
                                         lista_pergunta_server.push(resposta[i].pergunta);
-                                        console.log(lista_pergunta_server);
+                                        (lista_pergunta_server);
                                         opcoes_server.push(resposta[i].opcoes);
                                         opcoes_certas_server.push(resposta[i].opcao_certa);
                                     }
@@ -1441,11 +1448,11 @@ document.getElementById("exercicios").onclick = function () {
                                 document.getElementById("proxima_pergunta").onclick = function () {
                                     $("#wallalunx").css('padding-bottom', '20%');
                                     let input_radio_situacao = $("input[name='opcoes']:checked").val();
-                                    console.log(input_radio_situacao)
+                                    (input_radio_situacao)
                                     if (typeof input_radio_situacao != "undefined") {
                                         if (opcoes_certas_server[posicao_opcoes_certas] == input_radio_situacao) {
                                             lista_certas_usuario.push(lista_pergunta_server[posicao_pergunta]);
-                                            console.log(lista_certas_usuario);
+                                            (lista_certas_usuario);
                                             posicao_certa_pergunta.push(posicao_pergunta + 1)
 
                                             swal('Certa Resposta!', '<img height="6%" width="6%" src="./fotis/smile.png" />  parabéns', 'success');
@@ -1456,10 +1463,10 @@ document.getElementById("exercicios").onclick = function () {
                                             posicao_errada_pergunta.push(posicao_pergunta + 1);
                                             for (let i = 0; i <= 4; i++) {
                                                 lista_opcoes2s.push(opcoes_server[posicao_opcoes][i]);
-                                                console.log(lista_opcoes2s);
+                                                (lista_opcoes2s);
 
                                             }
-                                            console.log(lista_opcoes2s)
+                                            (lista_opcoes2s)
                                             opcoes_correta2.push(opcoes_certas_server[posicao_opcoes_certas]);
 
 
@@ -1535,7 +1542,7 @@ document.getElementById("exercicios").onclick = function () {
                                                 nota_final = 0;
                                                 let nota_service = new NOTA_ALUNO_SERVICE("https://bancodedados.tawham.repl.co/notas_aluno");
                                                 nota_service.inserir(nota_class).then(resposta => {
-                                                    console.log(resposta);
+                                                    (resposta);
                                                 })
 
                                             }
@@ -1558,7 +1565,7 @@ document.getElementById("exercicios").onclick = function () {
                                                 document.getElementById("proxima_pergunta").onclick = function () {
                                                     $("#wallalunx").css('padding-bottom', '20%');
                                                     let input_radio_situacao = $("input[name='opcoes']:checked").val();
-                                                    console.log(input_radio_situacao)
+                                                    (input_radio_situacao)
                                                     if (typeof input_radio_situacao != "undefined") {
                                                         if (opcoes_correta2[posicao_opcoes_certas] == input_radio_situacao) {
                                                             pergunta_certa_final.push(lista_perguntas_erradas_usuario[posicao_pergunta]);
@@ -1570,7 +1577,7 @@ document.getElementById("exercicios").onclick = function () {
                                                         } else {
 
                                                             pergunta_final_errada.push(lista_perguntas_erradas_usuario[posicao_pergunta]);
-                                                            console.log(lista_perguntas_erradas_usuario, lista_opcoes2s, opcoes_correta2);
+                                                            (lista_perguntas_erradas_usuario, lista_opcoes2s, opcoes_correta2);
                                                             swal('Resposta Errada!', '<img height="6%" width="6%" src="./fotis/sad.png" />  estude mais um pouco', 'error')
                                                             posicao_errada_pergunta.push(posicao_pergunta + 1);
                                                         }
@@ -1593,7 +1600,7 @@ document.getElementById("exercicios").onclick = function () {
                                                             $("#fazer_exercicio_lista_teorica").hide("fast");
                                                             $("#termino_exercicio").show("fast");
                                                             $("#fazer_perguntas_erradas").hide("fast");
-                                                            console.log(encerrar + "lista teorica");
+                                                            (encerrar + "lista teorica");
                                                             nota = parseInt((nota / lista_pergunta_server.length).toFixed(0));
                                                             nota_final += nota;
                                                             $("#lugar_nota").text(`Sua nota foi: ${nota_final} | certas: ${pergunta_certa_final.length}, erradas: ${pergunta_final_errada.length}`)
@@ -1610,7 +1617,7 @@ document.getElementById("exercicios").onclick = function () {
                                                             let nota_class = new NOTA_ALUNO(nome_login, nota_final, id_login, id_lista_teorica, input_nome, lista_certas_usuario, pergunta_final_errada);
                                                             let nota_service = new NOTA_ALUNO_SERVICE("https://bancodedados.tawham.repl.co/notas_aluno");
                                                             nota_service.inserir(nota_class).then(resposta => {
-                                                                console.log(resposta);
+                                                                (resposta);
                                                             })
                                                             for (let i = 0; i <= pergunta_certa_final.length - 1; i++) {
                                                                 let li = document.createElement("li");
@@ -1669,7 +1676,7 @@ document.getElementById("salas_presentes").onclick = function () {
     $("#escolha_de_sala").show("fast");
     let sala_service = new Sala_Service(`https://bancodedados.tawham.repl.co/salas?participantes_like=${email_login}`);
     sala_service.listar().then(resposta => {
-        console.log(resposta);
+        (resposta);
         let ul = document.getElementById("salas_inseridas");
         for (let i = 0; i <= resposta.length - 1; i++) {
             let li = document.createElement("li");
@@ -1696,14 +1703,14 @@ document.getElementById("salas_presentes").onclick = function () {
                         button_acessar_lista.setAttribute("class", "btn btn-primary");
                         let target_date;
                         if (data_de_entrega != "") {
-                            console.log(data_de_entrega);
+                            (data_de_entrega);
                             target_date = new Date(data_de_entrega).getTime();
 
                             function DATA_ENTREGA() {
                                 target_date = new Date(data_de_entrega).getTime();
-                                console.log(target_date)
+                                (target_date)
                                 var current_date = new Date().getTime();
-                                console.log(current_date)
+                                (current_date)
                                 if (current_date > target_date) {
                                     button_acessar_lista.setAttribute("class", "btn btn-danger")
                                     var atrasado = Math.abs((target_date - current_date) / 1000)
@@ -1733,7 +1740,7 @@ document.getElementById("salas_presentes").onclick = function () {
                                     seconds = `${parseInt(prazo % 60)} segundos`;
 
                                     data.push(days, hours, minutes, seconds);
-                                    console.log(data)
+                                    (data)
                                     button_acessar_lista.innerHTML = resposta[i].nome + "   " + data
                                 }
                             }
@@ -1750,7 +1757,7 @@ document.getElementById("salas_presentes").onclick = function () {
                             $("#wallalunx").css('background-size', 'cover');
                             $("#area_escolha_lista_teorica").hide("fast");
                             var id_lista_teorica = event.target.id;
-                            console.log(id_lista_teorica)
+                            (id_lista_teorica)
 
                             let lista_teorica = new Lista_Teorica_Service(`https://bancodedados.tawham.repl.co/lista_teoricas?id=${id_lista_teorica}`);
                             lista_teorica.listar().then(resposta => {
@@ -1817,7 +1824,7 @@ document.getElementById("salas_presentes").onclick = function () {
                                         let lista_opcoes_corretas;
                                         var nome_lista_teorica;
                                         tempo_de_termino = resposta[0].tempo_de_termino
-                                        console.log(tempo_de_termino);
+                                        (tempo_de_termino);
                                         lista_pergunta = resposta[0].perguntas;
                                         lista_opcoes = resposta[0].opcoes;
                                         lista_opcoes_corretas = resposta[0].opcoes_certas;
@@ -1844,12 +1851,12 @@ document.getElementById("salas_presentes").onclick = function () {
                                         document.getElementById("proxima_pergunta").onclick = function () {
                                             $("#wallalunx").css('padding-bottom', '20%');
                                             let input_radio_situacao = $("input[name='opcoes']:checked").val();
-                                            console.log(input_radio_situacao)
+                                            (input_radio_situacao)
                                             if (typeof input_radio_situacao != "undefined") {
 
                                                 if (lista_opcoes_corretas[posicao_opcoes_certas] == input_radio_situacao) {
                                                     lista_certas_usuario.push(lista_pergunta[posicao_pergunta]);
-                                                    console.log(lista_certas_usuario);
+                                                    (lista_certas_usuario);
                                                     posicao_certa_pergunta.push(posicao_pergunta + 1);
 
                                                     swal('Certa Resposta!', '<img height="6%" width="6%" src="./fotis/smile.png" />  parabéns', 'success');
@@ -1879,7 +1886,7 @@ document.getElementById("salas_presentes").onclick = function () {
                                                 if (posicao_pergunta == lista_pergunta.length) {
                                                     t_number = 1;
                                                     perguntas.innerHTML = `${t_number}/${lista_pergunta.length})`
-                                                    console.log("termino da lista teórica");
+                                                    ("termino da lista teórica");
                                                     $("#fazer_exercicio_lista_teorica").hide("fast");
                                                     $("#termino_exercicio").show("fast");
                                                     nota = parseInt((nota / lista_pergunta.length).toFixed(0));
@@ -1892,7 +1899,7 @@ document.getElementById("salas_presentes").onclick = function () {
                                                     let mes = data_errada.getMonth() + 1;
                                                     let ano = data_errada.getFullYear()
                                                     let current_date_enviar = `${dia}/${mes}/${ano}`;
-                                                    console.log(current_date_enviar);
+                                                    (current_date_enviar);
                                                     let situacao_envio;
                                                     if (data_de_entrega != "") {
                                                         if (target_date < current_date) {
@@ -1904,13 +1911,13 @@ document.getElementById("salas_presentes").onclick = function () {
                                                         let nota_enviar = new Nota(nome_login, nota, id_login, id_lista_teorica, nome_lista_teorica, lista_certas_usuario, lista_erradas_usuario, lista_perguntas_nao_feitas, situacao_envio, current_date_enviar);
                                                         let nota_service = new Nota_Service("https://bancodedados.tawham.repl.co/notas_professor");
                                                         nota_service.inserir(nota_enviar).then(resposta => {
-                                                            console.log(resposta);
+                                                            (resposta);
                                                         })
                                                     } else {
                                                         let nota_enviar = new Nota(nome_login, nota, id_login, id_lista_teorica, nome_lista_teorica, lista_certas_usuario, lista_erradas_usuario, lista_perguntas_nao_feitas);
                                                         let nota_service = new Nota_Service("https://bancodedados.tawham.repl.co/notas_professor");
                                                         nota_service.inserir(nota_enviar).then(resposta => {
-                                                            console.log(resposta);
+                                                            (resposta);
                                                         })
                                                     }
                                                     clearInterval(tempo);
@@ -1979,7 +1986,7 @@ document.getElementById("salas_presentes").onclick = function () {
                                                 var t_minutos = document.getElementById("minutos");
                                                 var t_segundos = document.getElementById("segundos");
 
-                                                console.log(relogio);
+                                                (relogio);
                                                 t_hora.innerHTML = (relogio[0][0] > 9) ? ("" + relogio[0][0] + ":") : ("0" + relogio[0][0] + ":");
                                                 t_minutos.innerHTML = (relogio[0][1] > 9) ? ("" + relogio[0][1] + ":") : ("0" + relogio[0][1] + ":");
                                                 t_segundos.innerHTML = 59;
@@ -2032,7 +2039,7 @@ document.getElementById("salas_presentes").onclick = function () {
                                                             ul_resposta_errada.append(li);
                                                         }
                                                         for (let i = posicao_pergunta; i <= lista_pergunta.length - 1; i++) {
-                                                            console.log(i);
+                                                            (i);
                                                             let li = document.createElement("li");
                                                             let button = document.createElement("button");
                                                             button.innerHTML = "?";
@@ -2048,7 +2055,7 @@ document.getElementById("salas_presentes").onclick = function () {
                                                         let mes = data_errada.getMonth() + 1;
                                                         let ano = data_errada.getFullYear()
                                                         let current_date_enviar = `${dia}/${mes}/${ano}`;
-                                                        console.log(current_date_enviar);
+                                                        (current_date_enviar);
                                                         if (data_de_entrega != "") {
                                                             if (target_date < current_date) {
                                                                 situacao_envio = "atrasado";
@@ -2058,13 +2065,13 @@ document.getElementById("salas_presentes").onclick = function () {
                                                             let nota_class = new Nota(nome_login, nota, id_login, id_lista_teorica, nome_lista_teorica, lista_certas_usuario, lista_erradas_usuario, lista_perguntas_nao_feitas, situacao_envio, current_date_enviar);
                                                             let nota_service = new Nota_Service("https://bancodedados.tawham.repl.co/notas_professor");
                                                             nota_service.inserir(nota_class).then(resposta => {
-                                                                console.log(resposta);
+                                                                (resposta);
                                                             })
                                                         } else {
                                                             let nota_class = new Nota(nome_login, nota, id_login, id_lista_teorica, nome_lista_teorica, lista_certas_usuario, lista_erradas_usuario, lista_perguntas_nao_feitas);
                                                             let nota_service = new Nota_Service("https://bancodedados.tawham.repl.co/notas_professor");
                                                             nota_service.inserir(nota_class).then(resposta => {
-                                                                console.log(resposta);
+                                                                (resposta);
                                                             })
                                                         }
 
@@ -2160,7 +2167,7 @@ document.getElementById("salas_presentes").onclick = function () {
                                                         }
 
                                                         for (let i = posicao_pergunta; i <= lista_pergunta.length - 1; i++) {
-                                                            console.log(i);
+                                                            (i);
                                                             let li = document.createElement("li");
                                                             let button = document.createElement("button");
                                                             button.innerHTML = "?";
@@ -2176,7 +2183,7 @@ document.getElementById("salas_presentes").onclick = function () {
                                                         let mes = data_errada.getMonth() + 1;
                                                         let ano = data_errada.getFullYear()
                                                         let current_date_enviar = `${dia}/${mes}/${ano}`;
-                                                        console.log(current_date_enviar);
+                                                        (current_date_enviar);
                                                         if (data_de_entrega != "") {
                                                             if (target_date < current_date) {
                                                                 situacao_envio = "atrasado";
@@ -2186,13 +2193,13 @@ document.getElementById("salas_presentes").onclick = function () {
                                                             let nota_class = new Nota(nome_login, nota, id_login, id_lista_teorica, nome_lista_teorica, lista_certas_usuario, lista_erradas_usuario, lista_perguntas_nao_feitas, situacao_envio, current_date_enviar);
                                                             let nota_service = new Nota_Service("https://bancodedados.tawham.repl.co/notas_professor");
                                                             nota_service.inserir(nota_class).then(resposta => {
-                                                                console.log(resposta);
+                                                                (resposta);
                                                             })
                                                         } else {
                                                             let nota_class = new Nota(nome_login, nota, id_login, id_lista_teorica, nome_lista_teorica, lista_certas_usuario, lista_erradas_usuario, lista_perguntas_nao_feitas);
                                                             let nota_service = new Nota_Service("https://bancodedados.tawham.repl.co/notas_professor");
                                                             nota_service.inserir(nota_class).then(resposta => {
-                                                                console.log(resposta);
+                                                                (resposta);
                                                             })
                                                         }
                                                         document.getElementById("voltar_escolha_lista_teorica").onclick = function () {
