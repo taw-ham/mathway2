@@ -745,7 +745,7 @@ document.getElementById("salas_criadas").onclick = function () {
                             $("#nome_lista").show("fast");
                             $("#proximo_passo2").hide("fast");
                             document.getElementById("salva_nome_lista_teorica").onclick = function () {
-                                $("#area_criar_lista_teorica").css('width', '80%');
+                                $("#area_criar_lista_teorica").css('width', '97%');
                                 $("#wallprofx").css("padding-bottom", '12%');
                                 let nome_da_lista_teorica = $("#nome_lista_teorica").val();
                                 let tempo_de_fazer_lista = $("#tempo_fazer_lista").val();

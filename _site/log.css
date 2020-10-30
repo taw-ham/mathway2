@@ -973,6 +973,7 @@ body {
     margin: 0%;
     padding: 1%;
     list-style-type: none;
+    padding-right: 2%;
 }
 
 .perserverx li {
@@ -981,9 +982,9 @@ body {
 }
 
 .perserverx li button {
-
-
     margin-left: -0.5%;
+    text-align: left;
+    width: 100%;
 }
 
 .perserverx li button:hover {
@@ -1008,8 +1009,8 @@ body {
     margin: 0%;
     background-color: whitesmoke;
     padding: 3%;
-    width: 60%;
-    margin-left: 19%;
+    width: 96%;
+    margin-left: 2%;
     margin-top: 1%;
     border: 1px solid lightslategrey;
 }
@@ -1037,10 +1038,6 @@ body {
 .exectx img {
     margin-top: -0.5%;
 }
-.exectx p img{
-    width: 100%;
-    height: 100%;
-}
 
 .exectx span {
     font-weight: bold;
@@ -1058,7 +1055,7 @@ body {
 
 .exectx ul li {
     font-family: calibri;
-    margin-left: -6%;
+    margin-left: -3%;
 }
 
 .exectx button {
@@ -1072,7 +1069,7 @@ body {
     margin: 0%;
     background-color: whitesmoke;
     padding: 2%;
-    width: 50%;
+    width: 96%;
     margin-left: 2%;
     border: 1px solid lightslategrey;
 }
