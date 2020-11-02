@@ -80,15 +80,6 @@ body {
     z-index: -1;
 }
 
-.opb {
-    background-color: whitesmoke;
-    padding: 1%;
-    width: 40%;
-    margin-left: 50%;
-    font-family: calibri;
-    border-radius: 2px;
-}
-
 #logx {
     width: 40%;
     background-color: whitesmoke;
