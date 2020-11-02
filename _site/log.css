@@ -149,13 +149,18 @@ body {
 }
 
 .opb {
-    margin-top: 2%;
+    margin-top: 3%;
 }
 
 .logxalunx {
     background-color: lightgrey;
     padding: 0.5%;
-    margin-top: 2%;
+    padding-bottom: -0.5%;
+    margin-top: 3%;
+}
+
+.logxlunx label {
+    margin-left: 1%;
 }
 
 #logxprof {
