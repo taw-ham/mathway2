@@ -153,7 +153,7 @@ body {
 .logxalunx {
     background-color: lightgrey;
     padding: 0.5%;
-    padding-bottom: -1%;
+    padding-bottom: -0.5%;
     margin-top: 3%;
 }
 
@@ -162,7 +162,7 @@ body {
 }
 
 .opb {
-    margin-top: 1%;
+    margin-top: 2%;
     margin-bottom: 2%;
 }
 
