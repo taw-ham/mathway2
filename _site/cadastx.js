@@ -1,1 +1,130 @@
-var _0x3ee3=["\x65\x6D\x61\x69\x6C","\x6E\x6F\x6D\x65","\x73\x65\x6E\x68\x61","\x75\x72\x6C","\x6A\x73\x6F\x6E","\x74\x68\x65\x6E","\x50\x4F\x53\x54","\x73\x74\x72\x69\x6E\x67\x69\x66\x79","\x61\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E\x2F\x6A\x73\x6F\x6E","\x47\x45\x54","\x66\x61\x73\x74","\x68\x69\x64\x65","\x23\x72\x61\x6D\x64\x6F\x6D\x5F\x63\x6F\x64\x65","\x74\x69\x70\x6F\x5F\x6C\x6F\x67\x69\x6E","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x73\x42\x79\x4E\x61\x6D\x65","\x6C\x65\x6E\x67\x74\x68","\x6F\x6E\x63\x6C\x69\x63\x6B","\x69\x64","\x74\x61\x72\x67\x65\x74","\x62\x62\x78\x32","\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64","\x6C\x69\x6E\x65\x61\x72\x2D\x67\x72\x61\x64\x69\x65\x6E\x74\x28\x6C\x69\x67\x68\x74\x62\x6C\x75\x65\x2C\x77\x68\x69\x74\x65\x73\x6D\x6F\x6B\x65\x2C\x77\x68\x69\x74\x65\x73\x6D\x6F\x6B\x65\x29","\x63\x73\x73","\x23\x6C\x6F\x67\x78\x32","\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64\x2D\x63\x6F\x6C\x6F\x72","\x6C\x69\x67\x68\x74\x62\x6C\x75\x65","\x23\x65\x73\x63\x6F\x6C\x68\x61\x78\x61","\x23\x6F\x62\x78\x30\x32","\x62\x6C\x75\x65","\x23\x62\x62\x78\x32","\x6C\x69\x67\x68\x74\x73\x6C\x61\x74\x65\x67\x72\x61\x79","\x23\x63\x63\x78\x32","\x70\x61\x64\x64\x69\x6E\x67\x2D\x62\x6F\x74\x74\x6F\x6D","\x33\x25","\x23\x77\x61\x6C\x6C\x78\x32","\x63\x63\x78\x32","\x6C\x69\x6E\x65\x61\x72\x2D\x67\x72\x61\x64\x69\x65\x6E\x74\x28\x6C\x69\x67\x68\x74\x67\x72\x65\x65\x6E\x2C\x77\x68\x69\x74\x65\x73\x6D\x6F\x6B\x65\x2C\x77\x68\x69\x74\x65\x73\x6D\x6F\x6B\x65\x29","\x6C\x69\x67\x68\x74\x67\x72\x65\x65\x6E","\x67\x72\x65\x65\x6E","\x66\x61\x7A\x65\x72\x5F\x63\x61\x64\x61\x73\x74\x72\x6F","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x76\x61\x6C\x75\x65","\x6E\x6F\x6D\x65\x5F\x63\x61\x64\x61\x73\x74\x72\x6F","\x73\x65\x6E\x68\x61\x5F\x63\x61\x64\x61\x73\x74\x72\x6F","\x65\x6D\x61\x69\x6C\x5F\x63\x61\x64\x61\x73\x74\x72\x6F","","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x61\x6E\x63\x6F\x64\x65\x64\x61\x64\x6F\x73\x2E\x74\x61\x77\x68\x61\x6D\x2E\x72\x65\x70\x6C\x2E\x63\x6F\x2F\x41\x6C\x75\x6E\x6F\x73\x3F\x65\x6D\x61\x69\x6C\x3D","\x43\x61\x64\x61\x73\x74\x72\x6F\x20\x49\x6E\x76\xE1\x6C\x69\x64\x6F\x21","\x2D\x20\x65\x2D\x6D\x61\x69\x6C\x20\x65\x78\x69\x73\x74\x65\x6E\x74\x65\x20\x65\x6D\x20\x6F\x75\x74\x72\x61\x20\x63\x6F\x6E\x74\x61\x20\x2D","\x65\x72\x72\x6F\x72","\x31\x32\x33\x34\x35\x36\x37\x38\x39\x30\x61\x62\x63\x64\x65\x66\x67\x68\x69\x6A\x6B\x6C\x6D\x6E\x6F\x70\x71\x72\x73\x74\x75\x76\x77\x78\x79\x7A","\x65\x6E\x63\x72\x79\x70\x74","\x41\x45\x53","\x69\x6E\x6E\x65\x72\x54\x65\x78\x74","\x72\x61\x6D\x64\x6F\x6D\x5F\x63\x6F\x64\x65","\x74\x65\x78\x74\x43\x6F\x6E\x74\x65\x6E\x74","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x61\x6E\x63\x6F\x64\x65\x64\x61\x64\x6F\x73\x2E\x74\x61\x77\x68\x61\x6D\x2E\x72\x65\x70\x6C\x2E\x63\x6F\x2F\x41\x6C\x75\x6E\x6F\x73","\x2E\x2F\x69\x6E\x64\x65\x78\x2E\x68\x74\x6D\x6C","\x61\x73\x73\x69\x67\x6E","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x69\x6E\x73\x65\x72\x69\x72","\x6C\x69\x73\x74\x61\x72","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x61\x6E\x63\x6F\x64\x65\x64\x61\x64\x6F\x73\x2E\x74\x61\x77\x68\x61\x6D\x2E\x72\x65\x70\x6C\x2E\x63\x6F\x2F\x70\x72\x6F\x66\x65\x73\x73\x6F\x72\x65\x73\x3F\x65\x6D\x61\x69\x6C\x3D","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x61\x6E\x63\x6F\x64\x65\x64\x61\x64\x6F\x73\x2E\x74\x61\x77\x68\x61\x6D\x2E\x72\x65\x70\x6C\x2E\x63\x6F\x2F\x70\x72\x6F\x66\x65\x73\x73\x6F\x72\x65\x73","\x2D\x20\x65\x73\x63\x6F\x6C\x68\x61\x20\x75\x6D\x20\x74\x69\x70\x6F\x20\x64\x65\x20\x75\x73\x75\xE1\x72\x69\x6F\x20\x2D","\x2D\x20\x70\x72\x65\x65\x6E\x63\x68\x61\x20\x74\x6F\x64\x6F\x73\x20\x6F\x73\x20\x63\x61\x6D\x70\x6F\x73\x20\x2D"];class Aluno{constructor(_0xc0aex2,_0xc0aex3,_0xc0aex4){this[_0x3ee3[0]]= _0xc0aex2;this[_0x3ee3[1]]= _0xc0aex3;this[_0x3ee3[2]]= _0xc0aex4}};class Aluno_Service{constructor(_0xc0aex5){this[_0x3ee3[3]]= _0xc0aex5}inserir(_0xc0aex2,_0xc0aex3,_0xc0aex4){return fetch(this[_0x3ee3[3]],{method:_0x3ee3[6],body:JSON[_0x3ee3[7]](_0xc0aex2,_0xc0aex3,_0xc0aex4),headers:{'\x43\x6F\x6E\x74\x65\x6E\x74\x2D\x54\x79\x70\x65':_0x3ee3[8]}})[_0x3ee3[5]]((_0xc0aex7)=>{return _0xc0aex7[_0x3ee3[4]]()})}listar(){return fetch(this[_0x3ee3[3]],{method:_0x3ee3[9]})[_0x3ee3[5]]((_0xc0aex7)=>{return _0xc0aex7[_0x3ee3[4]]()})}};class PROFESSOR{constructor(_0xc0aex3,_0xc0aex4,_0xc0aex2){this[_0x3ee3[1]]= _0xc0aex3;this[_0x3ee3[2]]= _0xc0aex4;this[_0x3ee3[0]]= _0xc0aex2}};class ProfessorService{constructor(_0xc0aex5){this[_0x3ee3[3]]= _0xc0aex5}inserir(_0xc0aex3,_0xc0aex4,_0xc0aex2){return fetch(this[_0x3ee3[3]],{method:_0x3ee3[6],body:JSON[_0x3ee3[7]](_0xc0aex3,_0xc0aex4,_0xc0aex2),headers:{'\x43\x6F\x6E\x74\x65\x6E\x74\x2D\x54\x79\x70\x65':_0x3ee3[8]}})[_0x3ee3[5]]((_0xc0aex7)=>{return _0xc0aex7[_0x3ee3[4]]()})}listar(){return fetch(this[_0x3ee3[3]],{method:_0x3ee3[9]})[_0x3ee3[5]]((_0xc0aex7)=>{return _0xc0aex7[_0x3ee3[4]]()})}};let tipo_loginx;$(_0x3ee3[12])[_0x3ee3[11]](_0x3ee3[10]);const tipo_userx=document[_0x3ee3[14]](_0x3ee3[13]);for(let i=0;i<= tipo_userx[_0x3ee3[15]]- 1;i++){tipo_userx[i][_0x3ee3[16]]= function(){tipo_loginx= event[_0x3ee3[18]][_0x3ee3[17]];if(tipo_loginx=== _0x3ee3[19]){$(_0x3ee3[23])[_0x3ee3[22]](_0x3ee3[20],_0x3ee3[21]);$(_0x3ee3[26])[_0x3ee3[22]](_0x3ee3[24],_0x3ee3[25]);$(_0x3ee3[27])[_0x3ee3[11]](_0x3ee3[10]);$(_0x3ee3[29])[_0x3ee3[22]](_0x3ee3[24],_0x3ee3[28]);$(_0x3ee3[31])[_0x3ee3[22]](_0x3ee3[24],_0x3ee3[30]);$(_0x3ee3[34])[_0x3ee3[22]](_0x3ee3[32],_0x3ee3[33])}else {if(tipo_loginx=== _0x3ee3[35]){$(_0x3ee3[23])[_0x3ee3[22]](_0x3ee3[20],_0x3ee3[36]);$(_0x3ee3[26])[_0x3ee3[22]](_0x3ee3[24],_0x3ee3[37]);$(_0x3ee3[27])[_0x3ee3[11]](_0x3ee3[10]);$(_0x3ee3[31])[_0x3ee3[22]](_0x3ee3[24],_0x3ee3[38]);$(_0x3ee3[29])[_0x3ee3[22]](_0x3ee3[24],_0x3ee3[30]);$(_0x3ee3[34])[_0x3ee3[22]](_0x3ee3[32],_0x3ee3[33])}}}};document[_0x3ee3[40]](_0x3ee3[39])[_0x3ee3[16]]= function(){const _0xc0aex3=document[_0x3ee3[40]](_0x3ee3[42])[_0x3ee3[41]];const _0xc0aex4=document[_0x3ee3[40]](_0x3ee3[43])[_0x3ee3[41]];const _0xc0aex2=document[_0x3ee3[40]](_0x3ee3[44])[_0x3ee3[41]];if(_0xc0aex3!= _0x3ee3[45]&& _0xc0aex4!= _0x3ee3[45]&& _0xc0aex2!= _0x3ee3[45]){if(tipo_loginx=== _0x3ee3[19]){const _0xc0aexc= new Aluno_Service(`${_0x3ee3[46]}${_0xc0aex2}${_0x3ee3[45]}`);_0xc0aexc[_0x3ee3[61]]()[_0x3ee3[5]]((_0xc0aex7)=>{if(_0xc0aex7[_0x3ee3[15]]> 0){swal(_0x3ee3[47],_0x3ee3[48],_0x3ee3[49])}else {const _0xc0aexd=_0x3ee3[50];const _0xc0aexe=CryptoJS[_0x3ee3[52]][_0x3ee3[51]](_0xc0aex4,_0xc0aexd);document[_0x3ee3[40]](_0x3ee3[54])[_0x3ee3[53]]= _0xc0aexe;const _0xc0aexf=document[_0x3ee3[40]](_0x3ee3[54])[_0x3ee3[55]];const _0xc0aex10= new Aluno(_0xc0aex2,_0xc0aex3,_0xc0aexf);const _0xc0aex11= new Aluno_Service(_0x3ee3[56]);_0xc0aex11[_0x3ee3[60]](_0xc0aex10)[_0x3ee3[5]]((_0xc0aex7)=>{window[_0x3ee3[59]][_0x3ee3[58]](_0x3ee3[57])})}})}else {if(tipo_loginx=== _0x3ee3[35]){const _0xc0aex12= new ProfessorService(`${_0x3ee3[62]}${_0xc0aex2}${_0x3ee3[45]}`);_0xc0aex12[_0x3ee3[61]]()[_0x3ee3[5]]((_0xc0aex7)=>{if(_0xc0aex7[_0x3ee3[15]]> 0){swal(_0x3ee3[47],_0x3ee3[48],_0x3ee3[49])}else {const _0xc0aexd=_0x3ee3[50];const _0xc0aexe=CryptoJS[_0x3ee3[52]][_0x3ee3[51]](_0xc0aex4,_0xc0aexd);document[_0x3ee3[40]](_0x3ee3[54])[_0x3ee3[53]]= _0xc0aexe;const _0xc0aexf=document[_0x3ee3[40]](_0x3ee3[54])[_0x3ee3[55]];const _0xc0aex12= new ProfessorService(_0x3ee3[63]);const _0xc0aex13= new PROFESSOR(_0xc0aex3,_0xc0aexf,_0xc0aex2);_0xc0aex12[_0x3ee3[60]](_0xc0aex13)[_0x3ee3[5]]((_0xc0aex7)=>{window[_0x3ee3[59]][_0x3ee3[58]](_0x3ee3[57])})}})}};if(tipo_loginx== _0x3ee3[45]){swal(_0x3ee3[47],_0x3ee3[64],_0x3ee3[49])}}else {swal(_0x3ee3[47],_0x3ee3[65],_0x3ee3[49])}}
+
+class Aluno {
+    constructor(email, nome, senha) {
+        this.email = email;
+        this.nome = nome;
+        this.senha = senha;
+    }
+}
+class Aluno_Service {
+    constructor(url) {
+        this.url = url;
+    }
+    inserir(email, nome, senha) {
+        return fetch(this.url, {
+            method: "POST",
+            body: JSON.stringify(email, nome, senha),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(resposta => resposta.json());
+    }
+    listar() {
+        return fetch(this.url, {
+            method: "GET"
+        }).then(resposta => resposta.json());
+    }
+}
+class PROFESSOR {
+    constructor(nome, senha, email) {
+        this.nome = nome;
+        this.senha = senha;
+        this.email = email;
+    }
+}
+class ProfessorService {
+    constructor(url) {
+        this.url = url
+    }
+    inserir(nome, senha, email) {
+        return fetch(this.url, {
+            method: "POST",
+            body: JSON.stringify(nome, senha, email),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(
+            resposta => resposta.json());
+    }
+    listar() {
+        return fetch(this.url, {
+            method: "GET"
+        }).then(
+            resposta => resposta.json());
+    }
+}
+
+let tipo_loginx;
+$("#ramdom_code").hide("fast");
+const tipo_userx = document.getElementsByName("tipo_login");
+for (let i = 0; i <= tipo_userx.length - 1; i++) {
+    tipo_userx[i].onclick = function () {
+        tipo_loginx = event.target.id;
+       
+        if (tipo_loginx === "bbx2") {
+            $("#logx2").css('background', 'linear-gradient(lightblue,whitesmoke,whitesmoke)');
+            $("#escolhaxa").css('background-color', 'lightblue');
+            $("#obx02").hide("fast");
+            $("#bbx2").css('background-color', 'blue');
+            $("#ccx2").css('background-color', 'lightslategray');
+            $("#wallx2").css('padding-bottom', '3%');
+        } else if (tipo_loginx === "ccx2") {
+            $("#logx2").css('background', 'linear-gradient(lightgreen,whitesmoke,whitesmoke)');
+            $("#escolhaxa").css('background-color', 'lightgreen');
+            $("#obx02").hide("fast");
+            $("#ccx2").css('background-color', 'green');
+            $("#bbx2").css('background-color', 'lightslategray');
+            $("#wallx2").css('padding-bottom', '3%');
+        }
+    }
+}
+
+document.getElementById("fazer_cadastro").onclick = function () {
+    const nome = document.getElementById("nome_cadastro").value;
+    const senha = document.getElementById("senha_cadastro").value;
+    const email = document.getElementById("email_cadastro").value;
+    if (nome != "" && senha != "" && email != "") {
+        if (tipo_loginx === "bbx2") {
+            const aluno_service = new Aluno_Service(`https://bancodedados.tawham.repl.co/Alunos?email=${email}`)
+            aluno_service.listar().then(resposta => {
+                if (resposta.length > 0) {
+                    swal('Cadastro Inválido!', '- e-mail existente em outra conta -', 'error')
+                } else {
+                    const encrypt_senha = CryptoJS.SHA512(senha)
+                    document.getElementById("ramdom_code").innerText = encrypt_senha;
+                    const senha_finish = document.getElementById("ramdom_code").textContent;
+                  
+                    const aluno = new Aluno(email, nome, senha_finish);
+                    const aluno_service2 = new Aluno_Service("https://bancodedados.tawham.repl.co/Alunos");
+                    aluno_service2.inserir(aluno).then(resposta => {
+                        window.location.assign("./index.html");
+                    })
+                }
+            })
+
+        } else if (tipo_loginx === "ccx2") {
+            const professor_service = new ProfessorService(`https://bancodedados.tawham.repl.co/professores?email=${email}`);
+            professor_service.listar().then(resposta => {
+                if (resposta.length > 0) {
+                    swal('Cadastro Inválido!', '- e-mail existente em outra conta -', 'error')
+
+                } else {
+                    const encrypt_senha =  CryptoJS.SHA512(senha);
+                    document.getElementById("ramdom_code").innerText = encrypt_senha;
+                    const senha_finish = document.getElementById("ramdom_code").textContent;
+                    const professor_service = new ProfessorService("https://bancodedados.tawham.repl.co/professores");
+                    const professor = new PROFESSOR(nome,senha_finish, email);
+                    professor_service.inserir(professor).then(resposta => {
+                        window.location.assign("./index.html");
+                    })
+
+                }
+            })
+        }
+        if (tipo_loginx == "") {
+            swal('Cadastro Inválido!', '- escolha um tipo de usuário -', 'error');
+        }
+    } else {
+        swal('Cadastro Inválido!', '- preencha todos os campos -', 'error');
+    }
+}
