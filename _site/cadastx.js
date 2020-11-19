@@ -115,8 +115,7 @@ document.getElementById("fazer_cadastro").onclick = function () {
                     })
                 }
             })
-        }
-        else if (tipo_loginx == "") {
+        } else {
             swal('Cadastro Inválido!', '- escolha um tipo de usuário -', 'error');
         }
     } else {
