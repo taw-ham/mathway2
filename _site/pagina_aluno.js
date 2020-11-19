@@ -1,1 +1,2250 @@
-const _0xba12=["\x70\x61\x72\x74\x69\x63\x69\x70\x61\x6E\x74\x65\x73","\x70\x61\x72\x74\x69\x63\x69\x70\x61\x6E\x74\x65\x73\x5F\x69\x64","\x75\x72\x6C","\x6A\x73\x6F\x6E","\x74\x68\x65\x6E","\x47\x45\x54","\x50\x41\x54\x43\x48","\x73\x74\x72\x69\x6E\x67\x69\x66\x79","\x61\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E\x2F\x6A\x73\x6F\x6E","\x6E\x6F\x74\x61","\x70\x65\x72\x67\x75\x6E\x74\x61\x73\x5F\x63\x65\x72\x74\x61\x73","\x70\x65\x72\x67\x75\x6E\x74\x61\x73\x5F\x65\x72\x72\x61\x64\x61\x73","\x6E\x6F\x6D\x65\x5F\x61\x6C\x75\x6E\x6F","\x69\x64\x5F\x61\x6C\x75\x6E\x6F","\x69\x64\x5F\x6C\x69\x73\x74\x61\x5F\x74\x65\x6F\x72\x69\x63\x61","\x6E\x6F\x6D\x65\x5F\x6C\x69\x73\x74\x61\x5F\x74\x65\x6F\x72\x69\x63\x61","\x70\x65\x72\x67\x75\x6E\x74\x61\x73\x5F\x6E\x61\x6F\x5F\x66\x65\x69\x74\x61\x73","\x73\x69\x74\x75\x61\x63\x61\x6F","\x64\x61\x74\x61\x5F\x64\x65\x5F\x65\x6E\x74\x72\x65\x67\x61","\x50\x4F\x53\x54","\x63\x6F\x6D\x65\x6E\x74\x61\x72\x69\x6F","\x6E\x6F\x6D\x65","\x69\x64\x5F\x63\x72\x69\x61\x64\x6F\x72","\x70\x65\x72\x67\x75\x6E\x74\x61\x73","\x6F\x70\x63\x6F\x65\x73","\x6F\x70\x63\x6F\x65\x73\x5F\x63\x65\x72\x74\x61\x73","\x69\x64","\x67\x65\x74\x49\x74\x65\x6D","\x65\x6D\x61\x69\x6C","\x31\x32\x33\x34\x35\x36\x37\x38\x39\x30\x61\x62\x63\x64\x65\x66\x67\x68\x69\x6A\x6B\x6C\x6D\x6E\x6F\x70\x71\x72\x73\x74\x75\x76\x77\x78\x79\x7A","\x64\x65\x63\x72\x79\x70\x74","\x41\x45\x53","\x65\x6E\x63","\x6C\x6F\x67\x6F\x75\x74","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x6F\x6E\x63\x6C\x69\x63\x6B","\x72\x65\x6D\x6F\x76\x65\x49\x74\x65\x6D","\x69\x6E\x6E\x65\x72\x54\x65\x78\x74","\x6E\x6F\x6D\x65\x5F\x75\x73\x65\x72","\x4E\x6F\x6D\x65\x3A\x20","","\x65\x6D\x61\x69\x6C\x5F\x75\x73\x65\x72","\x45\x2D\x6D\x61\x69\x6C\x3A\x20","\x66\x61\x73\x74","\x68\x69\x64\x65","\x23\x66\x61\x7A\x65\x72\x5F\x70\x65\x72\x67\x75\x6E\x74\x61\x73\x5F\x65\x72\x72\x61\x64\x61\x73","\x23\x65\x73\x63\x6F\x6C\x68\x61\x5F\x64\x65\x5F\x73\x61\x6C\x61","\x23\x61\x72\x65\x61\x5F\x65\x73\x63\x6F\x6C\x68\x61\x5F\x6C\x69\x73\x74\x61\x5F\x74\x65\x6F\x72\x69\x63\x61","\x23\x66\x61\x7A\x65\x72\x5F\x65\x78\x65\x72\x63\x69\x63\x69\x6F\x5F\x6C\x69\x73\x74\x61\x5F\x74\x65\x6F\x72\x69\x63\x61","\x23\x74\x65\x72\x6D\x69\x6E\x6F\x5F\x65\x78\x65\x72\x63\x69\x63\x69\x6F","\x23\x65\x73\x63\x6F\x6C\x68\x61\x5F\x6D\x6F\x64\x6F\x5F\x65\x78\x65\x72\x63\x69\x63\x69\x6F","\x23\x74\x65\x6D\x61\x5F\x6C\x69\x73\x74\x61\x5F\x74\x65\x6F\x72\x69\x63\x61","\x23\x63\x72\x69\x61\x63\x61\x6F\x5F\x6C\x69\x73\x74\x61\x5F\x74\x65\x6F\x72\x69\x63\x61","\x23\x6C\x75\x67\x61\x72\x5F\x64\x65\x5F\x6E\x6F\x74\x61\x73","\x23\x6C\x75\x67\x61\x72\x5F\x65\x6E\x74\x72\x61\x64\x61\x5F\x73\x61\x6C\x61","\x73\x68\x6F\x77","\x23\x63\x6F\x6D\x65\x6E\x74\x61\x72\x69\x6F","\x23\x70\x6C\x61\x63\x65\x5F\x6C\x69\x73\x74\x61\x5F\x74\x65\x6F\x72\x69\x63\x61\x73","\x23\x69\x6E\x66\x61\x6C\x75\x6E\x78","\x23\x63\x6F\x64\x65\x70\x72\x6F\x66\x78","\x23\x63\x6F\x64\x65\x70\x72\x6F\x66\x78\x32","\x76\x6F\x6C\x74\x61\x72\x5F\x61\x72\x65\x61\x5F\x64\x65\x5F\x65\x73\x63\x6F\x6C\x68\x61\x73\x5F\x69\x6E\x69\x63\x69\x61\x6C\x32","\x70\x61\x64\x64\x69\x6E\x67\x2D\x62\x6F\x74\x74\x6F\x6D","\x33\x32\x25","\x63\x73\x73","\x23\x77\x61\x6C\x6C\x61\x6C\x75\x6E\x78","\x23\x61\x72\x65\x61\x5F\x64\x65\x5F\x65\x73\x63\x6F\x6C\x68\x61\x73","\x6C\x75\x67\x61\x72\x5F\x63\x6F\x6D\x65\x6E\x74\x61\x72\x69\x6F","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x61\x6E\x63\x6F\x64\x65\x64\x61\x64\x6F\x73\x2E\x74\x61\x77\x68\x61\x6D\x2E\x72\x65\x70\x6C\x2E\x63\x6F\x2F\x63\x6F\x6D\x65\x6E\x74\x61\x72\x69\x6F","\x6C\x65\x6E\x67\x74\x68","\x6C\x69","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x73\x70\x61\x6E","\x62\x72","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x61\x70\x70\x65\x6E\x64","\x6C\x69\x73\x74\x61\x72","\x65\x6E\x76\x69\x61\x72\x5F\x63\x6F\x6D\x65\x6E\x74\x61\x72\x69\x6F","\x65\x6D\x70\x74\x79","\x23\x6C\x75\x67\x61\x72\x5F\x63\x6F\x6D\x65\x6E\x74\x61\x72\x69\x6F","\x76\x61\x6C","\x23\x63\x6F\x6D\x65\x6E\x74\x61\x72\x69\x6F\x5F\x75\x73\x65\x72","\x43\x6F\x6D\x65\x6E\x74\xE1\x72\x69\x6F\x20\x49\x6E\x76\xE1\x6C\x69\x64\x6F","\x2D\x20\x64\x69\x67\x69\x74\x65\x20\x61\x6C\x67\x75\x6D\x61\x20\x63\x6F\x69\x73\x61\x20\x2D","\x65\x72\x72\x6F\x72","\x76\x61\x6C\x75\x65","\x63\x6F\x6D\x65\x6E\x74\x61\x72\x69\x6F\x5F\x75\x73\x65\x72","\x69\x6E\x73\x65\x72\x69\x72","\x65\x6E\x74\x72\x61\x72\x5F\x73\x61\x6C\x61","\x73\x61\x6C\x76\x61\x72\x5F\x63\x6F\x64\x69\x67\x6F","\x63\x6F\x64\x69\x67\x6F\x5F\x73\x61\x6C\x61","\x43\xF3\x64\x69\x67\x6F\x20\x49\x6E\x76\xE1\x6C\x69\x64\x6F","\x2D\x20\x69\x6E\x73\x69\x72\x61\x20\x61\x6C\x67\x75\x6D\x20\x63\xF3\x64\x69\x67\x6F\x20\x2D","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x61\x6E\x63\x6F\x64\x65\x64\x61\x64\x6F\x73\x2E\x74\x61\x77\x68\x61\x6D\x2E\x72\x65\x70\x6C\x2E\x63\x6F\x2F\x73\x61\x6C\x61\x73\x3F\x63\x6F\x64\x69\x67\x6F\x3D","\x70\x75\x73\x68","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x61\x6E\x63\x6F\x64\x65\x64\x61\x64\x6F\x73\x2E\x74\x61\x77\x68\x61\x6D\x2E\x72\x65\x70\x6C\x2E\x63\x6F\x2F\x73\x61\x6C\x61\x73\x2F","\x72\x65\x6C\x6F\x61\x64","\x61\x74\x75\x61\x6C\x69\x7A\x61\x72","\x2D\x20\x65\x73\x74\x61\x20\x73\x61\x6C\x61\x20\x6E\xE3\x6F\x20\x65\x78\x69\x73\x74\x65\x20\x2D","\x6E\x6F\x74\x61\x73","\x33\x36\x25","\x62\x6F\x6C\x65\x74\x69\x6D","\x74\x68","\x4C\x69\x73\x74\x61\x73\x20\x74\x65\xF3\x72\x69\x63\x61\x73\x20\x7C\x20\x4E\x6F\x74\x61\x73","\x63\x6F\x6C\x73\x70\x61\x6E","\x73\x65\x74\x41\x74\x74\x72\x69\x62\x75\x74\x65","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x61\x6E\x63\x6F\x64\x65\x64\x61\x64\x6F\x73\x2E\x74\x61\x77\x68\x61\x6D\x2E\x72\x65\x70\x6C\x2E\x63\x6F\x2F\x6E\x6F\x74\x61\x73\x5F\x70\x72\x6F\x66\x65\x73\x73\x6F\x72\x3F\x69\x64\x5F\x61\x6C\x75\x6E\x6F\x3D","\x74\x72","\x74\x64","\x61\x63\x65\x72\x74\x6F\x73\x3A\x20","\x65\x72\x72\x6F\x73\x3A\x20","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x61\x6E\x63\x6F\x64\x65\x64\x61\x64\x6F\x73\x2E\x74\x61\x77\x68\x61\x6D\x2E\x72\x65\x70\x6C\x2E\x63\x6F\x2F\x6E\x6F\x74\x61\x73\x5F\x73\x65\x72\x76\x69\x64\x6F\x72\x3F\x69\x64\x5F\x61\x6C\x75\x6E\x6F\x3D","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x61\x6E\x63\x6F\x64\x65\x64\x61\x64\x6F\x73\x2E\x74\x61\x77\x68\x61\x6D\x2E\x72\x65\x70\x6C\x2E\x63\x6F\x2F\x6E\x6F\x74\x61\x73\x5F\x61\x6C\x75\x6E\x6F\x3F\x3D\x69\x64\x5F\x61\x6C\x75\x6E\x6F\x3D","\x76\x6F\x6C\x74\x61\x72\x5F\x61\x72\x65\x61\x5F\x64\x65\x5F\x65\x73\x63\x6F\x6C\x68\x61\x73\x5F\x69\x6E\x69\x63\x69\x61\x6C","\x23\x62\x6F\x6C\x65\x74\x69\x6D","\x65\x78\x65\x72\x63\x69\x63\x69\x6F\x73","\x23\x6D\x75\x72\x61\x6C\x78\x61\x6C\x75\x6E","\x31\x32\x25","\x76\x6F\x6C\x74\x61\x72\x5F\x64\x61\x5F\x61\x72\x65\x61\x5F\x65\x73\x63\x6F\x6C\x68\x61\x5F\x6D\x6F\x64\x6F\x5F\x65\x78\x65\x72\x63\x69\x63\x69\x6F","\x68\x69\x73\x74\x6F\x72\x69\x63\x6F\x5F\x6C\x69\x73\x74\x61\x73\x5F\x74\x65\x6F\x72\x69\x63\x61\x73\x5F\x73\x65\x72\x76\x65\x72","\x33\x30\x25","\x65\x73\x63\x6F\x6C\x68\x61\x5F\x6C\x69\x73\x74\x61\x5F\x74\x65\x6F\x72\x69\x63\x61","\x62\x75\x74\x74\x6F\x6E","\x63\x6C\x61\x73\x73","\x62\x74\x6E\x20\x62\x74\x6E\x2D\x70\x72\x69\x6D\x61\x72\x79","\x74\x61\x72\x67\x65\x74","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x61\x6E\x63\x6F\x64\x65\x64\x61\x64\x6F\x73\x2E\x74\x61\x77\x68\x61\x6D\x2E\x72\x65\x70\x6C\x2E\x63\x6F\x2F\x4C\x69\x73\x74\x61\x5F\x54\x65\x6F\x72\x69\x63\x61\x5F\x53\x65\x72\x76\x69\x64\x6F\x72\x2F","\x23\x65\x73\x63\x6F\x6C\x68\x61","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72\x41\x6C\x6C","\x23\x76\x61\x6C\x6F\x72","\x70\x6C\x61\x63\x65\x5F\x70\x65\x72\x67\x75\x6E\x74\x61\x73","\x2F","\x20","\x70\x72\x6F\x78\x69\x6D\x61\x5F\x70\x65\x72\x67\x75\x6E\x74\x61","\x32\x30\x25","\x69\x6E\x70\x75\x74\x5B\x6E\x61\x6D\x65\x3D\x27\x6F\x70\x63\x6F\x65\x73\x27\x5D\x3A\x63\x68\x65\x63\x6B\x65\x64","\x75\x6E\x64\x65\x66\x69\x6E\x65\x64","\x43\x65\x72\x74\x61\x20\x52\x65\x73\x70\x6F\x73\x74\x61\x21","\x3C\x69\x6D\x67\x20\x68\x65\x69\x67\x68\x74\x3D\x22\x36\x25\x22\x20\x77\x69\x64\x74\x68\x3D\x22\x36\x25\x22\x20\x73\x72\x63\x3D\x22\x2E\x2F\x66\x6F\x74\x69\x73\x2F\x73\x6D\x69\x6C\x65\x2E\x70\x6E\x67\x22\x20\x2F\x3E\x20\x20\x70\x61\x72\x61\x62\xE9\x6E\x73","\x73\x75\x63\x63\x65\x73\x73","\x52\x65\x73\x70\x6F\x73\x74\x61\x20\x45\x72\x72\x61\x64\x61\x21","\x3C\x69\x6D\x67\x20\x68\x65\x69\x67\x68\x74\x3D\x22\x36\x25\x22\x20\x77\x69\x64\x74\x68\x3D\x22\x36\x25\x22\x20\x73\x72\x63\x3D\x22\x2E\x2F\x66\x6F\x74\x69\x73\x2F\x73\x61\x64\x2E\x70\x6E\x67\x22\x20\x2F\x3E\x20\x20\x65\x73\x74\x75\x64\x65\x20\x6D\x61\x69\x73\x20\x75\x6D\x20\x70\x6F\x75\x63\x6F","\x69\x6E\x70\x75\x74\x5B\x6E\x61\x6D\x65\x3D\x27\x6F\x70\x63\x6F\x65\x73\x27\x5D","\x63\x68\x65\x63\x6B\x65\x64","\x29\x20\x20","\x74\x65\x72\x6D\x69\x6E\x6F\x20\x6C\x69\x73\x74\x61","\x74\x65\x72\x6D\x69\x6E\x6F\x20\x64\x61\x20\x6C\x69\x73\x74\x61\x20\x74\x65\xF3\x72\x69\x63\x61","\x74\x6F\x46\x69\x78\x65\x64","\x53\x75\x61\x20\x6E\x6F\x74\x61\x20\x66\x6F\x69\x20","\x20\x7C\x20\x61\x63\x65\x72\x74\x6F\x73\x3A\x20","\x2C\x20\x65\x72\x72\x6F\x73\x3A\x20","\x74\x65\x78\x74","\x23\x6C\x75\x67\x61\x72\x5F\x6E\x6F\x74\x61","\x72\x65\x70\x6F\x73\x74\x61\x5F\x63\x65\x72\x74\x61","\x70\x65\x72\x67\x75\x6E\x74\x61\x5F\x65\x72\x72\x61\x64\x61","\x63\x65\x72\x74\x61\x73","\x56","\x29\x20","\x58","\x76\x6F\x6C\x74\x61\x72\x5F\x65\x73\x63\x6F\x6C\x68\x61\x5F\x6C\x69\x73\x74\x61\x5F\x74\x65\x6F\x72\x69\x63\x61","\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64\x2D\x69\x6D\x61\x67\x65","\x75\x72\x6C\x28\x22\x2E\x2F\x66\x6F\x74\x69\x73\x2F\x77\x6F\x6F\x64\x2E\x70\x6E\x67\x22\x29","\x32\x38\x25","\x23\x72\x65\x70\x6F\x73\x74\x61\x5F\x63\x65\x72\x74\x61","\x23\x70\x65\x72\x67\x75\x6E\x74\x61\x5F\x65\x72\x72\x61\x64\x61","\x29","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x61\x6E\x63\x6F\x64\x65\x64\x61\x64\x6F\x73\x2E\x74\x61\x77\x68\x61\x6D\x2E\x72\x65\x70\x6C\x2E\x63\x6F\x2F\x6E\x6F\x74\x61\x73\x5F\x73\x65\x72\x76\x69\x64\x6F\x72\x3F\x69\x64\x5F\x6C\x69\x73\x74\x61\x5F\x74\x65\x6F\x72\x69\x63\x61\x3D","\x26\x69\x64\x5F\x61\x6C\x75\x6E\x6F\x3D","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x61\x6E\x63\x6F\x64\x65\x64\x61\x64\x6F\x73\x2E\x74\x61\x77\x68\x61\x6D\x2E\x72\x65\x70\x6C\x2E\x63\x6F\x2F\x6E\x6F\x74\x61\x73\x5F\x73\x65\x72\x76\x69\x64\x6F\x72\x2F","\x66\x61\x7A\x65\x72\x5F\x70\x65\x72\x67\x75\x6E\x74\x61\x73\x5F\x65\x72\x72\x61\x64\x61\x73","\x41\x20\x73\x75\x61\x20\x6E\x6F\x74\x61\x20\x66\x6F\x69\x3A\x20","\x75\x72\x6C\x28\x22\x2E\x2F\x66\x6F\x74\x69\x73\x2F\x77\x6F\x6F\x64\x2E\x6A\x70\x67\x22\x29","\x76\x6F\x6C\x74\x61\x72\x5F\x70\x6C\x61\x63\x65\x5F\x6C\x69\x73\x74\x61\x5F\x74\x65\x6F\x72\x69\x63\x61\x73","\x23\x65\x73\x63\x6F\x6C\x68\x61\x5F\x6C\x69\x73\x74\x61\x5F\x74\x65\x6F\x72\x69\x63\x61","\x68\x69\x73\x74\x6F\x72\x69\x63\x6F\x5F\x6C\x69\x73\x74\x61\x73\x5F\x74\x65\x6F\x72\x69\x63\x61\x73\x5F\x75\x73\x65\x72","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x61\x6E\x63\x6F\x64\x65\x64\x61\x64\x6F\x73\x2E\x74\x61\x77\x68\x61\x6D\x2E\x72\x65\x70\x6C\x2E\x63\x6F\x2F\x6E\x6F\x74\x61\x73\x5F\x61\x6C\x75\x6E\x6F\x3F\x69\x64\x5F\x61\x6C\x75\x6E\x6F\x3D","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x61\x6E\x63\x6F\x64\x65\x64\x61\x64\x6F\x73\x2E\x74\x61\x77\x68\x61\x6D\x2E\x72\x65\x70\x6C\x2E\x63\x6F\x2F\x4C\x69\x73\x74\x61\x5F\x54\x65\x6F\x72\x69\x63\x61\x5F\x61\x6C\x75\x6E\x6F\x2F","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x61\x6E\x63\x6F\x64\x65\x64\x61\x64\x6F\x73\x2E\x74\x61\x77\x68\x61\x6D\x2E\x72\x65\x70\x6C\x2E\x63\x6F\x2F\x6E\x6F\x74\x61\x73\x5F\x61\x6C\x75\x6E\x6F\x3F\x69\x64\x5F\x6C\x69\x73\x74\x61\x5F\x74\x65\x6F\x72\x69\x63\x61\x3D","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x61\x6E\x63\x6F\x64\x65\x64\x61\x64\x6F\x73\x2E\x74\x61\x77\x68\x61\x6D\x2E\x72\x65\x70\x6C\x2E\x63\x6F\x2F\x6E\x6F\x74\x61\x73\x5F\x61\x6C\x75\x6E\x6F\x2F","\x63\x72\x69\x61\x72\x5F\x6C\x69\x73\x74\x61\x5F\x74\x65\x6F\x72\x69\x63\x61\x5F\x61\x75\x74\x6F\x6D\x61\x74\x69\x63\x61","\x73\x61\x6C\x76\x61\x72\x5F\x74\x65\x6D\x61\x73","\x77\x69\x64\x74\x68","\x35\x30\x25","\x69\x6E\x70\x75\x74\x5B\x6E\x61\x6D\x65\x3D\x27\x6F\x70\x63\x6F\x65\x73\x5F\x74\x65\x6D\x61\x73\x27\x5D","\x69\x6E\x70\x75\x74\x5B\x6E\x61\x6D\x65\x3D\x27\x6F\x70\x63\x6F\x65\x73\x5F\x74\x65\x6D\x61\x73\x27\x5D\x3A\x63\x68\x65\x63\x6B\x65\x64","\x4C\x69\x73\x74\x61\x20\x49\x6E\x76\xE1\x6C\x69\x64\x61\x21","\x2D\x20\x65\x73\x63\x6F\x6C\x68\x61\x20\x61\x6C\x67\x75\x6D\x20\x74\x65\x6D\x61\x20\x2D","\x23\x70\x65\x67\x61\x72\x5F\x6E\x6F\x6D\x65","\x23\x63\x6F\x6E\x74\x5F\x70\x65\x72\x67\x75\x6E\x74\x61\x73","\x23\x70\x72\x6F\x78\x69\x6D\x6F\x5F\x70\x61\x73\x73\x6F\x5F\x63\x72\x69\x61\x63\x61\x6F","\x23\x66\x61\x7A\x65\x72\x5F\x6C\x69\x73\x74\x61\x5F\x74\x65\x6F\x72\x69\x63\x61","\x73\x61\x6C\x76\x61\x72\x5F\x6E\x6F\x6D\x65\x5F\x6C\x69\x73\x74\x61\x5F\x74\x65\x6F\x72\x69\x63\x61","\x75\x72\x6C\x28\x22\x2E\x2F\x66\x6F\x74\x69\x73\x2F\x63\x6C\x61\x73\x73\x72\x6F\x6F\x6D\x2E\x6A\x70\x67\x22\x29","\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64\x2D\x73\x69\x7A\x65","\x63\x6F\x76\x65\x72","\x38\x30\x25","\x23\x6E\x6F\x6D\x65\x5F\x6C\x69\x73\x74\x61\x5F\x74\x65\x6F\x72\x69\x63\x61","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x61\x6E\x63\x6F\x64\x65\x64\x61\x64\x6F\x73\x2E\x74\x61\x77\x68\x61\x6D\x2E\x72\x65\x70\x6C\x2E\x63\x6F\x2F\x70\x65\x72\x67\x75\x6E\x74\x61\x73\x3F","\x69\x64\x5F\x74\x65\x6D\x61\x3D","\x26","\x26\x5F\x73\x6F\x72\x74\x3D\x6F\x70\x63\x6F\x65\x73\x26\x5F\x6C\x69\x6D\x69\x74\x3D","\x26\x6F\x72\x64\x65\x72\x3D\x61\x73\x63","\x70\x65\x72\x67\x75\x6E\x74\x61","\x6F\x70\x63\x61\x6F\x5F\x63\x65\x72\x74\x61","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x61\x6E\x63\x6F\x64\x65\x64\x61\x64\x6F\x73\x2E\x74\x61\x77\x68\x61\x6D\x2E\x72\x65\x70\x6C\x2E\x63\x6F\x2F\x4C\x69\x73\x74\x61\x5F\x54\x65\x6F\x72\x69\x63\x61\x5F\x53\x65\x72\x76\x69\x64\x6F\x72","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x61\x6E\x63\x6F\x64\x65\x64\x61\x64\x6F\x73\x2E\x74\x61\x77\x68\x61\x6D\x2E\x72\x65\x70\x6C\x2E\x63\x6F\x2F\x6E\x6F\x74\x61\x73\x5F\x73\x65\x72\x76\x69\x64\x6F\x72","\x63\x72\x69\x61\x72\x5F\x6C\x69\x73\x74\x61\x5F\x74\x65\x6F\x72\x69\x63\x61","\x2D\x20\x65\x73\x63\x6F\x6C\x68\x61\x20\x61\x6C\x67\x75\x6D\x20\x6E\x6F\x6D\x65\x20\x2D","\x70\x65\x72\x67\x75\x6E\x74\x61\x73\x73\x65\x72\x76\x65\x72","\x68\x33","\x74\x6F\x55\x70\x70\x65\x72\x43\x61\x73\x65","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x61\x6E\x63\x6F\x64\x65\x64\x61\x64\x6F\x73\x2E\x74\x61\x77\x68\x61\x6D\x2E\x72\x65\x70\x6C\x2E\x63\x6F\x2F\x70\x65\x72\x67\x75\x6E\x74\x61\x73\x3F\x69\x64\x5F\x74\x65\x6D\x61\x3D","\x23","\x72\x65\x6D\x6F\x76\x65","\x23\x70\x65\x72\x67\x75\x6E\x74\x61\x73\x73\x65\x72\x76\x65\x72\x20\x3E\x20\x6C\x69","\x20\x70\x65\x72\x67\x75\x6E\x74\x61\x28\x73\x29\x20\x61\x64\x69\x63\x69\x6F\x6E\x61\x64\x61\x73","\x23\x63\x6F\x6E\x74\x61\x64\x6F\x72\x5F\x70\x65\x72\x67\x75\x6E\x74\x61\x73","\x66\x61\x7A\x65\x72\x5F\x6C\x69\x73\x74\x61\x5F\x74\x65\x6F\x72\x69\x63\x61","\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64","\x6E\x6F\x6E\x65","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x61\x6E\x63\x6F\x64\x65\x64\x61\x64\x6F\x73\x2E\x74\x61\x77\x68\x61\x6D\x2E\x72\x65\x70\x6C\x2E\x63\x6F\x2F\x4C\x69\x73\x74\x61\x5F\x54\x65\x6F\x72\x69\x63\x61\x5F\x61\x6C\x75\x6E\x6F","\x23\x70\x65\x72\x67\x75\x6E\x74\x61\x73\x73\x65\x72\x76\x65\x72","\x30","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x61\x6E\x63\x6F\x64\x65\x64\x61\x64\x6F\x73\x2E\x74\x61\x77\x68\x61\x6D\x2E\x72\x65\x70\x6C\x2E\x63\x6F\x2F\x6E\x6F\x74\x61\x73\x5F\x61\x6C\x75\x6E\x6F","\x53\x75\x61\x20\x6E\x6F\x74\x61\x20\x66\x6F\x69\x3A\x20","\x20\x7C\x20\x63\x65\x72\x74\x61\x73\x3A\x20","\x2C\x20\x65\x72\x72\x61\x64\x61\x73\x3A\x20","\x52\x65\x73\x70\x6F\x73\x74\x61\x20\x49\x6E\x76\xE1\x6C\x69\x64\x61\x21","\x2D\x20\x65\x73\x63\x6F\x6C\x68\x61\x20\x73\x75\x61\x20\x6F\x70\xE7\xE3\x6F\x20\x2D","\x73\x61\x6C\x61\x73\x5F\x70\x72\x65\x73\x65\x6E\x74\x65\x73","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x61\x6E\x63\x6F\x64\x65\x64\x61\x64\x6F\x73\x2E\x74\x61\x77\x68\x61\x6D\x2E\x72\x65\x70\x6C\x2E\x63\x6F\x2F\x73\x61\x6C\x61\x73\x3F\x70\x61\x72\x74\x69\x63\x69\x70\x61\x6E\x74\x65\x73\x5F\x6C\x69\x6B\x65\x3D","\x73\x61\x6C\x61\x73\x5F\x69\x6E\x73\x65\x72\x69\x64\x61\x73","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x61\x6E\x63\x6F\x64\x65\x64\x61\x64\x6F\x73\x2E\x74\x61\x77\x68\x61\x6D\x2E\x72\x65\x70\x6C\x2E\x63\x6F\x2F\x6C\x69\x73\x74\x61\x5F\x74\x65\x6F\x72\x69\x63\x61\x73\x3F\x69\x64\x5F\x73\x61\x6C\x61\x3D","\x6C\x69\x73\x74\x61\x73\x5F\x74\x65\x6F\x72\x69\x63\x61\x73","\x44\x61\x74\x61\x5F\x64\x65\x5F\x65\x6E\x74\x72\x65\x67\x61","\x67\x65\x74\x54\x69\x6D\x65","\x62\x74\x6E\x20\x62\x74\x6E\x2D\x64\x61\x6E\x67\x65\x72","\x61\x62\x73","\x7C\x20\x41\x74\x72\x61\x73\x6F\x3A\x20","\x20\x64\x69\x61\x73","\x3A","\x20\x20\x20","\x7C\x20\x50\x72\x61\x7A\x6F\x3A\x20","\x20\x68\x6F\x72\x61\x73\x3A","\x20\x6D\x69\x6E\x75\x74\x6F\x73\x3A","\x20\x73\x65\x67\x75\x6E\x64\x6F\x73","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x61\x6E\x63\x6F\x64\x65\x64\x61\x64\x6F\x73\x2E\x74\x61\x77\x68\x61\x6D\x2E\x72\x65\x70\x6C\x2E\x63\x6F\x2F\x6C\x69\x73\x74\x61\x5F\x74\x65\x6F\x72\x69\x63\x61\x73\x3F\x69\x64\x3D","\x26\x69\x64\x5F\x6C\x69\x73\x74\x61\x5F\x74\x65\x6F\x72\x69\x63\x61\x3D","\x53\x75\x61\x20\x4E\x6F\x74\x61\x20\x66\x6F\x69\x20","\x2C\x20\x63\x65\x72\x74\x61\x73\x3A\x20","\x2C\x20\x6E\xE3\x6F\x20\x66\x65\x69\x74\x61\x73\x3A\x20","\x3F","\x23\x70\x65\x72\x67\x75\x6E\x74\x61\x73\x5F\x6E\x61\x6F\x5F\x66\x65\x69\x74\x61\x73","\x26\x69\x64\x5F\x73\x61\x6C\x61\x3D","\x74\x65\x6D\x70\x6F\x5F\x64\x65\x5F\x74\x65\x72\x6D\x69\x6E\x6F","\x67\x65\x74\x44\x61\x74\x65","\x67\x65\x74\x4D\x6F\x6E\x74\x68","\x67\x65\x74\x46\x75\x6C\x6C\x59\x65\x61\x72","\x61\x74\x72\x61\x73\x61\x64\x6F","\x70\x72\x61\x7A\x6F","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x61\x6E\x63\x6F\x64\x65\x64\x61\x64\x6F\x73\x2E\x74\x61\x77\x68\x61\x6D\x2E\x72\x65\x70\x6C\x2E\x63\x6F\x2F\x6E\x6F\x74\x61\x73\x5F\x70\x72\x6F\x66\x65\x73\x73\x6F\x72","\x72\x65\x64","\x23\x46\x35\x46\x35\x46\x35","\x23\x70\x65\x72\x67\x75\x6E\x74\x61\x73\x5F\x65\x72\x72\x61\x64\x61\x73","\x23\x68\x6F\x72\x61","\x23\x6D\x69\x6E\x75\x74\x6F\x73","\x23\x73\x65\x67\x75\x6E\x64\x6F\x73","\x73\x70\x6C\x69\x74","\x68\x6F\x72\x61","\x6D\x69\x6E\x75\x74\x6F\x73","\x73\x65\x67\x75\x6E\x64\x6F\x73","\x2C\x20\x6E\xE3\x6F\x20\x72\x65\x61\x6C\x69\x7A\x61\x64\x61\x73\x3A\x20","\x29\x20\x20\x20","\x76\x6F\x6C\x74\x61\x72\x5F\x64\x61\x5F\x61\x72\x65\x61\x5F\x73\x61\x6C\x61\x5F\x65\x73\x70\x65\x63\x69\x66\x69\x63\x61","\x23\x6C\x69\x73\x74\x61\x73\x5F\x74\x65\x6F\x72\x69\x63\x61\x73","\x76\x6F\x6C\x74\x61\x72\x5F\x64\x61\x5F\x61\x72\x65\x61\x5F\x64\x65\x5F\x65\x73\x63\x6F\x6C\x68\x61\x5F\x64\x65\x5F\x73\x61\x6C\x61\x73","\x23\x73\x61\x6C\x61\x73\x5F\x69\x6E\x73\x65\x72\x69\x64\x61\x73"];class Sala{constructor(_0x97b9x2,_0x97b9x3){this[_0xba12[0]]= _0x97b9x2;this[_0xba12[1]]= _0x97b9x3}};class Sala_Service{constructor(_0x97b9x4){this[_0xba12[2]]= _0x97b9x4}listar(){return fetch(this[_0xba12[2]],{method:_0xba12[5]})[_0xba12[4]]((_0x97b9x6)=>{return _0x97b9x6[_0xba12[3]]()})}atualizar(_0x97b9x2,_0x97b9x3){return fetch(this[_0xba12[2]],{method:_0xba12[6],body:JSON[_0xba12[7]](_0x97b9x2,_0x97b9x3),headers:{'\x43\x6F\x6E\x74\x65\x6E\x74\x2D\x54\x79\x70\x65':_0xba12[8]}})[_0xba12[4]]((_0x97b9x6)=>{return _0x97b9x6[_0xba12[3]]()})}};class NOTA_ALUNO_2{constructor(_0x97b9x8,_0x97b9x9,_0x97b9xa){this[_0xba12[9]]= _0x97b9x8;this[_0xba12[10]]= _0x97b9x9;this[_0xba12[11]]= _0x97b9xa}};class Nota{constructor(_0x97b9xb,_0x97b9x8,_0x97b9xc,_0x97b9xd,_0x97b9xe,_0x97b9x9,_0x97b9xa,_0x97b9xf,_0x97b9x10,_0x97b9x11){this[_0xba12[12]]= _0x97b9xb;this[_0xba12[9]]= _0x97b9x8;this[_0xba12[13]]= _0x97b9xc;this[_0xba12[14]]= _0x97b9xd;this[_0xba12[15]]= _0x97b9xe;this[_0xba12[10]]= _0x97b9x9;this[_0xba12[11]]= _0x97b9xa;this[_0xba12[16]]= _0x97b9xf;this[_0xba12[17]]= _0x97b9x10;this[_0xba12[18]]= _0x97b9x11}};class Nota_Service{constructor(_0x97b9x4){this[_0xba12[2]]= _0x97b9x4}inserir(_0x97b9xb,_0x97b9x8,_0x97b9xc,_0x97b9xd,_0x97b9xe,_0x97b9x9,_0x97b9xa,_0x97b9xf,_0x97b9x10,_0x97b9x11){return fetch(this[_0xba12[2]],{method:_0xba12[19],body:JSON[_0xba12[7]](_0x97b9xb,_0x97b9x8,_0x97b9xc,_0x97b9xd,_0x97b9xe,_0x97b9x9,_0x97b9xa,_0x97b9xf,_0x97b9x10,_0x97b9x11),headers:{'\x43\x6F\x6E\x74\x65\x6E\x74\x2D\x54\x79\x70\x65':_0xba12[8]}})[_0xba12[4]]((_0x97b9x6)=>{return _0x97b9x6[_0xba12[3]]()})}listar(){return fetch(this[_0xba12[2]],{method:_0xba12[5]})[_0xba12[4]]((_0x97b9x6)=>{return _0x97b9x6[_0xba12[3]]()})}};class NOTA_SERVIDOR{constructor(_0x97b9xb,_0x97b9x8,_0x97b9xc,_0x97b9x13,_0x97b9xe,_0x97b9x9,_0x97b9xa){this[_0xba12[12]]= _0x97b9xb;this[_0xba12[9]]= _0x97b9x8;this[_0xba12[13]]= _0x97b9xc;this[_0xba12[14]]= _0x97b9x13;this[_0xba12[15]]= _0x97b9xe;this[_0xba12[10]]= _0x97b9x9;this[_0xba12[11]]= _0x97b9xa}};class NOTA_SERVIDOR_SERVICE{constructor(_0x97b9x4){this[_0xba12[2]]= _0x97b9x4}inserir(_0x97b9xb,_0x97b9x8,_0x97b9xc,_0x97b9x13,_0x97b9xe,_0x97b9x9,_0x97b9xa){return fetch(this[_0xba12[2]],{method:_0xba12[19],body:JSON[_0xba12[7]](_0x97b9xb,_0x97b9x8,_0x97b9xc,_0x97b9x13,_0x97b9xe,_0x97b9x9,_0x97b9xa),headers:{'\x43\x6F\x6E\x74\x65\x6E\x74\x2D\x54\x79\x70\x65':_0xba12[8]}})[_0xba12[4]]((_0x97b9x6)=>{return _0x97b9x6[_0xba12[3]]()})}listar(){return fetch(this[_0xba12[2]],{method:_0xba12[5]})[_0xba12[4]]((_0x97b9x6)=>{return _0x97b9x6[_0xba12[3]]()})}atualizar(_0x97b9x8,_0x97b9x9,_0x97b9xa){return fetch(this[_0xba12[2]],{method:_0xba12[6],body:JSON[_0xba12[7]](_0x97b9x8,_0x97b9x9,_0x97b9xa),headers:{'\x43\x6F\x6E\x74\x65\x6E\x74\x2D\x54\x79\x70\x65':_0xba12[8]}})[_0xba12[4]]((_0x97b9x6)=>{return _0x97b9x6[_0xba12[3]]()})}};class NOTA_ALUNO{constructor(_0x97b9xb,_0x97b9x8,_0x97b9xc,_0x97b9x14,_0x97b9xe,_0x97b9x9,_0x97b9xa){this[_0xba12[12]]= _0x97b9xb;this[_0xba12[9]]= _0x97b9x8;this[_0xba12[13]]= _0x97b9xc;this[_0xba12[14]]= _0x97b9x14;this[_0xba12[15]]= _0x97b9xe;this[_0xba12[10]]= _0x97b9x9;this[_0xba12[11]]= _0x97b9xa}};class NOTA_ALUNO_SERVICE{constructor(_0x97b9x4){this[_0xba12[2]]= _0x97b9x4}inserir(_0x97b9xb,_0x97b9x8,_0x97b9xc,_0x97b9x14,_0x97b9xe,_0x97b9x9,_0x97b9xa){return fetch(this[_0xba12[2]],{method:_0xba12[19],body:JSON[_0xba12[7]](_0x97b9xb,_0x97b9x8,_0x97b9xc,_0x97b9x14,_0x97b9xe,_0x97b9x9,_0x97b9xa),headers:{'\x43\x6F\x6E\x74\x65\x6E\x74\x2D\x54\x79\x70\x65':_0xba12[8]}})[_0xba12[4]]((_0x97b9x6)=>{return _0x97b9x6[_0xba12[3]]()})}listar(){return fetch(this[_0xba12[2]],{method:_0xba12[5]})[_0xba12[4]]((_0x97b9x6)=>{return _0x97b9x6[_0xba12[3]]()})}atualizar(_0x97b9x8,_0x97b9x9,_0x97b9xa){return fetch(this[_0xba12[2]],{method:_0xba12[6],body:JSON[_0xba12[7]](_0x97b9x8,_0x97b9x9,_0x97b9xa),headers:{'\x43\x6F\x6E\x74\x65\x6E\x74\x2D\x54\x79\x70\x65':_0xba12[8]}})[_0xba12[4]]((_0x97b9x6)=>{return _0x97b9x6[_0xba12[3]]()})}};class Comentario{constructor(_0x97b9xb,_0x97b9x15,_0x97b9xc){this[_0xba12[12]]= _0x97b9xb;this[_0xba12[20]]= _0x97b9x15;this[_0xba12[13]]= _0x97b9xc}};class Comentario_Service{constructor(_0x97b9x4){this[_0xba12[2]]= _0x97b9x4}inserir(_0x97b9xb,_0x97b9x15,_0x97b9xc){return fetch(this[_0xba12[2]],{method:_0xba12[19],body:JSON[_0xba12[7]](_0x97b9xb,_0x97b9x15,_0x97b9xc),headers:{'\x43\x6F\x6E\x74\x65\x6E\x74\x2D\x54\x79\x70\x65':_0xba12[8]}})[_0xba12[4]]((_0x97b9x6)=>{return _0x97b9x6[_0xba12[3]]()})}listar(){return fetch(this[_0xba12[2]],{method:_0xba12[5]})[_0xba12[4]]((_0x97b9x6)=>{return _0x97b9x6[_0xba12[3]]()})}};class Pergunta_Service{constructor(_0x97b9x4){this[_0xba12[2]]= _0x97b9x4}listar(){return fetch(this[_0xba12[2]],{method:_0xba12[5]})[_0xba12[4]]((_0x97b9x6)=>{return _0x97b9x6[_0xba12[3]]()})}};class Lista_Teorica_Service{constructor(_0x97b9x4){this[_0xba12[2]]= _0x97b9x4}listar(){return fetch(this[_0xba12[2]],{method:_0xba12[5]})[_0xba12[4]]((_0x97b9x6)=>{return _0x97b9x6[_0xba12[3]]()})}};class Lista_Teorica_Aluno{constructor(_0x97b9x16,_0x97b9x17,_0x97b9x18,_0x97b9x19,_0x97b9x1a){this[_0xba12[21]]= _0x97b9x16;this[_0xba12[22]]= _0x97b9x17;this[_0xba12[23]]= _0x97b9x18;this[_0xba12[24]]= _0x97b9x19;this[_0xba12[25]]= _0x97b9x1a}};class Lista_Teorica_Aluno_Service{constructor(_0x97b9x4){this[_0xba12[2]]= _0x97b9x4}listar(){return fetch(this[_0xba12[2]],{method:_0xba12[5]})[_0xba12[4]]((_0x97b9x6)=>{return _0x97b9x6[_0xba12[3]]()})}inserir(_0x97b9x16,_0x97b9x17,_0x97b9x18,_0x97b9x19,_0x97b9x1a){return fetch(this[_0xba12[2]],{method:_0xba12[19],body:JSON[_0xba12[7]](_0x97b9x16,_0x97b9x17,_0x97b9x18,_0x97b9x19,_0x97b9x1a),headers:{'\x43\x6F\x6E\x74\x65\x6E\x74\x2D\x54\x79\x70\x65':_0xba12[8]}})[_0xba12[4]]((_0x97b9x6)=>{return _0x97b9x6[_0xba12[3]]()})}};class Lista_Teorica_Servidor{constructor(_0x97b9x16,_0x97b9xc,_0x97b9x18,_0x97b9x19,_0x97b9x1a){this[_0xba12[21]]= _0x97b9x16;this[_0xba12[13]]= _0x97b9xc;this[_0xba12[23]]= _0x97b9x18;this[_0xba12[24]]= _0x97b9x19;this[_0xba12[25]]= _0x97b9x1a}};class Lista_Teorica_Servidor_Service{constructor(_0x97b9x4){this[_0xba12[2]]= _0x97b9x4}inserir(_0x97b9x16,_0x97b9xc,_0x97b9x18,_0x97b9x19,_0x97b9x1a){return fetch(this[_0xba12[2]],{method:_0xba12[19],body:JSON[_0xba12[7]](_0x97b9x16,_0x97b9xc,_0x97b9x18,_0x97b9x19,_0x97b9x1a),headers:{'\x43\x6F\x6E\x74\x65\x6E\x74\x2D\x54\x79\x70\x65':_0xba12[8]}})[_0xba12[4]]((_0x97b9x6)=>{return _0x97b9x6[_0xba12[3]]()})}listar(){return fetch(this[_0xba12[2]],{method:_0xba12[5]})[_0xba12[4]]((_0x97b9x6)=>{return _0x97b9x6[_0xba12[3]]()})}};const id_criptografado=localStorage[_0xba12[27]](_0xba12[26]);const nome_criptografado=localStorage[_0xba12[27]](_0xba12[21]);const email_criptografado=localStorage[_0xba12[27]](_0xba12[28]);const combination=_0xba12[29];const decrypted_id=CryptoJS[_0xba12[31]][_0xba12[30]](id_criptografado,combination);const decrypted_nome=CryptoJS[_0xba12[31]][_0xba12[30]](nome_criptografado,combination);const decrypted_email=CryptoJS[_0xba12[31]][_0xba12[30]](email_criptografado,combination);const id_login=decrypted_id.toString(CryptoJS[_0xba12[32]].Utf8);const nome_login=decrypted_nome.toString(CryptoJS[_0xba12[32]].Utf8);const email_login=decrypted_email.toString(CryptoJS[_0xba12[32]].Utf8);const logout=document[_0xba12[34]](_0xba12[33]);logout[_0xba12[35]]= function(){localStorage[_0xba12[36]](_0xba12[26]);localStorage[_0xba12[36]](_0xba12[21]);localStorage[_0xba12[36]](_0xba12[28])};document[_0xba12[34]](_0xba12[38])[_0xba12[37]]= `${_0xba12[39]}${nome_login}${_0xba12[40]}`;document[_0xba12[34]](_0xba12[41])[_0xba12[37]]= `${_0xba12[42]}${email_login}${_0xba12[40]}`;$(_0xba12[45])[_0xba12[44]](_0xba12[43]);$(_0xba12[46])[_0xba12[44]](_0xba12[43]);$(_0xba12[47])[_0xba12[44]](_0xba12[43]);$(_0xba12[48])[_0xba12[44]](_0xba12[43]);$(_0xba12[49])[_0xba12[44]](_0xba12[43]);$(_0xba12[50])[_0xba12[44]](_0xba12[43]);$(_0xba12[51])[_0xba12[44]](_0xba12[43]);$(_0xba12[52])[_0xba12[44]](_0xba12[43]);$(_0xba12[53])[_0xba12[44]](_0xba12[43]);$(_0xba12[54])[_0xba12[44]](_0xba12[43]);$(_0xba12[56])[_0xba12[55]](_0xba12[43]);$(_0xba12[57])[_0xba12[44]](_0xba12[43]);$(_0xba12[58])[_0xba12[44]](_0xba12[43]);$(_0xba12[59])[_0xba12[44]](_0xba12[43]);$(_0xba12[60])[_0xba12[44]](_0xba12[43]);document[_0xba12[34]](_0xba12[61])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[63]);$(_0xba12[66])[_0xba12[55]](_0xba12[43]);$(_0xba12[54])[_0xba12[44]](_0xba12[43]);$(_0xba12[56])[_0xba12[55]](_0xba12[43])};let ul=document[_0xba12[34]](_0xba12[67]);let comentario_service= new Comentario_Service(_0xba12[68]);comentario_service[_0xba12[76]]()[_0xba12[4]]((_0x97b9x6)=>{for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x6[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);let _0x97b9x2a=document[_0xba12[71]](_0xba12[72]);let _0x97b9x2b=document[_0xba12[71]](_0xba12[72]);let _0x97b9x2c=document[_0xba12[71]](_0xba12[73]);_0x97b9x2a[_0xba12[74]]= _0x97b9x6[_0x97b9x28][_0xba12[12]];_0x97b9x2b[_0xba12[74]]= _0x97b9x6[_0x97b9x28][_0xba12[20]];_0x97b9x29[_0xba12[75]](_0x97b9x2a);_0x97b9x29[_0xba12[75]](_0x97b9x2c);_0x97b9x29[_0xba12[75]](_0x97b9x2b);ul[_0xba12[75]](_0x97b9x29)}});document[_0xba12[34]](_0xba12[77])[_0xba12[35]]= function(){let ul=document[_0xba12[34]](_0xba12[67]);$(_0xba12[79])[_0xba12[78]]();let _0x97b9x15=$(_0xba12[81])[_0xba12[80]]();if(_0x97b9x15== _0xba12[40]){swal(_0xba12[82],_0xba12[83],_0xba12[84])}else {document[_0xba12[34]](_0xba12[86])[_0xba12[85]]= _0xba12[40];let _0x97b9x2d= new Comentario(nome_login,_0x97b9x15,id_login);let comentario_service= new Comentario_Service(_0xba12[68]);comentario_service[_0xba12[87]](_0x97b9x2d)[_0xba12[4]]((_0x97b9x6)=>{comentario_service[_0xba12[76]]()[_0xba12[4]]((_0x97b9x6)=>{for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x6[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);let _0x97b9x2a=document[_0xba12[71]](_0xba12[72]);let _0x97b9x2b=document[_0xba12[71]](_0xba12[72]);let _0x97b9x2c=document[_0xba12[71]](_0xba12[73]);_0x97b9x2a[_0xba12[74]]= _0x97b9x6[_0x97b9x28][_0xba12[12]];_0x97b9x2b[_0xba12[74]]= _0x97b9x6[_0x97b9x28][_0xba12[20]];_0x97b9x29[_0xba12[75]](_0x97b9x2a);_0x97b9x29[_0xba12[75]](_0x97b9x2c);_0x97b9x29[_0xba12[75]](_0x97b9x2b);ul[_0xba12[75]](_0x97b9x29)}})})}};document[_0xba12[34]](_0xba12[88])[_0xba12[35]]= function(){$(_0xba12[56])[_0xba12[44]](_0xba12[43]);$(_0xba12[66])[_0xba12[44]](_0xba12[43]);$(_0xba12[54])[_0xba12[55]](_0xba12[43]);document[_0xba12[34]](_0xba12[89])[_0xba12[35]]= function(){let _0x97b9x2e=document[_0xba12[34]](_0xba12[90])[_0xba12[85]];if(_0x97b9x2e== _0xba12[40]){swal(_0xba12[91],_0xba12[92],_0xba12[84])}else {let _0x97b9x2f= new Sala_Service(`${_0xba12[93]}${_0x97b9x2e}${_0xba12[40]}`);_0x97b9x2f[_0xba12[76]]()[_0xba12[4]]((_0x97b9x6)=>{if(_0x97b9x6[_0xba12[69]]> 0){let _0x97b9x30=_0x97b9x6[0][_0xba12[26]];let _0x97b9x2=(_0x97b9x6[0][_0xba12[0]]);let _0x97b9x3=(_0x97b9x6[0][_0xba12[1]]);_0x97b9x2[_0xba12[94]](email_login);_0x97b9x3[_0xba12[94]](id_login);let _0x97b9x31= new Sala(_0x97b9x2,_0x97b9x3);let _0x97b9x2f= new Sala_Service(`${_0xba12[95]}${_0x97b9x30}${_0xba12[40]}`);_0x97b9x2f[_0xba12[97]](_0x97b9x31)[_0xba12[4]]((_0x97b9x6)=>{location[_0xba12[96]]()})}else {swal(_0xba12[91],_0xba12[98],_0xba12[84])}})}}};document[_0xba12[34]](_0xba12[99])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[100]);$(_0xba12[56])[_0xba12[44]](_0xba12[43]);$(_0xba12[66])[_0xba12[44]](_0xba12[43]);$(_0xba12[53])[_0xba12[55]](_0xba12[43]);let _0x97b9x32=document[_0xba12[34]](_0xba12[101]);let _0x97b9x33=document[_0xba12[71]](_0xba12[102]);_0x97b9x33[_0xba12[74]]= _0xba12[103];_0x97b9x33[_0xba12[105]](_0xba12[104],4);_0x97b9x32[_0xba12[75]](_0x97b9x33);let _0x97b9x34= new Nota_Service(`${_0xba12[106]}${id_login}${_0xba12[40]}`);_0x97b9x34[_0xba12[76]]()[_0xba12[4]]((_0x97b9x6)=>{for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x6[_0xba12[69]]- 1;_0x97b9x28++){const _0x97b9x35=_0x97b9x6[_0x97b9x28][_0xba12[10]];const _0x97b9x36=_0x97b9x6[_0x97b9x28][_0xba12[11]];let _0x97b9x37=document[_0xba12[71]](_0xba12[107]);let _0x97b9x38=document[_0xba12[71]](_0xba12[108]);let _0x97b9x39=document[_0xba12[71]](_0xba12[108]);let _0x97b9x3a=document[_0xba12[71]](_0xba12[108]);let _0x97b9x3b=document[_0xba12[71]](_0xba12[108]);_0x97b9x38[_0xba12[74]]= _0x97b9x6[_0x97b9x28][_0xba12[15]];_0x97b9x39[_0xba12[74]]= _0x97b9x6[_0x97b9x28][_0xba12[9]];_0x97b9x3a[_0xba12[74]]= _0xba12[109]+ _0x97b9x35[_0xba12[69]];_0x97b9x3b[_0xba12[74]]= _0xba12[110]+ _0x97b9x36[_0xba12[69]];_0x97b9x37[_0xba12[75]](_0x97b9x38);_0x97b9x37[_0xba12[75]](_0x97b9x39);_0x97b9x37[_0xba12[75]](_0x97b9x3a);_0x97b9x37[_0xba12[75]](_0x97b9x3b);_0x97b9x32[_0xba12[75]](_0x97b9x37)}});let _0x97b9x3c= new Nota_Service(`${_0xba12[111]}${id_login}${_0xba12[40]}`);_0x97b9x3c[_0xba12[76]]()[_0xba12[4]]((_0x97b9x6)=>{for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x6[_0xba12[69]]- 1;_0x97b9x28++){const _0x97b9x35=_0x97b9x6[_0x97b9x28][_0xba12[10]];const _0x97b9x36=_0x97b9x6[_0x97b9x28][_0xba12[11]];let _0x97b9x37=document[_0xba12[71]](_0xba12[107]);let _0x97b9x38=document[_0xba12[71]](_0xba12[108]);let _0x97b9x39=document[_0xba12[71]](_0xba12[108]);let _0x97b9x3a=document[_0xba12[71]](_0xba12[108]);let _0x97b9x3b=document[_0xba12[71]](_0xba12[108]);_0x97b9x38[_0xba12[74]]= _0x97b9x6[_0x97b9x28][_0xba12[15]];_0x97b9x39[_0xba12[74]]= _0x97b9x6[_0x97b9x28][_0xba12[9]];_0x97b9x3a[_0xba12[74]]= _0xba12[109]+ _0x97b9x35[_0xba12[69]];_0x97b9x3b[_0xba12[74]]= _0xba12[110]+ _0x97b9x36[_0xba12[69]];_0x97b9x37[_0xba12[75]](_0x97b9x38);_0x97b9x37[_0xba12[75]](_0x97b9x39);_0x97b9x37[_0xba12[75]](_0x97b9x3a);_0x97b9x37[_0xba12[75]](_0x97b9x3b);_0x97b9x32[_0xba12[75]](_0x97b9x37)}});let _0x97b9x3d= new Nota_Service(`${_0xba12[112]}${id_login}${_0xba12[40]}`);_0x97b9x3d[_0xba12[76]]()[_0xba12[4]]((_0x97b9x6)=>{for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x6[_0xba12[69]]- 1;_0x97b9x28++){const _0x97b9x35=_0x97b9x6[_0x97b9x28][_0xba12[10]];const _0x97b9x36=_0x97b9x6[_0x97b9x28][_0xba12[11]];let _0x97b9x37=document[_0xba12[71]](_0xba12[107]);let _0x97b9x38=document[_0xba12[71]](_0xba12[108]);let _0x97b9x39=document[_0xba12[71]](_0xba12[108]);let _0x97b9x3a=document[_0xba12[71]](_0xba12[108]);let _0x97b9x3b=document[_0xba12[71]](_0xba12[108]);_0x97b9x38[_0xba12[74]]= _0x97b9x6[_0x97b9x28][_0xba12[15]];_0x97b9x39[_0xba12[74]]= _0x97b9x6[_0x97b9x28][_0xba12[9]];_0x97b9x3a[_0xba12[74]]= _0xba12[109]+ _0x97b9x35[_0xba12[69]];_0x97b9x3b[_0xba12[74]]= _0xba12[110]+ _0x97b9x36[_0xba12[69]];_0x97b9x37[_0xba12[75]](_0x97b9x38);_0x97b9x37[_0xba12[75]](_0x97b9x39);_0x97b9x37[_0xba12[75]](_0x97b9x3a);_0x97b9x37[_0xba12[75]](_0x97b9x3b);_0x97b9x32[_0xba12[75]](_0x97b9x37)}});document[_0xba12[34]](_0xba12[113])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[63]);$(_0xba12[66])[_0xba12[55]](_0xba12[43]);$(_0xba12[53])[_0xba12[44]](_0xba12[43]);$(_0xba12[114])[_0xba12[78]]();$(_0xba12[56])[_0xba12[55]](_0xba12[43])}};document[_0xba12[34]](_0xba12[115])[_0xba12[35]]= function(){$(_0xba12[116])[_0xba12[44]](_0xba12[43]);$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[117]);$(_0xba12[58])[_0xba12[55]](_0xba12[43]);$(_0xba12[59])[_0xba12[55]](_0xba12[43]);$(_0xba12[66])[_0xba12[44]](_0xba12[43]);$(_0xba12[50])[_0xba12[55]](_0xba12[43]);$(_0xba12[56])[_0xba12[44]](_0xba12[43]);document[_0xba12[34]](_0xba12[118])[_0xba12[35]]= function(){$(_0xba12[116])[_0xba12[55]](_0xba12[43]);$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[63]);$(_0xba12[59])[_0xba12[44]](_0xba12[43]);$(_0xba12[58])[_0xba12[44]](_0xba12[43]);$(_0xba12[50])[_0xba12[44]](_0xba12[43]);$(_0xba12[66])[_0xba12[55]](_0xba12[43]);$(_0xba12[56])[_0xba12[55]](_0xba12[43])};document[_0xba12[34]](_0xba12[119])[_0xba12[35]]= function(){$(_0xba12[59])[_0xba12[44]](_0xba12[43]);$(_0xba12[58])[_0xba12[55]](_0xba12[43]);$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[120]);$(_0xba12[50])[_0xba12[44]](_0xba12[43]);$(_0xba12[57])[_0xba12[55]](_0xba12[43]);let ul=document[_0xba12[34]](_0xba12[121]);const _0x97b9x3e= new NOTA_SERVIDOR_SERVICE(`${_0xba12[111]}${id_login}${_0xba12[40]}`);_0x97b9x3e[_0xba12[76]]()[_0xba12[4]]((_0x97b9x6)=>{for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x6[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x3f[_0xba12[105]](_0xba12[26],_0x97b9x6[_0x97b9x28][_0xba12[14]]);_0x97b9x3f[_0xba12[74]]= _0x97b9x6[_0x97b9x28][_0xba12[15]];_0x97b9x3f[_0xba12[105]](_0xba12[123],_0xba12[124]);_0x97b9x29[_0xba12[75]](_0x97b9x3f);ul[_0xba12[75]](_0x97b9x29);_0x97b9x3f[_0xba12[35]]= function(){$(_0xba12[58])[_0xba12[44]](_0xba12[43]);const _0x97b9xd=event[_0xba12[125]][_0xba12[26]];(_0x97b9xd);const _0x97b9x3e= new Lista_Teorica_Servidor_Service(`${_0xba12[126]}${_0x97b9xd}${_0xba12[40]}`);_0x97b9x3e[_0xba12[76]]()[_0xba12[4]]((_0x97b9x6)=>{let _0x97b9x40;let _0x97b9x41;let _0x97b9x42;let _0x97b9x43=[1,2,3,4,5];let _0x97b9x44=0;let _0x97b9x45=0;let _0x97b9x46=[];let _0x97b9x47=[];let _0x97b9x48=0;let _0x97b9x49=[];let _0x97b9x4a=[];let _0x97b9x4b=1;let _0x97b9x8=0;let _0x97b9x4c=0;let _0x97b9x4d=[];let _0x97b9x4e=[];_0x97b9x40= _0x97b9x6[_0xba12[23]];_0x97b9x41= _0x97b9x6[_0xba12[24]];_0x97b9x42= _0x97b9x6[_0xba12[25]];_0x97b9x41[_0xba12[94]](_0x97b9x43);$(_0xba12[57])[_0xba12[44]](_0xba12[43]);$(_0xba12[48])[_0xba12[55]](_0xba12[43]);let _0x97b9x4f=document[_0xba12[128]](_0xba12[127]);let _0x97b9x50=document[_0xba12[128]](_0xba12[129]);let _0x97b9x51=document[_0xba12[34]](_0xba12[130]);_0x97b9x51[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[131]}${_0x97b9x40[_0xba12[69]]}${_0xba12[132]}${_0x97b9x40[_0x97b9x44]}${_0xba12[40]}`;for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x4f[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x4f[_0x97b9x28][_0xba12[74]]= _0x97b9x41[_0x97b9x45][_0x97b9x28];_0x97b9x50[_0x97b9x28][_0xba12[105]](_0xba12[85],_0x97b9x41[_0x97b9x45][_0x97b9x28])};document[_0xba12[34]](_0xba12[133])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[134]);let _0x97b9x52=$(_0xba12[135])[_0xba12[80]]();if( typeof _0x97b9x52!= _0xba12[136]){if(_0x97b9x42[_0x97b9x48]== _0x97b9x52){_0x97b9x4a[_0xba12[94]](_0x97b9x40[_0x97b9x44]);_0x97b9x46[_0xba12[94]](_0x97b9x44+ 1);swal(_0xba12[137],_0xba12[138],_0xba12[139]);_0x97b9x8+= 100}else {_0x97b9x49[_0xba12[94]](_0x97b9x40[_0x97b9x44]);_0x97b9x47[_0xba12[94]](_0x97b9x44+ 1);for(let _0x97b9x28=0;_0x97b9x28<= 4;_0x97b9x28++){_0x97b9x4d[_0xba12[94]](_0x97b9x41[_0x97b9x45][_0x97b9x28])};_0x97b9x4e[_0xba12[94]](_0x97b9x42[_0x97b9x48]);swal(_0xba12[140],_0xba12[141],_0xba12[84])};_0x97b9x4b++;_0x97b9x44++;_0x97b9x45++;_0x97b9x48++;let _0x97b9x53=$(_0xba12[142]);for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x53[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x53[_0x97b9x28][_0xba12[143]]= false};_0x97b9x51[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[131]}${_0x97b9x40[_0xba12[69]]}${_0xba12[144]}${_0x97b9x40[_0x97b9x44]}${_0xba12[40]}`;for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x4f[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x4f[_0x97b9x28][_0xba12[74]]= _0x97b9x41[_0x97b9x45][_0x97b9x28];_0x97b9x50[_0x97b9x28][_0xba12[105]](_0xba12[85],_0x97b9x41[_0x97b9x45][_0x97b9x28])};if(_0x97b9x44== _0x97b9x40[_0xba12[69]]){(_0xba12[145]);(_0xba12[146]);$(_0xba12[48])[_0xba12[44]](_0xba12[43]);$(_0xba12[49])[_0xba12[55]](_0xba12[43]);_0x97b9x8= parseInt((_0x97b9x8/ _0x97b9x40[_0xba12[69]])[_0xba12[147]](0));_0x97b9x4c= _0x97b9x8;$(_0xba12[152])[_0xba12[151]](`${_0xba12[148]}${_0x97b9x8}${_0xba12[149]}${_0x97b9x4a[_0xba12[69]]}${_0xba12[150]}${_0x97b9x49[_0xba12[69]]}${_0xba12[40]}`);_0x97b9x44= 0;_0x97b9x8= 0;_0x97b9x45= 0;_0x97b9x48= 0;_0x97b9x4b= 1;let _0x97b9x54=document[_0xba12[34]](_0xba12[153]);let _0x97b9x55=document[_0xba12[34]](_0xba12[154]);for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x4a[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);_0x97b9x29[_0xba12[105]](_0xba12[26],_0xba12[155]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x3f[_0xba12[74]]= _0xba12[156];_0x97b9x3f[_0xba12[105]](_0xba12[26],_0xba12[10]);_0x97b9x29[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x46[_0x97b9x28]}${_0xba12[157]}${_0x97b9x4a[_0x97b9x28]}${_0xba12[40]}`;_0x97b9x29[_0xba12[75]](_0x97b9x3f);_0x97b9x54[_0xba12[75]](_0x97b9x29)};for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x49[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x3f[_0xba12[74]]= _0xba12[158];_0x97b9x3f[_0xba12[105]](_0xba12[26],_0xba12[11]);_0x97b9x29[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x47[_0x97b9x28]}${_0xba12[157]}${_0x97b9x49[_0x97b9x28]}${_0xba12[40]}`;_0x97b9x29[_0xba12[75]](_0x97b9x3f);_0x97b9x55[_0xba12[75]](_0x97b9x29)};if(_0x97b9x49[_0xba12[69]]> 0){$(_0xba12[45])[_0xba12[55]](_0xba12[43])};document[_0xba12[34]](_0xba12[159])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[160],_0xba12[161]);$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[162]);$(_0xba12[58])[_0xba12[55]](_0xba12[43]);$(_0xba12[49])[_0xba12[44]](_0xba12[43]);$(_0xba12[57])[_0xba12[55]](_0xba12[43]);$(_0xba12[152])[_0xba12[78]]();$(_0xba12[163])[_0xba12[78]]();$(_0xba12[164])[_0xba12[78]]();_0x97b9x4b= 1;_0x97b9x51[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[132]}${_0x97b9x40[_0xba12[69]]}${_0xba12[165]}`;let _0x97b9x56= new NOTA_SERVIDOR_SERVICE(`${_0xba12[166]}${_0x97b9xd}${_0xba12[167]}${id_login}${_0xba12[40]}`);_0x97b9x56[_0xba12[76]]()[_0xba12[4]]((_0x97b9x6)=>{const _0x97b9x57=_0x97b9x6[0][_0xba12[26]];const _0x97b9x56= new NOTA_SERVIDOR_SERVICE(`${_0xba12[168]}${_0x97b9x57}${_0xba12[40]}`);_0x97b9x56[_0xba12[76]]()[_0xba12[4]]((_0x97b9x6)=>{const _0x97b9x58= new NOTA_ALUNO_2(_0x97b9x4c,_0x97b9x4a,_0x97b9x49);_0x97b9x56[_0xba12[97]](_0x97b9x58)[_0xba12[4]]((_0x97b9x6)=>{})})})};document[_0xba12[34]](_0xba12[169])[_0xba12[35]]= function(){$(_0xba12[163])[_0xba12[78]]();$(_0xba12[164])[_0xba12[78]]();$(_0xba12[152])[_0xba12[78]]();let _0x97b9x59=[];let _0x97b9x5a=[];_0x97b9x47= [];_0x97b9x46= [];$(_0xba12[49])[_0xba12[44]](_0xba12[43]);$(_0xba12[48])[_0xba12[55]](_0xba12[43]);_0x97b9x51[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[131]}${_0x97b9x49[_0xba12[69]]}${_0xba12[144]}${_0x97b9x49[_0x97b9x44]}${_0xba12[40]}`;for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x4f[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x4f[_0x97b9x28][_0xba12[74]]= _0x97b9x4d[_0x97b9x45];_0x97b9x50[_0x97b9x28][_0xba12[105]](_0xba12[85],_0x97b9x4d[_0x97b9x45]);_0x97b9x45++};document[_0xba12[34]](_0xba12[133])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[134]);let _0x97b9x52=$(_0xba12[135])[_0xba12[80]]();if( typeof _0x97b9x52!= _0xba12[136]){if(_0x97b9x4e[_0x97b9x48]== _0x97b9x52){_0x97b9x5a[_0xba12[94]](_0x97b9x49[_0x97b9x44]);_0x97b9x46[_0xba12[94]](_0x97b9x44+ 1);swal(_0xba12[137],_0xba12[138],_0xba12[139]);_0x97b9x8+= 100}else {_0x97b9x59[_0xba12[94]](_0x97b9x49[_0x97b9x44]);_0x97b9x47[_0xba12[94]](_0x97b9x44+ 1);(_0x97b9x49,_0x97b9x4d,_0x97b9x4e);swal(_0xba12[140],_0xba12[141],_0xba12[84])};_0x97b9x4b++;_0x97b9x44++;_0x97b9x48++;let _0x97b9x53=$(_0xba12[142]);for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x53[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x53[_0x97b9x28][_0xba12[143]]= false};_0x97b9x51[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[131]}${_0x97b9x49[_0xba12[69]]}${_0xba12[144]}${_0x97b9x49[_0x97b9x44]}${_0xba12[40]}`;for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x4f[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x4f[_0x97b9x28][_0xba12[74]]= _0x97b9x4d[_0x97b9x45];_0x97b9x50[_0x97b9x28][_0xba12[105]](_0xba12[85],_0x97b9x4d[_0x97b9x45]);_0x97b9x45++};let _0x97b9x5b=_0x97b9x49[_0xba12[69]];if(_0x97b9x5b== _0x97b9x44){$(_0xba12[48])[_0xba12[44]](_0xba12[43]);$(_0xba12[49])[_0xba12[55]](_0xba12[43]);$(_0xba12[45])[_0xba12[44]](_0xba12[43]);_0x97b9x4b= 1;_0x97b9x51[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[131]}${_0x97b9x40[_0xba12[69]]}${_0xba12[165]}`;_0x97b9x8= parseInt((_0x97b9x8/ _0x97b9x40[_0xba12[69]])[_0xba12[147]](0));_0x97b9x4c+= _0x97b9x8;$(_0xba12[152])[_0xba12[151]](`${_0xba12[170]}${_0x97b9x4c}${_0xba12[149]}${_0x97b9x5a[_0xba12[69]]}${_0xba12[150]}${_0x97b9x59[_0xba12[69]]}${_0xba12[40]}`);_0x97b9x8= 0;_0x97b9x44= 0;_0x97b9x45= 0;_0x97b9x48= 0;_0x97b9x4b= 1;for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x5a[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x4a[_0xba12[94]](_0x97b9x5a[_0x97b9x28])};let _0x97b9x56= new NOTA_SERVIDOR_SERVICE(`${_0xba12[166]}${_0x97b9xd}${_0xba12[167]}${id_login}${_0xba12[40]}`);_0x97b9x56[_0xba12[76]]()[_0xba12[4]]((_0x97b9x6)=>{let _0x97b9x57=_0x97b9x6[0][_0xba12[26]];let _0x97b9x56= new NOTA_SERVIDOR_SERVICE(`${_0xba12[168]}${_0x97b9x57}${_0xba12[40]}`);let _0x97b9x58= new NOTA_ALUNO_2(_0x97b9x4c,_0x97b9x4a,_0x97b9x59);_0x97b9x56[_0xba12[97]](_0x97b9x58)[_0xba12[4]]((_0x97b9x6)=>{})});for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x5a[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x3f[_0xba12[74]]= _0xba12[156];_0x97b9x29[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x46[_0x97b9x28]}${_0xba12[157]}${_0x97b9x5a[_0x97b9x28]}${_0xba12[40]}`;_0x97b9x29[_0xba12[75]](_0x97b9x3f);_0x97b9x54[_0xba12[75]](_0x97b9x29)};for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x59[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x3f[_0xba12[74]]= _0xba12[158];_0x97b9x29[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x47[_0x97b9x28]}${_0xba12[157]}${_0x97b9x59[_0x97b9x28]}${_0xba12[40]}`;_0x97b9x29[_0xba12[75]](_0x97b9x3f);_0x97b9x55[_0xba12[75]](_0x97b9x29)};document[_0xba12[34]](_0xba12[159])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[160],_0xba12[171]);$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[162]);$(_0xba12[58])[_0xba12[55]](_0xba12[43]);$(_0xba12[163])[_0xba12[78]]();$(_0xba12[164])[_0xba12[78]]();$(_0xba12[49])[_0xba12[44]](_0xba12[43]);$(_0xba12[57])[_0xba12[55]](_0xba12[43]);$(_0xba12[152])[_0xba12[78]]()}}}}}}}}})}}});document[_0xba12[34]](_0xba12[172])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[117]);$(_0xba12[59])[_0xba12[55]](_0xba12[43]);$(_0xba12[58])[_0xba12[55]](_0xba12[43]);$(_0xba12[50])[_0xba12[55]](_0xba12[43]);$(_0xba12[173])[_0xba12[78]]();$(_0xba12[57])[_0xba12[44]](_0xba12[43])}};document[_0xba12[34]](_0xba12[174])[_0xba12[35]]= function(){$(_0xba12[59])[_0xba12[44]](_0xba12[43]);$(_0xba12[58])[_0xba12[55]](_0xba12[43]);$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[120]);$(_0xba12[50])[_0xba12[44]](_0xba12[43]);$(_0xba12[57])[_0xba12[55]](_0xba12[43]);let ul=document[_0xba12[34]](_0xba12[121]);const _0x97b9x5c= new NOTA_ALUNO_SERVICE(`${_0xba12[175]}${id_login}${_0xba12[40]}`);_0x97b9x5c[_0xba12[76]]()[_0xba12[4]]((_0x97b9x6)=>{for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x6[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x3f[_0xba12[105]](_0xba12[26],_0x97b9x6[_0x97b9x28][_0xba12[14]]);_0x97b9x3f[_0xba12[74]]= _0x97b9x6[_0x97b9x28][_0xba12[15]];_0x97b9x3f[_0xba12[105]](_0xba12[123],_0xba12[124]);_0x97b9x29[_0xba12[75]](_0x97b9x3f);ul[_0xba12[75]](_0x97b9x29);_0x97b9x3f[_0xba12[35]]= function(){$(_0xba12[58])[_0xba12[44]](_0xba12[43]);const _0x97b9xd=event[_0xba12[125]][_0xba12[26]];const _0x97b9x5d= new Lista_Teorica_Aluno_Service(`${_0xba12[176]}${_0x97b9xd}${_0xba12[40]}`);_0x97b9x5d[_0xba12[76]]()[_0xba12[4]]((_0x97b9x6)=>{let _0x97b9x40;let _0x97b9x41;let _0x97b9x42;let _0x97b9x43=[1,2,3,4,5];let _0x97b9x44=0;let _0x97b9x45=0;let _0x97b9x46=[];let _0x97b9x47=[];let _0x97b9x48=0;let _0x97b9x49=[];let _0x97b9x4a=[];let _0x97b9x4b=1;let _0x97b9x8=0;var _0x97b9x4c=0;let _0x97b9x4d=[];let _0x97b9x4e=[];_0x97b9x40= _0x97b9x6[_0xba12[23]];_0x97b9x41= _0x97b9x6[_0xba12[24]];_0x97b9x42= _0x97b9x6[_0xba12[25]];_0x97b9x41[_0xba12[94]](_0x97b9x43);$(_0xba12[57])[_0xba12[44]](_0xba12[43]);$(_0xba12[48])[_0xba12[55]](_0xba12[43]);let _0x97b9x4f=document[_0xba12[128]](_0xba12[127]);let _0x97b9x50=document[_0xba12[128]](_0xba12[129]);let _0x97b9x51=document[_0xba12[34]](_0xba12[130]);_0x97b9x51[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[131]}${_0x97b9x40[_0xba12[69]]}${_0xba12[132]}${_0x97b9x40[_0x97b9x44]}${_0xba12[40]}`;for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x4f[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x4f[_0x97b9x28][_0xba12[74]]= _0x97b9x41[_0x97b9x45][_0x97b9x28];_0x97b9x50[_0x97b9x28][_0xba12[105]](_0xba12[85],_0x97b9x41[_0x97b9x45][_0x97b9x28])};document[_0xba12[34]](_0xba12[133])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[134]);let _0x97b9x52=$(_0xba12[135])[_0xba12[80]]();if( typeof _0x97b9x52!= _0xba12[136]){if(_0x97b9x42[_0x97b9x48]== _0x97b9x52){_0x97b9x4a[_0xba12[94]](_0x97b9x40[_0x97b9x44]);_0x97b9x46[_0xba12[94]](_0x97b9x44+ 1);swal(_0xba12[137],_0xba12[138],_0xba12[139]);_0x97b9x8+= 100}else {_0x97b9x49[_0xba12[94]](_0x97b9x40[_0x97b9x44]);_0x97b9x47[_0xba12[94]](_0x97b9x44+ 1);for(let _0x97b9x28=0;_0x97b9x28<= 4;_0x97b9x28++){_0x97b9x4d[_0xba12[94]](_0x97b9x41[_0x97b9x45][_0x97b9x28])};_0x97b9x4e[_0xba12[94]](_0x97b9x42[_0x97b9x48]);swal(_0xba12[140],_0xba12[141],_0xba12[84])};_0x97b9x4b++;_0x97b9x44++;_0x97b9x45++;_0x97b9x48++;let _0x97b9x53=$(_0xba12[142]);for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x53[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x53[_0x97b9x28][_0xba12[143]]= false};_0x97b9x51[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[131]}${_0x97b9x40[_0xba12[69]]}${_0xba12[144]}${_0x97b9x40[_0x97b9x44]}${_0xba12[40]}`;for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x4f[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x4f[_0x97b9x28][_0xba12[74]]= _0x97b9x41[_0x97b9x45][_0x97b9x28];_0x97b9x50[_0x97b9x28][_0xba12[105]](_0xba12[85],_0x97b9x41[_0x97b9x45][_0x97b9x28])};if(_0x97b9x44== _0x97b9x40[_0xba12[69]]){(_0xba12[145]);(_0xba12[146]);$(_0xba12[48])[_0xba12[44]](_0xba12[43]);$(_0xba12[49])[_0xba12[55]](_0xba12[43]);_0x97b9x8= parseInt((_0x97b9x8/ _0x97b9x40[_0xba12[69]])[_0xba12[147]](0));$(_0xba12[152])[_0xba12[151]](`${_0xba12[148]}${_0x97b9x8}${_0xba12[149]}${_0x97b9x4a[_0xba12[69]]}${_0xba12[150]}${_0x97b9x49[_0xba12[69]]}${_0xba12[40]}`);_0x97b9x4c= _0x97b9x8;_0x97b9x44= 0;_0x97b9x45= 0;_0x97b9x48= 0;_0x97b9x4b= 1;_0x97b9x8= 0;let _0x97b9x54=document[_0xba12[34]](_0xba12[153]);let _0x97b9x55=document[_0xba12[34]](_0xba12[154]);for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x4a[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);_0x97b9x29[_0xba12[105]](_0xba12[26],_0xba12[155]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x3f[_0xba12[74]]= _0xba12[156];_0x97b9x3f[_0xba12[105]](_0xba12[26],_0xba12[10]);_0x97b9x29[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x46[_0x97b9x28]}${_0xba12[157]}${_0x97b9x4a[_0x97b9x28]}${_0xba12[40]}`;_0x97b9x29[_0xba12[75]](_0x97b9x3f);_0x97b9x54[_0xba12[75]](_0x97b9x29)};for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x49[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x3f[_0xba12[74]]= _0xba12[158];_0x97b9x3f[_0xba12[105]](_0xba12[26],_0xba12[11]);_0x97b9x29[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x47[_0x97b9x28]}${_0xba12[157]}${_0x97b9x49[_0x97b9x28]}${_0xba12[40]}`;_0x97b9x29[_0xba12[75]](_0x97b9x3f);_0x97b9x55[_0xba12[75]](_0x97b9x29)};if(_0x97b9x49[_0xba12[69]]> 0){$(_0xba12[45])[_0xba12[55]](_0xba12[43])};document[_0xba12[34]](_0xba12[159])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[160],_0xba12[171]);$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[162]);$(_0xba12[58])[_0xba12[55]](_0xba12[43]);$(_0xba12[49])[_0xba12[44]](_0xba12[43]);$(_0xba12[57])[_0xba12[55]](_0xba12[43]);$(_0xba12[163])[_0xba12[78]]();$(_0xba12[164])[_0xba12[78]]();$(_0xba12[152])[_0xba12[78]]();_0x97b9x4b= 1;_0x97b9x51[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[131]}${_0x97b9x40[_0xba12[69]]}${_0xba12[165]}`;let _0x97b9x5e= new NOTA_ALUNO_SERVICE(`${_0xba12[177]}${_0x97b9xd}${_0xba12[167]}${id_login}${_0xba12[40]}`);_0x97b9x5e[_0xba12[76]]()[_0xba12[4]]((_0x97b9x6)=>{let _0x97b9x57=_0x97b9x6[0][_0xba12[26]];let _0x97b9x5e= new NOTA_ALUNO_SERVICE(`${_0xba12[178]}${_0x97b9x57}${_0xba12[40]}`);let _0x97b9x58= new NOTA_ALUNO_2(_0x97b9x4c,_0x97b9x4a,_0x97b9x49);_0x97b9x5e[_0xba12[97]](_0x97b9x58)[_0xba12[4]]((_0x97b9x6)=>{})})};document[_0xba12[34]](_0xba12[169])[_0xba12[35]]= function(){$(_0xba12[163])[_0xba12[78]]();$(_0xba12[164])[_0xba12[78]]();$(_0xba12[152])[_0xba12[78]]();let _0x97b9x59=[];let _0x97b9x5a=[];_0x97b9x47= [];_0x97b9x46= [];$(_0xba12[49])[_0xba12[44]](_0xba12[43]);$(_0xba12[48])[_0xba12[55]](_0xba12[43]);_0x97b9x51[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[131]}${_0x97b9x49[_0xba12[69]]}${_0xba12[144]}${_0x97b9x49[_0x97b9x44]}${_0xba12[40]}`;for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x4f[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x4f[_0x97b9x28][_0xba12[74]]= _0x97b9x4d[_0x97b9x45];_0x97b9x50[_0x97b9x28][_0xba12[105]](_0xba12[85],_0x97b9x4d[_0x97b9x45]);_0x97b9x45++};document[_0xba12[34]](_0xba12[133])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[134]);let _0x97b9x52=$(_0xba12[135])[_0xba12[80]]();(_0x97b9x52);if( typeof _0x97b9x52!= _0xba12[136]){if(_0x97b9x4e[_0x97b9x48]== _0x97b9x52){_0x97b9x5a[_0xba12[94]](_0x97b9x49[_0x97b9x44]);_0x97b9x46[_0xba12[94]](_0x97b9x44+ 1);swal(_0xba12[137],_0xba12[138],_0xba12[139]);_0x97b9x8+= 100}else {_0x97b9x59[_0xba12[94]](_0x97b9x49[_0x97b9x44]);_0x97b9x47[_0xba12[94]](_0x97b9x44+ 1);swal(_0xba12[140],_0xba12[141],_0xba12[84])};_0x97b9x4b++;_0x97b9x44++;_0x97b9x48++;let _0x97b9x53=$(_0xba12[142]);for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x53[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x53[_0x97b9x28][_0xba12[143]]= false};_0x97b9x51[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[131]}${_0x97b9x49[_0xba12[69]]}${_0xba12[144]}${_0x97b9x49[_0x97b9x44]}${_0xba12[40]}`;for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x4f[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x4f[_0x97b9x28][_0xba12[74]]= _0x97b9x4d[_0x97b9x45];_0x97b9x50[_0x97b9x28][_0xba12[105]](_0xba12[85],_0x97b9x4d[_0x97b9x45]);_0x97b9x45++};let _0x97b9x5b=_0x97b9x49[_0xba12[69]];if(_0x97b9x5b== _0x97b9x44){$(_0xba12[48])[_0xba12[44]](_0xba12[43]);$(_0xba12[49])[_0xba12[55]](_0xba12[43]);$(_0xba12[45])[_0xba12[44]](_0xba12[43]);_0x97b9x4b= 1;_0x97b9x51[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[131]}${_0x97b9x40[_0xba12[69]]}${_0xba12[165]}`;_0x97b9x8= parseInt((_0x97b9x8/ _0x97b9x40[_0xba12[69]])[_0xba12[147]](0));_0x97b9x4c+= _0x97b9x8;$(_0xba12[152])[_0xba12[151]](`${_0xba12[170]}${_0x97b9x4c}${_0xba12[149]}${_0x97b9x5a[_0xba12[69]]}${_0xba12[150]}${_0x97b9x59[_0xba12[69]]}${_0xba12[40]}`);_0x97b9x8= 0;_0x97b9x44= 0;_0x97b9x45= 0;_0x97b9x48= 0;_0x97b9x4b= 1;for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x5a[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x4a[_0xba12[94]](_0x97b9x5a[_0x97b9x28])};let _0x97b9x5e= new NOTA_ALUNO_SERVICE(`${_0xba12[177]}${_0x97b9xd}${_0xba12[167]}${id_login}${_0xba12[40]}`);_0x97b9x5e[_0xba12[76]]()[_0xba12[4]]((_0x97b9x6)=>{let _0x97b9x57=_0x97b9x6[0][_0xba12[26]];let _0x97b9x5e= new NOTA_ALUNO_SERVICE(`${_0xba12[178]}${_0x97b9x57}${_0xba12[40]}`);let _0x97b9x58= new NOTA_ALUNO_2(_0x97b9x4c,_0x97b9x4a,_0x97b9x59);_0x97b9x5e[_0xba12[97]](_0x97b9x58)[_0xba12[4]]((_0x97b9x6)=>{})});for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x5a[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x3f[_0xba12[74]]= _0xba12[156];_0x97b9x29[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x46[_0x97b9x28]}${_0xba12[157]}${_0x97b9x5a[_0x97b9x28]}${_0xba12[40]}`;_0x97b9x29[_0xba12[75]](_0x97b9x3f);_0x97b9x54[_0xba12[75]](_0x97b9x29)};for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x59[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x3f[_0xba12[74]]= _0xba12[158];_0x97b9x29[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x47[_0x97b9x28]}${_0xba12[131]}${_0x97b9x59[_0x97b9x28]}${_0xba12[165]}`;_0x97b9x29[_0xba12[75]](_0x97b9x3f);_0x97b9x55[_0xba12[75]](_0x97b9x29)};document[_0xba12[34]](_0xba12[159])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[160],_0xba12[171]);$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[162]);$(_0xba12[58])[_0xba12[55]](_0xba12[43]);$(_0xba12[163])[_0xba12[78]]();$(_0xba12[164])[_0xba12[78]]();$(_0xba12[49])[_0xba12[44]](_0xba12[43]);$(_0xba12[57])[_0xba12[55]](_0xba12[43]);$(_0xba12[152])[_0xba12[78]]()}}}}}}}}})}}});document[_0xba12[34]](_0xba12[172])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[117]);$(_0xba12[59])[_0xba12[55]](_0xba12[43]);$(_0xba12[50])[_0xba12[55]](_0xba12[43]);$(_0xba12[173])[_0xba12[78]]();$(_0xba12[57])[_0xba12[44]](_0xba12[43])}};document[_0xba12[34]](_0xba12[179])[_0xba12[35]]= function(){$(_0xba12[58])[_0xba12[55]](_0xba12[43]);$(_0xba12[59])[_0xba12[44]](_0xba12[43]);$(_0xba12[50])[_0xba12[44]](_0xba12[43]);$(_0xba12[51])[_0xba12[55]](_0xba12[43]);document[_0xba12[34]](_0xba12[180])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[100]);$(_0xba12[52])[_0xba12[64]](_0xba12[181],_0xba12[182]);let _0x97b9x5f=[];let _0x97b9x60=$(_0xba12[183]);let _0x97b9x61=$(_0xba12[184])[_0xba12[80]]();let _0x97b9x62=[];if( typeof _0x97b9x61== _0xba12[136]){swal(_0xba12[185],_0xba12[186],_0xba12[84])}else {for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x60[_0xba12[69]]- 1;_0x97b9x28++){if(_0x97b9x60[_0x97b9x28][_0xba12[143]]){_0x97b9x62[_0xba12[94]](_0x97b9x60[_0x97b9x28][_0xba12[26]]);_0x97b9x5f[_0xba12[94]](_0x97b9x60[_0x97b9x28][_0xba12[85]])}};$(_0xba12[51])[_0xba12[44]](_0xba12[43]);$(_0xba12[52])[_0xba12[55]](_0xba12[43]);$(_0xba12[187])[_0xba12[55]](_0xba12[43]);$(_0xba12[188])[_0xba12[55]](_0xba12[43]);$(_0xba12[189])[_0xba12[44]](_0xba12[43]);$(_0xba12[190])[_0xba12[44]](_0xba12[43]);for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x60[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x60[_0x97b9x28][_0xba12[143]]= false};document[_0xba12[34]](_0xba12[191])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[117]);$(_0xba12[65])[_0xba12[64]](_0xba12[160],_0xba12[192]);$(_0xba12[65])[_0xba12[64]](_0xba12[193],_0xba12[194]);$(_0xba12[52])[_0xba12[64]](_0xba12[181],_0xba12[195]);$(_0xba12[58])[_0xba12[44]](_0xba12[43]);var _0x97b9x63=$(_0xba12[196])[_0xba12[80]]();let _0x97b9x64=$(_0xba12[188])[_0xba12[80]]();if(_0x97b9x63!= _0xba12[40]&& _0x97b9x64!= _0xba12[40]){$(_0xba12[52])[_0xba12[44]](_0xba12[43]);let _0x97b9x40=[];let _0x97b9x41=[];let _0x97b9x42=[];let _0x97b9x43=[1,2,3,4,5];let _0x97b9x44=0;let _0x97b9x45=0;let _0x97b9x46=[];let _0x97b9x47=[];let _0x97b9x48=0;let _0x97b9x49=[];let _0x97b9x4a=[];let _0x97b9x4b=1;let _0x97b9x8=0;var _0x97b9x4c=0;let _0x97b9x4d=[];let _0x97b9x4e=[];let _0x97b9x65=`${_0xba12[197]}`;for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x5f[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x66=`${_0xba12[198]}${_0x97b9x5f[_0x97b9x28]}${_0xba12[199]}`;_0x97b9x65= _0x97b9x65+ _0x97b9x66};let _0x97b9x67= new Pergunta_Service(`${_0xba12[40]}${_0x97b9x65}${_0xba12[200]}${_0x97b9x64}${_0xba12[201]}`);_0x97b9x67[_0xba12[76]]()[_0xba12[4]]((_0x97b9x6)=>{for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x6[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x40[_0xba12[94]](_0x97b9x6[_0x97b9x28][_0xba12[202]]);_0x97b9x41[_0xba12[94]](_0x97b9x6[_0x97b9x28][_0xba12[24]]);_0x97b9x42[_0xba12[94]](_0x97b9x6[_0x97b9x28][_0xba12[203]])};let _0x97b9x68= new Lista_Teorica_Servidor(_0x97b9x63,id_login,_0x97b9x40,_0x97b9x41,_0x97b9x42);let _0x97b9x3e= new Lista_Teorica_Servidor_Service(_0xba12[204]);_0x97b9x3e[_0xba12[87]](_0x97b9x68)[_0xba12[4]]((_0x97b9x6)=>{var _0x97b9xd=_0x97b9x6[_0xba12[26]];_0x97b9x41[_0xba12[94]](_0x97b9x43);let _0x97b9x4f=document[_0xba12[128]](_0xba12[127]);let _0x97b9x50=document[_0xba12[128]](_0xba12[129]);$(_0xba12[190])[_0xba12[44]](_0xba12[43]);$(_0xba12[48])[_0xba12[55]](_0xba12[43]);let _0x97b9x51=document[_0xba12[34]](_0xba12[130]);_0x97b9x51[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[131]}${_0x97b9x40[_0xba12[69]]}${_0xba12[132]}${_0x97b9x40[_0x97b9x44]}${_0xba12[40]}`;for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x4f[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x4f[_0x97b9x28][_0xba12[74]]= _0x97b9x41[_0x97b9x45][_0x97b9x28];_0x97b9x50[_0x97b9x28][_0xba12[105]](_0xba12[85],_0x97b9x41[_0x97b9x45][_0x97b9x28])};document[_0xba12[34]](_0xba12[133])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[134]);let _0x97b9x52=$(_0xba12[135])[_0xba12[80]]();if( typeof _0x97b9x52!= _0xba12[136]){if(_0x97b9x42[_0x97b9x48]== _0x97b9x52){_0x97b9x4a[_0xba12[94]](_0x97b9x40[_0x97b9x44]);_0x97b9x46[_0xba12[94]](_0x97b9x44+ 1);swal(_0xba12[137],_0xba12[138],_0xba12[139]);_0x97b9x8+= 100}else {_0x97b9x49[_0xba12[94]](_0x97b9x40[_0x97b9x44]);_0x97b9x47[_0xba12[94]](_0x97b9x44+ 1);(_0x97b9x47);for(let _0x97b9x28=0;_0x97b9x28<= 4;_0x97b9x28++){_0x97b9x4d[_0xba12[94]](_0x97b9x41[_0x97b9x45][_0x97b9x28])};_0x97b9x4e[_0xba12[94]](_0x97b9x42[_0x97b9x48]);swal(_0xba12[140],_0xba12[141],_0xba12[84])};_0x97b9x4b++;_0x97b9x44++;_0x97b9x45++;_0x97b9x48++;let _0x97b9x53=$(_0xba12[142]);for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x53[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x53[_0x97b9x28][_0xba12[143]]= false};_0x97b9x51[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[131]}${_0x97b9x40[_0xba12[69]]}${_0xba12[144]}${_0x97b9x40[_0x97b9x44]}${_0xba12[40]}`;for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x4f[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x4f[_0x97b9x28][_0xba12[74]]= _0x97b9x41[_0x97b9x45][_0x97b9x28];_0x97b9x50[_0x97b9x28][_0xba12[105]](_0xba12[85],_0x97b9x41[_0x97b9x45][_0x97b9x28])}};if(_0x97b9x44== _0x97b9x40[_0xba12[69]]){(_0xba12[145]);(_0xba12[146]);$(_0xba12[48])[_0xba12[44]](_0xba12[43]);$(_0xba12[49])[_0xba12[55]](_0xba12[43]);_0x97b9x8= parseInt((_0x97b9x8/ _0x97b9x40[_0xba12[69]])[_0xba12[147]](0));$(_0xba12[152])[_0xba12[151]](`${_0xba12[148]}${_0x97b9x8}${_0xba12[149]}${_0x97b9x4a[_0xba12[69]]}${_0xba12[150]}${_0x97b9x49[_0xba12[69]]}${_0xba12[40]}`);_0x97b9x4c= _0x97b9x8;_0x97b9x44= 0;_0x97b9x45= 0;_0x97b9x48= 0;_0x97b9x4b= 1;_0x97b9x8= 0;let _0x97b9x54=document[_0xba12[34]](_0xba12[153]);let _0x97b9x55=document[_0xba12[34]](_0xba12[154]);document[_0xba12[34]](_0xba12[159])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[160],_0xba12[171]);$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[162]);$(_0xba12[58])[_0xba12[55]](_0xba12[43]);$(_0xba12[49])[_0xba12[44]](_0xba12[43]);$(_0xba12[50])[_0xba12[55]](_0xba12[43]);$(_0xba12[163])[_0xba12[78]]();$(_0xba12[164])[_0xba12[78]]();$(_0xba12[152])[_0xba12[78]]();_0x97b9x4b= 1;_0x97b9x51[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[132]}${_0x97b9x40[_0xba12[69]]}${_0xba12[165]}`;let _0x97b9x69= new NOTA_SERVIDOR(nome_login,_0x97b9x4c,id_login,_0x97b9xd,_0x97b9x63,_0x97b9x4a,_0x97b9x49);let _0x97b9x34= new NOTA_SERVIDOR_SERVICE(_0xba12[205]);_0x97b9x34[_0xba12[87]](_0x97b9x69)[_0xba12[4]]((_0x97b9x6)=>{})};for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x4a[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);_0x97b9x29[_0xba12[105]](_0xba12[26],_0xba12[155]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x3f[_0xba12[74]]= _0xba12[156];_0x97b9x3f[_0xba12[105]](_0xba12[26],_0xba12[10]);_0x97b9x29[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x46[_0x97b9x28]}${_0xba12[157]}${_0x97b9x4a[_0x97b9x28]}${_0xba12[40]}`;_0x97b9x29[_0xba12[75]](_0x97b9x3f);_0x97b9x54[_0xba12[75]](_0x97b9x29)};for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x49[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x3f[_0xba12[74]]= _0xba12[158];_0x97b9x3f[_0xba12[105]](_0xba12[26],_0xba12[11]);_0x97b9x29[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x47[_0x97b9x28]}${_0xba12[157]}${_0x97b9x49[_0x97b9x28]}${_0xba12[40]}`;_0x97b9x29[_0xba12[75]](_0x97b9x3f);_0x97b9x55[_0xba12[75]](_0x97b9x29)};if(_0x97b9x49[_0xba12[69]]> 0){$(_0xba12[45])[_0xba12[55]](_0xba12[43])};document[_0xba12[34]](_0xba12[169])[_0xba12[35]]= function(){$(_0xba12[163])[_0xba12[78]]();$(_0xba12[164])[_0xba12[78]]();let _0x97b9x59=[];let _0x97b9x5a=[];_0x97b9x47= [];_0x97b9x46= [];$(_0xba12[152])[_0xba12[78]]();$(_0xba12[49])[_0xba12[44]](_0xba12[43]);$(_0xba12[48])[_0xba12[55]](_0xba12[43]);_0x97b9x51[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[131]}${_0x97b9x49[_0xba12[69]]}${_0xba12[144]}${_0x97b9x49[_0x97b9x44]}${_0xba12[40]}`;for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x4f[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x4f[_0x97b9x28][_0xba12[74]]= _0x97b9x4d[_0x97b9x45];_0x97b9x50[_0x97b9x28][_0xba12[105]](_0xba12[85],_0x97b9x4d[_0x97b9x45]);_0x97b9x45++};document[_0xba12[34]](_0xba12[133])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[134]);let _0x97b9x52=$(_0xba12[135])[_0xba12[80]]();if( typeof _0x97b9x52!= _0xba12[136]){if(_0x97b9x4e[_0x97b9x48]== _0x97b9x52){_0x97b9x5a[_0xba12[94]](_0x97b9x49[_0x97b9x44]);_0x97b9x46[_0xba12[94]](_0x97b9x44+ 1);swal(_0xba12[137],_0xba12[138],_0xba12[139]);_0x97b9x8+= 100}else {_0x97b9x59[_0xba12[94]](_0x97b9x49[_0x97b9x44]);_0x97b9x47[_0xba12[94]](_0x97b9x44+ 1);swal(_0xba12[140],_0xba12[141],_0xba12[84])};_0x97b9x4b++;_0x97b9x44++;_0x97b9x48++;let _0x97b9x53=$(_0xba12[142]);for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x53[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x53[_0x97b9x28][_0xba12[143]]= false};_0x97b9x51[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[131]}${_0x97b9x49[_0xba12[69]]}${_0xba12[144]}${_0x97b9x49[_0x97b9x44]}${_0xba12[40]}`;for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x4f[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x4f[_0x97b9x28][_0xba12[74]]= _0x97b9x4d[_0x97b9x45];_0x97b9x50[_0x97b9x28][_0xba12[105]](_0xba12[85],_0x97b9x4d[_0x97b9x45]);_0x97b9x45++};let _0x97b9x5b=_0x97b9x49[_0xba12[69]];if(_0x97b9x5b== _0x97b9x44){$(_0xba12[48])[_0xba12[44]](_0xba12[43]);$(_0xba12[49])[_0xba12[55]](_0xba12[43]);$(_0xba12[45])[_0xba12[44]](_0xba12[43]);_0x97b9x4b= 1;_0x97b9x51[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[131]}${_0x97b9x40[_0xba12[69]]}${_0xba12[165]}`;_0x97b9x8= parseInt((_0x97b9x8/ _0x97b9x40[_0xba12[69]])[_0xba12[147]](0));_0x97b9x4c+= _0x97b9x8;$(_0xba12[152])[_0xba12[151]](`${_0xba12[170]}${_0x97b9x4c}${_0xba12[149]}${_0x97b9x5a[_0xba12[69]]}${_0xba12[150]}${_0x97b9x59[_0xba12[69]]}${_0xba12[40]}`);_0x97b9x8= 0;_0x97b9x44= 0;_0x97b9x45= 0;_0x97b9x48= 0;_0x97b9x4b= 1;for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x5a[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x4a[_0xba12[94]](_0x97b9x5a[_0x97b9x28])};let _0x97b9x69= new NOTA_SERVIDOR(nome_login,_0x97b9x4c,id_login,_0x97b9xd,_0x97b9x63,_0x97b9x4a,_0x97b9x59);let _0x97b9x34= new NOTA_SERVIDOR_SERVICE(_0xba12[205]);_0x97b9x34[_0xba12[87]](_0x97b9x69)[_0xba12[4]]((_0x97b9x6)=>{});for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x5a[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x3f[_0xba12[74]]= _0xba12[156];_0x97b9x29[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x46[_0x97b9x28]}${_0xba12[157]}${_0x97b9x5a[_0x97b9x28]}${_0xba12[40]}`;_0x97b9x29[_0xba12[75]](_0x97b9x3f);_0x97b9x54[_0xba12[75]](_0x97b9x29)};for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x59[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x3f[_0xba12[74]]= _0xba12[158];_0x97b9x29[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x47[_0x97b9x28]}${_0xba12[157]}${_0x97b9x59[_0x97b9x28]}${_0xba12[40]}`;_0x97b9x29[_0xba12[75]](_0x97b9x3f);_0x97b9x55[_0xba12[75]](_0x97b9x29)};document[_0xba12[34]](_0xba12[159])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[160],_0xba12[171]);$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[162]);$(_0xba12[58])[_0xba12[55]](_0xba12[43]);$(_0xba12[163])[_0xba12[78]]();$(_0xba12[164])[_0xba12[78]]();$(_0xba12[49])[_0xba12[44]](_0xba12[43]);$(_0xba12[50])[_0xba12[55]](_0xba12[43]);$(_0xba12[152])[_0xba12[78]]()}}}}}}}})})}}}}};document[_0xba12[34]](_0xba12[206])[_0xba12[35]]= function(){$(_0xba12[58])[_0xba12[55]](_0xba12[43]);$(_0xba12[59])[_0xba12[44]](_0xba12[43]);$(_0xba12[50])[_0xba12[44]](_0xba12[43]);$(_0xba12[51])[_0xba12[55]](_0xba12[43]);document[_0xba12[34]](_0xba12[180])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[100]);$(_0xba12[52])[_0xba12[64]](_0xba12[181],_0xba12[182]);let _0x97b9x5f=[];let _0x97b9x60=$(_0xba12[183]);let _0x97b9x61=$(_0xba12[184])[_0xba12[80]]();let _0x97b9x62=[];if( typeof _0x97b9x61== _0xba12[136]){swal(_0xba12[185],_0xba12[186],_0xba12[84])}else {for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x60[_0xba12[69]]- 1;_0x97b9x28++){if(_0x97b9x60[_0x97b9x28][_0xba12[143]]){_0x97b9x62[_0xba12[94]](_0x97b9x60[_0x97b9x28][_0xba12[26]]);_0x97b9x5f[_0xba12[94]](_0x97b9x60[_0x97b9x28][_0xba12[85]])}};$(_0xba12[51])[_0xba12[44]](_0xba12[43]);$(_0xba12[52])[_0xba12[55]](_0xba12[43]);$(_0xba12[187])[_0xba12[55]](_0xba12[43]);$(_0xba12[188])[_0xba12[44]](_0xba12[43]);$(_0xba12[189])[_0xba12[44]](_0xba12[43]);$(_0xba12[190])[_0xba12[44]](_0xba12[43]);for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x60[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x60[_0x97b9x28][_0xba12[143]]= false};document[_0xba12[34]](_0xba12[191])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[117]);$(_0xba12[52])[_0xba12[64]](_0xba12[181],_0xba12[195]);$(_0xba12[58])[_0xba12[44]](_0xba12[43]);$(_0xba12[65])[_0xba12[64]](_0xba12[160],_0xba12[192]);$(_0xba12[65])[_0xba12[64]](_0xba12[193],_0xba12[194]);let _0x97b9x6a=$(_0xba12[196])[_0xba12[80]]();if(_0x97b9x6a== _0xba12[40]){swal(_0xba12[185],_0xba12[207],_0xba12[84])}else {$(_0xba12[190])[_0xba12[55]](_0xba12[43]);document[_0xba12[34]](_0xba12[15])[_0xba12[85]]= _0xba12[40];$(_0xba12[187])[_0xba12[44]](_0xba12[43]);$(_0xba12[189])[_0xba12[55]](_0xba12[43]);let _0x97b9x40=[];let _0x97b9x41=[];let _0x97b9x6b=[];let _0x97b9x6c=0;let ul=document[_0xba12[34]](_0xba12[208]);for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x5f[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x6d=document[_0xba12[71]](_0xba12[209]);_0x97b9x6d[_0xba12[74]]= _0x97b9x62[_0x97b9x28][_0xba12[210]]();let _0x97b9x6e=document[_0xba12[71]](_0xba12[70]);_0x97b9x6e[_0xba12[75]](_0x97b9x6d);let _0x97b9x67= new Pergunta_Service(`${_0xba12[211]}${_0x97b9x5f[_0x97b9x28]}${_0xba12[40]}`);_0x97b9x67[_0xba12[76]]()[_0xba12[4]]((_0x97b9x6)=>{ul[_0xba12[75]](_0x97b9x6e);for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x6[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x29[_0xba12[105]](_0xba12[26],_0x97b9x6[_0x97b9x28][_0xba12[26]]);_0x97b9x3f[_0xba12[74]]= _0x97b9x6[_0x97b9x28][_0xba12[202]];_0x97b9x3f[_0xba12[105]](_0xba12[26],_0x97b9x6[_0x97b9x28][_0xba12[26]]);_0x97b9x29[_0xba12[75]](_0x97b9x3f);ul[_0xba12[75]](_0x97b9x29);_0x97b9x3f[_0xba12[35]]= function(){let _0x97b9x6f=_0x97b9x6[_0x97b9x28][_0xba12[26]];$(_0xba12[214])[_0xba12[213]](`${_0xba12[212]}${_0x97b9x6f}${_0xba12[40]}`);_0x97b9x6c++;$(_0xba12[216])[_0xba12[151]](`${_0xba12[40]}${_0x97b9x6c}${_0xba12[215]}`);_0x97b9x40[_0xba12[94]](_0x97b9x6[_0x97b9x28][_0xba12[202]]);_0x97b9x41[_0xba12[94]](_0x97b9x6[_0x97b9x28][_0xba12[24]]);_0x97b9x6b[_0xba12[94]](_0x97b9x6[_0x97b9x28][_0xba12[203]])}}})};document[_0xba12[34]](_0xba12[217])[_0xba12[35]]= function(){$(_0xba12[52])[_0xba12[64]](_0xba12[218],_0xba12[219]);$(_0xba12[65])[_0xba12[64]](_0xba12[160],_0xba12[192]);$(_0xba12[65])[_0xba12[64]](_0xba12[193],_0xba12[194]);$(_0xba12[58])[_0xba12[44]](_0xba12[43]);$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[134]);let _0x97b9x5d= new Lista_Teorica_Aluno(_0x97b9x6a,id_login,_0x97b9x40,_0x97b9x41,_0x97b9x6b);let _0x97b9x70= new Lista_Teorica_Aluno_Service(_0xba12[220]);_0x97b9x70[_0xba12[87]](_0x97b9x5d)[_0xba12[4]]((_0x97b9x6)=>{var _0x97b9xd=_0x97b9x6[_0xba12[26]];$(_0xba12[189])[_0xba12[44]](_0xba12[43]);$(_0xba12[190])[_0xba12[55]](_0xba12[43]);$(_0xba12[221])[_0xba12[78]]();$(_0xba12[216])[_0xba12[151]](_0xba12[222]);let _0x97b9x4b=1;let _0x97b9x71=[];let _0x97b9x49=[];let _0x97b9x4d=[];let _0x97b9x4e=[];let _0x97b9x8=0;let _0x97b9x4c=0;lista_opcoes_falsas= [1,2,3,4,5];_0x97b9x41[_0xba12[94]](lista_opcoes_falsas);let _0x97b9x44=0;let _0x97b9x72=[];let _0x97b9x73=[];let _0x97b9x45=0;let _0x97b9x48=0;let _0x97b9x4f=document[_0xba12[128]](_0xba12[127]);let _0x97b9x50=document[_0xba12[128]](_0xba12[129]);$(_0xba12[190])[_0xba12[44]](_0xba12[43]);$(_0xba12[48])[_0xba12[55]](_0xba12[43]);let _0x97b9x51=document[_0xba12[34]](_0xba12[130]);_0x97b9x51[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[131]}${_0x97b9x40[_0xba12[69]]}${_0xba12[157]}${_0x97b9x40[_0x97b9x44]}${_0xba12[40]}`;for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x4f[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x4f[_0x97b9x28][_0xba12[74]]= _0x97b9x41[_0x97b9x45][_0x97b9x28];_0x97b9x50[_0x97b9x28][_0xba12[105]](_0xba12[85],_0x97b9x41[_0x97b9x45][_0x97b9x28])};document[_0xba12[34]](_0xba12[133])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[134]);let _0x97b9x52=$(_0xba12[135])[_0xba12[80]]();if( typeof _0x97b9x52!= _0xba12[136]){if(_0x97b9x6b[_0x97b9x48]== _0x97b9x52){_0x97b9x71[_0xba12[94]](_0x97b9x40[_0x97b9x44]);_0x97b9x72[_0xba12[94]](_0x97b9x44+ 1);swal(_0xba12[137],_0xba12[138],_0xba12[139]);_0x97b9x8+= 100}else {_0x97b9x49[_0xba12[94]](_0x97b9x40[_0x97b9x44]);_0x97b9x73[_0xba12[94]](_0x97b9x44+ 1);for(let _0x97b9x28=0;_0x97b9x28<= 4;_0x97b9x28++){_0x97b9x4d[_0xba12[94]](_0x97b9x41[_0x97b9x45][_0x97b9x28])};_0x97b9x4e[_0xba12[94]](_0x97b9x6b[_0x97b9x48]);swal(_0xba12[140],_0xba12[141],_0xba12[84])};_0x97b9x4b++;_0x97b9x44++;_0x97b9x45++;_0x97b9x48++;let _0x97b9x53=$(_0xba12[142]);for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x53[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x53[_0x97b9x28][_0xba12[143]]= false};_0x97b9x51[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[131]}${_0x97b9x40[_0xba12[69]]}${_0xba12[144]}${_0x97b9x40[_0x97b9x44]}${_0xba12[40]}`;for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x4f[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x4f[_0x97b9x28][_0xba12[74]]= _0x97b9x41[_0x97b9x45][_0x97b9x28];_0x97b9x50[_0x97b9x28][_0xba12[105]](_0xba12[85],_0x97b9x41[_0x97b9x45][_0x97b9x28])};if(_0x97b9x44== _0x97b9x40[_0xba12[69]]){$(_0xba12[48])[_0xba12[44]](_0xba12[43]);$(_0xba12[49])[_0xba12[55]](_0xba12[43]);_0x97b9x8= parseInt((_0x97b9x8/ _0x97b9x40[_0xba12[69]])[_0xba12[147]](0));$(_0xba12[152])[_0xba12[151]](`${_0xba12[148]}${_0x97b9x8}${_0xba12[149]}${_0x97b9x71[_0xba12[69]]}${_0xba12[150]}${_0x97b9x49[_0xba12[69]]}${_0xba12[40]}`);_0x97b9x4c= _0x97b9x8;_0x97b9x8= 0;_0x97b9x44= 0;_0x97b9x45= 0;_0x97b9x48= 0;_0x97b9x4b= 1;let _0x97b9x54=document[_0xba12[34]](_0xba12[153]);let _0x97b9x55=document[_0xba12[34]](_0xba12[154]);for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x71[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);_0x97b9x29[_0xba12[105]](_0xba12[26],_0xba12[155]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x3f[_0xba12[74]]= _0xba12[156];_0x97b9x3f[_0xba12[105]](_0xba12[26],_0xba12[10]);_0x97b9x29[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x72[_0x97b9x28]}${_0xba12[157]}${_0x97b9x71[_0x97b9x28]}${_0xba12[40]}`;_0x97b9x29[_0xba12[75]](_0x97b9x3f);_0x97b9x54[_0xba12[75]](_0x97b9x29)};for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x49[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x3f[_0xba12[74]]= _0xba12[158];_0x97b9x3f[_0xba12[105]](_0xba12[26],_0xba12[11]);_0x97b9x29[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x73[_0x97b9x28]}${_0xba12[157]}${_0x97b9x49[_0x97b9x28]}${_0xba12[40]}`;_0x97b9x29[_0xba12[75]](_0x97b9x3f);_0x97b9x55[_0xba12[75]](_0x97b9x29)};if(_0x97b9x49[_0xba12[69]]> 0){$(_0xba12[45])[_0xba12[55]](_0xba12[43])};document[_0xba12[34]](_0xba12[159])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[160],_0xba12[171]);$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[162]);$(_0xba12[58])[_0xba12[55]](_0xba12[43]);$(_0xba12[49])[_0xba12[44]](_0xba12[43]);$(_0xba12[50])[_0xba12[55]](_0xba12[43]);$(_0xba12[163])[_0xba12[78]]();$(_0xba12[164])[_0xba12[78]]();$(_0xba12[152])[_0xba12[78]]();_0x97b9x73= [];_0x97b9x73= [];_0x97b9x4b= 1;_0x97b9x51[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[131]}${_0x97b9x40[_0xba12[69]]}${_0xba12[165]}`;let _0x97b9x69= new NOTA_ALUNO(nome_login,_0x97b9x4c,id_login,_0x97b9xd,_0x97b9x6a,_0x97b9x71,_0x97b9x49);_0x97b9x4c= 0;let _0x97b9x34= new NOTA_ALUNO_SERVICE(_0xba12[223]);_0x97b9x34[_0xba12[87]](_0x97b9x69)[_0xba12[4]]((_0x97b9x6)=>{})};document[_0xba12[34]](_0xba12[169])[_0xba12[35]]= function(){_0x97b9x72= [];_0x97b9x73= [];$(_0xba12[163])[_0xba12[78]]();$(_0xba12[164])[_0xba12[78]]();$(_0xba12[152])[_0xba12[78]]();let _0x97b9x59=[];let _0x97b9x5a=[];$(_0xba12[49])[_0xba12[44]](_0xba12[43]);$(_0xba12[48])[_0xba12[55]](_0xba12[43]);_0x97b9x51[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[131]}${_0x97b9x49[_0xba12[69]]}${_0xba12[144]}${_0x97b9x49[_0x97b9x44]}${_0xba12[40]}`;for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x4f[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x4f[_0x97b9x28][_0xba12[74]]= _0x97b9x4d[_0x97b9x45];_0x97b9x50[_0x97b9x28][_0xba12[105]](_0xba12[85],_0x97b9x4d[_0x97b9x45]);_0x97b9x45++};document[_0xba12[34]](_0xba12[133])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[134]);let _0x97b9x52=$(_0xba12[135])[_0xba12[80]]();if( typeof _0x97b9x52!= _0xba12[136]){if(_0x97b9x4e[_0x97b9x48]== _0x97b9x52){_0x97b9x5a[_0xba12[94]](_0x97b9x49[_0x97b9x44]);_0x97b9x72[_0xba12[94]](_0x97b9x44+ 1);swal(_0xba12[137],_0xba12[138],_0xba12[139]);_0x97b9x8+= 100}else {_0x97b9x59[_0xba12[94]](_0x97b9x49[_0x97b9x44]);swal(_0xba12[140],_0xba12[141],_0xba12[84]);_0x97b9x73[_0xba12[94]](_0x97b9x44+ 1)};_0x97b9x4b++;_0x97b9x44++;_0x97b9x48++;let _0x97b9x53=$(_0xba12[142]);for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x53[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x53[_0x97b9x28][_0xba12[143]]= false};_0x97b9x51[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[131]}${_0x97b9x49[_0xba12[69]]}${_0xba12[144]}${_0x97b9x49[_0x97b9x44]}${_0xba12[40]}`;for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x4f[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x4f[_0x97b9x28][_0xba12[74]]= _0x97b9x4d[_0x97b9x45];_0x97b9x50[_0x97b9x28][_0xba12[105]](_0xba12[85],_0x97b9x4d[_0x97b9x45]);_0x97b9x45++};let _0x97b9x5b=_0x97b9x49[_0xba12[69]];if(_0x97b9x5b== _0x97b9x44){$(_0xba12[48])[_0xba12[44]](_0xba12[43]);$(_0xba12[49])[_0xba12[55]](_0xba12[43]);$(_0xba12[45])[_0xba12[44]](_0xba12[43]);_0x97b9x8= parseInt((_0x97b9x8/ _0x97b9x40[_0xba12[69]])[_0xba12[147]](0));_0x97b9x4c+= _0x97b9x8;$(_0xba12[152])[_0xba12[151]](`${_0xba12[224]}${_0x97b9x4c}${_0xba12[225]}${_0x97b9x5a[_0xba12[69]]}${_0xba12[226]}${_0x97b9x59[_0xba12[69]]}${_0xba12[40]}`);_0x97b9x8= 0;_0x97b9x44= 0;_0x97b9x45= 0;_0x97b9x48= 0;_0x97b9x4b= 1;_0x97b9x51[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[131]}${_0x97b9x40[_0xba12[69]]}${_0xba12[165]}`;for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x5a[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x71[_0xba12[94]](_0x97b9x5a[_0x97b9x28])};let _0x97b9x69= new NOTA_ALUNO(nome_login,_0x97b9x4c,id_login,_0x97b9xd,_0x97b9x6a,_0x97b9x71,_0x97b9x59);let _0x97b9x34= new NOTA_ALUNO_SERVICE(_0xba12[223]);_0x97b9x34[_0xba12[87]](_0x97b9x69)[_0xba12[4]]((_0x97b9x6)=>{});for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x5a[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x3f[_0xba12[74]]= _0xba12[156];_0x97b9x29[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x72[_0x97b9x28]}${_0xba12[157]}${_0x97b9x5a[_0x97b9x28]}${_0xba12[40]}`;_0x97b9x29[_0xba12[75]](_0x97b9x3f);_0x97b9x54[_0xba12[75]](_0x97b9x29)};for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x59[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x3f[_0xba12[74]]= _0xba12[158];_0x97b9x29[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x73[_0x97b9x28]}${_0xba12[157]}${_0x97b9x59[_0x97b9x28]}${_0xba12[40]}`;_0x97b9x29[_0xba12[75]](_0x97b9x3f);_0x97b9x55[_0xba12[75]](_0x97b9x29)};document[_0xba12[34]](_0xba12[159])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[160],_0xba12[171]);$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[162]);$(_0xba12[58])[_0xba12[55]](_0xba12[43]);$(_0xba12[163])[_0xba12[78]]();$(_0xba12[164])[_0xba12[78]]();$(_0xba12[152])[_0xba12[78]]();$(_0xba12[49])[_0xba12[44]](_0xba12[43]);$(_0xba12[50])[_0xba12[55]](_0xba12[43]);_0x97b9x73= [];_0x97b9x72= []}}}}}}}else {swal(_0xba12[227],_0xba12[228],_0xba12[84])}}})}}}}}}};document[_0xba12[34]](_0xba12[229])[_0xba12[35]]= function(){$(_0xba12[116])[_0xba12[44]](_0xba12[43]);$(_0xba12[58])[_0xba12[55]](_0xba12[43]);$(_0xba12[60])[_0xba12[55]](_0xba12[43]);$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[63]);$(_0xba12[56])[_0xba12[44]](_0xba12[43]);$(_0xba12[66])[_0xba12[44]](_0xba12[43]);$(_0xba12[46])[_0xba12[55]](_0xba12[43]);let _0x97b9x2f= new Sala_Service(`${_0xba12[230]}${email_login}${_0xba12[40]}`);_0x97b9x2f[_0xba12[76]]()[_0xba12[4]]((_0x97b9x6)=>{let ul=document[_0xba12[34]](_0xba12[231]);for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x6[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);let _0x97b9x74=document[_0xba12[71]](_0xba12[122]);_0x97b9x74[_0xba12[74]]= _0x97b9x6[_0x97b9x28][_0xba12[21]];_0x97b9x74[_0xba12[105]](_0xba12[26],_0x97b9x6[_0x97b9x28][_0xba12[26]]);_0x97b9x74[_0xba12[105]](_0xba12[123],_0xba12[124]);_0x97b9x29[_0xba12[75]](_0x97b9x74);ul[_0xba12[75]](_0x97b9x29);_0x97b9x74[_0xba12[35]]= function(){$(_0xba12[60])[_0xba12[44]](_0xba12[43]);$(_0xba12[46])[_0xba12[44]](_0xba12[43]);$(_0xba12[47])[_0xba12[55]](_0xba12[43]);let _0x97b9x30=event[_0xba12[125]][_0xba12[26]];let _0x97b9x75= new Lista_Teorica_Service(`${_0xba12[232]}${_0x97b9x30}${_0xba12[40]}`);let ul=document[_0xba12[34]](_0xba12[233]);_0x97b9x75[_0xba12[76]]()[_0xba12[4]]((_0x97b9x6)=>{for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x6[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x11=_0x97b9x6[_0x97b9x28][_0xba12[234]];let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);let _0x97b9x76=document[_0xba12[71]](_0xba12[122]);_0x97b9x76[_0xba12[74]]= _0x97b9x6[_0x97b9x28][_0xba12[21]];_0x97b9x76[_0xba12[105]](_0xba12[26],_0x97b9x6[_0x97b9x28][_0xba12[26]]);_0x97b9x76[_0xba12[105]](_0xba12[123],_0xba12[124]);let _0x97b9x77;if(_0x97b9x11!= _0xba12[40]){(_0x97b9x11);_0x97b9x77=  new Date(_0x97b9x11)[_0xba12[235]]();function _0x97b9x78(){_0x97b9x77=  new Date(_0x97b9x11)[_0xba12[235]]();var _0x97b9x79= new Date()[_0xba12[235]]();if(_0x97b9x79> _0x97b9x77){_0x97b9x76[_0xba12[105]](_0xba12[123],_0xba12[236]);var _0x97b9x7a=Math[_0xba12[237]]((_0x97b9x77- _0x97b9x79)/ 1000);days= `${_0xba12[238]}${parseInt(_0x97b9x7a/ 86400)}${_0xba12[239]}`;_0x97b9x7a= _0x97b9x7a% 86400;hours= `${_0xba12[40]}${parseInt(_0x97b9x7a/ 3600)}${_0xba12[240]}`;_0x97b9x7a= _0x97b9x7a% 3600;minutes= `${_0xba12[40]}${parseInt(_0x97b9x7a/ 60)}${_0xba12[240]}`;seconds= `${_0xba12[40]}${parseInt(_0x97b9x7a% 60)}${_0xba12[40]}`;let _0x97b9x7b=[];_0x97b9x7b[_0xba12[94]](days);_0x97b9x7b[_0xba12[94]](hours);_0x97b9x7b[_0xba12[94]](minutes);_0x97b9x7b[_0xba12[94]](seconds);_0x97b9x76[_0xba12[74]]= _0x97b9x6[_0x97b9x28][_0xba12[21]]+ _0xba12[241]+ _0x97b9x7b}else {let _0x97b9x7c=Math[_0xba12[237]]((_0x97b9x77- _0x97b9x79)/ 1000);let _0x97b9x7b=[];days= `${_0xba12[242]}${parseInt(_0x97b9x7c/ 86400)}${_0xba12[239]}`;_0x97b9x7c= _0x97b9x7c% 86400;hours= `${_0xba12[40]}${parseInt(_0x97b9x7c/ 3600)}${_0xba12[243]}`;_0x97b9x7c= _0x97b9x7c% 3600;minutes= `${_0xba12[40]}${parseInt(_0x97b9x7c/ 60)}${_0xba12[244]}`;seconds= `${_0xba12[40]}${parseInt(_0x97b9x7c% 60)}${_0xba12[245]}`;_0x97b9x7b[_0xba12[94]](days,hours,minutes,seconds);_0x97b9x76[_0xba12[74]]= _0x97b9x6[_0x97b9x28][_0xba12[21]]+ _0xba12[241]+ _0x97b9x7b}}var _0x97b9x7d=setInterval(_0x97b9x78,1000)};_0x97b9x29[_0xba12[75]](_0x97b9x76);ul[_0xba12[75]](_0x97b9x29);_0x97b9x76[_0xba12[35]]= function(){$(_0xba12[60])[_0xba12[44]](_0xba12[43]);$(_0xba12[58])[_0xba12[44]](_0xba12[43]);$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[117]);$(_0xba12[65])[_0xba12[64]](_0xba12[160],_0xba12[192]);$(_0xba12[65])[_0xba12[64]](_0xba12[193],_0xba12[194]);$(_0xba12[47])[_0xba12[44]](_0xba12[43]);var _0x97b9xd=event[_0xba12[125]][_0xba12[26]];let _0x97b9x7e= new Lista_Teorica_Service(`${_0xba12[246]}${_0x97b9xd}${_0xba12[40]}`);_0x97b9x7e[_0xba12[76]]()[_0xba12[4]]((_0x97b9x6)=>{_0x97b9x11= _0x97b9x6[0][_0xba12[234]]});let _0x97b9x34= new Nota_Service(`${_0xba12[106]}${id_login}${_0xba12[247]}${_0x97b9xd}${_0xba12[40]}`);_0x97b9x34[_0xba12[76]]()[_0xba12[4]]((_0x97b9x6)=>{if(_0x97b9x6[_0xba12[69]]> 0){$(_0xba12[49])[_0xba12[55]](_0xba12[43]);$(_0xba12[152])[_0xba12[151]](`${_0xba12[248]}${_0x97b9x6[0][_0xba12[9]]}${_0xba12[249]}${_0x97b9x6[0][_0xba12[10]][_0xba12[69]]}${_0xba12[226]}${_0x97b9x6[0][_0xba12[11]][_0xba12[69]]}${_0xba12[250]}${_0x97b9x6[0][_0xba12[16]][_0xba12[69]]}${_0xba12[40]}`);let _0x97b9x7f=_0x97b9x6[0][_0xba12[11]];let _0x97b9x9=_0x97b9x6[0][_0xba12[10]];let _0x97b9xf=_0x97b9x6[0][_0xba12[16]];let _0x97b9x54=document[_0xba12[34]](_0xba12[153]);let _0x97b9x55=document[_0xba12[34]](_0xba12[154]);let _0x97b9x80=document[_0xba12[34]](_0xba12[16]);for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x9[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x29[_0xba12[74]]= _0x97b9x9[_0x97b9x28];_0x97b9x3f[_0xba12[74]]= _0xba12[156];_0x97b9x29[_0xba12[75]](_0x97b9x3f);_0x97b9x54[_0xba12[75]](_0x97b9x29)};for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x7f[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x29[_0xba12[74]]= _0x97b9x7f[_0x97b9x28];_0x97b9x3f[_0xba12[74]]= _0xba12[158];_0x97b9x29[_0xba12[75]](_0x97b9x3f);_0x97b9x55[_0xba12[75]](_0x97b9x29)};for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9xf[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x3f[_0xba12[74]]= _0xba12[251];_0x97b9x29[_0xba12[74]]= _0x97b9xf[_0x97b9x28];_0x97b9x29[_0xba12[75]](_0x97b9x3f);_0x97b9x80[_0xba12[75]](_0x97b9x29)};document[_0xba12[34]](_0xba12[159])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[160],_0xba12[171]);$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[162]);$(_0xba12[58])[_0xba12[55]](_0xba12[43]);$(_0xba12[49])[_0xba12[44]](_0xba12[43]);$(_0xba12[47])[_0xba12[55]](_0xba12[43]);$(_0xba12[163])[_0xba12[78]]();$(_0xba12[164])[_0xba12[78]]();$(_0xba12[252])[_0xba12[78]]();$(_0xba12[152])[_0xba12[78]]()}}else {$(_0xba12[48])[_0xba12[55]](_0xba12[43]);let _0x97b9x75= new Lista_Teorica_Service(`${_0xba12[246]}${_0x97b9xd}${_0xba12[253]}${_0x97b9x30}${_0xba12[40]}`);_0x97b9x75[_0xba12[76]]()[_0xba12[4]]((_0x97b9x6)=>{var _0x97b9x81;let _0x97b9x82;let _0x97b9x83;let _0x97b9x84=[];let _0x97b9x85;var _0x97b9xe;_0x97b9x81= _0x97b9x6[0][_0xba12[254]];_0x97b9x82= _0x97b9x6[0][_0xba12[23]];_0x97b9x83= _0x97b9x6[0][_0xba12[24]];_0x97b9x85= _0x97b9x6[0][_0xba12[25]];_0x97b9xe= _0x97b9x6[0][_0xba12[21]];let _0x97b9x8=0;let _0x97b9x72=[];let _0x97b9x73=[];let _0x97b9x4b=1;let _0x97b9x86=[1,2,3,4,5];_0x97b9x83[_0xba12[94]](_0x97b9x86);let _0x97b9x44=0;let _0x97b9x45=0;let _0x97b9x48=0;let _0x97b9x87=[];let _0x97b9x71=[];let _0x97b9x50=document[_0xba12[128]](_0xba12[129]);let _0x97b9x88=document[_0xba12[128]](_0xba12[127]);let _0x97b9x18=document[_0xba12[34]](_0xba12[130]);_0x97b9x18[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[131]}${_0x97b9x82[_0xba12[69]]}${_0xba12[157]}${_0x97b9x82[_0x97b9x44]}${_0xba12[40]}`;for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x88[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x88[_0x97b9x28][_0xba12[74]]= _0x97b9x83[_0x97b9x45][_0x97b9x28];_0x97b9x50[_0x97b9x28][_0xba12[105]](_0xba12[85],_0x97b9x83[_0x97b9x45][_0x97b9x28])};document[_0xba12[34]](_0xba12[133])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[134]);let _0x97b9x52=$(_0xba12[135])[_0xba12[80]]();if( typeof _0x97b9x52!= _0xba12[136]){if(_0x97b9x85[_0x97b9x48]== _0x97b9x52){_0x97b9x71[_0xba12[94]](_0x97b9x82[_0x97b9x44]);_0x97b9x72[_0xba12[94]](_0x97b9x44+ 1);swal(_0xba12[137],_0xba12[138],_0xba12[139]);_0x97b9x8+= 100}else {_0x97b9x87[_0xba12[94]](_0x97b9x82[_0x97b9x44]);_0x97b9x73[_0xba12[94]](_0x97b9x44+ 1);swal(_0xba12[140],_0xba12[141],_0xba12[84])};_0x97b9x4b++;_0x97b9x44++;_0x97b9x45++;_0x97b9x48++;let _0x97b9x53=$(_0xba12[142]);for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x53[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x53[_0x97b9x28][_0xba12[143]]= false};_0x97b9x18[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[131]}${_0x97b9x82[_0xba12[69]]}${_0xba12[144]}${_0x97b9x82[_0x97b9x44]}${_0xba12[40]}`;for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x88[_0xba12[69]]- 1;_0x97b9x28++){_0x97b9x88[_0x97b9x28][_0xba12[74]]= _0x97b9x83[_0x97b9x45][_0x97b9x28];_0x97b9x50[_0x97b9x28][_0xba12[105]](_0xba12[85],_0x97b9x83[_0x97b9x45][_0x97b9x28])};if(_0x97b9x44== _0x97b9x82[_0xba12[69]]){_0x97b9x4b= 1;_0x97b9x18[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[131]}${_0x97b9x82[_0xba12[69]]}${_0xba12[165]}`;$(_0xba12[48])[_0xba12[44]](_0xba12[43]);$(_0xba12[49])[_0xba12[55]](_0xba12[43]);_0x97b9x8= parseInt((_0x97b9x8/ _0x97b9x82[_0xba12[69]])[_0xba12[147]](0));$(_0xba12[152])[_0xba12[151]](`${_0xba12[148]}${_0x97b9x8}${_0xba12[149]}${_0x97b9x71[_0xba12[69]]}${_0xba12[150]}${_0x97b9x87[_0xba12[69]]}${_0xba12[40]}`);let _0x97b9x54=document[_0xba12[34]](_0xba12[153]);let _0x97b9x55=document[_0xba12[34]](_0xba12[154]);let _0x97b9x79= new Date()[_0xba12[235]]();let _0x97b9x89= new Date();let _0x97b9x8a=_0x97b9x89[_0xba12[255]]();let _0x97b9x8b=_0x97b9x89[_0xba12[256]]()+ 1;let _0x97b9x8c=_0x97b9x89[_0xba12[257]]();let _0x97b9x8d=`${_0xba12[40]}${_0x97b9x8a}${_0xba12[131]}${_0x97b9x8b}${_0xba12[131]}${_0x97b9x8c}${_0xba12[40]}`;let _0x97b9x8e;if(_0x97b9x11!= _0xba12[40]){if(_0x97b9x77< _0x97b9x79){_0x97b9x8e= _0xba12[258]}else {_0x97b9x8e= _0xba12[259]};let _0x97b9x8f= new Nota(nome_login,_0x97b9x8,id_login,_0x97b9xd,_0x97b9xe,_0x97b9x71,_0x97b9x87,_0x97b9x84,_0x97b9x8e,_0x97b9x8d);let _0x97b9x34= new Nota_Service(_0xba12[260]);_0x97b9x34[_0xba12[87]](_0x97b9x8f)[_0xba12[4]]((_0x97b9x6)=>{})}else {let _0x97b9x8f= new Nota(nome_login,_0x97b9x8,id_login,_0x97b9xd,_0x97b9xe,_0x97b9x71,_0x97b9x87,_0x97b9x84);let _0x97b9x34= new Nota_Service(_0xba12[260]);_0x97b9x34[_0xba12[87]](_0x97b9x8f)[_0xba12[4]]((_0x97b9x6)=>{})};clearInterval(_0x97b9x98);clearInterval(_0x97b9x9a);for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x71[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);_0x97b9x29[_0xba12[105]](_0xba12[26],_0xba12[155]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x3f[_0xba12[74]]= _0xba12[156];_0x97b9x3f[_0xba12[105]](_0xba12[26],_0xba12[10]);_0x97b9x29[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x72[_0x97b9x28]}${_0xba12[157]}${_0x97b9x71[_0x97b9x28]}${_0xba12[40]}`;_0x97b9x29[_0xba12[75]](_0x97b9x3f);_0x97b9x54[_0xba12[75]](_0x97b9x29)};for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x87[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x3f[_0xba12[74]]= _0xba12[158];_0x97b9x3f[_0xba12[105]](_0xba12[26],_0xba12[11]);$(_0xba12[263])[_0xba12[64]]({"\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64\x2D\x63\x6F\x6C\x6F\x72":_0xba12[261],"\x63\x6F\x6C\x6F\x72":_0xba12[262]});_0x97b9x29[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x73[_0x97b9x28]}${_0xba12[157]}${_0x97b9x87[_0x97b9x28]}${_0xba12[40]}`;_0x97b9x29[_0xba12[75]](_0x97b9x3f);_0x97b9x55[_0xba12[75]](_0x97b9x29)};document[_0xba12[34]](_0xba12[159])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[160],_0xba12[171]);$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[162]);$(_0xba12[58])[_0xba12[55]](_0xba12[43]);$(_0xba12[49])[_0xba12[44]](_0xba12[43]);$(_0xba12[47])[_0xba12[55]](_0xba12[43]);$(_0xba12[163])[_0xba12[78]]();$(_0xba12[164])[_0xba12[78]]();$(_0xba12[252])[_0xba12[78]]();$(_0xba12[264])[_0xba12[78]]();$(_0xba12[265])[_0xba12[78]]();$(_0xba12[266])[_0xba12[78]]();_0x97b9x44= 0;_0x97b9x45= 0;_0x97b9x48= 0;_0x97b9x4b= 1;_0x97b9x8= 0;_0x97b9x94= 0;_0x97b9x95= 0;_0x97b9x96= 0;_0x97b9x72= [];_0x97b9x73= [];$(_0xba12[152])[_0xba12[78]]()}}}else {swal(_0xba12[227],_0xba12[228],_0xba12[84])}};if(_0x97b9x81!= _0xba12[40]){var _0x97b9x90=[];_0x97b9x90[_0xba12[94]](_0x97b9x81[_0xba12[267]](_0xba12[240]));if(_0x97b9x90[0][0]<= 0){var _0x97b9x91=document[_0xba12[34]](_0xba12[268]);var _0x97b9x92=document[_0xba12[34]](_0xba12[269]);var _0x97b9x93=document[_0xba12[34]](_0xba12[270]);_0x97b9x91[_0xba12[74]]= (_0x97b9x90[0][0]> 9)?(_0xba12[40]+ _0x97b9x90[0][0]+ _0xba12[240]):(_0xba12[222]+ _0x97b9x90[0][0]+ _0xba12[240]);_0x97b9x92[_0xba12[74]]= (_0x97b9x90[0][1]> 9)?(_0xba12[40]+ _0x97b9x90[0][1]+ _0xba12[240]):(_0xba12[222]+ _0x97b9x90[0][1]+ _0xba12[240]);_0x97b9x93[_0xba12[74]]= 59;var _0x97b9x94=_0x97b9x90[0][0];var _0x97b9x95=_0x97b9x90[0][1]- 1;var _0x97b9x96=59;function _0x97b9x97(){_0x97b9x92[_0xba12[74]]= (_0x97b9x95> 9)?(_0xba12[40]+ _0x97b9x95+ _0xba12[240]):(_0xba12[222]+ _0x97b9x95+ _0xba12[240]);_0x97b9x93[_0xba12[74]]= (_0x97b9x96> 9)?(_0xba12[40]+ _0x97b9x96):(_0xba12[222]+ _0x97b9x96);if(_0x97b9x96> 0){_0x97b9x96--}else {if(_0x97b9x96== 0&& _0x97b9x95> 0){_0x97b9x96= 59;_0x97b9x95-= 1}else {clearInterval(_0x97b9x98);$(_0xba12[48])[_0xba12[44]](_0xba12[43]);$(_0xba12[49])[_0xba12[55]](_0xba12[43]);_0x97b9x8= parseInt((_0x97b9x8/ _0x97b9x82[_0xba12[69]])[_0xba12[147]](0));$(_0xba12[152])[_0xba12[151]](`${_0xba12[148]}${_0x97b9x8}${_0xba12[149]}${_0x97b9x71[_0xba12[69]]}${_0xba12[150]}${_0x97b9x87[_0xba12[69]]}${_0xba12[271]}${_0x97b9x82[_0xba12[69]]- _0x97b9x44}${_0xba12[40]}`);let _0x97b9x54=document[_0xba12[34]](_0xba12[153]);let _0x97b9x55=document[_0xba12[34]](_0xba12[154]);let _0x97b9x80=document[_0xba12[34]](_0xba12[16]);_0x97b9x4b= 1;_0x97b9x18[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[131]}${_0x97b9x82[_0xba12[69]]}${_0xba12[165]}`;for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x71[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);_0x97b9x29[_0xba12[105]](_0xba12[26],_0xba12[155]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x3f[_0xba12[74]]= _0xba12[156];_0x97b9x3f[_0xba12[105]](_0xba12[26],_0xba12[10]);_0x97b9x29[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x72[_0x97b9x28]}${_0xba12[157]}${_0x97b9x71[_0x97b9x28]}${_0xba12[40]}`;_0x97b9x29[_0xba12[75]](_0x97b9x3f);_0x97b9x54[_0xba12[75]](_0x97b9x29)};for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x87[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x3f[_0xba12[74]]= _0xba12[158];_0x97b9x3f[_0xba12[105]](_0xba12[26],_0xba12[11]);$(_0xba12[263])[_0xba12[64]]({"\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64\x2D\x63\x6F\x6C\x6F\x72":_0xba12[261],"\x63\x6F\x6C\x6F\x72":_0xba12[262]});_0x97b9x29[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x73[_0x97b9x28]}${_0xba12[272]}${_0x97b9x87[_0x97b9x28]}${_0xba12[40]}`;_0x97b9x29[_0xba12[75]](_0x97b9x3f);_0x97b9x55[_0xba12[75]](_0x97b9x29)};for(let _0x97b9x28=_0x97b9x44;_0x97b9x28<= _0x97b9x82[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x3f[_0xba12[74]]= _0xba12[251];_0x97b9x29[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x28+ 1}${_0xba12[157]}${_0x97b9x82[_0x97b9x28]}${_0xba12[40]}`;_0x97b9x84[_0xba12[94]](_0x97b9x82[_0x97b9x28]);_0x97b9x29[_0xba12[75]](_0x97b9x3f);_0x97b9x80[_0xba12[75]](_0x97b9x29)};let _0x97b9x8e=_0xba12[40];let _0x97b9x79= new Date()[_0xba12[235]]();let _0x97b9x89= new Date();let _0x97b9x8a=_0x97b9x89[_0xba12[255]]();let _0x97b9x8b=_0x97b9x89[_0xba12[256]]()+ 1;let _0x97b9x8c=_0x97b9x89[_0xba12[257]]();let _0x97b9x8d=`${_0xba12[40]}${_0x97b9x8a}${_0xba12[131]}${_0x97b9x8b}${_0xba12[131]}${_0x97b9x8c}${_0xba12[40]}`;if(_0x97b9x11!= _0xba12[40]){if(_0x97b9x77< _0x97b9x79){_0x97b9x8e= _0xba12[258]}else {_0x97b9x8e= _0xba12[259]};let _0x97b9x69= new Nota(nome_login,_0x97b9x8,id_login,_0x97b9xd,_0x97b9xe,_0x97b9x71,_0x97b9x87,_0x97b9x84,_0x97b9x8e,_0x97b9x8d);let _0x97b9x34= new Nota_Service(_0xba12[260]);_0x97b9x34[_0xba12[87]](_0x97b9x69)[_0xba12[4]]((_0x97b9x6)=>{})}else {let _0x97b9x69= new Nota(nome_login,_0x97b9x8,id_login,_0x97b9xd,_0x97b9xe,_0x97b9x71,_0x97b9x87,_0x97b9x84);let _0x97b9x34= new Nota_Service(_0xba12[260]);_0x97b9x34[_0xba12[87]](_0x97b9x69)[_0xba12[4]]((_0x97b9x6)=>{})};document[_0xba12[34]](_0xba12[159])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[160],_0xba12[171]);$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[162]);$(_0xba12[58])[_0xba12[55]](_0xba12[43]);$(_0xba12[49])[_0xba12[44]](_0xba12[43]);$(_0xba12[47])[_0xba12[55]](_0xba12[43]);$(_0xba12[163])[_0xba12[78]]();$(_0xba12[164])[_0xba12[78]]();$(_0xba12[264])[_0xba12[78]]();$(_0xba12[265])[_0xba12[78]]();$(_0xba12[266])[_0xba12[78]]();$(_0xba12[252])[_0xba12[78]]();$(_0xba12[152])[_0xba12[78]]();_0x97b9x44= 0;_0x97b9x45= 0;_0x97b9x48= 0;_0x97b9x4b= 1;_0x97b9x8= 0;_0x97b9x94= 0;_0x97b9x95= 0;_0x97b9x96= 0;_0x97b9x73= [];_0x97b9x72= []}}}}var _0x97b9x98=setInterval(_0x97b9x97,1000)}else {var _0x97b9x91=document[_0xba12[34]](_0xba12[268]);var _0x97b9x92=document[_0xba12[34]](_0xba12[269]);var _0x97b9x93=document[_0xba12[34]](_0xba12[270]);_0x97b9x91[_0xba12[74]]= (_0x97b9x90[0][0]> 9)?(_0xba12[40]+ _0x97b9x90[0][0]+ _0xba12[240]):(_0xba12[222]+ _0x97b9x90[0][0]+ _0xba12[240]);_0x97b9x92[_0xba12[74]]= (_0x97b9x90[0][1]> 9)?(_0xba12[40]+ _0x97b9x90[0][1]+ _0xba12[240]):(_0xba12[222]+ _0x97b9x90[0][1]+ _0xba12[240]);_0x97b9x93[_0xba12[74]]= 59;var _0x97b9x94=_0x97b9x90[0][0];var _0x97b9x95=_0x97b9x90[0][1];var _0x97b9x96=59;function _0x97b9x99(){_0x97b9x92[_0xba12[74]]= (_0x97b9x95> 9)?(_0xba12[40]+ _0x97b9x95+ _0xba12[240]):(_0xba12[222]+ _0x97b9x95+ _0xba12[240]);_0x97b9x93[_0xba12[74]]= (_0x97b9x96> 9)?(_0xba12[40]+ _0x97b9x96):(_0xba12[222]+ _0x97b9x96);_0x97b9x91[_0xba12[74]]= (_0x97b9x94> 9)?(_0xba12[40]+ _0x97b9x94+ _0xba12[240]):(_0xba12[222]+ _0x97b9x94+ _0xba12[240]);if(_0x97b9x96> 0){_0x97b9x96--}else {if(_0x97b9x96== 0&& _0x97b9x95> 0){_0x97b9x96= 59;_0x97b9x95-= 1}else {if(_0x97b9x95== 0&& _0x97b9x94> 0){_0x97b9x95= 60;_0x97b9x94-= 1}else {clearInterval(_0x97b9x9a);_0x97b9x4b= 1;_0x97b9x18[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x4b}${_0xba12[131]}${_0x97b9x82[_0xba12[69]]}${_0xba12[165]}`;$(_0xba12[48])[_0xba12[44]](_0xba12[43]);$(_0xba12[49])[_0xba12[55]](_0xba12[43]);_0x97b9x8= parseInt((_0x97b9x8/ _0x97b9x82[_0xba12[69]])[_0xba12[147]](0));$(_0xba12[152])[_0xba12[151]](`${_0xba12[148]}${_0x97b9x8}${_0xba12[149]}${_0x97b9x71[_0xba12[69]]}${_0xba12[150]}${_0x97b9x87[_0xba12[69]]}${_0xba12[271]}${_0x97b9x82[_0xba12[69]]- _0x97b9x44}${_0xba12[40]}`);let _0x97b9x54=document[_0xba12[34]](_0xba12[153]);let _0x97b9x55=document[_0xba12[34]](_0xba12[154]);let _0x97b9x80=document[_0xba12[34]](_0xba12[16]);for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x71[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);_0x97b9x29[_0xba12[105]](_0xba12[26],_0xba12[155]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x3f[_0xba12[74]]= _0xba12[156];_0x97b9x3f[_0xba12[105]](_0xba12[26],_0xba12[10]);_0x97b9x29[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x72[_0x97b9x28]}${_0xba12[157]}${_0x97b9x71[_0x97b9x28]}${_0xba12[40]}`;_0x97b9x29[_0xba12[75]](_0x97b9x3f);_0x97b9x54[_0xba12[75]](_0x97b9x29)};for(let _0x97b9x28=0;_0x97b9x28<= _0x97b9x87[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x3f[_0xba12[74]]= _0xba12[158];_0x97b9x3f[_0xba12[105]](_0xba12[26],_0xba12[11]);$(_0xba12[263])[_0xba12[64]]({"\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64\x2D\x63\x6F\x6C\x6F\x72":_0xba12[261],"\x63\x6F\x6C\x6F\x72":_0xba12[262]});_0x97b9x29[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x73[_0x97b9x28]}${_0xba12[157]}${_0x97b9x87[_0x97b9x28]}${_0xba12[40]}`;_0x97b9x29[_0xba12[75]](_0x97b9x3f);_0x97b9x55[_0xba12[75]](_0x97b9x29)};for(let _0x97b9x28=_0x97b9x44;_0x97b9x28<= _0x97b9x82[_0xba12[69]]- 1;_0x97b9x28++){let _0x97b9x29=document[_0xba12[71]](_0xba12[70]);let _0x97b9x3f=document[_0xba12[71]](_0xba12[122]);_0x97b9x3f[_0xba12[74]]= _0xba12[251];_0x97b9x29[_0xba12[74]]= `${_0xba12[40]}${_0x97b9x28+ 1}${_0xba12[157]}${_0x97b9x82[_0x97b9x28]}${_0xba12[40]}`;_0x97b9x84[_0xba12[94]](_0x97b9x82[_0x97b9x28]);_0x97b9x29[_0xba12[75]](_0x97b9x3f);_0x97b9x80[_0xba12[75]](_0x97b9x29)};let _0x97b9x8e;let _0x97b9x79= new Date()[_0xba12[235]]();let _0x97b9x89= new Date();let _0x97b9x8a=_0x97b9x89[_0xba12[255]]();let _0x97b9x8b=_0x97b9x89[_0xba12[256]]()+ 1;let _0x97b9x8c=_0x97b9x89[_0xba12[257]]();let _0x97b9x8d=`${_0xba12[40]}${_0x97b9x8a}${_0xba12[131]}${_0x97b9x8b}${_0xba12[131]}${_0x97b9x8c}${_0xba12[40]}`;if(_0x97b9x11!= _0xba12[40]){if(_0x97b9x77< _0x97b9x79){_0x97b9x8e= _0xba12[258]}else {_0x97b9x8e= _0xba12[259]};let _0x97b9x69= new Nota(nome_login,_0x97b9x8,id_login,_0x97b9xd,_0x97b9xe,_0x97b9x71,_0x97b9x87,_0x97b9x84,_0x97b9x8e,_0x97b9x8d);let _0x97b9x34= new Nota_Service(_0xba12[260]);_0x97b9x34[_0xba12[87]](_0x97b9x69)[_0xba12[4]]((_0x97b9x6)=>{})}else {let _0x97b9x69= new Nota(nome_login,_0x97b9x8,id_login,_0x97b9xd,_0x97b9xe,_0x97b9x71,_0x97b9x87,_0x97b9x84);let _0x97b9x34= new Nota_Service(_0xba12[260]);_0x97b9x34[_0xba12[87]](_0x97b9x69)[_0xba12[4]]((_0x97b9x6)=>{})};document[_0xba12[34]](_0xba12[159])[_0xba12[35]]= function(){$(_0xba12[65])[_0xba12[64]](_0xba12[160],_0xba12[171]);$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[162]);$(_0xba12[58])[_0xba12[55]](_0xba12[43]);$(_0xba12[49])[_0xba12[44]](_0xba12[43]);$(_0xba12[47])[_0xba12[55]](_0xba12[43]);$(_0xba12[163])[_0xba12[78]]();$(_0xba12[164])[_0xba12[78]]();$(_0xba12[264])[_0xba12[78]]();$(_0xba12[265])[_0xba12[78]]();$(_0xba12[266])[_0xba12[78]]();$(_0xba12[252])[_0xba12[78]]();$(_0xba12[152])[_0xba12[78]]();_0x97b9x44= 0;_0x97b9x45= 0;_0x97b9x48= 0;_0x97b9x4b= 1;_0x97b9x94= 0;_0x97b9x95= 0;_0x97b9x96= 0;_0x97b9x72= [];_0x97b9x73= []}}}}}var _0x97b9x9a=setInterval(_0x97b9x99,1000)}}})}})}}});document[_0xba12[34]](_0xba12[273])[_0xba12[35]]= function(){$(_0xba12[274])[_0xba12[78]]();$(_0xba12[47])[_0xba12[44]](_0xba12[43]);$(_0xba12[46])[_0xba12[55]](_0xba12[43]);$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[63])}}}});document[_0xba12[34]](_0xba12[275])[_0xba12[35]]= function(){$(_0xba12[116])[_0xba12[55]](_0xba12[43]);$(_0xba12[65])[_0xba12[64]](_0xba12[62],_0xba12[63]);$(_0xba12[60])[_0xba12[44]](_0xba12[43]);$(_0xba12[58])[_0xba12[44]](_0xba12[43]);$(_0xba12[276])[_0xba12[78]]();$(_0xba12[66])[_0xba12[55]](_0xba12[43]);$(_0xba12[56])[_0xba12[55]](_0xba12[43]);$(_0xba12[46])[_0xba12[44]](_0xba12[43])}}
+class Sala {
+    constructor(participantes, participantes_id) {
+        this.participantes = participantes;
+        this.participantes_id = participantes_id;
+    }
+}
+class Sala_Service {
+    constructor(url) {
+        this.url = url
+    }
+    listar() {
+        return fetch(this.url, {
+            method: "GET"
+        }).then(resposta => resposta.json())
+    }
+    atualizar(participantes, participantes_id) {
+        return fetch(this.url, {
+            method: "PATCH",
+            body: JSON.stringify(participantes, participantes_id),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(resposta => resposta.json())
+    }
+}
+class NOTA_ALUNO_2 {
+    constructor(nota, perguntas_certas, perguntas_erradas) {
+        this.nota = nota;
+        this.perguntas_certas = perguntas_certas;
+        this.perguntas_erradas = perguntas_erradas;
+    }
+}
+class Nota {
+    constructor(nome_aluno, nota, id_aluno, id_lista_teorica, nome_lista_teorica, perguntas_certas, perguntas_erradas, perguntas_nao_feitas, situacao, data_de_entrega) {
+        this.nome_aluno = nome_aluno;
+        this.nota = nota;
+        this.id_aluno = id_aluno;
+        this.id_lista_teorica = id_lista_teorica;
+        this.nome_lista_teorica = nome_lista_teorica
+        this.perguntas_certas = perguntas_certas;
+        this.perguntas_erradas = perguntas_erradas;
+        this.perguntas_nao_feitas = perguntas_nao_feitas;
+        this.situacao = situacao;
+        this.data_de_entrega = data_de_entrega;
+    }
+}
+class Nota_Service {
+    constructor(url) {
+        this.url = url;
+    }
+    inserir(nome_aluno, nota, id_aluno, id_lista_teorica, nome_lista_teorica, perguntas_certas, perguntas_erradas, perguntas_nao_feitas, situacao, data_de_entrega) {
+        return fetch(this.url, {
+            method: "POST",
+            body: JSON.stringify(nome_aluno, nota, id_aluno, id_lista_teorica, nome_lista_teorica, perguntas_certas, perguntas_erradas, perguntas_nao_feitas, situacao, data_de_entrega),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(resposta => resposta.json())
+    }
+    listar() {
+        return fetch(this.url, {
+            method: "GET"
+        }).then(resposta => resposta.json())
+    }
+}
+class NOTA_SERVIDOR {
+    constructor(nome_aluno, nota, id_aluno, id_lista_teorica_servidor, nome_lista_teorica, perguntas_certas, perguntas_erradas) {
+        this.nome_aluno = nome_aluno;
+        this.nota = nota;
+        this.id_aluno = id_aluno;
+        this.id_lista_teorica = id_lista_teorica_servidor;
+        this.nome_lista_teorica = nome_lista_teorica
+        this.perguntas_certas = perguntas_certas;
+        this.perguntas_erradas = perguntas_erradas;
+    }
+}
+class NOTA_SERVIDOR_SERVICE {
+    constructor(url) {
+        this.url = url;
+    }
+    inserir(nome_aluno, nota, id_aluno, id_lista_teorica_servidor, nome_lista_teorica, perguntas_certas, perguntas_erradas) {
+        return fetch(this.url, {
+            method: "POST",
+            body: JSON.stringify(nome_aluno, nota, id_aluno, id_lista_teorica_servidor, nome_lista_teorica, perguntas_certas, perguntas_erradas),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(resposta => resposta.json())
+    }
+    listar() {
+        return fetch(this.url, {
+            method: "GET"
+        }).then(resposta => resposta.json())
+    }
+    atualizar(nota, perguntas_certas, perguntas_erradas) {
+        return fetch(this.url, {
+            method: "PATCH",
+            body: JSON.stringify(nota, perguntas_certas, perguntas_erradas),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(resposta => resposta.json())
+    }
+}
+class NOTA_ALUNO {
+    constructor(nome_aluno, nota, id_aluno, id_lista_teorica_aluno, nome_lista_teorica, perguntas_certas, perguntas_erradas) {
+        this.nome_aluno = nome_aluno;
+        this.nota = nota;
+        this.id_aluno = id_aluno;
+        this.id_lista_teorica = id_lista_teorica_aluno;
+        this.nome_lista_teorica = nome_lista_teorica
+        this.perguntas_certas = perguntas_certas;
+        this.perguntas_erradas = perguntas_erradas;
+    }
+}
+class NOTA_ALUNO_SERVICE {
+    constructor(url) {
+        this.url = url;
+    }
+    inserir(nome_aluno, nota, id_aluno, id_lista_teorica_aluno, nome_lista_teorica, perguntas_certas, perguntas_erradas) {
+        return fetch(this.url, {
+            method: "POST",
+            body: JSON.stringify(nome_aluno, nota, id_aluno, id_lista_teorica_aluno, nome_lista_teorica, perguntas_certas, perguntas_erradas),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(resposta => resposta.json())
+    }
+    listar() {
+        return fetch(this.url, {
+            method: "GET"
+        }).then(resposta => resposta.json())
+    }
+    atualizar(nota, perguntas_certas, perguntas_erradas) {
+        return fetch(this.url, {
+            method: "PATCH",
+            body: JSON.stringify(nota, perguntas_certas, perguntas_erradas),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(resposta => resposta.json())
+    }
+}
+class Comentario {
+    constructor(nome_aluno, comentario, id_aluno) {
+        this.nome_aluno = nome_aluno;
+        this.comentario = comentario;
+        this.id_aluno = id_aluno
+    }
+}
+class Comentario_Service {
+    constructor(url) {
+        this.url = url;
+    }
+    inserir(nome_aluno, comentario, id_aluno) {
+        return fetch(this.url, {
+            method: "POST",
+            body: JSON.stringify(nome_aluno, comentario, id_aluno),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(resposta => resposta.json())
+    }
+    listar() {
+        return fetch(this.url, {
+            method: "GET"
+        }).then(resposta => resposta.json());
+    }
+}
+class Pergunta_Service {
+    constructor(url) {
+        this.url = url;
+    }
+    listar() {
+        return fetch(this.url, {
+            method: "GET"
+        }).then(resposta => resposta.json());
+    }
+}
+class Lista_Teorica_Service {
+    constructor(url) {
+        this.url = url;
+    }
+    listar() {
+        return fetch(this.url, {
+            method: "GET"
+        }).then(resposta => resposta.json())
+    }
+}
+class Lista_Teorica_Aluno {
+    constructor(nome, id_criador, perguntas, opcoes, opcoes_certas) {
+        this.nome = nome;
+        this.id_criador = id_criador;
+        this.perguntas = perguntas;
+        this.opcoes = opcoes;
+        this.opcoes_certas = opcoes_certas;
+    }
+}
+class Lista_Teorica_Aluno_Service {
+    constructor(url) {
+        this.url = url;
+    }
+    listar() {
+        return fetch(this.url, {
+            method: "GET"
+        }).then(resposta => resposta.json())
+    }
+    inserir(nome, id_criador, perguntas, opcoes, opcoes_certas) {
+        return fetch(this.url, {
+            method: "POST",
+            body: JSON.stringify(nome, id_criador, perguntas, opcoes, opcoes_certas),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(resposta => resposta.json())
+    }
+}
+class Lista_Teorica_Servidor {
+    constructor(nome, id_aluno, perguntas, opcoes, opcoes_certas) {
+        this.nome = nome;
+        this.id_aluno = id_aluno;
+        this.perguntas = perguntas;
+        this.opcoes = opcoes;
+        this.opcoes_certas = opcoes_certas;
+    }
+}
+class Lista_Teorica_Servidor_Service {
+    constructor(url) {
+        this.url = url;
+    }
+    inserir(nome, id_aluno, perguntas, opcoes, opcoes_certas) {
+        return fetch(this.url, {
+            method: "POST",
+            body: JSON.stringify(nome, id_aluno, perguntas, opcoes, opcoes_certas),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(resposta => resposta.json())
+    }
+    listar() {
+        return fetch(this.url, {
+            method: "GET"
+        }).then(resposta => resposta.json())
+    }
+}
+
+const id_criptografado = localStorage.getItem('id');
+const nome_criptografado = localStorage.getItem('nome');
+const email_criptografado = localStorage.getItem('email');
+const combination = "1234567890abcdefghijklmnopqrstuvwxyz";
+const decrypted_id = CryptoJS.AES.decrypt(id_criptografado, combination);
+const decrypted_nome = CryptoJS.AES.decrypt(nome_criptografado, combination);
+const decrypted_email = CryptoJS.AES.decrypt(email_criptografado, combination);
+const id_login = decrypted_id.toString(CryptoJS.enc.Utf8);
+const nome_login = decrypted_nome.toString(CryptoJS.enc.Utf8);
+const email_login = decrypted_email.toString(CryptoJS.enc.Utf8);
+
+const logout = document.getElementById("logout");
+logout.onclick = function () {
+    localStorage.removeItem('id');
+    localStorage.removeItem('nome');
+    localStorage.removeItem('email');
+}
+document.getElementById("nome_user").innerText = `Nome: ${nome_login}`;
+document.getElementById("email_user").innerText = `E-mail: ${email_login}`
+$("#fazer_perguntas_erradas").hide("fast")
+$("#escolha_de_sala").hide("fast");
+$("#area_escolha_lista_teorica").hide("fast");
+$("#fazer_exercicio_lista_teorica").hide("fast");
+$("#termino_exercicio").hide("fast");
+$("#escolha_modo_exercicio").hide("fast");
+$("#tema_lista_teorica").hide("fast");
+$("#criacao_lista_teorica").hide("fast");
+$("#lugar_de_notas").hide("fast");
+$("#lugar_entrada_sala").hide("fast");
+$("#comentario").show("fast");
+$("#place_lista_teoricas").hide("fast");
+$("#infalunx").hide("fast");
+$("#codeprofx").hide("fast");
+$("#codeprofx2").hide("fast");
+
+document.getElementById("voltar_area_de_escolhas_inicial2").onclick = function () {
+    $("#wallalunx").css('padding-bottom', '32%');
+    $("#area_de_escolhas").show("fast");
+    $("#lugar_entrada_sala").hide("fast");
+    $("#comentario").show("fast");
+}
+
+let ul = document.getElementById("lugar_comentario");
+let comentario_service = new Comentario_Service("https://bancodedados.tawham.repl.co/comentario");
+comentario_service.listar().then(resposta => {
+    for (let i = 0; i <= resposta.length - 1; i++) {
+        let li = document.createElement("li");
+        let span_nome = document.createElement("span");
+        let span_comentario = document.createElement("span");
+        let br = document.createElement("br")
+        span_nome.innerHTML = resposta[i].nome_aluno;
+        span_comentario.innerHTML = resposta[i].comentario;
+        li.append(span_nome);
+        li.append(br);
+        li.append(span_comentario);
+        ul.append(li);
+    }
+})
+document.getElementById("enviar_comentario").onclick = function () {
+    let ul = document.getElementById("lugar_comentario");
+    $("#lugar_comentario").empty();
+    let comentario = $("#comentario_user").val();
+    if (comentario == "") {
+        swal('Comentário Inválido', '- digite alguma coisa -', 'error')
+
+    } else {
+        document.getElementById("comentario_user").value = ""
+
+        let comentario_class = new Comentario(nome_login, comentario, id_login);
+        let comentario_service = new Comentario_Service("https://bancodedados.tawham.repl.co/comentario")
+        comentario_service.inserir(comentario_class).then(resposta => {
+
+            comentario_service.listar().then(resposta => {
+                for (let i = 0; i <= resposta.length - 1; i++) {
+                    let li = document.createElement("li");
+                    let span_nome = document.createElement("span");
+                    let span_comentario = document.createElement("span");
+                    let br = document.createElement("br")
+                    span_nome.innerHTML = resposta[i].nome_aluno;
+                    span_comentario.innerHTML = resposta[i].comentario;
+                    li.append(span_nome);
+                    li.append(br);
+                    li.append(span_comentario);
+                    ul.append(li);
+                }
+            })
+        })
+    }
+}
+document.getElementById("entrar_sala").onclick = function () {
+    $("#comentario").hide("fast");
+    $("#area_de_escolhas").hide("fast");
+    $("#lugar_entrada_sala").show("fast");
+    document.getElementById("salvar_codigo").onclick = function () {
+        let codigo_sala = document.getElementById("codigo_sala").value;
+        if (codigo_sala == "") {
+            swal('Código Inválido', '- insira algum código -', 'error');
+        } else {
+
+            let sala_service = new Sala_Service(`https://bancodedados.tawham.repl.co/salas?codigo=${codigo_sala}`)
+            sala_service.listar().then(resposta => {
+
+                if (resposta.length > 0) {
+                    let id_sala = resposta[0].id
+                    let participantes = (resposta[0].participantes);
+                    let participantes_id = (resposta[0].participantes_id);
+                    participantes.push(email_login);
+                    participantes_id.push(id_login);
+                    let sala = new Sala(participantes, participantes_id);
+                    let sala_service = new Sala_Service(`https://bancodedados.tawham.repl.co/salas/${id_sala}`)
+                    sala_service.atualizar(sala).then(resposta => {
+
+                        location.reload();
+                    })
+
+                } else {
+                    swal('Código Inválido', '- esta sala não existe -', 'error');
+                }
+            })
+        }
+    }
+}
+document.getElementById("notas").onclick = function () {
+    $("#wallalunx").css('padding-bottom', '36%');
+    $("#comentario").hide("fast");
+    $("#area_de_escolhas").hide("fast");
+    $("#lugar_de_notas").show("fast");
+    let boletim = document.getElementById("boletim");
+    let titulo_table = document.createElement("th");
+    titulo_table.innerHTML = "Listas teóricas | Notas"
+    titulo_table.setAttribute('colspan', 4);
+    boletim.append(titulo_table);
+    let nota_service = new Nota_Service(`https://bancodedados.tawham.repl.co/notas_professor?id_aluno=${id_login}`);
+    nota_service.listar().then(resposta => {
+        for (let i = 0; i <= resposta.length - 1; i++) {
+            const acertos = resposta[i].perguntas_certas;
+            const erros = resposta[i].perguntas_erradas
+            let tr = document.createElement("tr");
+            let td_nome = document.createElement("td");
+            let td_nota = document.createElement("td");
+            let td_acertos = document.createElement("td");
+            let td_erros = document.createElement("td")
+            td_nome.innerHTML = resposta[i].nome_lista_teorica;
+            td_nota.innerHTML = resposta[i].nota;
+            td_acertos.innerHTML = "acertos: " + acertos.length;
+            td_erros.innerHTML = "erros: " + erros.length;
+            tr.append(td_nome);
+            tr.append(td_nota);
+            tr.append(td_acertos);
+            tr.append(td_erros);
+            boletim.append(tr);
+        }
+    })
+    let nota_service2 = new Nota_Service(`https://bancodedados.tawham.repl.co/notas_servidor?id_aluno=${id_login}`);
+    nota_service2.listar().then(resposta => {
+
+        for (let i = 0; i <= resposta.length - 1; i++) {
+            const acertos = resposta[i].perguntas_certas;
+            const erros = resposta[i].perguntas_erradas
+            let tr = document.createElement("tr");
+            let td_nome = document.createElement("td");
+            let td_nota = document.createElement("td");
+            let td_acertos = document.createElement("td");
+            let td_erros = document.createElement("td")
+            td_nome.innerHTML = resposta[i].nome_lista_teorica;
+            td_nota.innerHTML = resposta[i].nota;
+            td_acertos.innerHTML = "acertos: " + acertos.length;
+            td_erros.innerHTML = "erros: " + erros.length;
+            tr.append(td_nome);
+            tr.append(td_nota);
+            tr.append(td_acertos);
+            tr.append(td_erros);
+            boletim.append(tr);
+        }
+    })
+    let nota_service3 = new Nota_Service(`https://bancodedados.tawham.repl.co/notas_aluno?=id_aluno=${id_login}`)
+    nota_service3.listar().then(resposta => {
+        for (let i = 0; i <= resposta.length - 1; i++) {
+            const acertos = resposta[i].perguntas_certas;
+            const erros = resposta[i].perguntas_erradas
+            let tr = document.createElement("tr");
+            let td_nome = document.createElement("td");
+            let td_nota = document.createElement("td");
+            let td_acertos = document.createElement("td");
+            let td_erros = document.createElement("td");
+            td_nome.innerHTML = resposta[i].nome_lista_teorica;
+            td_nota.innerHTML = resposta[i].nota;
+            td_acertos.innerHTML = "acertos: " + acertos.length;
+            td_erros.innerHTML = "erros: " + erros.length;
+            tr.append(td_nome);
+            tr.append(td_nota);
+            tr.append(td_acertos);
+            tr.append(td_erros);
+            boletim.append(tr);
+        }
+
+    })
+    document.getElementById("voltar_area_de_escolhas_inicial").onclick = function () {
+        $("#wallalunx").css('padding-bottom', '32%');
+        $("#area_de_escolhas").show("fast");
+        $("#lugar_de_notas").hide("fast");
+        $("#boletim").empty();
+        $("#comentario").show("fast");
+    }
+}
+document.getElementById("exercicios").onclick = function () {
+    $("#muralxalun").hide("fast");
+    $("#wallalunx").css('padding-bottom', '12%');
+    $("#infalunx").show("fast");
+    $("#codeprofx").show("fast");
+    $("#area_de_escolhas").hide("fast");
+    $("#escolha_modo_exercicio").show("fast");
+    $("#comentario").hide("fast");
+    document.getElementById("voltar_da_area_escolha_modo_exercicio").onclick = function () {
+        $("#muralxalun").show("fast");
+        $("#wallalunx").css('padding-bottom', '32%');
+        $("#codeprofx").hide("fast");
+        $("#infalunx").hide("fast");
+        $("#escolha_modo_exercicio").hide("fast");
+        $("#area_de_escolhas").show("fast");
+        $("#comentario").show("fast");
+    }
+    document.getElementById("historico_listas_teoricas_server").onclick = function () {
+        $("#codeprofx").hide("fast");
+        $("#infalunx").show("fast");
+        $("#wallalunx").css('padding-bottom', '30%');
+        $("#escolha_modo_exercicio").hide("fast");
+        $("#place_lista_teoricas").show("fast");
+        let ul = document.getElementById("escolha_lista_teorica");
+        const lista_teorica_servidor_service = new NOTA_SERVIDOR_SERVICE(`https://bancodedados.tawham.repl.co/notas_servidor?id_aluno=${id_login}`);
+        lista_teorica_servidor_service.listar().then(resposta => {
+            for (let i = 0; i <= resposta.length - 1; i++) {
+                let li = document.createElement("li");
+                let button = document.createElement("button");
+                button.setAttribute('id', resposta[i].id_lista_teorica);
+                button.innerHTML = resposta[i].nome_lista_teorica;
+                button.setAttribute("class", "btn btn-primary");
+                li.append(button);
+                ul.append(li);
+                button.onclick = function () {
+                    $("#infalunx").hide("fast");
+                    const id_lista_teorica = event.target.id;
+
+                    const lista_teorica_servidor_service = new Lista_Teorica_Servidor_Service(`https://bancodedados.tawham.repl.co/Lista_Teorica_Servidor/${id_lista_teorica}`);
+                    lista_teorica_servidor_service.listar().then(resposta => {
+
+                        let lista_pergunta_server;
+                        let opcoes_server;
+                        let opcoes_corretas_server;
+                        let lista_opcoes_falsas = [1, 2, 3, 4, 5];
+                        let posicao_pergunta = 0;
+                        let posicao_opcoes = 0;
+                        let posicao_certa = [];
+                        let posicao_erradas_perguntas = [];
+                        let posicao_opcoes_certas = 0;
+                        let lista_perguntas_erradas_usuario = [];
+                        let lista_perguntas_certas_user = []
+                        let t_number = 1;
+                        let nota = 0;
+                        let nota_final = 0;
+                        let lista_opcoes2s = [];
+                        let opcoes_correta2 = [];
+                        lista_pergunta_server = resposta.perguntas
+                        opcoes_server = resposta.opcoes
+                        opcoes_corretas_server = resposta.opcoes_certas;
+
+                        opcoes_server.push(lista_opcoes_falsas);
+                        $("#place_lista_teoricas").hide("fast");
+                        $("#fazer_exercicio_lista_teorica").show("fast");
+                        let lugar_opcoes_resposta = document.querySelectorAll("#escolha");
+                        let input_radio = document.querySelectorAll("#valor");
+                        let lugar_perguntas = document.getElementById("place_perguntas");
+                        lugar_perguntas.innerHTML = `${t_number}/${lista_pergunta_server.length} ${lista_pergunta_server[posicao_pergunta]}`;
+                        for (let i = 0; i <= lugar_opcoes_resposta.length - 1; i++) {
+                            lugar_opcoes_resposta[i].innerHTML = opcoes_server[posicao_opcoes][i];
+                            input_radio[i].setAttribute('value', opcoes_server[posicao_opcoes][i]);
+                        }
+                        document.getElementById("proxima_pergunta").onclick = function () {
+                            $("#wallalunx").css('padding-bottom', '20%');
+                            let input_radio_situacao = $("input[name='opcoes']:checked").val();
+
+                            if (typeof input_radio_situacao != "undefined") {
+                                if (opcoes_corretas_server[posicao_opcoes_certas] == input_radio_situacao) {
+                                    lista_perguntas_certas_user.push(lista_pergunta_server[posicao_pergunta]);
+                                    posicao_certa.push(posicao_pergunta + 1)
+
+                                    swal('Certa Resposta!', '<img height="6%" width="6%" src="./fotis/smile.png" />  parabéns', 'success');
+                                    nota += 100
+                                } else {
+                                    lista_perguntas_erradas_usuario.push(lista_pergunta_server[posicao_pergunta])
+                                    posicao_erradas_perguntas.push(posicao_pergunta + 1);
+
+                                    for (let i = 0; i <= 4; i++) {
+                                        lista_opcoes2s.push(opcoes_server[posicao_opcoes][i]);
+
+                                    }
+
+                                    opcoes_correta2.push(opcoes_corretas_server[posicao_opcoes_certas]);
+                                    swal('Resposta Errada!', '<img height="6%" width="6%" src="./fotis/sad.png" />  estude mais um pouco', 'error')
+                                }
+                                t_number++;
+                                posicao_pergunta++;
+                                posicao_opcoes++;
+                                posicao_opcoes_certas++;
+
+                                let input_radio_checker = $("input[name='opcoes']")
+                                for (let i = 0; i <= input_radio_checker.length - 1; i++) {
+                                    input_radio_checker[i].checked = false;
+                                }
+                                lugar_perguntas.innerHTML = `${t_number}/${lista_pergunta_server.length})  ${lista_pergunta_server[posicao_pergunta]}`;
+                                for (let i = 0; i <= lugar_opcoes_resposta.length - 1; i++) {
+                                    lugar_opcoes_resposta[i].innerHTML = opcoes_server[posicao_opcoes][i];
+                                    input_radio[i].setAttribute('value', opcoes_server[posicao_opcoes][i]);
+                                }
+                                if (posicao_pergunta == lista_pergunta_server.length) {
+
+                                    $("#fazer_exercicio_lista_teorica").hide("fast");
+                                    $("#termino_exercicio").show("fast");
+                                    nota = parseInt((nota / lista_pergunta_server.length).toFixed(0));
+                                    nota_final = nota;
+                                    $("#lugar_nota").text(`Sua nota foi ${nota} | acertos: ${lista_perguntas_certas_user.length}, erros: ${lista_perguntas_erradas_usuario.length}`)
+                                    posicao_pergunta = 0;
+                                    nota = 0;
+                                    posicao_opcoes = 0;
+                                    posicao_opcoes_certas = 0;
+                                    t_number = 1;
+                                    let ul_resposta_certa = document.getElementById("reposta_certa");
+                                    let ul_resposta_errada = document.getElementById("pergunta_errada");
+                                    for (let i = 0; i <= lista_perguntas_certas_user.length - 1; i++) {
+                                        let li = document.createElement("li");
+                                        li.setAttribute('id', 'certas')
+                                        let button = document.createElement("button");
+                                        button.innerHTML = "V";
+                                        button.setAttribute('id', 'perguntas_certas');
+                                        li.innerHTML = `${posicao_certa[i]}) ${lista_perguntas_certas_user[i]}`;
+                                        li.append(button);
+                                        ul_resposta_certa.append(li);
+                                    }
+                                    for (let i = 0; i <= lista_perguntas_erradas_usuario.length - 1; i++) {
+                                        let li = document.createElement("li");
+                                        let button = document.createElement("button");
+                                        button.innerHTML = "X";
+                                        button.setAttribute('id', 'perguntas_erradas');
+                                        li.innerHTML = `${posicao_erradas_perguntas[i]}) ${lista_perguntas_erradas_usuario[i]}`;
+                                        li.append(button);
+                                        ul_resposta_errada.append(li);
+
+                                    }
+                                    if (lista_perguntas_erradas_usuario.length > 0) {
+                                        $("#fazer_perguntas_erradas").show("fast");
+                                    }
+                                    document.getElementById("voltar_escolha_lista_teorica").onclick = function () {
+                                        $("#wallalunx").css('background-image', 'url("./fotis/wood.png")');
+                                        $("#wallalunx").css('padding-bottom', '28%');
+                                        $("#infalunx").show("fast");
+                                        $("#termino_exercicio").hide("fast");
+                                        $("#place_lista_teoricas").show("fast");
+                                        $("#lugar_nota").empty();
+
+                                        $("#reposta_certa").empty();
+                                        $("#pergunta_errada").empty();
+                                        t_number = 1;
+                                        lugar_perguntas.innerHTML = `${t_number} ${lista_pergunta_server.length})`
+                                        let nota_servidor_service = new NOTA_SERVIDOR_SERVICE(`https://bancodedados.tawham.repl.co/notas_servidor?id_lista_teorica=${id_lista_teorica}&id_aluno=${id_login}`);
+                                        nota_servidor_service.listar().then(resposta => {
+
+                                            const id = resposta[0].id;
+
+                                            const nota_servidor_service = new NOTA_SERVIDOR_SERVICE(`https://bancodedados.tawham.repl.co/notas_servidor/${id}`)
+                                            nota_servidor_service.listar().then(resposta => {
+
+                                                const nota_aluno = new NOTA_ALUNO_2(nota_final, lista_perguntas_certas_user, lista_perguntas_erradas_usuario)
+                                                nota_servidor_service.atualizar(nota_aluno).then(resposta => {
+
+                                                })
+
+                                            })
+
+                                        })
+
+                                    }
+
+                                    document.getElementById("fazer_perguntas_erradas").onclick = function () {
+                                        $("#reposta_certa").empty();
+                                        $("#pergunta_errada").empty();
+                                        $("#lugar_nota").empty();
+                                        let pergunta_final_errada = [];
+                                        let pergunta_certa_final = [];
+                                        posicao_erradas_perguntas = []
+                                        posicao_certa = []
+
+                                        $("#termino_exercicio").hide("fast");
+                                        $("#fazer_exercicio_lista_teorica").show("fast");
+                                        lugar_perguntas.innerHTML = `${t_number}/${lista_perguntas_erradas_usuario.length})  ${lista_perguntas_erradas_usuario[posicao_pergunta]}`;
+                                        for (let i = 0; i <= lugar_opcoes_resposta.length - 1; i++) {
+                                            lugar_opcoes_resposta[i].innerHTML = lista_opcoes2s[posicao_opcoes];
+                                            input_radio[i].setAttribute('value', lista_opcoes2s[posicao_opcoes]);
+                                            posicao_opcoes++;
+                                        }
+                                        document.getElementById("proxima_pergunta").onclick = function () {
+                                            $("#wallalunx").css('padding-bottom', '20%');
+                                            let input_radio_situacao = $("input[name='opcoes']:checked").val();
+
+                                            if (typeof input_radio_situacao != "undefined") {
+                                                if (opcoes_correta2[posicao_opcoes_certas] == input_radio_situacao) {
+                                                    pergunta_certa_final.push(lista_perguntas_erradas_usuario[posicao_pergunta]);
+                                                    posicao_certa.push(posicao_pergunta + 1)
+                                                    swal('Certa Resposta!', '<img height="6%" width="6%" src="./fotis/smile.png" />  parabéns', 'success');
+                                                    nota += 100;
+
+                                                } else {
+                                                    pergunta_final_errada.push(lista_perguntas_erradas_usuario[posicao_pergunta]);
+                                                    posicao_erradas_perguntas.push(posicao_pergunta + 1);
+
+                                                    swal('Resposta Errada!', '<img height="6%" width="6%" src="./fotis/sad.png" />  estude mais um pouco', 'error')
+                                                }
+                                                t_number++;
+                                                posicao_pergunta++;
+                                                posicao_opcoes_certas++;
+                                                let input_radio_checker = $("input[name='opcoes']")
+                                                for (let i = 0; i <= input_radio_checker.length - 1; i++) {
+                                                    input_radio_checker[i].checked = false;
+                                                }
+                                                lugar_perguntas.innerHTML = `${t_number}/${lista_perguntas_erradas_usuario.length})  ${lista_perguntas_erradas_usuario[posicao_pergunta]}`;
+                                                for (let i = 0; i <= lugar_opcoes_resposta.length - 1; i++) {
+                                                    lugar_opcoes_resposta[i].innerHTML = lista_opcoes2s[posicao_opcoes];
+                                                    input_radio[i].setAttribute('value', lista_opcoes2s[posicao_opcoes]);
+                                                    posicao_opcoes++
+                                                }
+                                                let encerrar = lista_perguntas_erradas_usuario.length
+                                                if (encerrar == posicao_pergunta) {
+                                                    $("#fazer_exercicio_lista_teorica").hide("fast");
+                                                    $("#termino_exercicio").show("fast");
+                                                    $("#fazer_perguntas_erradas").hide("fast");
+                                                    t_number = 1;
+                                                    lugar_perguntas.innerHTML = `${t_number}/${lista_pergunta_server.length})`
+                                                    nota = parseInt((nota / lista_pergunta_server.length).toFixed(0));
+                                                    nota_final += nota;
+                                                    $("#lugar_nota").text(`A sua nota foi: ${nota_final} | acertos: ${pergunta_certa_final.length}, erros: ${pergunta_final_errada.length}`)
+                                                    nota = 0;
+                                                    posicao_pergunta = 0;
+                                                    posicao_opcoes = 0;
+                                                    posicao_opcoes_certas = 0;
+                                                    t_number = 1;
+                                                    for (let i = 0; i <= pergunta_certa_final.length - 1; i++) {
+                                                        lista_perguntas_certas_user.push(pergunta_certa_final[i])
+                                                    }
+                                                    let nota_servidor_service = new NOTA_SERVIDOR_SERVICE(`https://bancodedados.tawham.repl.co/notas_servidor?id_lista_teorica=${id_lista_teorica}&id_aluno=${id_login}`)
+                                                    nota_servidor_service.listar().then(resposta => {
+                                                        let id = resposta[0].id
+
+                                                        let nota_servidor_service = new NOTA_SERVIDOR_SERVICE(`https://bancodedados.tawham.repl.co/notas_servidor/${id}`)
+                                                        let nota_aluno = new NOTA_ALUNO_2(nota_final, lista_perguntas_certas_user, pergunta_final_errada)
+                                                        nota_servidor_service.atualizar(nota_aluno).then(resposta => {
+
+                                                        })
+                                                    })
+
+                                                    for (let i = 0; i <= pergunta_certa_final.length - 1; i++) {
+                                                        let li = document.createElement("li");
+                                                        let button = document.createElement("button");
+                                                        button.innerHTML = "V"
+                                                        li.innerHTML = `${posicao_certa[i]}) ${pergunta_certa_final[i]}`;
+                                                        li.append(button);
+                                                        ul_resposta_certa.append(li);
+                                                    }
+                                                    for (let i = 0; i <= pergunta_final_errada.length - 1; i++) {
+                                                        let li = document.createElement("li");
+                                                        let button = document.createElement("button");
+                                                        button.innerHTML = "X"
+                                                        li.innerHTML = `${posicao_erradas_perguntas[i]}) ${pergunta_final_errada[i]}`;
+                                                        li.append(button);
+                                                        ul_resposta_errada.append(li)
+                                                    }
+                                                    document.getElementById("voltar_escolha_lista_teorica").onclick = function () {
+                                                        $("#wallalunx").css('background-image', 'url("./fotis/wood.jpg")');
+                                                        $("#wallalunx").css('padding-bottom', '28%');
+                                                        $("#infalunx").show("fast");
+                                                        $("#reposta_certa").empty();
+                                                        $("#pergunta_errada").empty();
+                                                        $("#termino_exercicio").hide("fast");
+                                                        $("#place_lista_teoricas").show("fast");
+                                                        $("#lugar_nota").empty();
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    })
+                }
+            }
+        })
+        document.getElementById("voltar_place_lista_teoricas").onclick = function () {
+            $("#wallalunx").css('padding-bottom', '12%');
+            $("#codeprofx").show("fast");
+            $("#infalunx").show("fast");
+            $("#escolha_modo_exercicio").show("fast");
+            $("#escolha_lista_teorica").empty();
+            $("#place_lista_teoricas").hide("fast");
+
+        }
+    }
+    document.getElementById("historico_listas_teoricas_user").onclick = function () {
+        $("#codeprofx").hide("fast");
+        $("#infalunx").show("fast");
+        $("#wallalunx").css('padding-bottom', '30%');
+        $("#escolha_modo_exercicio").hide("fast");
+        $("#place_lista_teoricas").show("fast");
+        let ul = document.getElementById("escolha_lista_teorica");
+        const lista_toericas_feitas = new NOTA_ALUNO_SERVICE(`https://bancodedados.tawham.repl.co/notas_aluno?id_aluno=${id_login}`);
+        lista_toericas_feitas.listar().then(resposta => {
+            for (let i = 0; i <= resposta.length - 1; i++) {
+                let li = document.createElement("li");
+                let button = document.createElement("button");
+                button.setAttribute('id', resposta[i].id_lista_teorica);
+                button.innerHTML = resposta[i].nome_lista_teorica;
+                button.setAttribute("class", "btn btn-primary");
+                li.append(button);
+                ul.append(li);
+                button.onclick = function () {
+                    $("#infalunx").hide("fast");
+                    const id_lista_teorica = event.target.id;
+                    const lista_teorica_aluno = new Lista_Teorica_Aluno_Service(`https://bancodedados.tawham.repl.co/Lista_Teorica_aluno/${id_lista_teorica}`)
+                    lista_teorica_aluno.listar().then(resposta => {
+
+                        let lista_pergunta_server;
+                        let opcoes_server;
+                        let opcoes_corretas_server;
+                        let lista_opcoes_falsas = [1, 2, 3, 4, 5];
+                        let posicao_pergunta = 0;
+                        let posicao_opcoes = 0;
+                        let posicao_certa = [];
+                        let posicao_erradas_perguntas = [];
+                        let posicao_opcoes_certas = 0;
+                        let lista_perguntas_erradas_usuario = [];
+                        let lista_perguntas_certas_user = []
+                        let t_number = 1;
+                        let nota = 0;
+                        var nota_final = 0;
+                        let lista_opcoes2s = [];
+                        let opcoes_correta2 = [];
+                        lista_pergunta_server = resposta.perguntas
+                        opcoes_server = resposta.opcoes
+                        opcoes_corretas_server = resposta.opcoes_certas;
+
+                        opcoes_server.push(lista_opcoes_falsas);
+                        $("#place_lista_teoricas").hide("fast");
+                        $("#fazer_exercicio_lista_teorica").show("fast");
+                        let lugar_opcoes_resposta = document.querySelectorAll("#escolha");
+                        let input_radio = document.querySelectorAll("#valor");
+                        let lugar_perguntas = document.getElementById("place_perguntas");
+                        lugar_perguntas.innerHTML = `${t_number}/${lista_pergunta_server.length} ${lista_pergunta_server[posicao_pergunta]}`;
+                        for (let i = 0; i <= lugar_opcoes_resposta.length - 1; i++) {
+                            lugar_opcoes_resposta[i].innerHTML = opcoes_server[posicao_opcoes][i];
+                            input_radio[i].setAttribute('value', opcoes_server[posicao_opcoes][i]);
+                        }
+                        document.getElementById("proxima_pergunta").onclick = function () {
+                            $("#wallalunx").css('padding-bottom', '20%');
+                            let input_radio_situacao = $("input[name='opcoes']:checked").val();
+
+                            if (typeof input_radio_situacao != "undefined") {
+                                if (opcoes_corretas_server[posicao_opcoes_certas] == input_radio_situacao) {
+                                    lista_perguntas_certas_user.push(lista_pergunta_server[posicao_pergunta]);
+                                    posicao_certa.push(posicao_pergunta + 1)
+
+                                    swal('Certa Resposta!', '<img height="6%" width="6%" src="./fotis/smile.png" />  parabéns', 'success');
+                                    nota += 100
+                                } else {
+                                    lista_perguntas_erradas_usuario.push(lista_pergunta_server[posicao_pergunta])
+                                    posicao_erradas_perguntas.push(posicao_pergunta + 1);
+
+                                    for (let i = 0; i <= 4; i++) {
+                                        lista_opcoes2s.push(opcoes_server[posicao_opcoes][i]);
+
+                                    }
+
+                                    opcoes_correta2.push(opcoes_corretas_server[posicao_opcoes_certas]);
+                                    swal('Resposta Errada!', '<img height="6%" width="6%" src="./fotis/sad.png" />  estude mais um pouco', 'error')
+                                }
+                                t_number++;
+                                posicao_pergunta++;
+                                posicao_opcoes++;
+                                posicao_opcoes_certas++;
+
+                                let input_radio_checker = $("input[name='opcoes']")
+                                for (let i = 0; i <= input_radio_checker.length - 1; i++) {
+                                    input_radio_checker[i].checked = false;
+                                }
+                                lugar_perguntas.innerHTML = `${t_number}/${lista_pergunta_server.length})  ${lista_pergunta_server[posicao_pergunta]}`;
+                                for (let i = 0; i <= lugar_opcoes_resposta.length - 1; i++) {
+                                    lugar_opcoes_resposta[i].innerHTML = opcoes_server[posicao_opcoes][i];
+                                    input_radio[i].setAttribute('value', opcoes_server[posicao_opcoes][i]);
+                                }
+                                if (posicao_pergunta == lista_pergunta_server.length) {
+
+                                    $("#fazer_exercicio_lista_teorica").hide("fast");
+                                    $("#termino_exercicio").show("fast");
+                                    nota = parseInt((nota / lista_pergunta_server.length).toFixed(0));
+                                    $("#lugar_nota").text(`Sua nota foi ${nota} | acertos: ${lista_perguntas_certas_user.length}, erros: ${lista_perguntas_erradas_usuario.length}`);
+                                    nota_final = nota
+                                    posicao_pergunta = 0;
+                                    posicao_opcoes = 0;
+                                    posicao_opcoes_certas = 0;
+                                    t_number = 1;
+                                    nota = 0
+                                    let ul_resposta_certa = document.getElementById("reposta_certa");
+                                    let ul_resposta_errada = document.getElementById("pergunta_errada");
+                                    for (let i = 0; i <= lista_perguntas_certas_user.length - 1; i++) {
+                                        let li = document.createElement("li");
+                                        li.setAttribute('id', 'certas')
+                                        let button = document.createElement("button");
+                                        button.innerHTML = "V";
+                                        button.setAttribute('id', 'perguntas_certas');
+                                        li.innerHTML = `${posicao_certa[i]}) ${lista_perguntas_certas_user[i]}`;
+                                        li.append(button);
+                                        ul_resposta_certa.append(li);
+                                    }
+                                    for (let i = 0; i <= lista_perguntas_erradas_usuario.length - 1; i++) {
+                                        let li = document.createElement("li");
+                                        let button = document.createElement("button");
+                                        button.innerHTML = "X";
+                                        button.setAttribute('id', 'perguntas_erradas');
+                                        li.innerHTML = `${posicao_erradas_perguntas[i]}) ${lista_perguntas_erradas_usuario[i]}`;
+                                        li.append(button);
+                                        ul_resposta_errada.append(li);
+
+                                    }
+                                    if (lista_perguntas_erradas_usuario.length > 0) {
+                                        $("#fazer_perguntas_erradas").show("fast");
+
+                                    }
+                                    document.getElementById("voltar_escolha_lista_teorica").onclick = function () {
+                                        $("#wallalunx").css('background-image', 'url("./fotis/wood.jpg")');
+                                        $("#wallalunx").css('padding-bottom', '28%');
+                                        $("#infalunx").show("fast");
+                                        $("#termino_exercicio").hide("fast");
+                                        $("#place_lista_teoricas").show("fast");
+                                        $("#reposta_certa").empty();
+                                        $("#pergunta_errada").empty();
+                                        $("#lugar_nota").empty();
+                                        t_number = 1;
+                                        lugar_perguntas.innerHTML = `${t_number}/${lista_pergunta_server.length})`
+                                        let nota_aluno_service = new NOTA_ALUNO_SERVICE(`https://bancodedados.tawham.repl.co/notas_aluno?id_lista_teorica=${id_lista_teorica}&id_aluno=${id_login}`)
+                                        nota_aluno_service.listar().then(resposta => {
+
+                                            let id = resposta[0].id
+                                            let nota_aluno_service = new NOTA_ALUNO_SERVICE(`https://bancodedados.tawham.repl.co/notas_aluno/${id}`)
+                                            let nota_aluno = new NOTA_ALUNO_2(nota_final, lista_perguntas_certas_user, lista_perguntas_erradas_usuario)
+                                            nota_aluno_service.atualizar(nota_aluno).then(resposta => {
+
+                                            })
+                                        })
+
+                                    }
+                                    document.getElementById("fazer_perguntas_erradas").onclick = function () {
+                                        $("#reposta_certa").empty();
+                                        $("#pergunta_errada").empty();
+                                        $("#lugar_nota").empty();
+                                        let pergunta_final_errada = [];
+                                        let pergunta_certa_final = [];
+                                        posicao_erradas_perguntas = []
+                                        posicao_certa = []
+
+                                        $("#termino_exercicio").hide("fast");
+                                        $("#fazer_exercicio_lista_teorica").show("fast");
+                                        lugar_perguntas.innerHTML = `${t_number}/${lista_perguntas_erradas_usuario.length})  ${lista_perguntas_erradas_usuario[posicao_pergunta]}`;
+                                        for (let i = 0; i <= lugar_opcoes_resposta.length - 1; i++) {
+                                            lugar_opcoes_resposta[i].innerHTML = lista_opcoes2s[posicao_opcoes];
+                                            input_radio[i].setAttribute('value', lista_opcoes2s[posicao_opcoes]);
+                                            posicao_opcoes++;
+                                        }
+                                        document.getElementById("proxima_pergunta").onclick = function () {
+                                            $("#wallalunx").css('padding-bottom', '20%');
+                                            let input_radio_situacao = $("input[name='opcoes']:checked").val();
+
+                                            if (typeof input_radio_situacao != "undefined") {
+                                                if (opcoes_correta2[posicao_opcoes_certas] == input_radio_situacao) {
+                                                    pergunta_certa_final.push(lista_perguntas_erradas_usuario[posicao_pergunta]);
+                                                    posicao_certa.push(posicao_pergunta + 1)
+                                                    swal('Certa Resposta!', '<img height="6%" width="6%" src="./fotis/smile.png" />  parabéns', 'success');
+                                                    nota += 100;
+
+                                                } else {
+                                                    pergunta_final_errada.push(lista_perguntas_erradas_usuario[posicao_pergunta]);
+                                                    posicao_erradas_perguntas.push(posicao_pergunta + 1);
+
+                                                    swal('Resposta Errada!', '<img height="6%" width="6%" src="./fotis/sad.png" />  estude mais um pouco', 'error')
+                                                }
+                                                t_number++;
+                                                posicao_pergunta++;
+                                                posicao_opcoes_certas++;
+
+                                                let input_radio_checker = $("input[name='opcoes']")
+                                                for (let i = 0; i <= input_radio_checker.length - 1; i++) {
+                                                    input_radio_checker[i].checked = false;
+                                                }
+                                                lugar_perguntas.innerHTML = `${t_number}/${lista_perguntas_erradas_usuario.length})  ${lista_perguntas_erradas_usuario[posicao_pergunta]}`;
+                                                for (let i = 0; i <= lugar_opcoes_resposta.length - 1; i++) {
+                                                    lugar_opcoes_resposta[i].innerHTML = lista_opcoes2s[posicao_opcoes];
+                                                    input_radio[i].setAttribute('value', lista_opcoes2s[posicao_opcoes]);
+                                                    posicao_opcoes++
+                                                }
+                                                let encerrar = lista_perguntas_erradas_usuario.length
+                                                if (encerrar == posicao_pergunta) {
+                                                    $("#fazer_exercicio_lista_teorica").hide("fast");
+                                                    $("#termino_exercicio").show("fast");
+                                                    $("#fazer_perguntas_erradas").hide("fast");
+                                                    t_number = 1;
+                                                    lugar_perguntas.innerHTML = `${t_number}/${lista_pergunta_server.length})`
+
+                                                    nota = parseInt((nota / lista_pergunta_server.length).toFixed(0));
+                                                    nota_final += nota;
+                                                    $("#lugar_nota").text(`A sua nota foi: ${nota_final} | acertos: ${pergunta_certa_final.length}, erros: ${pergunta_final_errada.length}`);
+                                                    nota = 0;
+                                                    posicao_pergunta = 0;
+                                                    posicao_opcoes = 0;
+                                                    posicao_opcoes_certas = 0;
+                                                    t_number = 1;
+                                                    for (let i = 0; i <= pergunta_certa_final.length - 1; i++) {
+                                                        lista_perguntas_certas_user.push(pergunta_certa_final[i])
+                                                    }
+                                                    let nota_aluno_service = new NOTA_ALUNO_SERVICE(`https://bancodedados.tawham.repl.co/notas_aluno?id_lista_teorica=${id_lista_teorica}&id_aluno=${id_login}`)
+                                                    nota_aluno_service.listar().then(resposta => {
+
+                                                        let id = resposta[0].id
+
+                                                        let nota_aluno_service = new NOTA_ALUNO_SERVICE(`https://bancodedados.tawham.repl.co/notas_aluno/${id}`)
+                                                        let nota_aluno = new NOTA_ALUNO_2(nota_final, lista_perguntas_certas_user, pergunta_final_errada)
+                                                        nota_aluno_service.atualizar(nota_aluno).then(resposta => {
+
+                                                        })
+                                                    })
+
+                                                    for (let i = 0; i <= pergunta_certa_final.length - 1; i++) {
+                                                        let li = document.createElement("li");
+                                                        let button = document.createElement("button");
+                                                        button.innerHTML = "V"
+                                                        li.innerHTML = `${posicao_certa[i]}) ${pergunta_certa_final[i]}`;
+                                                        li.append(button);
+                                                        ul_resposta_certa.append(li);
+                                                    }
+                                                    for (let i = 0; i <= pergunta_final_errada.length - 1; i++) {
+                                                        let li = document.createElement("li");
+                                                        let button = document.createElement("button");
+                                                        button.innerHTML = "X"
+                                                        li.innerHTML = `${posicao_erradas_perguntas[i]}/${pergunta_final_errada[i]})`;
+                                                        li.append(button);
+                                                        ul_resposta_errada.append(li)
+                                                    }
+                                                    document.getElementById("voltar_escolha_lista_teorica").onclick = function () {
+                                                        $("#wallalunx").css('background-image', 'url("./fotis/wood.jpg")');
+                                                        $("#wallalunx").css('padding-bottom', '28%');
+                                                        $("#infalunx").show("fast");
+                                                        $("#reposta_certa").empty();
+                                                        $("#pergunta_errada").empty();
+                                                        $("#termino_exercicio").hide("fast");
+                                                        $("#place_lista_teoricas").show("fast");
+                                                        $("#lugar_nota").empty();
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    })
+                }
+            }
+        })
+        document.getElementById("voltar_place_lista_teoricas").onclick = function () {
+            $("#wallalunx").css('padding-bottom', '12%');
+            $("#codeprofx").show("fast");
+            $("#escolha_modo_exercicio").show("fast");
+            $("#escolha_lista_teorica").empty();
+            $("#place_lista_teoricas").hide("fast");
+        }
+
+    }
+    document.getElementById("criar_lista_teorica_automatica").onclick = function () {
+        $("#infalunx").show("fast");
+        $("#codeprofx").hide("fast");
+        $("#escolha_modo_exercicio").hide("fast");
+        $("#tema_lista_teorica").show("fast");
+        document.getElementById("salvar_temas").onclick = function () {
+            $("#wallalunx").css('padding-bottom', '36%');
+            $("#criacao_lista_teorica").css('width', '50%');
+            let temas_lista = [];
+            let temas = $("input[name='opcoes_temas']");
+            let temas_verificar = $("input[name='opcoes_temas']:checked").val();
+            let nome_temas = [];
+            if (typeof temas_verificar == "undefined") {
+                swal('Lista Inválida!', '- escolha algum tema -', 'error');
+            } else {
+                for (let i = 0; i <= temas.length - 1; i++) {
+                    if (temas[i].checked) {
+                        nome_temas.push(temas[i].id)
+
+                        temas_lista.push(temas[i].value);
+
+                    }
+                }
+                $("#tema_lista_teorica").hide("fast");
+                $("#criacao_lista_teorica").show("fast");
+                $("#pegar_nome").show("fast");
+                $("#cont_perguntas").show("fast");
+                $("#proximo_passo_criacao").hide("fast");
+                $("#fazer_lista_teorica").hide("fast");
+                for (let i = 0; i <= temas.length - 1; i++) {
+                    temas[i].checked = false;
+                }
+                document.getElementById("salvar_nome_lista_teorica").onclick = function () {
+                    $("#wallalunx").css('padding-bottom', '12%');
+                    $("#wallalunx").css('background-image', 'url("./fotis/classroom.jpg")');
+                    $("#wallalunx").css('background-size', 'cover');
+                    $("#criacao_lista_teorica").css('width', '80%');
+                    $("#infalunx").hide("fast");
+                    var nome_lista_teorica_automatica = $("#nome_lista_teorica").val();
+                    let quantidade_perguntas = $("#cont_perguntas").val()
+                    if (nome_lista_teorica_automatica != "" && quantidade_perguntas != "") {
+                        $("#criacao_lista_teorica").hide("fast");
+                        let lista_pergunta_server = [];
+                        let opcoes_server = [];
+                        let opcoes_corretas_server = [];
+                        let lista_opcoes_falsas = [1, 2, 3, 4, 5];
+                        let posicao_pergunta = 0;
+                        let posicao_opcoes = 0;
+                        let posicao_certa = [];
+                        let posicao_erradas_perguntas = [];
+                        let posicao_opcoes_certas = 0;
+                        let lista_perguntas_erradas_usuario = [];
+                        let lista_perguntas_certas_user = []
+                        let t_number = 1;
+                        let nota = 0;
+                        var nota_final = 0;
+                        let lista_opcoes2s = [];
+                        let opcoes_correta2 = [];
+
+                        let link_banco = `https://bancodedados.tawham.repl.co/perguntas?`;
+                        for (let i = 0; i <= temas_lista.length - 1; i++) {
+                            let operacao_logica = `id_tema=${temas_lista[i]}&`;
+                            link_banco = link_banco + operacao_logica;
+                        }
+                        let pergunta_service = new Pergunta_Service(`${link_banco}&_sort=opcoes&_limit=${quantidade_perguntas}&order=asc`);
+                        pergunta_service.listar().then(resposta => {
+
+                            for (let i = 0; i <= resposta.length - 1; i++) {
+                                lista_pergunta_server.push(resposta[i].pergunta);
+                                opcoes_server.push(resposta[i].opcoes);
+                                opcoes_corretas_server.push(resposta[i].opcao_certa);
+                            }
+                            let lista_teorica_servidor = new Lista_Teorica_Servidor(nome_lista_teorica_automatica, id_login, lista_pergunta_server, opcoes_server, opcoes_corretas_server);
+                            let lista_teorica_servidor_service = new Lista_Teorica_Servidor_Service("https://bancodedados.tawham.repl.co/Lista_Teorica_Servidor");
+                            lista_teorica_servidor_service.inserir(lista_teorica_servidor).then(resposta => {
+
+                                var id_lista_teorica = resposta.id;
+                                opcoes_server.push(lista_opcoes_falsas);
+                                let lugar_opcoes_resposta = document.querySelectorAll("#escolha");
+                                let input_radio = document.querySelectorAll("#valor");
+                                $("#fazer_lista_teorica").hide("fast");
+                                $("#fazer_exercicio_lista_teorica").show("fast");
+                                let lugar_perguntas = document.getElementById("place_perguntas");
+                                lugar_perguntas.innerHTML = `${t_number}/${lista_pergunta_server.length} ${lista_pergunta_server[posicao_pergunta]}`;
+                                for (let i = 0; i <= lugar_opcoes_resposta.length - 1; i++) {
+                                    lugar_opcoes_resposta[i].innerHTML = opcoes_server[posicao_opcoes][i];
+                                    input_radio[i].setAttribute('value', opcoes_server[posicao_opcoes][i]);
+                                }
+                                document.getElementById("proxima_pergunta").onclick = function () {
+                                    $("#wallalunx").css('padding-bottom', '20%');
+                                    let input_radio_situacao = $("input[name='opcoes']:checked").val();
+
+                                    if (typeof input_radio_situacao != "undefined") {
+                                        if (opcoes_corretas_server[posicao_opcoes_certas] == input_radio_situacao) {
+                                            lista_perguntas_certas_user.push(lista_pergunta_server[posicao_pergunta]);
+                                            posicao_certa.push(posicao_pergunta + 1)
+
+                                            swal('Certa Resposta!', '<img height="6%" width="6%" src="./fotis/smile.png" />  parabéns', 'success');
+                                            nota += 100
+                                        } else {
+                                            lista_perguntas_erradas_usuario.push(lista_pergunta_server[posicao_pergunta])
+                                            posicao_erradas_perguntas.push(posicao_pergunta + 1);
+                                            (posicao_erradas_perguntas);
+                                            for (let i = 0; i <= 4; i++) {
+                                                lista_opcoes2s.push(opcoes_server[posicao_opcoes][i]);
+
+                                            }
+
+                                            opcoes_correta2.push(opcoes_corretas_server[posicao_opcoes_certas]);
+                                            swal('Resposta Errada!', '<img height="6%" width="6%" src="./fotis/sad.png" />  estude mais um pouco', 'error');
+                                        }
+                                        t_number++;
+                                        posicao_pergunta++;
+                                        posicao_opcoes++;
+                                        posicao_opcoes_certas++;
+
+                                        let input_radio_checker = $("input[name='opcoes']")
+                                        for (let i = 0; i <= input_radio_checker.length - 1; i++) {
+                                            input_radio_checker[i].checked = false;
+                                        }
+                                        lugar_perguntas.innerHTML = `${t_number}/${lista_pergunta_server.length})  ${lista_pergunta_server[posicao_pergunta]}`;
+                                        for (let i = 0; i <= lugar_opcoes_resposta.length - 1; i++) {
+                                            lugar_opcoes_resposta[i].innerHTML = opcoes_server[posicao_opcoes][i];
+                                            input_radio[i].setAttribute('value', opcoes_server[posicao_opcoes][i]);
+                                        }
+                                    }
+                                    if (posicao_pergunta == lista_pergunta_server.length) {
+
+                                        $("#fazer_exercicio_lista_teorica").hide("fast");
+                                        $("#termino_exercicio").show("fast");
+                                        nota = parseInt((nota / lista_pergunta_server.length).toFixed(0));
+                                        $("#lugar_nota").text(`Sua nota foi ${nota} | acertos: ${lista_perguntas_certas_user.length}, erros: ${lista_perguntas_erradas_usuario.length}`);
+                                        nota_final = nota
+                                        posicao_pergunta = 0;
+                                        posicao_opcoes = 0;
+                                        posicao_opcoes_certas = 0;
+                                        t_number = 1;
+                                        nota = 0
+                                        let ul_resposta_certa = document.getElementById("reposta_certa");
+                                        let ul_resposta_errada = document.getElementById("pergunta_errada");
+                                        document.getElementById("voltar_escolha_lista_teorica").onclick = function () {
+                                            $("#wallalunx").css('background-image', 'url("./fotis/wood.jpg")');
+                                            $("#wallalunx").css('padding-bottom', '28%');
+                                            $("#infalunx").show("fast");
+                                            $("#termino_exercicio").hide("fast");
+                                            $("#escolha_modo_exercicio").show("fast");
+                                            $("#reposta_certa").empty();
+                                            $("#pergunta_errada").empty();
+                                            $("#lugar_nota").empty();
+                                            t_number = 1;
+                                            lugar_perguntas.innerHTML = `${t_number} ${lista_pergunta_server.length})`
+                                            let nota_class = new NOTA_SERVIDOR(nome_login, nota_final, id_login, id_lista_teorica, nome_lista_teorica_automatica, lista_perguntas_certas_user, lista_perguntas_erradas_usuario);
+                                            let nota_service = new NOTA_SERVIDOR_SERVICE("https://bancodedados.tawham.repl.co/notas_servidor");
+                                            nota_service.inserir(nota_class).then(resposta => {})
+                                        }
+                                        for (let i = 0; i <= lista_perguntas_certas_user.length - 1; i++) {
+                                            let li = document.createElement("li");
+                                            li.setAttribute('id', 'certas')
+                                            let button = document.createElement("button");
+                                            button.innerHTML = "V";
+                                            button.setAttribute('id', 'perguntas_certas');
+                                            li.innerHTML = `${posicao_certa[i]}) ${lista_perguntas_certas_user[i]}`;
+                                            li.append(button);
+                                            ul_resposta_certa.append(li);
+                                        }
+                                        for (let i = 0; i <= lista_perguntas_erradas_usuario.length - 1; i++) {
+                                            let li = document.createElement("li");
+                                            let button = document.createElement("button");
+                                            button.innerHTML = "X";
+                                            button.setAttribute('id', 'perguntas_erradas');
+                                            li.innerHTML = `${posicao_erradas_perguntas[i]}) ${lista_perguntas_erradas_usuario[i]}`;
+                                            li.append(button);
+                                            ul_resposta_errada.append(li);
+                                        }
+                                        if (lista_perguntas_erradas_usuario.length > 0) {
+                                            $("#fazer_perguntas_erradas").show("fast");
+                                        }
+                                        document.getElementById("fazer_perguntas_erradas").onclick = function () {
+                                            $("#reposta_certa").empty();
+                                            $("#pergunta_errada").empty();
+                                            let pergunta_final_errada = [];
+                                            let pergunta_certa_final = [];
+                                            posicao_erradas_perguntas = []
+                                            posicao_certa = []
+                                            $("#lugar_nota").empty();
+
+                                            $("#termino_exercicio").hide("fast");
+                                            $("#fazer_exercicio_lista_teorica").show("fast");
+                                            lugar_perguntas.innerHTML = `${t_number}/${lista_perguntas_erradas_usuario.length})  ${lista_perguntas_erradas_usuario[posicao_pergunta]}`;
+                                            for (let i = 0; i <= lugar_opcoes_resposta.length - 1; i++) {
+                                                lugar_opcoes_resposta[i].innerHTML = lista_opcoes2s[posicao_opcoes];
+                                                input_radio[i].setAttribute('value', lista_opcoes2s[posicao_opcoes]);
+                                                posicao_opcoes++;
+                                            }
+                                            document.getElementById("proxima_pergunta").onclick = function () {
+                                                $("#wallalunx").css('padding-bottom', '20%');
+                                                let input_radio_situacao = $("input[name='opcoes']:checked").val();
+
+                                                if (typeof input_radio_situacao != "undefined") {
+                                                    if (opcoes_correta2[posicao_opcoes_certas] == input_radio_situacao) {
+                                                        pergunta_certa_final.push(lista_perguntas_erradas_usuario[posicao_pergunta]);
+                                                        posicao_certa.push(posicao_pergunta + 1)
+                                                        swal('Certa Resposta!', '<img height="6%" width="6%" src="./fotis/smile.png" />  parabéns', 'success');
+                                                        nota += 100;
+
+                                                    } else {
+                                                        pergunta_final_errada.push(lista_perguntas_erradas_usuario[posicao_pergunta]);
+                                                        posicao_erradas_perguntas.push(posicao_pergunta + 1);
+
+                                                        swal('Resposta Errada!', '<img height="6%" width="6%" src="./fotis/sad.png" />  estude mais um pouco', 'error')
+                                                    }
+                                                    t_number++;
+                                                    posicao_pergunta++;
+                                                    posicao_opcoes_certas++;
+
+                                                    let input_radio_checker = $("input[name='opcoes']")
+                                                    for (let i = 0; i <= input_radio_checker.length - 1; i++) {
+                                                        input_radio_checker[i].checked = false;
+                                                    }
+                                                    lugar_perguntas.innerHTML = `${t_number}/${lista_perguntas_erradas_usuario.length})  ${lista_perguntas_erradas_usuario[posicao_pergunta]}`;
+                                                    for (let i = 0; i <= lugar_opcoes_resposta.length - 1; i++) {
+                                                        lugar_opcoes_resposta[i].innerHTML = lista_opcoes2s[posicao_opcoes];
+                                                        input_radio[i].setAttribute('value', lista_opcoes2s[posicao_opcoes]);
+                                                        posicao_opcoes++
+                                                    }
+                                                    let encerrar = lista_perguntas_erradas_usuario.length
+                                                    if (encerrar == posicao_pergunta) {
+                                                        $("#fazer_exercicio_lista_teorica").hide("fast");
+                                                        $("#termino_exercicio").show("fast");
+                                                        $("#fazer_perguntas_erradas").hide("fast");
+                                                        t_number = 1;
+                                                        lugar_perguntas.innerHTML = `${t_number}/${lista_pergunta_server.length})`
+                                                        nota = parseInt((nota / lista_pergunta_server.length).toFixed(0));
+
+                                                        nota_final += nota;
+                                                        $("#lugar_nota").text(`A sua nota foi: ${nota_final} | acertos: ${pergunta_certa_final.length}, erros: ${pergunta_final_errada.length}`)
+                                                        nota = 0;
+                                                        posicao_pergunta = 0;
+                                                        posicao_opcoes = 0;
+                                                        posicao_opcoes_certas = 0;
+                                                        t_number = 1;
+                                                        for (let i = 0; i <= pergunta_certa_final.length - 1; i++) {
+                                                            lista_perguntas_certas_user.push(pergunta_certa_final[i])
+                                                        }
+                                                        let nota_class = new NOTA_SERVIDOR(nome_login, nota_final, id_login, id_lista_teorica, nome_lista_teorica_automatica, lista_perguntas_certas_user, pergunta_final_errada);
+                                                        let nota_service = new NOTA_SERVIDOR_SERVICE("https://bancodedados.tawham.repl.co/notas_servidor");
+                                                        nota_service.inserir(nota_class).then(resposta => {
+
+                                                        })
+                                                        for (let i = 0; i <= pergunta_certa_final.length - 1; i++) {
+                                                            let li = document.createElement("li");
+                                                            let button = document.createElement("button");
+                                                            button.innerHTML = "V"
+                                                            li.innerHTML = `${posicao_certa[i]}) ${pergunta_certa_final[i]}`;
+                                                            li.append(button);
+                                                            ul_resposta_certa.append(li);
+                                                        }
+                                                        for (let i = 0; i <= pergunta_final_errada.length - 1; i++) {
+                                                            let li = document.createElement("li");
+                                                            let button = document.createElement("button");
+                                                            button.innerHTML = "X"
+                                                            li.innerHTML = `${posicao_erradas_perguntas[i]}) ${pergunta_final_errada[i]}`;
+                                                            li.append(button);
+                                                            ul_resposta_errada.append(li)
+                                                        }
+                                                        document.getElementById("voltar_escolha_lista_teorica").onclick = function () {
+                                                            $("#wallalunx").css('background-image', 'url("./fotis/wood.jpg")');
+                                                            $("#wallalunx").css('padding-bottom', '28%');
+                                                            $("#infalunx").show("fast");
+                                                            $("#reposta_certa").empty();
+                                                            $("#pergunta_errada").empty();
+                                                            $("#termino_exercicio").hide("fast");
+                                                            $("#escolha_modo_exercicio").show("fast");
+                                                            $("#lugar_nota").empty();
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            })
+                        })
+                    }
+                }
+            }
+        }
+    }
+    document.getElementById("criar_lista_teorica").onclick = function () {
+        $("#infalunx").show("fast");
+        $("#codeprofx").hide("fast");
+        $("#escolha_modo_exercicio").hide("fast");
+        $("#tema_lista_teorica").show("fast");
+        document.getElementById("salvar_temas").onclick = function () {
+            $("#wallalunx").css('padding-bottom', '36%');
+            $("#criacao_lista_teorica").css('width', '50%');
+            let temas_lista = [];
+            let temas = $("input[name='opcoes_temas']");
+            let temas_verificar = $("input[name='opcoes_temas']:checked").val();
+            let nome_temas = [];
+            if (typeof temas_verificar == "undefined") {
+                swal('Lista Inválida!', '- escolha algum tema -', 'error');
+            } else {
+                for (let i = 0; i <= temas.length - 1; i++) {
+                    if (temas[i].checked) {
+                        nome_temas.push(temas[i].id)
+
+                        temas_lista.push(temas[i].value);
+
+                    }
+                }
+                $("#tema_lista_teorica").hide("fast");
+                $("#criacao_lista_teorica").show("fast");
+                $("#pegar_nome").show("fast");
+                $("#cont_perguntas").hide("fast");
+                $("#proximo_passo_criacao").hide("fast");
+                $("#fazer_lista_teorica").hide("fast");
+                for (let i = 0; i <= temas.length - 1; i++) {
+                    temas[i].checked = false;
+                }
+                document.getElementById("salvar_nome_lista_teorica").onclick = function () {
+                    $("#wallalunx").css('padding-bottom', '12%');
+                    $("#criacao_lista_teorica").css('width', '80%');
+                    $("#infalunx").hide("fast");
+                    $("#wallalunx").css('background-image', 'url("./fotis/classroom.jpg")');
+                    $("#wallalunx").css('background-size', 'cover');
+                    let input_nome = $("#nome_lista_teorica").val();
+                    if (input_nome == "") {
+                        swal('Lista Inválida!', '- escolha algum nome -', 'error')
+                    } else {
+                        $("#fazer_lista_teorica").show("fast");
+                        document.getElementById("nome_lista_teorica").value = ""
+                        $("#pegar_nome").hide("fast");
+                        $("#proximo_passo_criacao").show("fast");
+                        let lista_pergunta_server = [];
+                        let opcoes_server = [];
+                        let opcoes_certas_server = [];
+                        let contador_perguntas_adicionadas = 0;
+                        let ul = document.getElementById("perguntasserver");
+                        for (let i = 0; i <= temas_lista.length - 1; i++) {
+                            let h3 = document.createElement("h3");
+                            h3.innerHTML = nome_temas[i].toUpperCase();
+
+                            let li_nome = document.createElement("li");
+                            li_nome.append(h3);
+                            let pergunta_service = new Pergunta_Service(`https://bancodedados.tawham.repl.co/perguntas?id_tema=${temas_lista[i]}`);
+                            pergunta_service.listar().then(resposta => {
+                                ul.append(li_nome);
+                                for (let i = 0; i <= resposta.length - 1; i++) {
+                                    let li = document.createElement("li");
+                                    let button = document.createElement("button");
+                                    li.setAttribute('id', resposta[i].id)
+                                    button.innerHTML = resposta[i].pergunta;
+                                    button.setAttribute('id', resposta[i].id);
+                                    li.append(button);
+                                    ul.append(li);
+                                    button.onclick = function () {
+                                        let id_pergunta = resposta[i].id
+
+                                        $("#perguntasserver > li").remove(`#${id_pergunta}`)
+                                        contador_perguntas_adicionadas++;
+                                        $("#contador_perguntas").text(`${contador_perguntas_adicionadas} pergunta(s) adicionadas`);
+                                        lista_pergunta_server.push(resposta[i].pergunta);
+
+                                        opcoes_server.push(resposta[i].opcoes);
+                                        opcoes_certas_server.push(resposta[i].opcao_certa);
+                                    }
+                                }
+                            })
+                        }
+                        document.getElementById("fazer_lista_teorica").onclick = function () {
+                            $("#criacao_lista_teorica").css('background', 'none');
+                            $("#wallalunx").css('background-image', 'url("./fotis/classroom.jpg")');
+                            $("#wallalunx").css('background-size', 'cover');
+                            $("#infalunx").hide("fast");
+                            $("#wallalunx").css('padding-bottom', '20%');
+                            let lista_teorica_aluno = new Lista_Teorica_Aluno(input_nome, id_login, lista_pergunta_server, opcoes_server, opcoes_certas_server);
+                            let lista_teorica_aluno_service = new Lista_Teorica_Aluno_Service("https://bancodedados.tawham.repl.co/Lista_Teorica_aluno");
+                            lista_teorica_aluno_service.inserir(lista_teorica_aluno).then(resposta => {
+                                var id_lista_teorica = resposta.id;
+                                $("#proximo_passo_criacao").hide("fast");
+                                $("#fazer_lista_teorica").show("fast");
+                                $("#perguntasserver").empty();
+                                $("#contador_perguntas").text("0");
+                                let t_number = 1;
+                                let lista_certas_usuario = [];
+                                let lista_perguntas_erradas_usuario = [];
+                                let lista_opcoes2s = [];
+                                let opcoes_correta2 = []
+                                let nota = 0;
+                                let nota_final = 0;
+                                lista_opcoes_falsas = [1, 2, 3, 4, 5];
+                                opcoes_server.push(lista_opcoes_falsas);
+                                let posicao_pergunta = 0;
+                                let posicao_certa_pergunta = []
+                                let posicao_errada_pergunta = []
+                                let posicao_opcoes = 0;
+                                let posicao_opcoes_certas = 0;
+                                let lugar_opcoes_resposta = document.querySelectorAll("#escolha");
+                                let input_radio = document.querySelectorAll("#valor");
+                                $("#fazer_lista_teorica").hide("fast");
+                                $("#fazer_exercicio_lista_teorica").show("fast");
+                                let lugar_perguntas = document.getElementById("place_perguntas");
+                                lugar_perguntas.innerHTML = `${t_number}/${lista_pergunta_server.length}) ${lista_pergunta_server[posicao_pergunta]}`;
+                                for (let i = 0; i <= lugar_opcoes_resposta.length - 1; i++) {
+                                    lugar_opcoes_resposta[i].innerHTML = opcoes_server[posicao_opcoes][i];
+                                    input_radio[i].setAttribute('value', opcoes_server[posicao_opcoes][i]);
+                                }
+                                document.getElementById("proxima_pergunta").onclick = function () {
+                                    $("#wallalunx").css('padding-bottom', '20%');
+                                    let input_radio_situacao = $("input[name='opcoes']:checked").val();
+
+                                    if (typeof input_radio_situacao != "undefined") {
+                                        if (opcoes_certas_server[posicao_opcoes_certas] == input_radio_situacao) {
+                                            lista_certas_usuario.push(lista_pergunta_server[posicao_pergunta]);
+
+                                            posicao_certa_pergunta.push(posicao_pergunta + 1)
+
+                                            swal('Certa Resposta!', '<img height="6%" width="6%" src="./fotis/smile.png" />  parabéns', 'success');
+                                            nota += 100;
+
+                                        } else {
+                                            lista_perguntas_erradas_usuario.push(lista_pergunta_server[posicao_pergunta])
+                                            posicao_errada_pergunta.push(posicao_pergunta + 1);
+                                            for (let i = 0; i <= 4; i++) {
+                                                lista_opcoes2s.push(opcoes_server[posicao_opcoes][i]);
+
+
+                                            }
+
+                                            opcoes_correta2.push(opcoes_certas_server[posicao_opcoes_certas]);
+
+
+                                            swal('Resposta Errada!', '<img height="6%" width="6%" src="./fotis/sad.png" />  estude mais um pouco', 'error')
+                                        }
+                                        t_number++;
+                                        posicao_pergunta++;
+                                        posicao_opcoes++;
+                                        posicao_opcoes_certas++;
+
+                                        let input_radio_checker = $("input[name='opcoes']")
+                                        for (let i = 0; i <= input_radio_checker.length - 1; i++) {
+                                            input_radio_checker[i].checked = false;
+                                        }
+                                        lugar_perguntas.innerHTML = `${t_number}/${lista_pergunta_server.length})  ${lista_pergunta_server[posicao_pergunta]}`;
+                                        for (let i = 0; i <= lugar_opcoes_resposta.length - 1; i++) {
+                                            lugar_opcoes_resposta[i].innerHTML = opcoes_server[posicao_opcoes][i];
+                                            input_radio[i].setAttribute('value', opcoes_server[posicao_opcoes][i]);
+                                        }
+                                        if (posicao_pergunta == lista_pergunta_server.length) {
+
+                                            $("#fazer_exercicio_lista_teorica").hide("fast");
+                                            $("#termino_exercicio").show("fast");
+                                            nota = parseInt((nota / lista_pergunta_server.length).toFixed(0));
+                                            $("#lugar_nota").text(`Sua nota foi ${nota} | acertos: ${lista_certas_usuario.length}, erros: ${lista_perguntas_erradas_usuario.length}`);
+
+                                            nota_final = nota;
+                                            nota = 0;
+                                            posicao_pergunta = 0;
+                                            posicao_opcoes = 0;
+                                            posicao_opcoes_certas = 0;
+                                            t_number = 1;
+                                            let ul_resposta_certa = document.getElementById("reposta_certa");
+                                            let ul_resposta_errada = document.getElementById("pergunta_errada");
+                                            for (let i = 0; i <= lista_certas_usuario.length - 1; i++) {
+                                                let li = document.createElement("li");
+                                                li.setAttribute('id', 'certas')
+                                                let button = document.createElement("button");
+                                                button.innerHTML = "V";
+                                                button.setAttribute('id', 'perguntas_certas');
+                                                li.innerHTML = `${posicao_certa_pergunta[i]}) ${lista_certas_usuario[i]}`;
+                                                li.append(button);
+                                                ul_resposta_certa.append(li);
+                                            }
+                                            for (let i = 0; i <= lista_perguntas_erradas_usuario.length - 1; i++) {
+                                                let li = document.createElement("li");
+                                                let button = document.createElement("button");
+                                                button.innerHTML = "X";
+                                                button.setAttribute('id', 'perguntas_erradas');
+                                                li.innerHTML = `${posicao_errada_pergunta[i]}) ${lista_perguntas_erradas_usuario[i]}`;
+                                                li.append(button);
+                                                ul_resposta_errada.append(li);
+                                            }
+                                            if (lista_perguntas_erradas_usuario.length > 0) {
+                                                $("#fazer_perguntas_erradas").show("fast");
+
+                                            }
+                                            document.getElementById("voltar_escolha_lista_teorica").onclick = function () {
+                                                $("#wallalunx").css('background-image', 'url("./fotis/wood.jpg")');
+                                                $("#wallalunx").css('padding-bottom', '28%');
+                                                $("#infalunx").show("fast");
+                                                $("#termino_exercicio").hide("fast");
+                                                $("#escolha_modo_exercicio").show("fast");
+                                                $("#reposta_certa").empty();
+                                                $("#pergunta_errada").empty();
+                                                $("#lugar_nota").empty();
+                                                posicao_errada_pergunta = [];
+                                                posicao_errada_pergunta = [];
+                                                t_number = 1;
+                                                lugar_perguntas.innerHTML = `${t_number}/${lista_pergunta_server.length})`
+
+                                                let nota_class = new NOTA_ALUNO(nome_login, nota_final, id_login, id_lista_teorica, input_nome, lista_certas_usuario, lista_perguntas_erradas_usuario);
+                                                nota_final = 0;
+                                                let nota_service = new NOTA_ALUNO_SERVICE("https://bancodedados.tawham.repl.co/notas_aluno");
+                                                nota_service.inserir(nota_class).then(resposta => {
+
+                                                })
+
+                                            }
+                                            document.getElementById("fazer_perguntas_erradas").onclick = function () {
+                                                posicao_certa_pergunta = [];
+                                                posicao_errada_pergunta = [];
+                                                $("#reposta_certa").empty();
+                                                $("#pergunta_errada").empty();
+                                                $("#lugar_nota").empty();
+                                                let pergunta_final_errada = [];
+                                                let pergunta_certa_final = [];
+                                                $("#termino_exercicio").hide("fast");
+                                                $("#fazer_exercicio_lista_teorica").show("fast");
+                                                lugar_perguntas.innerHTML = `${t_number}/${lista_perguntas_erradas_usuario.length})  ${lista_perguntas_erradas_usuario[posicao_pergunta]}`;
+                                                for (let i = 0; i <= lugar_opcoes_resposta.length - 1; i++) {
+                                                    lugar_opcoes_resposta[i].innerHTML = lista_opcoes2s[posicao_opcoes];
+                                                    input_radio[i].setAttribute('value', lista_opcoes2s[posicao_opcoes]);
+                                                    posicao_opcoes++;
+                                                }
+                                                document.getElementById("proxima_pergunta").onclick = function () {
+                                                    $("#wallalunx").css('padding-bottom', '20%');
+                                                    let input_radio_situacao = $("input[name='opcoes']:checked").val();
+
+                                                    if (typeof input_radio_situacao != "undefined") {
+                                                        if (opcoes_correta2[posicao_opcoes_certas] == input_radio_situacao) {
+                                                            pergunta_certa_final.push(lista_perguntas_erradas_usuario[posicao_pergunta]);
+                                                            posicao_certa_pergunta.push(posicao_pergunta + 1);
+
+                                                            swal('Certa Resposta!', '<img height="6%" width="6%" src="./fotis/smile.png" />  parabéns', 'success');
+                                                            nota += 100;
+
+                                                        } else {
+
+                                                            pergunta_final_errada.push(lista_perguntas_erradas_usuario[posicao_pergunta]);
+
+                                                            swal('Resposta Errada!', '<img height="6%" width="6%" src="./fotis/sad.png" />  estude mais um pouco', 'error')
+                                                            posicao_errada_pergunta.push(posicao_pergunta + 1);
+                                                        }
+                                                        t_number++;
+                                                        posicao_pergunta++;
+                                                        posicao_opcoes_certas++;
+
+                                                        let input_radio_checker = $("input[name='opcoes']")
+                                                        for (let i = 0; i <= input_radio_checker.length - 1; i++) {
+                                                            input_radio_checker[i].checked = false;
+                                                        }
+                                                        lugar_perguntas.innerHTML = `${t_number}/${lista_perguntas_erradas_usuario.length})  ${lista_perguntas_erradas_usuario[posicao_pergunta]}`;
+                                                        for (let i = 0; i <= lugar_opcoes_resposta.length - 1; i++) {
+                                                            lugar_opcoes_resposta[i].innerHTML = lista_opcoes2s[posicao_opcoes];
+                                                            input_radio[i].setAttribute('value', lista_opcoes2s[posicao_opcoes]);
+                                                            posicao_opcoes++
+                                                        }
+                                                        let encerrar = lista_perguntas_erradas_usuario.length
+                                                        if (encerrar == posicao_pergunta) {
+                                                            $("#fazer_exercicio_lista_teorica").hide("fast");
+                                                            $("#termino_exercicio").show("fast");
+                                                            $("#fazer_perguntas_erradas").hide("fast");
+
+                                                            nota = parseInt((nota / lista_pergunta_server.length).toFixed(0));
+                                                            nota_final += nota;
+                                                            $("#lugar_nota").text(`Sua nota foi: ${nota_final} | certas: ${pergunta_certa_final.length}, erradas: ${pergunta_final_errada.length}`)
+                                                            nota = 0;
+                                                            posicao_pergunta = 0;
+                                                            posicao_opcoes = 0;
+                                                            posicao_opcoes_certas = 0;
+                                                            t_number = 1;
+                                                            lugar_perguntas.innerHTML = `${t_number}/${lista_pergunta_server.length})`
+                                                            for (let i = 0; i <= pergunta_certa_final.length - 1; i++) {
+                                                                lista_certas_usuario.push(pergunta_certa_final[i])
+
+                                                            }
+                                                            let nota_class = new NOTA_ALUNO(nome_login, nota_final, id_login, id_lista_teorica, input_nome, lista_certas_usuario, pergunta_final_errada);
+                                                            let nota_service = new NOTA_ALUNO_SERVICE("https://bancodedados.tawham.repl.co/notas_aluno");
+                                                            nota_service.inserir(nota_class).then(resposta => {
+
+                                                            })
+                                                            for (let i = 0; i <= pergunta_certa_final.length - 1; i++) {
+                                                                let li = document.createElement("li");
+                                                                let button = document.createElement("button");
+                                                                button.innerHTML = "V"
+                                                                li.innerHTML = `${posicao_certa_pergunta[i]}) ${pergunta_certa_final[i]}`;
+                                                                li.append(button);
+                                                                ul_resposta_certa.append(li);
+                                                            }
+                                                            for (let i = 0; i <= pergunta_final_errada.length - 1; i++) {
+                                                                let li = document.createElement("li");
+                                                                let button = document.createElement("button");
+                                                                button.innerHTML = "X"
+                                                                li.innerHTML = `${posicao_errada_pergunta[i]}) ${pergunta_final_errada[i]}`;
+                                                                li.append(button);
+                                                                ul_resposta_errada.append(li)
+                                                            }
+                                                            document.getElementById("voltar_escolha_lista_teorica").onclick = function () {
+                                                                $("#wallalunx").css('background-image', 'url("./fotis/wood.jpg")');
+                                                                $("#wallalunx").css('padding-bottom', '28%');
+                                                                $("#infalunx").show("fast");
+                                                                $("#reposta_certa").empty();
+                                                                $("#pergunta_errada").empty();
+                                                                $("#lugar_nota").empty();
+                                                                $("#termino_exercicio").hide("fast");
+                                                                $("#escolha_modo_exercicio").show("fast");
+
+                                                                posicao_errada_pergunta = [];
+                                                                posicao_certa_pergunta = [];
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    } else {
+                                        swal('Resposta Inválida!', '- escolha sua opção -', 'error')
+
+                                    }
+                                }
+                            })
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+document.getElementById("salas_presentes").onclick = function () {
+    $("#muralxalun").hide("fast");
+    $("#infalunx").show("fast");
+    $("#codeprofx2").show("fast");
+    $("#wallalunx").css('padding-bottom', '32%');
+    $("#comentario").hide("fast");
+    $("#area_de_escolhas").hide("fast");
+    $("#escolha_de_sala").show("fast");
+    let sala_service = new Sala_Service(`https://bancodedados.tawham.repl.co/salas?participantes_like=${email_login}`);
+    sala_service.listar().then(resposta => {
+
+        let ul = document.getElementById("salas_inseridas");
+        for (let i = 0; i <= resposta.length - 1; i++) {
+            let li = document.createElement("li");
+            let button_acessar_sala = document.createElement("button");
+            button_acessar_sala.innerHTML = resposta[i].nome;
+            button_acessar_sala.setAttribute('id', resposta[i].id);
+            button_acessar_sala.setAttribute("class", "btn btn-primary");
+            li.append(button_acessar_sala);
+            ul.append(li);
+            button_acessar_sala.onclick = function () {
+                $("#codeprofx2").hide("fast");
+                $("#escolha_de_sala").hide("fast");
+                $("#area_escolha_lista_teorica").show("fast");
+                let id_sala = event.target.id;
+                let lista_teorica_service = new Lista_Teorica_Service(`https://bancodedados.tawham.repl.co/lista_teoricas?id_sala=${id_sala}`);
+                let ul = document.getElementById("listas_teoricas");
+                lista_teorica_service.listar().then(resposta => {
+                    for (let i = 0; i <= resposta.length - 1; i++) {
+                        let data_de_entrega = resposta[i].Data_de_entrega;
+                        let li = document.createElement("li");
+                        let button_acessar_lista = document.createElement("button");
+                        button_acessar_lista.innerHTML = resposta[i].nome
+                        button_acessar_lista.setAttribute('id', resposta[i].id);
+                        button_acessar_lista.setAttribute("class", "btn btn-primary");
+                        let target_date;
+                        if (data_de_entrega != "") {
+
+                            target_date = new Date(data_de_entrega).getTime();
+
+                            function DATA_ENTREGA() {
+                                target_date = new Date(data_de_entrega).getTime();
+
+                                var current_date = new Date().getTime();
+
+                                if (current_date > target_date) {
+                                    button_acessar_lista.setAttribute("class", "btn btn-danger")
+                                    var atrasado = Math.abs((target_date - current_date) / 1000)
+                                    days = `| Atraso: ${parseInt(atrasado / 86400)} dias`
+                                    atrasado = atrasado % 86400;
+                                    hours = `${parseInt(atrasado / 3600)}:`;
+
+                                    atrasado = atrasado % 3600;
+                                    minutes = `${parseInt(atrasado / 60)}:`;
+                                    seconds = `${parseInt(atrasado % 60)}`;
+                                    let data = [];
+                                    data.push(days);
+                                    data.push(hours);
+                                    data.push(minutes);
+                                    data.push(seconds)
+
+                                    button_acessar_lista.innerHTML = resposta[i].nome + "   " + data
+                                } else {
+                                    let prazo = Math.abs((target_date - current_date) / 1000);
+                                    let data = [];
+
+                                    days = `| Prazo: ${parseInt(prazo / 86400)} dias`;
+                                    prazo = prazo % 86400;
+                                    hours = `${parseInt(prazo / 3600)} horas:`;
+                                    prazo = prazo % 3600;
+                                    minutes = `${parseInt(prazo / 60)} minutos:`;
+                                    seconds = `${parseInt(prazo % 60)} segundos`;
+
+                                    data.push(days, hours, minutes, seconds);
+
+                                    button_acessar_lista.innerHTML = resposta[i].nome + "   " + data
+                                }
+                            }
+                            var tempo_entrega = setInterval(DATA_ENTREGA, 1000)
+                        }
+
+                        li.append(button_acessar_lista);
+                        ul.append(li);
+                        button_acessar_lista.onclick = function () {
+                            $("#codeprofx2").hide("fast");
+                            $("#infalunx").hide("fast");
+                            $("#wallalunx").css('padding-bottom', '12%');
+                            $("#wallalunx").css('background-image', 'url("./fotis/classroom.jpg")');
+                            $("#wallalunx").css('background-size', 'cover');
+                            $("#area_escolha_lista_teorica").hide("fast");
+                            var id_lista_teorica = event.target.id;
+
+
+                            let lista_teorica = new Lista_Teorica_Service(`https://bancodedados.tawham.repl.co/lista_teoricas?id=${id_lista_teorica}`);
+                            lista_teorica.listar().then(resposta => {
+                                data_de_entrega = resposta[0].Data_de_entrega
+
+                            })
+                            let nota_service = new Nota_Service(`https://bancodedados.tawham.repl.co/notas_professor?id_aluno=${id_login}&id_lista_teorica=${id_lista_teorica}`);
+                            nota_service.listar().then(resposta => {
+                                if (resposta.length > 0) {
+                                    $("#termino_exercicio").show("fast");
+                                    $("#lugar_nota").text(`Sua Nota foi ${resposta[0].nota}, certas: ${resposta[0].perguntas_certas.length}, erradas: ${resposta[0].perguntas_erradas.length}, não feitas: ${resposta[0].perguntas_nao_feitas.length}`);
+                                    let pergunta_errada = resposta[0].perguntas_erradas;
+                                    let perguntas_certas = resposta[0].perguntas_certas;
+                                    let perguntas_nao_feitas = resposta[0].perguntas_nao_feitas;
+
+                                    let ul_resposta_certa = document.getElementById("reposta_certa");
+                                    let ul_resposta_errada = document.getElementById("pergunta_errada");
+                                    let ul_perguntas_nao_feitas = document.getElementById("perguntas_nao_feitas");
+                                    for (let i = 0; i <= perguntas_certas.length - 1; i++) {
+                                        let li = document.createElement("li");
+                                        let button = document.createElement("button");
+                                        li.innerHTML = perguntas_certas[i];
+                                        button.innerHTML = "V"
+                                        li.append(button);
+                                        ul_resposta_certa.append(li);
+                                    }
+                                    for (let i = 0; i <= pergunta_errada.length - 1; i++) {
+                                        let li = document.createElement("li");
+                                        let button = document.createElement("button");
+                                        li.innerHTML = pergunta_errada[i];
+                                        button.innerHTML = "X"
+                                        li.append(button);
+                                        ul_resposta_errada.append(li);
+                                    }
+                                    for (let i = 0; i <= perguntas_nao_feitas.length - 1; i++) {
+                                        let li = document.createElement("li");
+                                        let button = document.createElement("button");
+                                        button.innerHTML = "?";
+                                        li.innerHTML = perguntas_nao_feitas[i];
+                                        li.append(button);
+                                        ul_perguntas_nao_feitas.append(li);
+                                    }
+                                    document.getElementById("voltar_escolha_lista_teorica").onclick = function () {
+                                        $("#wallalunx").css('background-image', 'url("./fotis/wood.jpg")');
+                                        $("#wallalunx").css('padding-bottom', '28%');
+                                        $("#infalunx").show("fast");
+                                        $("#termino_exercicio").hide("fast");
+                                        $("#area_escolha_lista_teorica").show("fast");
+                                        $("#reposta_certa").empty();
+                                        $("#pergunta_errada").empty();
+                                        $("#perguntas_nao_feitas").empty();
+                                        $("#lugar_nota").empty();
+                                    }
+
+                                } else {
+                                    $("#fazer_exercicio_lista_teorica").show("fast");
+
+                                    let lista_teorica_service = new Lista_Teorica_Service(`https://bancodedados.tawham.repl.co/lista_teoricas?id=${id_lista_teorica}&id_sala=${id_sala}`);
+                                    lista_teorica_service.listar().then(resposta => {
+                                        var tempo_de_termino;
+                                        let lista_pergunta;
+                                        let lista_opcoes;
+                                        let lista_perguntas_nao_feitas = [];
+                                        let lista_opcoes_corretas;
+                                        var nome_lista_teorica;
+                                        tempo_de_termino = resposta[0].tempo_de_termino
+
+                                        lista_pergunta = resposta[0].perguntas;
+                                        lista_opcoes = resposta[0].opcoes;
+                                        lista_opcoes_corretas = resposta[0].opcoes_certas;
+                                        nome_lista_teorica = resposta[0].nome
+                                        let nota = 0;
+                                        let posicao_certa_pergunta = [];
+                                        let posicao_errada_pergunta = [];
+                                        let t_number = 1;
+                                        let lista_opcoes2 = [1, 2, 3, 4, 5]
+                                        lista_opcoes.push(lista_opcoes2);
+                                        let posicao_pergunta = 0;
+                                        let posicao_opcoes = 0;
+                                        let posicao_opcoes_certas = 0;
+                                        let lista_erradas_usuario = [];
+                                        let lista_certas_usuario = [];
+                                        let input_radio = document.querySelectorAll("#valor");
+                                        let label_escolhas = document.querySelectorAll("#escolha");
+                                        let perguntas = document.getElementById("place_perguntas");
+                                        perguntas.innerHTML = `${t_number}/${lista_pergunta.length}) ${lista_pergunta[posicao_pergunta]}`;
+                                        for (let i = 0; i <= label_escolhas.length - 1; i++) {
+                                            label_escolhas[i].innerHTML = lista_opcoes[posicao_opcoes][i];
+                                            input_radio[i].setAttribute('value', lista_opcoes[posicao_opcoes][i]);
+                                        }
+                                        document.getElementById("proxima_pergunta").onclick = function () {
+                                            $("#wallalunx").css('padding-bottom', '20%');
+                                            let input_radio_situacao = $("input[name='opcoes']:checked").val();
+
+                                            if (typeof input_radio_situacao != "undefined") {
+
+                                                if (lista_opcoes_corretas[posicao_opcoes_certas] == input_radio_situacao) {
+                                                    lista_certas_usuario.push(lista_pergunta[posicao_pergunta]);
+
+                                                    posicao_certa_pergunta.push(posicao_pergunta + 1);
+
+                                                    swal('Certa Resposta!', '<img height="6%" width="6%" src="./fotis/smile.png" />  parabéns', 'success');
+                                                    nota += 100;
+
+                                                } else {
+                                                    lista_erradas_usuario.push(lista_pergunta[posicao_pergunta])
+                                                    posicao_errada_pergunta.push(posicao_pergunta + 1);
+
+                                                    swal('Resposta Errada!', '<img height="6%" width="6%" src="./fotis/sad.png" />  estude mais um pouco', 'error')
+                                                }
+                                                t_number++;
+                                                posicao_pergunta++;
+
+                                                posicao_opcoes++;
+                                                posicao_opcoes_certas++;
+
+                                                let input_radio_checker = $("input[name='opcoes']")
+                                                for (let i = 0; i <= input_radio_checker.length - 1; i++) {
+                                                    input_radio_checker[i].checked = false;
+                                                }
+                                                perguntas.innerHTML = `${t_number}/${lista_pergunta.length})  ${lista_pergunta[posicao_pergunta]}`;
+                                                for (let i = 0; i <= label_escolhas.length - 1; i++) {
+                                                    label_escolhas[i].innerHTML = lista_opcoes[posicao_opcoes][i];
+                                                    input_radio[i].setAttribute('value', lista_opcoes[posicao_opcoes][i]);
+                                                }
+                                                if (posicao_pergunta == lista_pergunta.length) {
+                                                    t_number = 1;
+                                                    perguntas.innerHTML = `${t_number}/${lista_pergunta.length})`
+
+                                                    $("#fazer_exercicio_lista_teorica").hide("fast");
+                                                    $("#termino_exercicio").show("fast");
+                                                    nota = parseInt((nota / lista_pergunta.length).toFixed(0));
+                                                    $("#lugar_nota").text(`Sua nota foi ${nota} | acertos: ${lista_certas_usuario.length}, erros: ${lista_erradas_usuario.length}`);
+                                                    let ul_resposta_certa = document.getElementById("reposta_certa");
+                                                    let ul_resposta_errada = document.getElementById("pergunta_errada");
+                                                    let current_date = new Date().getTime();
+                                                    let data_errada = new Date();
+                                                    let dia = data_errada.getDate();
+                                                    let mes = data_errada.getMonth() + 1;
+                                                    let ano = data_errada.getFullYear()
+                                                    let current_date_enviar = `${dia}/${mes}/${ano}`;
+
+                                                    let situacao_envio;
+                                                    if (data_de_entrega != "") {
+                                                        if (target_date < current_date) {
+                                                            situacao_envio = "atrasado";
+                                                        } else {
+                                                            situacao_envio = "prazo"
+                                                        }
+
+                                                        let nota_enviar = new Nota(nome_login, nota, id_login, id_lista_teorica, nome_lista_teorica, lista_certas_usuario, lista_erradas_usuario, lista_perguntas_nao_feitas, situacao_envio, current_date_enviar);
+                                                        let nota_service = new Nota_Service("https://bancodedados.tawham.repl.co/notas_professor");
+                                                        nota_service.inserir(nota_enviar).then(resposta => {
+
+                                                        })
+                                                    } else {
+                                                        let nota_enviar = new Nota(nome_login, nota, id_login, id_lista_teorica, nome_lista_teorica, lista_certas_usuario, lista_erradas_usuario, lista_perguntas_nao_feitas);
+                                                        let nota_service = new Nota_Service("https://bancodedados.tawham.repl.co/notas_professor");
+                                                        nota_service.inserir(nota_enviar).then(resposta => {
+
+                                                        })
+                                                    }
+                                                    clearInterval(tempo);
+                                                    clearInterval(tempo2);
+                                                    for (let i = 0; i <= lista_certas_usuario.length - 1; i++) {
+                                                        let li = document.createElement("li");
+                                                        li.setAttribute('id', 'certas')
+                                                        let button = document.createElement("button");
+                                                        button.innerHTML = "V";
+                                                        button.setAttribute('id', 'perguntas_certas');
+                                                        li.innerHTML = `${posicao_certa_pergunta[i]}) ${lista_certas_usuario[i]}`;
+                                                        li.append(button);
+                                                        ul_resposta_certa.append(li);
+
+                                                    }
+                                                    for (let i = 0; i <= lista_erradas_usuario.length - 1; i++) {
+                                                        let li = document.createElement("li");
+                                                        let button = document.createElement("button");
+                                                        button.innerHTML = "X";
+                                                        button.setAttribute('id', 'perguntas_erradas');
+                                                        $("#perguntas_erradas").css({
+                                                            "background-color": "red",
+                                                            "color": "#F5F5F5"
+                                                        })
+                                                        li.innerHTML = `${posicao_errada_pergunta[i]}) ${lista_erradas_usuario[i]}`;
+                                                        li.append(button);
+                                                        ul_resposta_errada.append(li);
+                                                    }
+                                                    document.getElementById("voltar_escolha_lista_teorica").onclick = function () {
+                                                        $("#wallalunx").css('background-image', 'url("./fotis/wood.jpg")');
+                                                        $("#wallalunx").css('padding-bottom', '28%');
+                                                        $("#infalunx").show("fast");
+                                                        $("#termino_exercicio").hide("fast");
+                                                        $("#area_escolha_lista_teorica").show("fast");
+                                                        $("#reposta_certa").empty();
+                                                        $("#pergunta_errada").empty();
+                                                        $("#perguntas_nao_feitas").empty();
+                                                        $("#hora").empty();
+                                                        $("#minutos").empty();
+                                                        $("#segundos").empty();
+                                                        posicao_pergunta = 0;
+                                                        posicao_opcoes = 0;
+                                                        posicao_opcoes_certas = 0;
+                                                        t_number = 1;
+                                                        nota = 0;
+                                                        hora = 0;
+                                                        minutos = 0;
+                                                        segundos = 0;
+                                                        posicao_certa_pergunta = [];
+                                                        posicao_errada_pergunta = [];
+                                                        $("#lugar_nota").empty();
+                                                    }
+                                                }
+                                            } else {
+                                                swal('Resposta Inválida!', '- escolha sua opção -', 'error')
+                                            }
+                                        }
+                                        if (tempo_de_termino != "") {
+                                            var relogio = [];
+                                            relogio.push(tempo_de_termino.split(":"))
+
+
+                                            if (relogio[0][0] <= 0) {
+
+                                                var t_hora = document.getElementById("hora");
+                                                var t_minutos = document.getElementById("minutos");
+                                                var t_segundos = document.getElementById("segundos");
+
+
+                                                t_hora.innerHTML = (relogio[0][0] > 9) ? ("" + relogio[0][0] + ":") : ("0" + relogio[0][0] + ":");
+                                                t_minutos.innerHTML = (relogio[0][1] > 9) ? ("" + relogio[0][1] + ":") : ("0" + relogio[0][1] + ":");
+                                                t_segundos.innerHTML = 59;
+                                                var hora = relogio[0][0];
+                                                var minutos = relogio[0][1] - 1;
+                                                var segundos = 59;
+
+                                                function contador() {
+
+                                                    t_minutos.innerHTML = (minutos > 9) ? ("" + minutos + ":") : ("0" + minutos + ":");
+                                                    t_segundos.innerHTML = (segundos > 9) ? ("" + segundos) : ("0" + segundos);
+                                                    if (segundos > 0) segundos--;
+                                                    else if (segundos == 0 && minutos > 0) {
+                                                        segundos = 59;
+                                                        minutos -= 1;
+                                                    } else {
+                                                        clearInterval(tempo);
+                                                        $("#fazer_exercicio_lista_teorica").hide("fast");
+                                                        $("#termino_exercicio").show("fast");
+                                                        nota = parseInt((nota / lista_pergunta.length).toFixed(0));
+                                                        $("#lugar_nota").text(`Sua nota foi ${nota} | acertos: ${lista_certas_usuario.length}, erros: ${lista_erradas_usuario.length}, não realizadas: ${lista_pergunta.length - posicao_pergunta}`);
+                                                        let ul_resposta_certa = document.getElementById("reposta_certa");
+                                                        let ul_resposta_errada = document.getElementById("pergunta_errada");
+                                                        let ul_perguntas_nao_feitas = document.getElementById("perguntas_nao_feitas");
+                                                        t_number = 1;
+                                                        perguntas.innerHTML = `${t_number}/${lista_pergunta.length})`
+
+                                                        for (let i = 0; i <= lista_certas_usuario.length - 1; i++) {
+                                                            let li = document.createElement("li");
+                                                            li.setAttribute('id', 'certas')
+                                                            let button = document.createElement("button");
+                                                            button.innerHTML = "V";
+                                                            button.setAttribute('id', 'perguntas_certas');
+                                                            li.innerHTML = `${posicao_certa_pergunta[i]}) ${lista_certas_usuario[i]}`;
+                                                            li.append(button);
+                                                            ul_resposta_certa.append(li);
+
+                                                        }
+                                                        for (let i = 0; i <= lista_erradas_usuario.length - 1; i++) {
+                                                            let li = document.createElement("li");
+                                                            let button = document.createElement("button");
+                                                            button.innerHTML = "X";
+                                                            button.setAttribute('id', 'perguntas_erradas');
+                                                            $("#perguntas_erradas").css({
+                                                                "background-color": "red",
+                                                                "color": "#F5F5F5"
+                                                            })
+                                                            li.innerHTML = `${posicao_errada_pergunta[i]})   ${lista_erradas_usuario[i]}`;
+                                                            li.append(button);
+                                                            ul_resposta_errada.append(li);
+                                                        }
+                                                        for (let i = posicao_pergunta; i <= lista_pergunta.length - 1; i++) {
+
+                                                            let li = document.createElement("li");
+                                                            let button = document.createElement("button");
+                                                            button.innerHTML = "?";
+                                                            li.innerHTML = `${i + 1}) ${lista_pergunta[i]}`;
+                                                            lista_perguntas_nao_feitas.push(lista_pergunta[i]);
+                                                            li.append(button);
+                                                            ul_perguntas_nao_feitas.append(li)
+                                                        }
+                                                        let situacao_envio = "";
+                                                        let current_date = new Date().getTime();
+                                                        let data_errada = new Date();
+                                                        let dia = data_errada.getDate();
+                                                        let mes = data_errada.getMonth() + 1;
+                                                        let ano = data_errada.getFullYear()
+                                                        let current_date_enviar = `${dia}/${mes}/${ano}`;
+
+                                                        if (data_de_entrega != "") {
+                                                            if (target_date < current_date) {
+                                                                situacao_envio = "atrasado";
+                                                            } else {
+                                                                situacao_envio = "prazo"
+                                                            }
+                                                            let nota_class = new Nota(nome_login, nota, id_login, id_lista_teorica, nome_lista_teorica, lista_certas_usuario, lista_erradas_usuario, lista_perguntas_nao_feitas, situacao_envio, current_date_enviar);
+                                                            let nota_service = new Nota_Service("https://bancodedados.tawham.repl.co/notas_professor");
+                                                            nota_service.inserir(nota_class).then(resposta => {
+
+                                                            })
+                                                        } else {
+                                                            let nota_class = new Nota(nome_login, nota, id_login, id_lista_teorica, nome_lista_teorica, lista_certas_usuario, lista_erradas_usuario, lista_perguntas_nao_feitas);
+                                                            let nota_service = new Nota_Service("https://bancodedados.tawham.repl.co/notas_professor");
+                                                            nota_service.inserir(nota_class).then(resposta => {
+
+                                                            })
+                                                        }
+
+                                                        document.getElementById("voltar_escolha_lista_teorica").onclick = function () {
+                                                            $("#wallalunx").css('background-image', 'url("./fotis/wood.jpg")');
+                                                            $("#wallalunx").css('padding-bottom', '28%');
+                                                            $("#infalunx").show("fast");
+                                                            $("#termino_exercicio").hide("fast");
+                                                            $("#area_escolha_lista_teorica").show("fast");
+                                                            $("#reposta_certa").empty();
+                                                            $("#pergunta_errada").empty();
+                                                            $("#hora").empty();
+                                                            $("#minutos").empty();
+                                                            $("#segundos").empty();
+                                                            $("#perguntas_nao_feitas").empty();
+                                                            $("#lugar_nota").empty();
+                                                            posicao_pergunta = 0;
+                                                            posicao_opcoes = 0;
+                                                            posicao_opcoes_certas = 0;
+                                                            t_number = 1;
+                                                            nota = 0;
+                                                            hora = 0;
+                                                            minutos = 0;
+                                                            segundos = 0;
+                                                            posicao_errada_pergunta = [];
+                                                            posicao_certa_pergunta = [];
+
+                                                        }
+
+                                                    }
+
+                                                }
+                                                var tempo = setInterval(contador, 1000);
+
+                                            } else {
+
+                                                var t_hora = document.getElementById("hora");
+                                                var t_minutos = document.getElementById("minutos");
+                                                var t_segundos = document.getElementById("segundos");
+                                                t_hora.innerHTML = (relogio[0][0] > 9) ? ("" + relogio[0][0] + ":") : ("0" + relogio[0][0] + ":");
+                                                t_minutos.innerHTML = (relogio[0][1] > 9) ? ("" + relogio[0][1] + ":") : ("0" + relogio[0][1] + ":");
+                                                t_segundos.innerHTML = 59;
+                                                var hora = relogio[0][0];
+                                                var minutos = relogio[0][1];
+                                                var segundos = 59;
+
+                                                function contador2() {
+
+                                                    t_minutos.innerHTML = (minutos > 9) ? ("" + minutos + ":") : ("0" + minutos + ":");
+                                                    t_segundos.innerHTML = (segundos > 9) ? ("" + segundos) : ("0" + segundos);
+                                                    t_hora.innerHTML = (hora > 9) ? ("" + hora + ":") : ("0" + hora + ":");
+                                                    if (segundos > 0) segundos--;
+                                                    else if (segundos == 0 && minutos > 0) {
+                                                        segundos = 59;
+                                                        minutos -= 1;
+                                                    } else if (minutos == 0 && hora > 0) {
+                                                        minutos = 60;
+                                                        hora -= 1;
+                                                    } else {
+                                                        clearInterval(tempo2);
+                                                        t_number = 1;
+                                                        perguntas.innerHTML = `${t_number}/${lista_pergunta.length})`
+                                                        $("#fazer_exercicio_lista_teorica").hide("fast");
+                                                        $("#termino_exercicio").show("fast");
+                                                        nota = parseInt((nota / lista_pergunta.length).toFixed(0));
+                                                        $("#lugar_nota").text(`Sua nota foi ${nota} | acertos: ${lista_certas_usuario.length}, erros: ${lista_erradas_usuario.length}, não realizadas: ${lista_pergunta.length - posicao_pergunta}`);
+                                                        let ul_resposta_certa = document.getElementById("reposta_certa");
+                                                        let ul_resposta_errada = document.getElementById("pergunta_errada");
+                                                        let ul_perguntas_nao_feitas = document.getElementById("perguntas_nao_feitas");
+                                                        for (let i = 0; i <= lista_certas_usuario.length - 1; i++) {
+                                                            let li = document.createElement("li");
+                                                            li.setAttribute('id', 'certas')
+                                                            let button = document.createElement("button");
+                                                            button.innerHTML = "V";
+                                                            button.setAttribute('id', 'perguntas_certas');
+                                                            li.innerHTML = `${posicao_certa_pergunta[i]}) ${lista_certas_usuario[i]}`;
+                                                            li.append(button);
+                                                            ul_resposta_certa.append(li);
+
+                                                        }
+                                                        for (let i = 0; i <= lista_erradas_usuario.length - 1; i++) {
+                                                            let li = document.createElement("li");
+                                                            let button = document.createElement("button");
+                                                            button.innerHTML = "X";
+                                                            button.setAttribute('id', 'perguntas_erradas');
+                                                            $("#perguntas_erradas").css({
+                                                                "background-color": "red",
+                                                                "color": "#F5F5F5"
+                                                            })
+                                                            li.innerHTML = `${posicao_errada_pergunta[i]}) ${lista_erradas_usuario[i]}`;
+                                                            li.append(button);
+                                                            ul_resposta_errada.append(li);
+                                                        }
+
+                                                        for (let i = posicao_pergunta; i <= lista_pergunta.length - 1; i++) {
+
+                                                            let li = document.createElement("li");
+                                                            let button = document.createElement("button");
+                                                            button.innerHTML = "?";
+                                                            li.innerHTML = `${i + 1}) ${lista_pergunta[i]}`;
+                                                            lista_perguntas_nao_feitas.push(lista_pergunta[i]);
+                                                            li.append(button);
+                                                            ul_perguntas_nao_feitas.append(li)
+                                                        }
+                                                        let situacao_envio;
+                                                        let current_date = new Date().getTime();
+                                                        let data_errada = new Date();
+                                                        let dia = data_errada.getDate();
+                                                        let mes = data_errada.getMonth() + 1;
+                                                        let ano = data_errada.getFullYear()
+                                                        let current_date_enviar = `${dia}/${mes}/${ano}`;
+
+                                                        if (data_de_entrega != "") {
+                                                            if (target_date < current_date) {
+                                                                situacao_envio = "atrasado";
+                                                            } else {
+                                                                situacao_envio = "prazo"
+                                                            }
+                                                            let nota_class = new Nota(nome_login, nota, id_login, id_lista_teorica, nome_lista_teorica, lista_certas_usuario, lista_erradas_usuario, lista_perguntas_nao_feitas, situacao_envio, current_date_enviar);
+                                                            let nota_service = new Nota_Service("https://bancodedados.tawham.repl.co/notas_professor");
+                                                            nota_service.inserir(nota_class).then(resposta => {
+
+                                                            })
+                                                        } else {
+                                                            let nota_class = new Nota(nome_login, nota, id_login, id_lista_teorica, nome_lista_teorica, lista_certas_usuario, lista_erradas_usuario, lista_perguntas_nao_feitas);
+                                                            let nota_service = new Nota_Service("https://bancodedados.tawham.repl.co/notas_professor");
+                                                            nota_service.inserir(nota_class).then(resposta => {
+
+                                                            })
+                                                        }
+                                                        document.getElementById("voltar_escolha_lista_teorica").onclick = function () {
+                                                            $("#wallalunx").css('background-image', 'url("./fotis/wood.jpg")');
+                                                            $("#wallalunx").css('padding-bottom', '28%');
+                                                            $("#infalunx").show("fast");
+                                                            $("#termino_exercicio").hide("fast");
+                                                            $("#area_escolha_lista_teorica").show("fast");
+                                                            $("#reposta_certa").empty();
+                                                            $("#pergunta_errada").empty();
+                                                            $("#hora").empty();
+                                                            $("#minutos").empty();
+                                                            $("#segundos").empty();
+                                                            $("#perguntas_nao_feitas").empty();
+                                                            $("#lugar_nota").empty();
+                                                            posicao_pergunta = 0;
+                                                            posicao_opcoes = 0;
+                                                            posicao_opcoes_certas = 0;
+                                                            t_number = 1;
+                                                            hora = 0;
+                                                            minutos = 0;
+                                                            segundos = 0;
+                                                            posicao_certa_pergunta = [];
+                                                            posicao_errada_pergunta = [];
+
+                                                        }
+                                                    }
+
+                                                }
+                                                var tempo2 = setInterval(contador2, 1000);
+                                            }
+                                        }
+                                    })
+                                }
+                            })
+                        }
+                    }
+                })
+                document.getElementById("voltar_da_area_sala_especifica").onclick = function () {
+                    $("#listas_teoricas").empty();
+                    $("#area_escolha_lista_teorica").hide("fast");
+                    $("#escolha_de_sala").show("fast");
+                    $("#wallalunx").css('padding-bottom', '32%');
+                }
+            }
+        }
+    })
+    document.getElementById("voltar_da_area_de_escolha_de_salas").onclick = function () {
+        $("#muralxalun").show("fast");
+        $("#wallalunx").css('padding-bottom', '32%');
+        $("#codeprofx2").hide("fast");
+        $("#infalunx").hide("fast");
+        $("#salas_inseridas").empty();
+        $("#area_de_escolhas").show("fast");
+        $("#comentario").show("fast");
+        $("#escolha_de_sala").hide("fast");
+    }
+}
