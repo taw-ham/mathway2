@@ -64,14 +64,14 @@
                 $("#tipologinx").css('background-color', 'lightblue');
                 $("#bbx").css('background-color', 'blue');
                 $("#ccx").css('background-color', 'lightslategray');
-                $("#wallx").css('padding-bottom', '6.6%');
+                $("#wallx").css('padding-bottom', '6.5%');
             } else {
                 $("#logx").css('background', 'linear-gradient(whitesmoke,lightgreen');
                 $("#obx").hide("fast");
                 $("#tipologinx").css('background-color', 'lightgreen');
                 $("#ccx").css('background-color', 'green');
                 $("#bbx").css('background-color', 'lightslategray');
-                $("#wallx").css('padding-bottom', '6.6%');
+                $("#wallx").css('padding-bottom', '6.5%');
             }
         }
     }
