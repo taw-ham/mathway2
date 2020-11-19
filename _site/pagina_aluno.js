@@ -280,7 +280,7 @@ $("#codeprofx").hide("fast");
 $("#codeprofx2").hide("fast");
 
 document.getElementById("voltar_area_de_escolhas_inicial2").onclick = function () {
-    $("#wallalunx").css('padding-bottom', '32%');
+    $("#wallalunx").css('padding-bottom', '24%');
     $("#area_de_escolhas").show("fast");
     $("#lugar_entrada_sala").hide("fast");
     $("#comentario").show("fast");
@@ -442,7 +442,7 @@ document.getElementById("notas").onclick = function () {
 
     })
     document.getElementById("voltar_area_de_escolhas_inicial").onclick = function () {
-        $("#wallalunx").css('padding-bottom', '32%');
+        $("#wallalunx").css('padding-bottom', '24%');
         $("#area_de_escolhas").show("fast");
         $("#lugar_de_notas").hide("fast");
         $("#boletim").empty();
@@ -459,7 +459,7 @@ document.getElementById("exercicios").onclick = function () {
     $("#comentario").hide("fast");
     document.getElementById("voltar_da_area_escolha_modo_exercicio").onclick = function () {
         $("#muralxalun").show("fast");
-        $("#wallalunx").css('padding-bottom', '32%');
+        $("#wallalunx").css('padding-bottom', '24%');
         $("#codeprofx").hide("fast");
         $("#infalunx").hide("fast");
         $("#escolha_modo_exercicio").hide("fast");
@@ -2239,7 +2239,7 @@ document.getElementById("salas_presentes").onclick = function () {
     })
     document.getElementById("voltar_da_area_de_escolha_de_salas").onclick = function () {
         $("#muralxalun").show("fast");
-        $("#wallalunx").css('padding-bottom', '32%');
+        $("#wallalunx").css('padding-bottom', '24%');
         $("#codeprofx2").hide("fast");
         $("#infalunx").hide("fast");
         $("#salas_inseridas").empty();
